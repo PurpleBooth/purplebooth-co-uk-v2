@@ -3,8 +3,9 @@ languageCode = "en-gb"
 title = "Purple Booth"
 
 [params]
-logo = "Purple Booth Logo-01.png"
+Logo = "Purple Booth Logo-01.png"
 Description = "Billie Thompson. Software developer."
+GoogleAnalytics = "UA-32113064-1"
 
 [[menu.main]]
     name = "About"
