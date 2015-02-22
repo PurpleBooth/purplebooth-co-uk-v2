@@ -7,4 +7,4 @@ title = "Me talking at PHPUK"
 
 I had a lovely time a PHPUK this year, and met lots of wonderful people. I hope I can come back next year.
 
-Photo by [Rob Allen](https://www.flickr.com/photos/akrabat/)
+Photo [Billie presenting](https://www.flickr.com/photos/akrabat/16601798701/) by [Rob Allen](https://www.flickr.com/photos/akrabat/) [(CC BY-NC-SA 2.0)](https://creativecommons.org/licenses/by-nc-sa/2.0/)
