@@ -1,6 +1,7 @@
 baseurl = "https://purplebooth.co.uk"
 languageCode = "en-gb"
 title = "Purple Booth"
+pygmentsstyle = "pastie"
 
 [params]
 Logo = "Purple Booth Logo-01.png"
