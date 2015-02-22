@@ -1,0 +1,23 @@
+baseurl = "https://purplebooth.co.uk"
+languageCode = "en-gb"
+title = "Purple Booth"
+
+[params]
+logo = "Purple Booth Logo-01.png"
+Description = "Billie Thompson. Software developer."
+
+[[menu.main]]
+    name = "About"
+    url = "/about/me"
+[[menu.main]]
+    name = "Twitter"
+    pre = "<i class='fa fa-twitter-square'></i>"
+    url = "https://twitter.com/BillieAThompson"
+[[menu.main]]
+    name = "github"
+    pre = "<i class='fa fa-github-square'></i>"
+    url = "https://github.com/PurpleBooth"
+[[menu.main]]
+    name = "LinkedIn"
+    pre = "<i class='fa fa-linkedin-square'></i>"
+    url = "https://uk.linkedin.com/in/billieathompson"
