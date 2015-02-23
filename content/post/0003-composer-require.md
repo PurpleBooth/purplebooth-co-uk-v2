@@ -6,9 +6,11 @@ title = "Composer Require"
 
 Not many people seem to know this, but you don't have to edit the composer.json file to update or add to your required packages.
 
-{{< highlight sh >}}
+<pre>
+<code class="bash">
 $ php composer.phar require vendor/package1:dev-master
 $ php composer.phar require --dev vendor/package2:~1.1.0
-{{< /highlight >}}
+</code>
+</pre>
 
 This first example adds a normal dependency, and the latter a dev dependency. It'll run an update on that single package too, if it's already in there.
