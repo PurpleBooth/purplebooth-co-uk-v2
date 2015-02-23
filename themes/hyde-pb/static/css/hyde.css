@@ -53,6 +53,10 @@ html {
  * out above content in mobile and later moves to the side with wider viewports.
  */
 
+code.hljs {
+    background-color: transparent;
+}
+
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
