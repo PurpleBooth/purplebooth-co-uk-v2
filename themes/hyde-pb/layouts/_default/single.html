@@ -3,13 +3,30 @@
 
 {{ partial "sidebar.html" . }}
 
-    <div class="content container">
-<div class="post">
-  <h1>{{ .Title }}</h1>
-  <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-      {{ .Content }}
-</div>
+<div class="content container">
+    <div class="post">
+        <h1>{{ .Title }}</h1>
+        <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+        {{ .Content }}
+
+        <a href="https://twitter.com/share" 
+           class="twitter-share-button" 
+           data-via="BillieAThompson" 
+           data-size="large"
+           data-related="BillieAThompson">
+            Tweet
+        </a>
+        <script>!function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + '://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'twitter-wjs');</script>
+    </div>
 </div>
 
-  </body>
+</body>
 </html>
