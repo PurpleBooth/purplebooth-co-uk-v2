@@ -1,6 +1,9 @@
 +++
+Categories = ["OOP"]
+Tags = ["Development", "PHP", "SOLID", "OOP"]
 date = "2015-02-25T21:06:24Z"
 title = "L is for Liskovs Substitution Principle"
+Description = "How to use Liskovs Substitution Principle in PHP. The third in a series on SOLID."
 draft = false
 +++
 
@@ -59,13 +62,13 @@ abstract class Writer {
      * @return true
      */
     abstract public function connect();
-    
+
 }
 </code>
 </pre>
 
 Here you can see that we don't match the interface of the parent class in our *JsonWriter*. You can imagine what's going to happen when we try to check if the connection has been successfully made in a none strict manner. It'll always return true, because a none empty array is true in PHP.
- 
+
  Another common mistake is to have functions throw exceptions, where no exceptions were expected before. I think we've all had the situation where we've been using a dependency that unexpectedly thew a exception, causing our application to 500. We should catch and handle that error to make the interface the same across all subtypes of a type.
 
 These are the simplest instance of violating the LSP. There is a more subtle violation of the LSP though. This is the incorrect use of inheritance.
@@ -83,7 +86,7 @@ class MongoDBWriter extends JsonWriter {
     public function connect()
     {
         $this->log("\"json\"");
-        
+
         return true;
     }
 }
@@ -95,7 +98,7 @@ class MongoDBWriter extends JsonWriter {
  * Writes log lines in JSON to disk
  */
 class JsonWriter extends Writer {
-    
+
     /**
      * @return true
      */
@@ -121,7 +124,7 @@ abstract class Writer {
      * @return true
      */
     abstract public function connect();
-    
+
 }
 </code>
 </pre>

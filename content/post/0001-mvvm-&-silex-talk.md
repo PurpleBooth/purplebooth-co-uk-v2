@@ -1,7 +1,10 @@
 +++
+Categories = ["Talks"]
+Tags = ["Development", "PHP", "Silex", "MVVM", "PHPUK", "Talks", "Slides"]
 date = "2015-02-22T13:02:16Z"
 draft = false
 title = "MVVM & Silex Talk"
+Description = "The slides from my MVVM and Silex talk"
 +++
 
 Here are the slides from my MVVM & Silex talk from PHP UK.

@@ -1,12 +1,15 @@
 +++
+Categories = ["OOP"]
+Tags = ["Development", "PHP", "SOLID", "OOP"]
 date = "2015-02-23T19:17:37Z"
 draft = false
 title = "S is for Single Responsibility Principle"
+Description = "How to use the Single Responsibility Principle in PHP. The first in a series on SOLID."
 +++
 
-S is the first letter in SOLID. 
+S is the first letter in SOLID.
 
-It stands for The Single Responsibility Principle, and means "A Class Should Have One Reason To Change". 
+It stands for The Single Responsibility Principle, and means "A Class Should Have One Reason To Change".
 
 It was first described by Tom DeMarco in 1979. He called it Cohesion, in fact you've probably heard the phrase "High Cohesion, Low Coupling" before. These days we call it the Single Responsibility Principle, as popularised by  Robert C. Martin (Uncle Bob).
 
@@ -77,7 +80,7 @@ class Basket
     /**
      * Complete the order
      *
-     * Send an order complete email and when the items have 
+     * Send an order complete email and when the items have
      * been purchased and clear the order items
      */
     public function orderComplete()
@@ -99,7 +102,7 @@ This class violates the Single Responsibility Principle because it's got two thi
 2. The object can change when we send an email
 
 A give away code smell for this problem is injecting dependencies that are only used by some of the methods in this object. If your constructor has lots of dependencies, they're probably not being used in every method. So you're probably not following the Single Responsibility Principle, so double check if there isn't some refactoring you can do in that class.
- 
+
  Another key indicator is, if when attempting to describe what the object does, you use the word **and**. In this case: "The object represents the basket **and** sends emails when the order is complete". If you can describe your method without using the word **and** (or also, or any other joining word), you're probably following the Single Responsibility Principle.
 
 Not following this rule (also known as high coupling), is going to cause you problems because now you're going to need to bring an *EmailSender* where ever you initialise your *Basket*, and what's worse, the *EmailSender* has wound its way into the order complete logic, and it's now impossible to use this class anywhere where we would want to complete an order without sending an email.

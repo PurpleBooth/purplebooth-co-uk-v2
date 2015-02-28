@@ -1,7 +1,10 @@
 +++
+Categories = ["Talks"]
+Tags = ["Development", "PHP", "Silex", "MVVM", "PHPUK15", "PHPUK", "Talks", "Photos"]
 date = "2015-02-22T16:02:16Z"
 draft = false
 title = "Me talking at PHPUK"
+Description = "A photo of me speaking at PHPUK15"
 +++
 <iframe src="https://www.flickr.com/photos/akrabat/16601798701/player/" width="99%" max-width="645" height="430" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 

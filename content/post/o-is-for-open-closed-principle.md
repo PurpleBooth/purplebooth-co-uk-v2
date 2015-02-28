@@ -1,8 +1,10 @@
 +++
+Categories = ["OOP"]
+Tags = ["Development", "PHP", "SOLID", "OOP"]
 date = "2015-02-24T19:46:10Z"
 draft = false
 title = "O is for Open Closed Principle"
-
+Description = "How to use Open Closed Principle in PHP. The second in a series on SOLID."
 +++
 
 O is the second letter in SOLID.
@@ -253,7 +255,7 @@ class LineItem
     {
         return $user->getPrice($this->price);
     }
-    
+
     public function delayDispatch(Disliked $user) {
         //...
     }
@@ -263,4 +265,4 @@ class LineItem
 
 So you can see the Open Closed Principle is key to good usage of polymorphism. It helps us think about where we're willing to let new functionality be added to our system, and enforce where we are not. It's a powerful design tool that can allow the compiler to prevent errors before they happen, and teach other developers how to use the system.
 
-Plus it makes you IDE work like, super good, and anything that makes my IDE work better is a plus in my book. 
+Plus it makes you IDE work like, super good, and anything that makes my IDE work better is a plus in my book.

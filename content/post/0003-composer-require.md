@@ -1,7 +1,10 @@
 +++
+Categories = ["Tips"]
+Tags = ["Development", "PHP", "Composer", "Tips"]
 date = "2015-02-22T21:19:37Z"
 draft = false
 title = "Composer Require"
+Description = "How to use the require command in composer to edit your dependencies"
 +++
 
 Not many people seem to know this, but you don't have to edit the composer.json file to update or add to your required packages.
