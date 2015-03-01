@@ -25,7 +25,7 @@ In practical terms, this means that any new functionality should be implementabl
 
 Take for example this *LineItem* that offers special discount for some *User* types of the system:
 
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Line item in the basket
@@ -68,7 +68,7 @@ class LineItem
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * A user of the system
@@ -109,7 +109,7 @@ This is bad because we have some code that we know works, in the *LineItem*, how
 
 However it is possible to write code that only needs us to write new classes to extend it (that is open to extension), and doesn't require us to change the existing working code (closed to modification).
 
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Line item in the basket
@@ -145,7 +145,7 @@ class LineItem
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * A user of the system
@@ -162,7 +162,7 @@ abstract class User
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * A special favourite customer
@@ -182,7 +182,7 @@ class Special extends User
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * A customer we like the best
@@ -202,7 +202,7 @@ class Regular extends User
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * A customer we don't like much
@@ -233,7 +233,7 @@ If we were to make our class fully open, we should make all our member variables
 
 This has an additional benefit, by explicitly creating the extension points we give our fellow developers key information as to how some code is to be used, and we can even take advantage of the compiler to enforce this usage. In the following example we're taking advantage of making the extension point to delayDispatch explicitly only take *Disliked* users, to prevent any users that are not mean to us from having their *LineItem* delayed.
 
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Line item in the basket

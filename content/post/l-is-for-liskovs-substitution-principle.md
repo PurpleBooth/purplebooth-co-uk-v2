@@ -25,7 +25,7 @@ Liskov's Substitution Principle states that "objects in a program should be repl
 
 Take for example:
 
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Writes log lines to MongoDB
@@ -43,7 +43,7 @@ class MongoDBWriter extends  Writer {
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Writes log lines in JSON to disk
@@ -61,7 +61,7 @@ class JsonWriter extends Writer {
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Parent class for all log writers
@@ -83,7 +83,7 @@ Here you can see that we don't match the interface of the parent class in our *J
 
 These are the simplest instance of violating the LSP. There is a more subtle violation of the LSP though. This is the incorrect use of inheritance.
 
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Writes log lines to MongoDB
@@ -102,7 +102,7 @@ class MongoDBWriter extends JsonWriter {
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Writes log lines in JSON to disk
@@ -123,7 +123,7 @@ class JsonWriter extends Writer {
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Parent class for all log writers

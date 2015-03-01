@@ -34,7 +34,7 @@ Just to clarify, by services I mean classes that exist within your system that d
 
 Imagine for a minute we have a caching layer. In this caching layer we have a number of methods, for getting and setting cache values. We use this caching layer in another class, one that calculates the number of pages that a search result has.
 
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Client for an in memory cache service
@@ -69,7 +69,7 @@ class MemoryCache
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Paginates search results
@@ -118,7 +118,7 @@ Lets change this class to follow the Dependency Inversion Principle. We will cha
 
 The key things to notice now are that if we need to change the way we do caching, we no longer have to change any of the code inside our *SearchPagination* class.
 
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * KeyValueCache interface.
@@ -143,7 +143,7 @@ interface KeyValueCache
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Client for an in memory cache service
@@ -178,7 +178,7 @@ class MemoryCache implements KeyValueCache
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Paginates search results
@@ -233,7 +233,7 @@ class SearchPagination
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 // In a dependency injection container somewhere
 $cache = new MemoryCache();

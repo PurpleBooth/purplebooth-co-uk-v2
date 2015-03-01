@@ -27,7 +27,7 @@ This principle is based around the idea that each responsibility that a class ha
 
 Take for example this class
 
-<pre>
+<pre class="code">
 <code class="php">
 
 /**
@@ -119,7 +119,7 @@ Not following this rule (also known as high coupling), is going to cause you pro
 
 The correct way to implement this is to split each responsibility into a class. In this example this means we end up with a *Basket* and and *BasketCompleteEmailListener*. We will run the *BasketCompleteEmailListener* with the [Observer pattern](http://en.wikipedia.org/wiki/Observer_pattern). This way we can still send the email when the order is complete, but we can also complete an order without sending an email.
 
-<pre>
+<pre class="code">
 <code class="php">
 
 /**
@@ -157,7 +157,7 @@ class Basket
 
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 
 /**

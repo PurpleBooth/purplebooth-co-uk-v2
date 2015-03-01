@@ -9,7 +9,7 @@ Description = "How to use the require command in composer to edit your dependenc
 
 Not many people seem to know this, but you don't have to edit the composer.json file to update or add to your required packages.
 
-<pre>
+<pre class="code">
 <code class="bash">
 $ php composer.phar require vendor/package1:dev-master
 $ php composer.phar require --dev vendor/package2:~1.1.0

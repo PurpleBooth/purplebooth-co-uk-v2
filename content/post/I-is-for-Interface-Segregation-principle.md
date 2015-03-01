@@ -27,7 +27,7 @@ So for each of your services, you should provide an interface for each of its cl
 
 Take for example the following purchasing system, and it's two clients that are dependent on the concrete class.
 
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Make changes to the stored basket within the system
@@ -69,7 +69,7 @@ class BasketPersistenceService
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Order new stock depending on the top purchases
@@ -104,7 +104,7 @@ class StockManagementService
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Service for making changes to the basket for a specific user
@@ -168,7 +168,7 @@ We now have to change the interface in two downstream clients, because we cannot
 
 Now consider the following design following the Interface Segregation Principle. Notice how we only have to change the classes that are actually impacted by the change: *BasketPersistenceService* and *StockManagementService*, rather than all of the classes that have the *BasketPersistenceService* injected as a constructor variable into them. This is because the client specific interfaces guarantee that the analytics methods are only being called in classes that require them.
 
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Interface for the Stock Management Service to identity purchasing trends
@@ -182,7 +182,7 @@ interface BasketAnalyticsService
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Interface for the Session Basket to allow users to purchase things
@@ -207,7 +207,7 @@ interface PurchasingService
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Make changes to the stored basket within the system
@@ -249,7 +249,7 @@ class BasketPersistenceService implements PurchasingService, BasketAnalyticsServ
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Order new stock depending on the top purchases
@@ -284,7 +284,7 @@ class StockManagementService
 }
 </code>
 </pre>
-<pre>
+<pre class="code">
 <code class="php">
 /**
  * Service for making changes to the basket for a specific user
