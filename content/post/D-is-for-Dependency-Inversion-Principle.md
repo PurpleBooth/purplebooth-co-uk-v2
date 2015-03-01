@@ -7,6 +7,16 @@ title = "D is for Dependency Inversion Principle"
 
 +++
 
+This is the fifth article in a series the SOLID principles for software design. There are 5 principles, each corresponding to a letter in the word SOLID.
+
+1. [S is for Single Responsibility Principle](/post/0004-s-is-for-single-responsibility-principle)
+2. [O is for Open Closed Principle](/post/o-is-for-open-closed-principle)
+3. [L is for Liskovs Substitution Principle](/post/l-is-for-liskovs-substitution-principle)
+4. [I is for Interface Segregation Principle](/post/I-is-for-Interface-Segregation-principle)
+5. [D is for Dependency Inversion Principle](/post/D-is-for-Dependency-Inversion-Principle)
+
+These principles describe the key principles to follow to make maintainable Object Oriented Code.
+
 D stands for Dependency Inversion Principle.
 
 The Dependency Inversion Principle is

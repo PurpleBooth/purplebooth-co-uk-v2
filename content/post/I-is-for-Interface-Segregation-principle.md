@@ -7,6 +7,16 @@ title = "I is for Interface Segregation Principle"
 draft = false
 +++
 
+This is the fourth article in a series the SOLID principles for software design. There are 5 principles, each corresponding to a letter in the word SOLID.
+
+1. [S is for Single Responsibility Principle](/post/0004-s-is-for-single-responsibility-principle)
+2. [O is for Open Closed Principle](/post/o-is-for-open-closed-principle)
+3. [L is for Liskovs Substitution Principle](/post/l-is-for-liskovs-substitution-principle)
+4. [I is for Interface Segregation Principle](/post/I-is-for-Interface-Segregation-principle)
+5. [D is for Dependency Inversion Principle](/post/D-is-for-Dependency-Inversion-Principle)
+
+These principles describe the key principles to follow to make maintainable Object Oriented Code.
+
 I stands for Interface Segregation Principle.
 
 The Interface Segregation Principle is the idea that "Many client specific interfaces are better than one general purpose interface".
@@ -156,7 +166,7 @@ Now assume we want to extend and enhance the reporting aspects of this system, t
 
 We now have to change the interface in two downstream clients, because we cannot guarantee that none of the analytics methods are being called, as opposed to just changing the classes that implement or use the functionality we are enhancing. This is a very small example, but you can imagine a more complicated service being the dependency of five or six different downstream classes, each which could potentially need to change.
 
-Now consider the following design following the Interface Segregation Principle. Notice how we only have to change the classes that are actually impacted by the change: *BasketPersistenceService* and *StockManagementService*, rather than all of the classes that have the *BasketPersistenceService* injected into them. This is because the client specific interfaces guarantee that the analytics methods are only being called in classes that require them.
+Now consider the following design following the Interface Segregation Principle. Notice how we only have to change the classes that are actually impacted by the change: *BasketPersistenceService* and *StockManagementService*, rather than all of the classes that have the *BasketPersistenceService* injected as a constructor variable into them. This is because the client specific interfaces guarantee that the analytics methods are only being called in classes that require them.
 
 <pre>
 <code class="php">
@@ -347,4 +357,4 @@ So how do we deal with the problem of third party interfaces changing, meaning w
 
 A simple idea. Frequently misunderstood. However, with a little insight it can lower the coupling between your services and classes that depend on them, allowing you to quickly make radical changes to how your services are implemented, in a way that has limited impact on classes that have dependencies on them. This means simpler and faster refactoring, and there's nothing I love more than a refactoring session that is done in half an hour rather than half a day.
 
-The next item in our tour of SOLID is the dependency inversion principle.
+The next item in our tour of SOLID is the [Dependency Inversion Principle](/post/D-is-for-Dependency-Inversion-Principle).

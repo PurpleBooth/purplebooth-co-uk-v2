@@ -7,13 +7,23 @@ title = "S is for Single Responsibility Principle"
 Description = "How to use the Single Responsibility Principle in PHP. The first in a series on SOLID."
 +++
 
+This is the first article in a series the SOLID principles for software design. There are 5 principles, each corresponding to a letter in the word SOLID.
+
+1. [S is for Single Responsibility Principle](/post/0004-s-is-for-single-responsibility-principle)
+2. [O is for Open Closed Principle](/post/o-is-for-open-closed-principle)
+3. [L is for Liskovs Substitution Principle](/post/l-is-for-liskovs-substitution-principle)
+4. [I is for Interface Segregation Principle](/post/I-is-for-Interface-Segregation-principle)
+5. [D is for Dependency Inversion Principle](/post/D-is-for-Dependency-Inversion-Principle)
+
+These principles describe the key principles to follow to make maintainable Object Oriented Code.
+
 S is the first letter in SOLID.
 
 It stands for The Single Responsibility Principle, and means "A Class Should Have One Reason To Change".
 
-It was first described by Tom DeMarco in 1979. He called it Cohesion, in fact you've probably heard the phrase "High Cohesion, Low Coupling" before. These days we call it the Single Responsibility Principle, as popularised by  Robert C. Martin (Uncle Bob).
+It was first described by Tom DeMarco in 1979. He called it Cohesion, in fact you've probably heard the phrase "High Cohesion, Low Coupling" before. These days we call it the Single Responsibility Principle, as popularized by  Robert C. Martin (Uncle Bob).
 
-This principle is based around the idea that each responsibility that a class has, is a requirement. Requirements change. Isolating the change to a single class reduces overall changes within the system needed to add a new feature.
+This principle is based around the idea that each responsibility that a class has, is a requirement. Requirements change. Isolating the change to a single class reduces the risk of breaking anything else when you add a new feature.
 
 Take for example this class
 
@@ -105,9 +115,9 @@ A give away code smell for this problem is injecting dependencies that are only 
 
  Another key indicator is, if when attempting to describe what the object does, you use the word **and**. In this case: "The object represents the basket **and** sends emails when the order is complete". If you can describe your method without using the word **and** (or also, or any other joining word), you're probably following the Single Responsibility Principle.
 
-Not following this rule (also known as high coupling), is going to cause you problems because now you're going to need to bring an *EmailSender* where ever you initialise your *Basket*, and what's worse, the *EmailSender* has wound its way into the order complete logic, and it's now impossible to use this class anywhere where we would want to complete an order without sending an email.
+Not following this rule (also known as high coupling), is going to cause you problems because now you're going to need to bring an *EmailSender* where ever you initialize your *Basket*, and what's worse, the *EmailSender* has wound its way into the order complete logic, and it's now impossible to use this class anywhere where we would want to complete an order without sending an email.
 
-The correct way to implement this is to split each responsibility into a class. In this example this means we end up with a *Basket* and and *BasketCompleteEmailListener*. This way we can still send the email when the order is complete, but we can also complete an order without sending an email.
+The correct way to implement this is to split each responsibility into a class. In this example this means we end up with a *Basket* and and *BasketCompleteEmailListener*. We will run the *BasketCompleteEmailListener* with the [Observer pattern](http://en.wikipedia.org/wiki/Observer_pattern). This way we can still send the email when the order is complete, but we can also complete an order without sending an email.
 
 <pre>
 <code class="php">
@@ -193,6 +203,6 @@ class BasketCompleteEmailListener
 </code>
 </pre>
 
-Once seperated like this it's clear to see: responsibilities mean requirements. The requirement to send an email, or keep track of the basket in this example. Uncoupling these responsibilities means, if we get a change in requirements to not send an email sometimes, that's perfectly achievable without changing the basket logic, so a single change, rather than both email and basket logic.
+Once separated like this it's clear to see: responsibilities mean requirements. The requirement to send an email, or keep track of the basket in this example. Uncoupling these responsibilities means, if we get a change in requirements to not send an email sometimes, that's perfectly achievable without changing the basket logic, so a single change, rather than both email and basket logic.
 
 Multiple changes mean more rewriting code, and if you're as lazy as I am, that's something you want to avoid.

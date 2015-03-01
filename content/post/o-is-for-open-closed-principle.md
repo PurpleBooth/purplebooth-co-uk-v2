@@ -7,6 +7,16 @@ title = "O is for Open Closed Principle"
 Description = "How to use Open Closed Principle in PHP. The second in a series on SOLID."
 +++
 
+This is the second article in a series the SOLID principles for software design. There are 5 principles, each corresponding to a letter in the word SOLID.
+
+1. [S is for Single Responsibility Principle](/post/0004-s-is-for-single-responsibility-principle)
+2. [O is for Open Closed Principle](/post/o-is-for-open-closed-principle)
+3. [L is for Liskovs Substitution Principle](/post/l-is-for-liskovs-substitution-principle)
+4. [I is for Interface Segregation Principle](/post/I-is-for-Interface-Segregation-principle)
+5. [D is for Dependency Inversion Principle](/post/D-is-for-Dependency-Inversion-Principle)
+
+These principles describe the key principles to follow to make maintainable Object Oriented Code.
+
 O is the second letter in SOLID.
 
 O stands for the Open Closed Principle, it means "software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification".
@@ -215,7 +225,7 @@ class Disliked extends User
 
 You can see here that we can add additional types, simply by adding another class, we don't need to change any existing classes. We're open to extension of the functionality, closed to needing to modify the original class.
 
-If you're looking for an easy way to spot instances where you're not taking full advantage of the Open Closed Principle: look at your if statements. Use this thought experiment: Think about how you would remove each of your selection statements using polymorphism, it should be possible to remove nearly every single one!
+If you're looking for an easy way to spot instances where you're not taking full advantage of the Open Closed Principle: look at your if statements. Use this thought experiment: [Think about how you would remove each of your selection statements using polymorphism](http://www.refactoring.com/catalog/replaceConditionalWithPolymorphism.html), it should be possible to remove nearly every single one!
 
 However, there are some instances that it is undesirable to open our code up to extension. The key instance of these is member variables.
 

@@ -7,6 +7,16 @@ Description = "How to use Liskovs Substitution Principle in PHP. The third in a 
 draft = false
 +++
 
+This is the third article in a series the SOLID principles for software design. There are 5 principles, each corresponding to a letter in the word SOLID.
+
+1. [S is for Single Responsibility Principle](/post/0004-s-is-for-single-responsibility-principle)
+2. [O is for Open Closed Principle](/post/o-is-for-open-closed-principle)
+3. [L is for Liskovs Substitution Principle](/post/l-is-for-liskovs-substitution-principle)
+4. [I is for Interface Segregation Principle](/post/I-is-for-Interface-Segregation-principle)
+5. [D is for Dependency Inversion Principle](/post/D-is-for-Dependency-Inversion-Principle)
+
+These principles describe the key principles to follow to make maintainable Object Oriented Code.
+
 L stands for Liskov's Substitution Principle or LSP (not that LSP)
 
 {{< figure src="/Lumpy_Space.png" title="Like, Oh My Glob" >}}
@@ -135,8 +145,8 @@ This could have serious problems in a situation when we want to force a fallback
 
 What's worse, when we make a change to the *JsonWriter*, we're also making a change to our MongoDBWriter. With this non-clear dependency it's highly likely we will impact the *MongoDBWriter* with any change, as these classes, despite describing different behaviours, are now tightly coupled.
 
-The tricky part of this rule is that it seems to be DRYing up our code. We want to be able to share logic between our classes. However it's important to remember that OOP is really about modeling behaviours. A *MongoDBWriter* is not a special kind of *JsonWriter*, so we shouldn't tell other components within the system that it is.
+The tricky part of this rule is that it seems to be [DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself)ing up our code. We want to be able to share logic between our classes. However it's important to remember that OOP is really about modeling behaviours. A *MongoDBWriter* is not a special kind of *JsonWriter*, so we shouldn't tell other components within the system that it is.
 
-So how do I DRY up my code then? Well the solution is simple, use composition rather than inheritance. Move that shared logic into a parent class, or if it doesn't need to be available to all subtypes, then move it into it's own class, and inject it into the classes that need it.
+So how do I DRY up my code then? Take advantage of composition. Composition is where you move shared logic to a new class, and then set that class via a constructor or setter as a member variable in your existing class. Only if you know all classes of that type need the logic, should you use inheritance to prevent code duplication.
 
-LSP is one of the simpler rules of SOLID, however it's one of the most effective at preventing bugs. Next up in the tour of SOLID is I the "Interface segregation principle".
+LSP is one of the simpler rules of SOLID, however it's one of the most effective at preventing bugs. Next up in the tour of SOLID is [I the "Interface segregation principle"](/post/I-is-for-Interface-Segregation-principle).
