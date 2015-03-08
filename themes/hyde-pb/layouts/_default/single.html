@@ -1,4 +1,5 @@
 {{ partial "head.html" . }}
+<link rel="payment" href="https://flattr.com/submit/auto?url={{ urlquery .Permalink }}&user_id=billieathompson&title={{ urlquery .Title }}" type="text/html" />
 <body>
 
 {{ partial "sidebar.html" . }}
@@ -9,9 +10,9 @@
         <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
         {{ .Content }}
 
-        <a href="https://twitter.com/share" 
-           class="twitter-share-button" 
-           data-via="BillieAThompson" 
+        <a href="https://twitter.com/share"
+           class="twitter-share-button"
+           data-via="BillieAThompson"
            data-size="large"
            data-related="BillieAThompson">
             Tweet
