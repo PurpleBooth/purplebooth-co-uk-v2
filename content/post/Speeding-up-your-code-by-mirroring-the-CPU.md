@@ -1,6 +1,6 @@
 +++
 Categories = ["Asynchronous Architectures"]
-Description = ""
+Description = "Introduction to why asynchronous architectures"
 Tags = ["RabbitMQ", "PHP", "GoLang", "Events", "Queue Servers"]
 date = "2015-03-02T21:01:33Z"
 title = "Speeding up your code by mirroring the CPU"
