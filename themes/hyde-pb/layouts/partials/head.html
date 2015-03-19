@@ -45,4 +45,9 @@
     </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    {{ if .Permalink }}
+    <link rel="payment" href="https://flattr.com/submit/auto?url={{ urlquery .Permalink }}&user_id=billieathompson&title={{ urlquery .Title }}" type="text/html" />
+    {{ else }}
+    <link rel="payment" href="https://flattr.com/submit/auto?url={{ urlquery .Site.BaseUrl }}&user_id=billieathompson&title= {{ urlquery .Title }} %C2%B7 {{ urlquery .Site.Title }} " type="text/html" />
+    {{ end }}
 </head>
