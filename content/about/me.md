@@ -18,4 +18,6 @@ Billie Thompson is a contracting software developer. She's been contracting from
 * [**<i class="fa fa-github-square"></i>** purplebooth](https://github.com/purplebooth)
 * <a href='mail&#116;o&#58;bil%6Ci&#37;6&#53;&#46;&#119;ebsi%74&#101;&#64;%70&#37;75&#114;pleb&#37;&#54;F%&#54;Fth%2Eco&#46;uk'><strong><i class="fa fa-envelope-o"></i></strong> b&#105;ll&#105;e&#46;website&#64;purp&#108;ebooth&#46;co&#46;uk</a>
 
-Find my PGP key on [keybase.io](https://keybase.io/billie).
+### PGP
+
+* [**<i class="fa fa-key"></i>** D5D5 0C93 78BF CAB0](https://keybase.io/billie)
