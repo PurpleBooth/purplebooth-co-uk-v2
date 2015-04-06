@@ -15,7 +15,7 @@ GoogleAnalytics = "UA-32113064-1"
 [[menu.main]]
     name = "Twitter"
     pre = "<i class='fa fa-twitter-square'></i>"
-    url = "https://twitter.com/BillieAThompson"
+    url = "https://twitter.com/PurpleBooth"
 [[menu.main]]
     name = "GitHub"
     pre = "<i class='fa fa-github-square'></i>"
@@ -23,4 +23,4 @@ GoogleAnalytics = "UA-32113064-1"
 [[menu.main]]
     name = "LinkedIn"
     pre = "<i class='fa fa-linkedin-square'></i>"
-    url = "https://uk.linkedin.com/in/billieathompson"
+    url = "https://uk.linkedin.com/in/PurpleBooth"
