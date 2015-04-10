@@ -21,3 +21,9 @@ Billie Thompson is a contracting software developer. She's been contracting from
 ### PGP
 
 * [**<i class="fa fa-key"></i>** D5D5 0C93 78BF CAB0](https://keybase.io/billie)
+
+### Availability
+
+I'm available for contract work in London, on dates I am not shown as busy on the calendar belong
+
+<iframe src="https://www.google.com/calendar/embed?src=billiecodes.com_492s7u2ren6difuqhsrc0p9en4%40group.calendar.google.com&ctz=Europe/London" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
