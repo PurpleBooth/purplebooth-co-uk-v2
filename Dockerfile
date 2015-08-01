@@ -12,5 +12,6 @@ RUN apt-get update && \
     mv /tmp/hugo*/hugo* /usr/local/bin/hugo && \
     rm -rf /tmp/hugo.tar.gz /tmp/hugo*/hugo* && \
     hugo && \
-    cp -r public/* /usr/share/nginx/html && \
+    rm -rf /usr/share/nginx/html && \
+    cp -r public /usr/share/nginx/html && \
     rm -rf /data
