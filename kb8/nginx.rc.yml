@@ -1,0 +1,58 @@
+--- 
+apiVersion: v1
+kind: ReplicationController
+metadata: 
+  labels: 
+    facing: front
+    service: pbcouk
+    type: nginx
+  name: pbcouk-nginx
+spec: 
+  replicas: 2
+  selector: 
+    name: pbcouk-nginx
+  template: 
+    metadata: 
+      labels: 
+        name: pbcouk-nginx
+    spec: 
+      containers: 
+        - 
+          env: 
+            - 
+              name: SSL_CRT_PATH
+              value: /certs/purplebooth-co-uk.crt
+            - 
+              name: SSL_KEY_PATH
+              value: /certs/purplebooth-co-uk.key
+            - 
+              name: UPSTREAM
+              value: "pbcouk-hugo:80"
+          image: quay.io/purplebooth/nginx-ssl-terminator
+          imagePullPolicy: Always
+          name: pbcouk-nginx
+          ports: 
+            - 
+              containerPort: 80
+              name: http
+              protocol: TCP
+            - 
+              containerPort: 443
+              name: https
+              protocol: TCP
+          volumeMounts: 
+            - 
+              mountPath: /certs
+              name: ssl-certs
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 15
+            timeoutSeconds: 1
+      restartPolicy: Always
+      volumes: 
+        - 
+          name: ssl-certs
+          secret: 
+            secretName: ssl-certs

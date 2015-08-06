@@ -1,0 +1,18 @@
+--- 
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    facing: front
+    service: pbcouk
+    type: hugo
+  name: pbcouk-hugo
+spec: 
+  ports: 
+    -
+      name: http
+      port: 80
+      protocol: TCP
+      targetPort: http
+  selector: 
+    name: pbcouk-hugo
