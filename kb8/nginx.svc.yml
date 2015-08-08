@@ -20,5 +20,6 @@ spec:
       protocol: TCP
       targetPort: https
   selector: 
-    name: pbcouk-nginx
+    service: pbcouk
+    type: nginx
   type: LoadBalancer

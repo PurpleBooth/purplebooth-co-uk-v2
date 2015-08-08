@@ -6,30 +6,34 @@ metadata:
     facing: front
     service: pbcouk
     type: hugo
-  name: pbcouk-hugo
-spec:
+  name: pbcouk-hugo-v0
+spec: 
   replicas: 2
-  selector:
-    name: pbcouk-hugo
-  template:
-    metadata:
-      labels:
-        name: pbcouk-hugo
+  selector: 
+    service: pbcouk
+    type: hugo
+    version: v0
+  template: 
+    metadata: 
+      labels: 
+        service: pbcouk
+        type: hugo
+        version: v0
     spec:
-      containers:
-        -
+      containers: 
+        - 
           image: quay.io/purplebooth/purplebooth-co-uk-v2
           imagePullPolicy: Always
+          livenessProbe: 
+            httpGet: 
+              path: /
+              port: 80
+            initialDelaySeconds: 15
+            timeoutSeconds: 1
           name: pbcouk-hugo
-          ports:
-            -
+          ports: 
+            - 
               containerPort: 80
               name: http
               protocol: TCP
-          livenessProbe:
-            httpGet:
-              path: /
-              port: http
-            initialDelaySeconds: 15
-            timeoutSeconds: 1
       restartPolicy: Always
