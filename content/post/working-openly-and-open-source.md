@@ -2,7 +2,7 @@
 categories = ["Open Source"]
 date = "2015-08-16T20:57:50+01:00"
 description = "Working openly and its benefits"
-keywords = ["Open Source", "Working Openly"]
+keywords = ["Open Source", "Working Openly", "Cathedral and the Bazaar"]
 title = "Working Openly and Open Source"
 
 +++
