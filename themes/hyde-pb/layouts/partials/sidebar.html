@@ -2,8 +2,8 @@
     <div class="container sidebar-sticky">
         <div class="sidebar-about">
             <h1>
-                <a href="{{ .Site.BaseUrl }}">
-                    <img alt="{{ .Site.Title }}" src="{{ .Site.BaseUrl }}/{{ .Site.Params.Logo }}"/>
+                <a href="{{ .Site.BaseURL }}">
+                    <img alt="{{ .Site.Title }}" src="{{ .Site.BaseURL }}/{{ .Site.Params.Logo }}"/>
                 </a>
             </h1>
 
@@ -21,7 +21,7 @@
             <li><a href="/"><i class="fa fa-square"></i> <span>Home</span></a></li>
             {{ range .Site.Menus.main }}
             <li>
-                <a href="{{.Url}}">
+                <a href="{{.URL}}">
                     {{ with .Pre }} {{.}} {{ else }}<i class="fa fa-square"></i>{{end}} <span>{{ .Name }}</span>
                 </a>
             </li>
