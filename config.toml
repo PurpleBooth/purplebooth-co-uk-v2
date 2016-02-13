@@ -22,7 +22,7 @@ paginate = 10
 #
 [params]
     logo = "Purple Booth Logo-01.png"
-    Description = "Billie Thompson. Software developer."
+    Description = "Consultancy, Training and Software Development"
     GoogleAnalytics = "UA-32113064-1"
     # Used when a given page doesn't set its own.
     defaultDescription = "Adventures in coding"
@@ -39,7 +39,7 @@ paginate = 10
 
     # Displays under the author name in the sidebar, keep it short.
     # You can use markdown here.
-    tagline = "Billie Thompson. Software developer."
+    tagline = "Consultancy, Training and Software Development"
 
     # Metadata used to drive integrations.
     googleAuthorship = "+PurpleboothCoUk"
