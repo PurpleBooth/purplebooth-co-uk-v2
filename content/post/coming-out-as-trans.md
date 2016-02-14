@@ -1,6 +1,7 @@
 +++
 date = "2015-04-05T17:51:06+01:00"
 title = "Coming out as Trans as work"
+Categories = ["Trans", "Video"]
 
 +++
 

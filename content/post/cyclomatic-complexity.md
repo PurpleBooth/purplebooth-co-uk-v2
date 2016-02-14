@@ -2,6 +2,7 @@
 
 date = "2015-04-10T12:27:13+01:00"
 title = "Cyclomatic Complexity"
+categories = ["Complexity", "OOP", "Programming"]
 
 +++
 

@@ -1,6 +1,5 @@
 +++
-Categories = ["Tips"]
-Tags = ["Development", "PHP", "Composer", "Tips"]
+Categories = ["Tips", "Development", "PHP", "Composer", "Tips"]
 date = "2015-02-22T21:19:37Z"
 draft = false
 title = "Composer Require"

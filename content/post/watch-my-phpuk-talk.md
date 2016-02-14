@@ -2,6 +2,7 @@
 
 date = "2015-04-02T09:24:37+01:00"
 title = "Watch My PHP UK 2015 Talk"
+Categories = ["Video", "PHPUK"]
 
 +++
 

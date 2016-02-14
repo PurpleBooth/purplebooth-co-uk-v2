@@ -1,7 +1,6 @@
 +++
-Categories = ["Development", "Process", "Agile"]
+Categories = ["Development", "Process", "Agile", "Pull Requests"]
 Description = "Discussing creating information discovery opportunities in a development team"
-Tags = ["Development", "Process", "Agile", "Pull Requests"]
 date = "2015-03-15T10:58:34Z"
 title = "Creating prompts to Learn"
 

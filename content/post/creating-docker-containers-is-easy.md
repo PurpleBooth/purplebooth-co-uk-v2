@@ -1,8 +1,7 @@
 +++
-categories = ["DevOps"]
+categories = ["DevOps", "Docker", "NodeJS", "Express", "NPM"]
 date = "2015-06-14T12:03:15+01:00"
 description = "Previously I showed you how to get a docker container up and running. Now I'll show you how to build your own container with your own code in, and run that."
-keywords = ["Docker", "NodeJS", "Express", "NPM"]
 title = "Creating docker containers is easy"
 
 +++

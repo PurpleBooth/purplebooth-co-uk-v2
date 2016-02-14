@@ -1,6 +1,8 @@
 +++
 date = "2015-03-18T15:30:54Z"
 title = "Given When Then"
+categories = ["BDD", "Cucumber", "Behat", "Testing"]
+
 
 +++
 

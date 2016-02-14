@@ -1,8 +1,7 @@
 +++
-categories = ["DevOps"]
+categories = ["DevOps", "Ansible", "Docker", "SystemD"]
 date = "2015-05-31T16:04:03+01:00"
 description = "A design pattern to manage docker using Ansible and SystemD"
-keywords = ["Ansible", "Docker", "SystemD"]
 title = "Managing Docker"
 
 +++

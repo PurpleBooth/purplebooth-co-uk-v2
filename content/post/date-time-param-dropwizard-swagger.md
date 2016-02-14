@@ -1,8 +1,7 @@
 +++
-categories = ["Java"]
+categories = ["Java", "Dropwizard","Swagger"]
 date = "2015-06-07T17:44:28+01:00"
 description = "Example of how to make DateTimeParam not show up as unknown in swagger json. Might point you in the direction of doing more complicated things too."
-keywords = ["Dropwizard","Swagger"]
 title = "Correct parameter type for DateTimeParam in Dropwizard when using Swagger"
 
 +++

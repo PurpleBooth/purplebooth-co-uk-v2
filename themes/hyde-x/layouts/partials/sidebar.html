@@ -1,6 +1,6 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
-      <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}/{{ with .Site.Params.logo }}{{ . }}{{ end }}" alt="logo"></a>
+      <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="logo"></a>
     <div class="sidebar-about">
       {{ with .Site.Params.gravatarHash }}<img src="http://www.gravatar.com/avatar/{{ . }}?s=200" alt="gravatar">{{ end }}
       {{ with .Site.Params.tagline }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
@@ -23,6 +23,46 @@
       {{ with .Site.Params.twitter }}<a href="{{ . }}"><i class="fa fa-twitter-square fa-3x"></i></a>{{ end }}
       </li>
     </ul>
+
+    <script type="application/ld+json">
+      { "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "name" : "Purple Booth Ltd",
+        "url" : "{{ .Site.BaseURL }}",
+        "logo": "{{ .Site.Params.logo | absURL }}",
+        "sameAs" : [
+          {{ with .Site.Params.github }}"{{ . | safeURL }}",{{ end }}
+          {{ with .Site.Params.bitbucket }}"{{ . | safeURL }}",{{ end }}
+          {{ with .Site.Params.linkedin }}"{{ . | safeURL }}",{{ end }}
+          {{ with .Site.Params.googleplus }}"{{ replace . "+" "%2B" }}",{{ end }}
+          {{ with .Site.Params.facebook }}"{{ . }}",{{ end }}
+          {{ with .Site.Params.twitter }}"{{ . }}"{{ end }}
+        ],
+        "founder" : {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "email": "mailto:billie@purplebooth.co.uk",
+          "image": "{{ "me_5_30.jpg" | absURL }}",
+          "jobTitle": "Software Developer",
+          "name": "Billie Thompson",
+          "telephone": "+447813452516",
+          "url": "{{ .Site.BaseURL }}",
+          "sameAs" : [
+            {{ with .Site.Params.github }}"{{ . | safeURL }}",{{ end }}
+            {{ with .Site.Params.bitbucket }}"{{ . | safeURL }}",{{ end }}
+            {{ with .Site.Params.linkedin }}"{{ . | safeURL }}",{{ end }}
+            {{ with .Site.Params.googleplus }}"{{ replace . "+" "%2B" }}",{{ end }}
+            {{ with .Site.Params.facebook }}"{{ . }}",{{ end }}
+            {{ with .Site.Params.twitter }}"{{ . }}"{{ end }}
+          ]
+        },
+        "contactPoint" : [
+        { "@type" : "ContactPoint",
+          "telephone" : "+447813452516",
+          "contactType" : "customer service"
+        } ]
+      }
+      </script>
 
     <p>Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ .Site.BaseURL }}/license">License</a><br/>
        Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>

@@ -2,6 +2,7 @@
 
 date = "2015-04-19T16:35:56+01:00"
 title = "14 Yes/No Questions to measure your team"
+categories = ["The Joel Test", "Management"]
 
 +++
 

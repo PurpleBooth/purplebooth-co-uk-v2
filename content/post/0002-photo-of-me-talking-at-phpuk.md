@@ -1,6 +1,5 @@
 +++
-Categories = ["Talks"]
-Tags = ["Development", "PHP", "Silex", "MVVM", "PHPUK15", "PHPUK", "Talks", "Photos"]
+Categories = ["Talks", "Development", "PHP", "Silex", "MVVM", "PHPUK15", "PHPUK", "Talks", "Photos"]
 date = "2015-02-22T16:02:16Z"
 draft = false
 title = "Me talking at PHPUK"

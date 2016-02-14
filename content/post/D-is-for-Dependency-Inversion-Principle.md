@@ -1,7 +1,6 @@
 +++
-Categories = ["OOP"]
+Categories = ["OOP", "Development", "PHP", "SOLID", "OOP"]
 Description = "How to use the Dependency Inversion Principle in PHP. The fifth in a series on SOLID"
-Tags = ["Development", "PHP", "SOLID", "OOP"]
 date = "2015-03-01T09:27:00Z"
 title = "D is for Dependency Inversion Principle"
 
@@ -9,11 +8,11 @@ title = "D is for Dependency Inversion Principle"
 
 This is the fifth article in a series the SOLID principles for software design. There are 5 principles, each corresponding to a letter in the word SOLID.
 
-1. [S is for Single Responsibility Principle](/post/0004-s-is-for-single-responsibility-principle)
-2. [O is for Open Closed Principle](/post/o-is-for-open-closed-principle)
-3. [L is for Liskovs Substitution Principle](/post/l-is-for-liskovs-substitution-principle)
-4. [I is for Interface Segregation Principle](/post/I-is-for-Interface-Segregation-principle)
-5. [D is for Dependency Inversion Principle](/post/D-is-for-Dependency-Inversion-Principle)
+1. [S is for Single Responsibility Principle]({{< relref "0004-s-is-for-single-responsibility-principle.md" >}})
+2. [O is for Open Closed Principle]({{< relref "o-is-for-open-closed-principle.md" >}})
+3. [L is for Liskovs Substitution Principle]({{< relref "l-is-for-liskovs-substitution-principle.md" >}})
+4. [I is for Interface Segregation Principle]({{< relref "I-is-for-Interface-Segregation-principle.md" >}})
+5. [D is for Dependency Inversion Principle]({{< relref "D-is-for-Dependency-Inversion-Principle.md" >}})
 
 These principles describe the key principles to follow to make maintainable Object Oriented Code.
 

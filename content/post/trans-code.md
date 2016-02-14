@@ -2,6 +2,7 @@
 
 date = "2015-03-27T18:34:37Z"
 title = "Trans* Code"
+Categories = ["Trans", "Trans*code"]
 
 +++
 

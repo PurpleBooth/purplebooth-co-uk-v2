@@ -1,4 +1,47 @@
 {{ partial "head.html" . }}
+<script type="application/ld+json">
+{
+    "mainEntityOfPage":{
+      "@type" : "BlogPosting",
+      "@id":"{{ .Permalink }}"
+    },
+    "@id" : "{{ .Permalink }}",
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "articleSection" : "{{ .Section }}",
+    "name" : "{{ .Title }}",
+    "headline" : "{{ .Title }}",
+    "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+    "inLanguage" : "en-US",
+    "author" : "{{ .Site.Author.name }}",
+    "creator" : "{{ .Site.Author.name }}",
+    "accountablePerson" : "{{ .Site.Author.name }}",
+    "copyrightHolder" : "{{ .Site.Author.name }}",
+    "copyrightYear" : "{{ .Date.Format "2006" }}",
+    "publisher" : {
+        "@type" : "Organization",
+        "name" : "Purple Booth Ltd",
+        "logo": {
+            "url" : "{{ .Site.Params.logo | absURL }}",
+            "@type": "ImageObject",
+            "height": "4329px",
+            "width": "2904px"
+        }
+    },
+    "image": {
+        "url" : "{{ .Site.Params.logo | absURL }}",
+        "@type": "ImageObject",
+        "height": "4329px",
+        "width": "2904px"
+    },
+    "license" : "{{ "/license" | absURL }}",
+    "datePublished": "{{ .Date.Format "2006-01-02T15:04:05UTC" }}",
+    "dateModified" : "{{ .Date.Format "2006-01-02T15:04:05UTC" }}",
+    "url" : "{{ .Permalink }}",
+    "wordCount" : "{{ .WordCount }}",
+    "keywords" : [ {{ range $i, $e := .Params.categories }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ]
+}
+</script>
 <div class="content container">
   <div class="post">
     <h1>{{ .Title }}</h1>

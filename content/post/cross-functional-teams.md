@@ -3,8 +3,7 @@
 date = "2016-02-13T09:35:23+00:00"
 title = "Cross Functional Teams"
 description = "How Cross Functional Teams prevent blockers and improve delivery"
-categories = ["Management"]
-keywords = ["Managing", "Cross Functional Teams", "Teams", "Effective Teams"]
+categories = ["Management", "Managing", "Cross Functional Teams", "Teams", "Effective Teams"]
 
 +++
 

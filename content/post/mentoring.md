@@ -1,8 +1,7 @@
 +++
-categories = ["Mentoring"]
+categories = ["PHP", "Personal Development", "Mentoring"]
 date = "2015-07-28T21:40:02+01:00"
 description = "I'm now available to do mentoring"
-keywords = ["Mentoring", "PHP", "Personal Development"]
 title = "Mentoring"
 
 +++
