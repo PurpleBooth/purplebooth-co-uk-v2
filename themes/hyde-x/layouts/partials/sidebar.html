@@ -1,6 +1,7 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
-    <a class="logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="logo"></a>
+    <a class="logo non-mobile"  href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="Purple Booth Ltd"></a>
+    <a class="logo mobile" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo_small | absURL }}" alt="Purple Booth Ltd" /></a>
     <div class="sidebar-about">
       {{ with .Site.Params.gravatarHash }}<img src="http://www.gravatar.com/avatar/{{ . }}?s=200" alt="gravatar">{{ end }}
       {{ with .Site.Params.tagline }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
@@ -14,7 +15,7 @@
     </ul>
 
     <ul class="sidebar-nav social-networks">
-      <li class="sidebar-nav-item">
+      <li class="sidebar-nav-item non-mobile">
       {{ with .Site.Params.github }}<a href="{{ . }}"><i class="fa fa-github-square fa-3x"></i></a>{{ end }}
       {{ with .Site.Params.bitbucket }}<a href="{{ . }}"><i class="fa fa-bitbucket-square fa-3x"></i></a>{{ end }}
       {{ with .Site.Params.linkedin }}<a href="{{ . }}"><i class="fa fa-linkedin-square fa-3x"></i></a>{{ end }}
@@ -64,7 +65,7 @@
       }
       </script>
 
-    <p>Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ .Site.BaseURL }}/license">License</a><br/>
+    <p class="legal">Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ .Site.BaseURL }}/license">License</a><br/>
        Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
   </div>
 </div>
