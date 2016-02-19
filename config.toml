@@ -24,7 +24,7 @@ paginate = 10
     logo = "Purple Booth Logo-01-min.png"
     logo_small = "Purple Booth Logo Colored-1-notext-min.png"
     Description = "Consultancy, Training and Software Development"
-    GoogleAnalytics = "UA-32113064-1"
+    #GoogleAnalytics = "UA-32113064-1"
     # Used when a given page doesn't set its own.
     defaultDescription = "Adventures in coding"
     defaultKeywords = "Coding,Billie Thompson,blog"
