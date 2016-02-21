@@ -34,7 +34,17 @@
   {{ with .Permalink }}<link rel="canonical" href="{{ . }}" /> {{ end }}
 
   <!-- Icons -->
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="/favicon.ico" />
+
+  <link href="https://ajax.cloudflare.com" rel="preconnect" pr="1" />
+  <link href="https://ssl.google-analytics.com" rel="preconnect" pr="1" />
+  <link href="https://www.google-analytics.com" rel="preconnect" pr="1" />
+
+  <link href="{{ .Site.BaseURL }}" rel="prefetch prerender" pr="0.1" />
+
+  {{ range .Site.Menus.main }}
+    <link href="{{ .URL | absURL }}" rel="prefetch prerender"  pr="0. 1" />
+  {{end}}
 
   <!-- RSS -->
   {{ $siteTitle := .Site.Title }}

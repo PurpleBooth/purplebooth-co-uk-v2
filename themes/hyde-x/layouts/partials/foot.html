@@ -23,18 +23,5 @@
 
 {{ if isset .Site.Params "highlight" }}
 <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/highlight/{{ .Site.Params.highlight }}.css">{{ end }}
-<script>
-    var links = document.getElementsByTagName("a");
-    var head = document.getElementsByTagName('head')[0];
-
-    for (i = 0; i < links.length; i++) {
-        if(links[i].href.slice(0, -1).indexOf("{{ .Site.BaseURL }}") != -1) {
-            var prerender = document.createElement('link');
-            prerender.setAttribute('rel', 'prerender prefetch');
-            prerender.setAttribute('href', links[i].href);
-            head.appendChild(prerender);
-        }
-    }
-</script>
 </body>
 </html>
