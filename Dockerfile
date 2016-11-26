@@ -3,7 +3,9 @@ FROM nginx
 RUN mkdir -p /data
 WORKDIR /data
 COPY . /data
-RUN apt-get update && \
+COPY default.conf /etc/nginx/conf.d/default.conf
+RUN chmod a+r /etc/nginx/conf.d/default.conf && \
+    apt-get update && \
     apt-get install -y wget && \
     rm -r /var/lib/apt/lists/* && \
     wget https://github.com/spf13/hugo/releases/download/v0.15/hugo_0.15_linux_amd64.tar.gz \
@@ -15,3 +17,5 @@ RUN apt-get update && \
     rm -rf /usr/share/nginx/html && \
     cp -r public /usr/share/nginx/html && \
     rm -rf /data
+
+EXPOSE 80
