@@ -1,4 +1,9 @@
-web:
-  build: .
-  ports:
-   - "8888:80"
+version: '3'
+services:
+  web:
+    build:
+      context: "."
+      args:
+        - hugobaseurl=http://localhost:8888
+    ports:
+     - "8888:80"

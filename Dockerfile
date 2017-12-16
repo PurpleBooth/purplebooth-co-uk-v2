@@ -1,23 +1,23 @@
-FROM nginx
+FROM debian
 
-RUN chmod a+r /etc/nginx/conf.d/default.conf && \
-    apt-get update && \
+RUN apt-get update && \
     apt-get install -y wget && \
-    rm -r /var/lib/apt/lists/* && \
-    wget https://github.com/spf13/hugo/releases/download/v0.15/hugo_0.15_linux_amd64.tar.gz \
+    rm -r /var/lib/apt/lists/*
+
+RUN wget https://github.com/gohugoio/hugo/releases/download/v0.31.1/hugo_0.31.1_Linux-64bit.tar.gz \
          -O /tmp/hugo.tar.gz && \
-    tar -xvzf /tmp/hugo.tar.gz -C /tmp && \
-    mv /tmp/hugo*/hugo* /usr/local/bin/hugo && \
-    rm -rf /tmp/hugo.tar.gz /tmp/hugo*/hugo*
+    tar -xvzf /tmp/hugo.tar.gz -C /tmp
 
 RUN mkdir -p /data
 WORKDIR /data
 COPY . /data
+
+ARG hugobaseurl="https://purplebooth.co.uk"
+RUN echo /tmp/hugo --baseUrl=$hugobaseurl
+RUN /tmp/hugo --baseUrl=$hugobaseurl
+
+FROM nginx
+
 COPY default.conf /etc/nginx/conf.d/default.conf
-
-RUN hugo && \
-    rm -rf /usr/share/nginx/html && \
-    cp -r public /usr/share/nginx/html && \
-    rm -rf /data
-
+COPY --from=0 /data/public /usr/share/nginx/html
 EXPOSE 80

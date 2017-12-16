@@ -1,4 +1,3 @@
-BaseURL = "https://purplebooth.co.uk"
 languageCode = "en-gb"
 title = "Purple Booth"
 MetaDataFormat = "toml"
