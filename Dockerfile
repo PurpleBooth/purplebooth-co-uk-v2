@@ -16,7 +16,7 @@ ARG hugobaseurl="https://purplebooth.co.uk"
 RUN echo /tmp/hugo --baseUrl=$hugobaseurl
 RUN /tmp/hugo --baseUrl=$hugobaseurl
 
-FROM nginx
+FROM nginx:alpine
 
 COPY default.conf /etc/nginx/conf.d/default.conf
 COPY --from=0 /data/public /usr/share/nginx/html
