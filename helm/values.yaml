@@ -5,7 +5,7 @@ replicaCount:
   start: 2
   min: 2
   max: 10
-  targetCPUUtilizationPercentage: 80
+  targetCPUUtilizationPercentage: 50
 image:
   nginx:
     repository: gcr.io/purplebooth-gke/github-purplebooth-purplebooth-co-uk-v2
