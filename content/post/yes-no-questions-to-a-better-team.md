@@ -61,7 +61,7 @@ Now one to one techniques aren't always ideal. Some people don't learn best in a
 
 More passive approaches can be used to allow people to self teach. However in order to do this people need to know that their is a problem.
 
-Thankfully there are lots of tools available to do identify problem. Tools that count the dependencies between classes, the following of SOLID rules, length of functions and lots of others, give you an opportunity to show where problems might lie within the code without having to directly teach someone. The person can then go away on their own and learn why these things have been flagged as issues, and self correct in the future.
+Thankfully there are lots of tools available to do identify problem. Tools that count the dependencies between classes, the following of SOLID rules, length of functions and lots of others, give you an opportunity to show where problems lie within the code without having to directly teach someone. The person can then go away on their own and learn why these things have been flagged as issues, and self correct in the future.
 
 Finally there are group teaching techniques, for things that you don't want to impart directly over and over again. These can be really obvious things like a short talk per sprint by different members of the team, or it can be taking the team to a conference where they can learn more about what's going on in the community. These are opportunities to set the culture of the team, and impart vital information en-mass.
 

@@ -6,8 +6,8 @@ title = "Check your code follows PSR-2 and check it's got a good design on the c
 
 +++
 
-Need to check your code follows PSR-2, but it's not supported in your 
-editor of choice? Here's a quick bit of code to check. It uses 
+Need to check your code follows PSR-2, but it's not supported in your
+editor of choice? Here's a quick bit of code to check. It uses
 [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer).
 
 <pre class="code">
@@ -47,11 +47,11 @@ Time: 764ms; Memory: 10Mb
 </pre>
 
 You only need to run the *composer require* once.
- 
-As you can see you'll get a nice summary as to your compliance with 
+
+As you can see you'll get a nice summary as to your compliance with
 PSR-2, and what you need to fix.
 
-What's more you can also use this code to fix most of the style 
+What's more you can also use this code to fix most of the style
 violations too!
 
 <pre class="code">
@@ -86,7 +86,7 @@ Time: 1.29 secs; Memory: 10Mb
 </code>
 </pre>
 
-If you want to run some fancy analytics on your code to see if your 
+If you want to run some fancy analytics on your code to see if your
 design is looking okay, use [PHPMD](https://phpmd.org/).
 
 <pre class="code">
@@ -97,9 +97,9 @@ $ vendor/bin/phpmd your-code/ text cleancode,codesize,design,naming,unusedcode
 </code>
 </pre>
 
-This will check against a whole bunch of rules from naming guidelines 
-to, [cyclomatic complexity]({{< relref "cyclomatic-complexity.md" >}}), 
-to checking for unused code. Check the [PHPMD website](https://phpmd.org/) for more 
+This will check against a whole bunch of rules from naming guidelines
+to, [cyclomatic complexity]({{< relref "cyclomatic-complexity.md" >}}),
+to checking for unused code. Check the [PHPMD website](https://phpmd.org/) for more
 details.
 
-Hopefully this will help you write lots of lovely clean code.
+This will help you write lots of lovely clean code.

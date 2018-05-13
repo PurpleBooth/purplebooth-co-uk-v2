@@ -1,0 +1,46 @@
+# Default values for fitness.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+replicaCount:
+  start: 2
+  min: 2
+  max: 10
+  targetCPUUtilizationPercentage: 80
+image:
+  nginx:
+    repository: gcr.io/purplebooth-gke/github-purplebooth-purplebooth-co-uk-v2
+    tag: latest
+    pullPolicy: Always
+  newRelic:
+    repository: gcr.io/purplebooth-gke/github-purplebooth-nginx-nr-agent
+    tag: latest
+    pullPolicy: Always
+
+service:
+  portName: http
+  type: NodePort
+  externalPort: 80
+  nginx:
+    internalPort: 80
+
+resources:
+  newRelic:
+    limits:
+      memory: "50Mi"
+      cpu: "2m"
+    requests:
+      memory: "8Mi"
+  nginx:
+    limits:
+      memory: "50Mi"
+      cpu: "2m"
+    requests:
+      memory: "2Mi"
+
+
+newRelic:
+  appName: 'purplebooth.co.uk'
+  licenseKey: 'license key here'
+fqdn:
+  canonical: 'purplebooth.co.uk'
+  www: 'www.purplebooth.co.uk'

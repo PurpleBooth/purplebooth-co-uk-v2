@@ -12,7 +12,7 @@ In order to do this I'm going to first talk about the [observer pattern](http://
 
 The observer pattern is a design pattern that is implemented in many libraries. It consists of 2 components, the **observer** and the **subject**. The **subject** is aware of all of the **observers** that are interested in a specific thing happening, and will call a method on each of them when the thing that the **observers** are interested in happens.
 
-You might have heard of or used an Event Dispatcher (like [Symfony's](http://symfony.com/doc/current/components/event_dispatcher/introduction.html)). This is a common implementation of the observer pattern, in which the subject is a the event dispatcher, and the listeners that are executed when certain events are triggered in the event dispatcher are the **observers**.
+A popular implementation of the observer pattern is the Event Dispatcher (like [Symfony's](http://symfony.com/doc/current/components/event_dispatcher/introduction.html)). This is a common implementation in which the subject is a the event dispatcher, and the listeners that are executed when certain events are triggered in the dispatcher are the **observers**.
 
 {{< figure src="/post/Speeding-up-your-code-by-mirroring-the-CPU/observer-squence-diagram.png" title="Sequence Diagram of the observer pattern" >}}
 
@@ -26,14 +26,14 @@ Now there are two ways of dealing with this situation. The first is to simply wa
 
 The second way is a lot more efficient. That is to pass a piece of code to be executed at time the Listener is called, but keep doing other things until that point. That way we take advantage of the CPU we would have otherwise sitting idle.
 
-This is called a non-blocking architecture. This is because we don't block any other code from running while we're waiting. There are a number of languages that explicitly support non-blocking code, including, [Python](https://docs.python.org/2/library/multiprocessing.html), [Java](https://spring.io/guides/gs/async-method/), [Go](https://golang.org/doc/effective_go.html#concurrency), [Rust](http://static.rust-lang.org/doc/master/book/concurrency.html), [JavaScript](http://www.html5rocks.com/en/tutorials/es6/promises/), or [Ruby](http://rubyeventmachine.com/).
+This is called a non-blocking architecture. This is because we don't block any other code from running while we're waiting. There are languages that explicitly support non-blocking code, including, [Python](https://docs.python.org/2/library/multiprocessing.html), [Java](https://spring.io/guides/gs/async-method/), [Go](https://golang.org/doc/effective_go.html#concurrency), [Rust](http://static.rust-lang.org/doc/master/book/concurrency.html), [JavaScript](http://www.html5rocks.com/en/tutorials/es6/promises/), or [Ruby](http://rubyeventmachine.com/).
 
 {{< figure src="/post/Speeding-up-your-code-by-mirroring-the-CPU/blocking.png" title="Blocking" >}}
 {{< figure src="/post/Speeding-up-your-code-by-mirroring-the-CPU/non-blocking.png" title="Non-blocking" >}}
 
-Non-blocking systems are very fast. However they're also very hard to understand, because any **observer** can run at any time, it's often difficult to determine which bits of memory are being read from, or written to. This can lead to complex to debug [race conditions](http://en.wikipedia.org/wiki/Race_condition).
+Non-blocking systems are fast. However they're also hard to understand, because any **observer** can run at any time, it's often difficult to determine which bits of memory are being read from, or written to. This can lead to complex to debug [race conditions](http://en.wikipedia.org/wiki/Race_condition).
 
-To make it simpler, we can regiment our architecture with an event dispatcher. An Event dispatcher is a subject that takes messages, and based on the content of these messages triggers different **observers**, which when combined with an Event Dispatcher we call listeners. These messages could be something like "file read finished", combined with the content of the file.
+To make it simpler, we can regiment our architecture with an event dispatcher. An Event dispatcher is a subject that takes messages, and based on the content of these messages, trigger different **observers**, which when combined with an Event Dispatcher call listeners. An example of one of these messages would be "file read finished", combined with the content of the file.
 
 This reduces the opportunity for race conditions because the only shared memory is the message, and we can make that immutable (read only), as once passed to the listener, the listener can simply make a new message to communicate with other listeners.
 

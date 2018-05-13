@@ -1,0 +1,19 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: {{ template "fullname" . }}-crt
+spec:
+  secretName: {{ template "fullname" . }}-tls
+  dnsNames:
+  - {{ .Values.fqdn.canonical }}
+  - {{ .Values.fqdn.www }}
+  acme:
+    config:
+    - dns01:
+        provider: prod-dns
+      domains:
+      - {{ .Values.fqdn.canonical }}
+      - {{ .Values.fqdn.www }}
+  issuerRef:
+    name: letsencrypt-prod
+    kind: Issuer

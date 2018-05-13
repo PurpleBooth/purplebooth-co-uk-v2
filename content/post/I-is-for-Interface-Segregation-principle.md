@@ -20,7 +20,7 @@ I stands for Interface Segregation Principle.
 
 The Interface Segregation Principle is the idea that "Many client specific interfaces are better than one general purpose interface".
 
-So for each of your services, you should provide an interface for each of its clients. What I mean by service is a class or set of classes that provide a grouped suite of behaviors to the rest of the system, for example, you might have a service that is the shopping basket for your Plushie store. What I mean by client is a class that depends on this service to achieve a certain goal, which may be providing reporting information on this weeks purchases to decide which soft toys to get in stock next week, or it may be allowing someone to add items to their basket.
+So for each of your services, you should provide an interface for each of its clients. What I mean by service is a class or set of classes that provide a grouped suite of behaviors to the rest of the system, for example, imagine a service that is the shopping basket for your Plushie store. What I mean by client is a class that depends on this service to achieve a certain goal, which may be providing reporting information on this weeks purchases to decide which soft toys to get in stock next week, or it may be allowing someone to add items to their basket.
 
 {{< figure src="/post/I-is-for-Interface-Segregation-principle/teddies.jpg" title="Plushie store" attr="Photo by Edward Terry" attrlink="https://flic.kr/p/nw5b84" >}}
 
@@ -163,9 +163,9 @@ class UserBasket
 
 Now assume we want to extend and enhance the reporting aspects of this system, to such an extent that the analytics methods such as *getTopWeeklySellers* deserve their own class, away from the purchasing methods such as *addItemToBasket* and *purchaseBasket*.
 
-We now have to change the interface in two downstream clients, because we cannot guarantee that none of the analytics methods are being called, as opposed to just changing the classes that implement or use the functionality we are enhancing. This is a very small example, but you can imagine a more complicated service being the dependency of five or six different downstream classes, each which could potentially need to change.
+We now have to change the interface in two downstream clients, because we cannot guarantee that none of the analytics methods are being called, as opposed to just changing the classes that implement or use the functionality we are enhancing. This is a small example, but you can imagine a more complicated service being the dependency of five or six different downstream classes, each needing to change.
 
-Now consider the following design following the Interface Segregation Principle. Notice how we only have to change the classes that are actually impacted by the change: *BasketPersistenceService* and *StockManagementService*, rather than all of the classes that have the *BasketPersistenceService* injected as a constructor variable into them. This is because the client specific interfaces guarantee that the analytics methods are only being called in classes that require them.
+Now consider the following design following the Interface Segregation Principle. Notice how we only have to change the classes that are impacted by the change: *BasketPersistenceService* and *StockManagementService*, rather than all of the classes that have the *BasketPersistenceService* injected as a constructor variable into them. This is because the client specific interfaces guarantee that the analytics methods are only being called in classes that require them.
 
 <pre class="code">
 <code class="php">
@@ -352,7 +352,7 @@ The second common question is trickier. Sometimes we use third party code, and a
 
 A common solution to this is to write a wrapper. This is a bad choice because you're violating the first of the SOLID principles: The Single Responsibility Principle. You now have a third party library that has a specific behavior, and you have your own code, that is supposed to present the same behavior. You have one behavior, twice within your system, rather than a single time. What's worse, is that the wrapper won't even be as functional as the original code, and you'll need to maintain it too!
 
-So how do we deal with the problem of third party interfaces changing, meaning we need to refactor potentially lots of code. That's simple, use a dependency management tool ([composer](https://getcomposer.org/) probably if you're a PHP-iean). This way we have essentially fixed the interface to a specific version, you don't limit the ability of your system to take full advantage of the functionality in the third party library, and you're not forced to add code that provides no new behavior.
+So how do we deal with the problem of third party interfaces changing, meaning we need to refactor potentially lots of code. That's simple, use a dependency management tool ([composer](https://getcomposer.org/) if you're a PHP-iean). This way we have fixed the interface to a specific version, you don't limit the ability of your system to take full advantage of the functionality in the third party library, and you're not forced to add code that provides no new behavior.
 
 A simple idea. Frequently misunderstood. However, with a little insight it can lower the coupling between your services and classes that depend on them, allowing you to quickly make radical changes to how your services are implemented, in a way that has limited impact on classes that have dependencies on them. This means simpler and faster refactoring, and there's nothing I love more than a refactoring session that is done in half an hour rather than half a day.
 

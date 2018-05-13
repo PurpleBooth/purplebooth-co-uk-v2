@@ -17,6 +17,6 @@ Enjoy!
 
 As soon as I told them about my transition, they printed me business cards with my name on, which as a trans person finally using that name everywhere, meant so much to me.
 
-What's more, they immediately switched over all my old accounts to use my new name. I have never been misgendered by them, even as a one off slip-up, which can happen when you're getting used to someones pronouns. Generally they made me feel human, and respected at what could be a very stressful time.
+What's more, they immediately switched over all my old accounts to use my new name. I have never been misgendered by them, even as a one off slip-up, which can happen when you're getting used to someones pronouns. They made me feel human, and respected at a stressful time.
 
 All their staff were all amazingly understanding. I cannot praise them highly enough.

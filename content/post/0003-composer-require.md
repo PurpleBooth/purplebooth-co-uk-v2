@@ -6,7 +6,7 @@ title = "Composer Require"
 Description = "How to use the require command in composer to edit your dependencies"
 +++
 
-Not many people seem to know this, but you don't have to edit the composer.json file to update or add to your required packages.
+Few people know this, but you don't have to edit the `composer.json` file to update or add to your required packages.
 
 <pre class="code">
 <code class="bash">

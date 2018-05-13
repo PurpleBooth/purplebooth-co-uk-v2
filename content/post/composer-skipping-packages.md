@@ -39,4 +39,4 @@ You can also create more complicated package requirements by using the or operat
 
 In this case we're saying we want versions from 2.1.0 to versions less than 2.1.5 or 2.4.0 to anything less than version 3.0.0
 
-Hopefully this will allow you to keep the advantages of being able to pull in additional fixes and upgrades, while allowing you to avoid broken releases.
+This will allow you to keep the advantages of being able to pull in additional fixes and upgrades, while allowing you to avoid broken releases.
