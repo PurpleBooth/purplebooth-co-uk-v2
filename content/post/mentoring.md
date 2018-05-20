@@ -3,7 +3,6 @@ categories = ["PHP", "Personal Development", "Mentoring"]
 date = "2015-07-28T21:40:02+01:00"
 description = "I'm now available to do mentoring"
 title = "Mentoring"
-
 +++
 
 I'm interested in helping someone else develop their skills by mentoring. If you think that that could be you, drop me an [email](mailto:mentoring@purplebooth.co.uk).

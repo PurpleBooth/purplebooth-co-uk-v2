@@ -11,3 +11,10 @@ ifeq (, $(shell helm list --all | grep "purplebooth-co-uk" ))
 else
 	helm upgrade lovely-ant ./helm -f secrets/helm-secrets.yml
 endif
+
+autoformat:
+	prettier --write content/**/*.md  
+
+lint:
+	 proselint content/*/**.md
+	 prettier content/**/*.md

@@ -8,11 +8,11 @@ draft = false
 
 This is the fourth article in a series the SOLID principles for software design. There are 5 principles, each corresponding to a letter in the word SOLID.
 
-1. [S is for Single Responsibility Principle]({{< relref "0004-s-is-for-single-responsibility-principle.md" >}})
-2. [O is for Open Closed Principle]({{< relref "o-is-for-open-closed-principle.md" >}})
-3. [L is for Liskovs Substitution Principle]({{< relref "l-is-for-liskovs-substitution-principle.md" >}})
-4. [I is for Interface Segregation Principle]({{< relref "I-is-for-Interface-Segregation-principle.md" >}})
-5. [D is for Dependency Inversion Principle]({{< relref "D-is-for-Dependency-Inversion-Principle.md" >}})
+1.  [S is for Single Responsibility Principle]({{< relref "0004-s-is-for-single-responsibility-principle.md" >}})
+2.  [O is for Open Closed Principle]({{< relref "o-is-for-open-closed-principle.md" >}})
+3.  [L is for Liskovs Substitution Principle]({{< relref "l-is-for-liskovs-substitution-principle.md" >}})
+4.  [I is for Interface Segregation Principle]({{< relref "I-is-for-Interface-Segregation-principle.md" >}})
+5.  [D is for Dependency Inversion Principle]({{< relref "D-is-for-Dependency-Inversion-Principle.md" >}})
 
 These principles describe the key principles to follow to make maintainable Object Oriented Code.
 
@@ -68,6 +68,7 @@ class BasketPersistenceService
 }
 </code>
 </pre>
+
 <pre class="code">
 <code class="php">
 /**
@@ -103,6 +104,7 @@ class StockManagementService
 }
 </code>
 </pre>
+
 <pre class="code">
 <code class="php">
 /**
@@ -161,11 +163,11 @@ class UserBasket
 </code>
 </pre>
 
-Now assume we want to extend and enhance the reporting aspects of this system, to such an extent that the analytics methods such as *getTopWeeklySellers* deserve their own class, away from the purchasing methods such as *addItemToBasket* and *purchaseBasket*.
+Now assume we want to extend and enhance the reporting aspects of this system, to such an extent that the analytics methods such as _getTopWeeklySellers_ deserve their own class, away from the purchasing methods such as _addItemToBasket_ and _purchaseBasket_.
 
 We now have to change the interface in two downstream clients, because we cannot guarantee that none of the analytics methods are being called, as opposed to just changing the classes that implement or use the functionality we are enhancing. This is a small example, but you can imagine a more complicated service being the dependency of five or six different downstream classes, each needing to change.
 
-Now consider the following design following the Interface Segregation Principle. Notice how we only have to change the classes that are impacted by the change: *BasketPersistenceService* and *StockManagementService*, rather than all of the classes that have the *BasketPersistenceService* injected as a constructor variable into them. This is because the client specific interfaces guarantee that the analytics methods are only being called in classes that require them.
+Now consider the following design following the Interface Segregation Principle. Notice how we only have to change the classes that are impacted by the change: _BasketPersistenceService_ and _StockManagementService_, rather than all of the classes that have the _BasketPersistenceService_ injected as a constructor variable into them. This is because the client specific interfaces guarantee that the analytics methods are only being called in classes that require them.
 
 <pre class="code">
 <code class="php">
@@ -181,6 +183,7 @@ interface BasketAnalyticsService
 }
 </code>
 </pre>
+
 <pre class="code">
 <code class="php">
 /**
@@ -206,6 +209,7 @@ interface PurchasingService
 }
 </code>
 </pre>
+
 <pre class="code">
 <code class="php">
 /**
@@ -248,6 +252,7 @@ class BasketPersistenceService implements PurchasingService, BasketAnalyticsServ
 }
 </code>
 </pre>
+
 <pre class="code">
 <code class="php">
 /**
@@ -283,6 +288,7 @@ class StockManagementService
 }
 </code>
 </pre>
+
 <pre class="code">
 <code class="php">
 /**
@@ -340,7 +346,6 @@ class UserBasket
 }
 </code>
 </pre>
-
 
 Now there are two common questions people have about this Principle.
 

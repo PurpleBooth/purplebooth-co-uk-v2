@@ -8,11 +8,11 @@ Description = "How to use Open Closed Principle in PHP. The second in a series o
 
 This is the second article in a series the SOLID principles for software design. There are 5 principles, each corresponding to a letter in the word SOLID.
 
-1. [S is for Single Responsibility Principle]({{< relref "0004-s-is-for-single-responsibility-principle.md" >}})
-2. [O is for Open Closed Principle]({{< relref "o-is-for-open-closed-principle.md" >}})
-3. [L is for Liskovs Substitution Principle]({{< relref "l-is-for-liskovs-substitution-principle.md" >}})
-4. [I is for Interface Segregation Principle]({{< relref "I-is-for-Interface-Segregation-principle.md" >}})
-5. [D is for Dependency Inversion Principle]({{< relref "D-is-for-Dependency-Inversion-Principle.md" >}})
+1.  [S is for Single Responsibility Principle]({{< relref "0004-s-is-for-single-responsibility-principle.md" >}})
+2.  [O is for Open Closed Principle]({{< relref "o-is-for-open-closed-principle.md" >}})
+3.  [L is for Liskovs Substitution Principle]({{< relref "l-is-for-liskovs-substitution-principle.md" >}})
+4.  [I is for Interface Segregation Principle]({{< relref "I-is-for-Interface-Segregation-principle.md" >}})
+5.  [D is for Dependency Inversion Principle]({{< relref "D-is-for-Dependency-Inversion-Principle.md" >}})
 
 These principles describe the key principles to follow to make maintainable Object Oriented Code.
 
@@ -22,7 +22,7 @@ O stands for the Open Closed Principle, it means "software entities (classes, mo
 
 In practical terms, this means that any new functionality should be implementable by only adding new code, and not by changing existing code that we know works.
 
-Take for example this *LineItem* that offers special discount for some *User* types of the system:
+Take for example this _LineItem_ that offers special discount for some _User_ types of the system:
 
 <pre class="code">
 <code class="php">
@@ -67,6 +67,7 @@ class LineItem
 }
 </code>
 </pre>
+
 <pre class="code">
 <code class="php">
 /**
@@ -102,9 +103,9 @@ class User
 </code>
 </pre>
 
-This violates the open closed principle because we need to modify existing code in order to add additional *User* *LineItem* price calculations.
+This violates the open closed principle because we need to modify existing code in order to add additional _User_ _LineItem_ price calculations.
 
-This is bad because we have some code that we know works, in the *LineItem*, however every time we get a new requirement in for different *User* types, we need to edit it. Every time we edit a working class, we risk breaking it.
+This is bad because we have some code that we know works, in the _LineItem_, however every time we get a new requirement in for different _User_ types, we need to edit it. Every time we edit a working class, we risk breaking it.
 
 However it is possible to write code that only needs us to write new classes to extend it (that is open to extension), and doesn't require us to change the existing working code (closed to modification).
 
@@ -144,6 +145,7 @@ class LineItem
 }
 </code>
 </pre>
+
 <pre class="code">
 <code class="php">
 /**
@@ -161,6 +163,7 @@ abstract class User
 }
 </code>
 </pre>
+
 <pre class="code">
 <code class="php">
 /**
@@ -181,6 +184,7 @@ class Special extends User
 }
 </code>
 </pre>
+
 <pre class="code">
 <code class="php">
 /**
@@ -201,6 +205,7 @@ class Regular extends User
 }
 </code>
 </pre>
+
 <pre class="code">
 <code class="php">
 /**
@@ -230,7 +235,7 @@ However, there are some instances that it is undesirable to open our code up to 
 
 If we were to make our class fully open, we should make all our member variables public. However this causes us dependency problems, by being fully open we cannot prevent a misbehaving piece of code from disrupting all the other modules operation. By making member variables private, and explicitly creating the extension points in the form of methods, we control the access to those variables, and can regulate the content, and how they are managed.
 
-This has an additional benefit, by explicitly creating the extension points we give our fellow developers key information as to how some code is to be used, and we can even take advantage of the compiler to enforce this usage. In the following example we're taking advantage of making the extension point to delayDispatch explicitly only take *Disliked* users, to prevent any users that are not mean to us from having their *LineItem* delayed.
+This has an additional benefit, by explicitly creating the extension points we give our fellow developers key information as to how some code is to be used, and we can even take advantage of the compiler to enforce this usage. In the following example we're taking advantage of making the extension point to delayDispatch explicitly only take _Disliked_ users, to prevent any users that are not mean to us from having their _LineItem_ delayed.
 
 <pre class="code">
 <code class="php">

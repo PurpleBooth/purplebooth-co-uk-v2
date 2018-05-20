@@ -3,7 +3,6 @@ Categories = ["Asynchronous Architectures", "RabbitMQ", "PHP", "GoLang", "Events
 Description = "Introduction to why asynchronous architectures"
 date = "2015-03-02T21:01:33Z"
 title = "Speeding up your code by mirroring the CPU"
-
 +++
 
 What if I told you your code was primarily waiting for things to happen, rather than doing stuff? Waiting is exactly what happens when you attempt to interact with any component of your system that is a peripheral, so that's your network, the disk, anything you have connected via USB, Firewire or Thunderbolt. In this article I'm going to talk about how to do other stuff while you're waiting, to better use the resources available to you, so you can squeeze out the next 100 users from your hardware.
@@ -15,8 +14,6 @@ The observer pattern is a design pattern that is implemented in many libraries. 
 A popular implementation of the observer pattern is the Event Dispatcher (like [Symfony's](http://symfony.com/doc/current/components/event_dispatcher/introduction.html)). This is a common implementation in which the subject is a the event dispatcher, and the listeners that are executed when certain events are triggered in the dispatcher are the **observers**.
 
 {{< figure src="/post/Speeding-up-your-code-by-mirroring-the-CPU/observer-squence-diagram.png" title="Sequence Diagram of the observer pattern" >}}
-
-
 
 The observer pattern is exactly what happens internally inside your computer, when you want to interact with a peripheral. You register your interest in being notified when an event happens, such as writing to disk, or a packet coming in from the network, by setting an [interrupt](http://en.wikipedia.org/wiki/Interrupt) on the CPU. Interrupts are triggered when that event occurs and your code is run, it does this by interrupting the code that is currently scheduled to run on the CPU at that time, and by running your code instead - hence the name.
 

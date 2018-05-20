@@ -3,10 +3,9 @@
 date = "2016-11-26T09:35:56+00:00"
 title = "Kubernetes at the Home Office"
 categories = ["Video", "DevOps London", "PHPUK", "Kubernetes"]
-
 +++
 
-There's two versions of this talk, one where I intro docker at the start, and one where I don't. If you're 
+There's two versions of this talk, one where I intro docker at the start, and one where I don't. If you're
 familiar with docker you probably want the shorter one.
 
 ## PHP UK 2016 (Long version)

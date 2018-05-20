@@ -3,7 +3,6 @@
 date = "2015-04-19T16:35:56+01:00"
 title = "14 Yes/No Questions to measure your team"
 categories = ["The Joel Test", "Management"]
-
 +++
 
 Someone reminded me recently of [The Joel Test](http://www.joelonsoftware.com/articles/fog0000000043.html), which is 12 yes or no questions to rate a software development team's ability to perform.
@@ -12,15 +11,15 @@ They're looking a little tired and old now, I thought I'd attempt an update, so 
 
 Like the originals, these are hardly scientific, and fairly opinionated.
 
-1. [Are you providing a pleasant work environment?](#yesno1)
-2. [Are you developing vertical slices of functionality?](#yesno2)
-3. [Are you creating opportunities for team members to develop?](#yesno3)
-4. [Are you following an agile methodology?](#yesno4)
-5. [Are you using a DVCS?](#yesno5)
-6. [Are you testing behaviors?](#yesno6)
-7. [Are you continuously deploying?](#yesno7)
-8. [Are your applications small?](#yesno8)
-9. [Are you following a coding standard?](#yesno9)
+1.  [Are you providing a pleasant work environment?](#yesno1)
+2.  [Are you developing vertical slices of functionality?](#yesno2)
+3.  [Are you creating opportunities for team members to develop?](#yesno3)
+4.  [Are you following an agile methodology?](#yesno4)
+5.  [Are you using a DVCS?](#yesno5)
+6.  [Are you testing behaviors?](#yesno6)
+7.  [Are you continuously deploying?](#yesno7)
+8.  [Are your applications small?](#yesno8)
+9.  [Are you following a coding standard?](#yesno9)
 10. [Are you using your logs?](#yesno10)
 11. [Are you testing with real users?](#yesno11)
 12. [Are you testing real life scenarios?](#yesno12)
@@ -117,7 +116,7 @@ Following a coding standard with comments, and a clear style means you avoid all
 
 ### <a name="yesno10"></a> 10. Are you using your logs?
 
-First and foremost, without logs on production and other remote servers, and a way to access them, you can't fix problems.
+Without logs on production and other remote servers, and a way to access them, you can't fix problems.
 
 Further more, logs are a source of business data, you can track how many times someone has logged on or purchased something, and learn about a users behavior with your application.
 
@@ -153,4 +152,4 @@ Talking face to face is the best way to get information. If you don't have a rep
 
 Having them on site and on your side means that they can constantly re-prioratise tasks that are important to them. This means the truly valuable things are built first, and the less important things wait until later, rather than your best guess at what might be important.
 
-It also means you're not managing expectations all the time. The product owner is aware of the reality of the situation, and is comitted and involved.
+It also means you're not managing expectations all the time. The product owner is aware of the reality of the situation, and is committed and involved.

@@ -3,12 +3,11 @@ categories = ["Java", "Dropwizard","Swagger"]
 date = "2015-06-07T17:44:28+01:00"
 description = "Example of how to make DateTimeParam not show up as unknown in swagger json. Might point you in the direction of doing more complicated things too."
 title = "Correct parameter type for DateTimeParam in Dropwizard when using Swagger"
-
 +++
 
-If you're using the [Swagger](https://github.com/federecio/dropwizard-swagger) bundle for [Dropwizard](http://www.dropwizard.io/) and also a [DateTimeParam](https://github.com/dropwizard/dropwizard/blob/master/dropwizard-jersey/src/main/java/io/dropwizard/jersey/params/DateTimeParam.java) you may have noticed that Swagger puts *unknown* for this parameter in the *swagger.json*, when it should be a *date-time*. Here's how to resolve that.
+If you're using the [Swagger](https://github.com/federecio/dropwizard-swagger) bundle for [Dropwizard](http://www.dropwizard.io/) and also a [DateTimeParam](https://github.com/dropwizard/dropwizard/blob/master/dropwizard-jersey/src/main/java/io/dropwizard/jersey/params/DateTimeParam.java) you may have noticed that Swagger puts _unknown_ for this parameter in the _swagger.json_, when it should be a _date-time_. Here's how to resolve that.
 
-We get *unknown* because Swagger doesn't know how to represent a *DateTimeParam* in it's output. We can tell Swagger how to interpret this class using a *ModelConverter*. *ModelConverters* give swagger knowledge of how it should output classes, and allow us some degree of customization of swaggers output.
+We get _unknown_ because Swagger doesn't know how to represent a _DateTimeParam_ in it's output. We can tell Swagger how to interpret this class using a _ModelConverter_. _ModelConverters_ give swagger knowledge of how it should output classes, and allow us some degree of customization of swaggers output.
 
 <pre class="code">
 <code class="java">
@@ -50,17 +49,17 @@ public class SwaggerDateModelConverter extends AbstractModelConverter implements
 </code>
 </pre>
 
-Above is an example that allows you to output *DateTimeParam* as *date-time*.
+Above is an example that allows you to output _DateTimeParam_ as _date-time_.
 
 I'll break this down a little bit.
 
-In the constructor we need to tell Swagger which output we're mapping to. This is what the *Json.mapper* call is doing.
+In the constructor we need to tell Swagger which output we're mapping to. This is what the _Json.mapper_ call is doing.
 
-We've extended this class off *AbstractModelConverter*, which provides us with some useful functions to help us.
+We've extended this class off _AbstractModelConverter_, which provides us with some useful functions to help us.
 
-The *resolveProperty* method is used to determine what sort of property a type is. We can do really complicated things here like handle classes without annotations, we only need something simple though.
+The _resolveProperty_ method is used to determine what sort of property a type is. We can do really complicated things here like handle classes without annotations, we only need something simple though.
 
- We're going to call the parent class and resolve the property as normal. Then we're going to disregard it if the property we're resolving is a *DateTimeParam*. We'll then use the *getPrimitiveProperty* method from the super class to give us the right parameter for a *datetime* (The string *datetime* returns a swagger *DateProperty*, which is in turn converted into the string *date-time* in the Json).
+We're going to call the parent class and resolve the property as normal. Then we're going to disregard it if the property we're resolving is a _DateTimeParam_. We'll then use the _getPrimitiveProperty_ method from the super class to give us the right parameter for a _datetime_ (The string _datetime_ returns a swagger _DateProperty_, which is in turn converted into the string _date-time_ in the Json).
 
 Once you've done this, you simply need to add the converter to swagger.
 
@@ -79,4 +78,4 @@ Once you've done this, you simply need to add the converter to swagger.
 </code>
 </pre>
 
-Hopefully this will save you a little time Googling.
+I hope this has saved you a little time Googling.

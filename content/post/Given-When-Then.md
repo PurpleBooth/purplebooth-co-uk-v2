@@ -2,27 +2,25 @@
 date = "2015-03-18T15:30:54Z"
 title = "Given When Then"
 categories = ["BDD", "Cucumber", "Behat", "Testing"]
-
-
 +++
 
 ## How to write good behavioral tests
 
-You're being Given a tour of a code base. You get to the end and you ask if the code has any tests, and your friend proudly says "Oh yes, we have lots of tests" and opens a folder filled with feature files. "Brilliant", you say smiling, but your heart begins to sink when you look at the contents of the files.
+You're being given a tour of a code base. You get to the end and you ask if the code has any tests, and your friend proudly says "Oh yes, we have lots of tests" and opens a folder filled with feature files. "Brilliant", you say smiling, but your heart begins to sink when you look at the contents of the files.
 
-There are no Givens! The tests need to be run in a specific order, the scenario step lines are very long and use unusual wording for the steps.
+There are no Givens. The tests need to be run in a specific order, the scenario step lines are long and use unusual wording for the steps.
 
 What's more when you look into the step definitions there's hundreds and hundreds of functions, no objects, and one big mess.
 
 This is not an uncommon situation.
 
-Writing tests is a vital part of BDD, but frequently it's done in a way that can make life very hard. However there are a number of simple principles that you can follow in order to make things easier for yourself.
+Writing tests is a vital part of BDD, but frequently it's done in a way that can make life hard. However there are a number of simple principles that you can follow in order to make things easier for yourself.
 
 Lets start from the beginning though, what is BDD? BDD is Behavior Driven Development.
 
 BDD means you develop your system by defining a behavior you want it to have in a feature file. You then write code until that test passes. Then you stop coding or write another test.
 
-This is very similar to [TDD](http://en.wikipedia.org/wiki/Test-driven_development), in that you write tests, then write code. But with one key difference: BDD makes it very clear what you're supposed to be testing. Behavior.
+This is similar to [TDD](http://en.wikipedia.org/wiki/Test-driven_development), in that you write tests, then write code. But with one key difference: BDD makes it clear what you're supposed to be testing: Behavior.
 
 Testing Behavior means that you test the apparent actions of the system from a users perspective. For a website you're testing that a user can log in, can look at a product, can search, and so on. You don't test implementation details such as what a value in a database is, or if a method was called.
 
@@ -37,9 +35,9 @@ Scenario: A book can be rated
 </code>
 </pre>
 
-Now imagine I change the database table that the users are stored in from ratings to reviews. All my tests will break, even if my code is correct!
+Now imagine I change the database table that the users are stored in from ratings to reviews. All my tests will break, even if my code is correct.
 
-If your tests are tied to your implementation then you're going have all your tests break the moment you change that implementation. What we care about is the behavior, not how we have implemented it. To put it another way: We care that we *can* create a rating, not *how* we create a rating.
+If your tests are tied to your implementation then you're going have all your tests break the moment you change that implementation. What we care about is the behavior, not how we have implemented it. To put it another way: We care that we _can_ create a rating, not _how_ we create a rating.
 
 <pre class="code">
 <code class="gherkin">
@@ -54,7 +52,7 @@ Now look at this example, changing the name of the users table wouldn't break th
 
 This sounds easy, but actually sometimes it can be quite hard. Imagine you're writing a bit of code that reads from a queue and writes to a database as part of a larger system. You want to write a BDD test for that behavior, but it doesn't have any obvious user output. A common error would be to query the database in order to check the database has the correct value in.
 
-Don't do it! You're testing an implementation detail. Test the behavior.
+Don't do it. You're testing an implementation detail. Test the behavior.
 
 Make the request through your application, rather than looking in the database. If the code that's reading from the queue and inserting into the database doesn't make any change to the behavior of your application, it doesn't need to exist.
 
@@ -62,7 +60,7 @@ Not testing Behavior in BDD is a sure fire way to make maintaining tests a chore
 
 So now we know what we're testing, lets talk about the anatomy of a behavioral test.
 
-Most behavioral testing frameworks have standardized around the the [Gherkin](https://github.com/cucumber/cucumber/wiki/Gherkin) language. Gherkin is defined in text files which are called "features". These features have multiple scenarios.
+Most behavioral testing frameworks have standardized around the [Gherkin](https://github.com/cucumber/cucumber/wiki/Gherkin) language. Gherkin is defined in text files which are called "features". These features have multiple scenarios.
 
 Each of these scenarios has multiple lines with a starting keyword, of Given, When and Then. Each of these lines triggers a bit of code to be executed. We call the code that is executed the step definition.
 
@@ -389,14 +387,14 @@ This allows you to have much higher reuse between steps. On top of that your cod
 
 Here's a run down of those tips:
 
- - Test behavior not implementation
- - Use Givens
- - Don't use fixtures
- - Step should be fairly high level
- - Textual descriptions can be clearer than tables
- - Use [SOLID]({{< ref "post/0004-s-is-for-single-responsibility-principle.md" >}}) in your step definitions
- - Keep your step definitions to a minimum number of lines
- - Use [data transformations](http://docs.behat.org/en/latest/guides/2.definitions.html#step-argument-transformations) (or in [cucumber](https://cukes.info/step-definitions#string_transformations))
- - Use the [page object pattern](http://martinfowler.com/bliki/PageObject.html)
+* Test behavior not implementation
+* Use Givens
+* Don't use fixtures
+* Step should be fairly high level
+* Textual descriptions can be clearer than tables
+* Use [SOLID]({{< ref "post/0004-s-is-for-single-responsibility-principle.md" >}}) in your step definitions
+* Keep your step definitions to a minimum number of lines
+* Use [data transformations](http://docs.behat.org/en/latest/guides/2.definitions.html#step-argument-transformations) (or in [cucumber](https://cukes.info/step-definitions#string_transformations))
+* Use the [page object pattern](http://martinfowler.com/bliki/PageObject.html)
 
 Maintaining a full suite of tests doesn't have to be a chore so long as you follow those simple steps. You'll soon find that your test suite become much more of an asset.

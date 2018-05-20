@@ -3,7 +3,6 @@
 date = "2015-04-10T12:27:13+01:00"
 title = "Cyclomatic Complexity"
 categories = ["Complexity", "OOP", "Programming"]
-
 +++
 
 Imagine you're having a great day at the office, you've got a brand new feature the customer is dying to have, and you've completed it in record time. You're all ready to get it merged and peer reviewed.
@@ -34,24 +33,24 @@ Now we've built our graph, we apply this formula defined by McCabe that counts t
 
 > M = E − N + 2P
 
-What do these letters mean though?  
+What do these letters mean though?
 
-* E = The number of edges of the graph. *Edges are the lines in the graph*
-* N = The number of nodes of the graph. *One of the circles is a node*
-* P = The number of connected components. *Number of interchangeable components, like classes, we're analysing*
+* E = The number of edges of the graph. _Edges are the lines in the graph_
+* N = The number of nodes of the graph. _One of the circles is a node_
+* P = The number of connected components. _Number of interchangeable components, like classes, we're analysing_
 
-So in this very simple example
+So in this example
 
-* E = 1 *There's 1 line in the graph*
-* N = 2 *There's 2 nodes in the graph, Start and End*
-* P = 1 *There's a single component we are analyzing, our simple hello world function*
+* E = 1 _There's 1 line in the graph_
+* N = 2 _There's 2 nodes in the graph, Start and End_
+* P = 1 _There's a single component we are analyzing, our simple hello world function_
 
 So our formula breaks down like this
 
-1. 1 = 1 - 2 + (2 * 1)
-2. 1 = 1 - 2 + 2
-3. 1 = -1 + 2
-4. 1 = 1
+1.  1 = 1 - 2 + (2 \* 1)
+2.  1 = 1 - 2 + 2
+3.  1 = -1 + 2
+4.  1 = 1
 
 So this method has a complexity of 1. There is 1 route through the code.
 
@@ -77,16 +76,16 @@ So lets take our formula again
 
 > M = E − N + 2P
 
-* E = 4 *There's 4 edges in the graph*
-* N = 4 *There's 4 nodes in the graph, Start and End and our if name selection*
-* P = 1 *There's a single component we are analyzing, our simple hello world function*
+* E = 4 _There's 4 edges in the graph_
+* N = 4 _There's 4 nodes in the graph, Start and End and our if name selection_
+* P = 1 _There's a single component we are analyzing, our simple hello world function_
 
 So our formula breaks down like this
 
-1. 2 = 4 - 4 + (2 * 1)
-2. 2 = 4 - 4 + 2
-3. 2 = 0 + 2
-4. 2 = 2
+1.  2 = 4 - 4 + (2 \* 1)
+2.  2 = 4 - 4 + 2
+3.  2 = 0 + 2
+4.  2 = 2
 
 There are 2 routes through the code.
 
@@ -127,10 +126,10 @@ So lets apply our formula again.
 
 Which means the complexity is
 
-1. 3 = 8 - 7 + (2 * 1)
-2. 3 = 8 - 7 + 2
-3. 3 = 1 + 2
-4. 3 = 3
+1.  3 = 8 - 7 + (2 \* 1)
+2.  3 = 8 - 7 + 2
+3.  3 = 1 + 2
+4.  3 = 3
 
 There are 3 paths through the code.
 
@@ -138,9 +137,9 @@ There are 3 paths through the code.
 
 This number is important because there are [3 main types of bugs](http://misko.hevery.com/2008/11/17/unified-theory-of-bugs/) in software:
 
-1. Logical *If 2 > 3 when it should be if 3 > 4*
-2. Wiring *I injected the queue object when I should have injected the db object*
-3. Rendering *I put the wrong text in this button*
+1.  Logical _If 2 > 3 when it should be if 3 > 4_
+2.  Wiring _I injected the queue object when I should have injected the db object_
+3.  Rendering _I put the wrong text in this button_
 
 Logical is the most common, Wiring the second most common and Rendering the least common. Logical is also the hardest to identify and resolve, Wiring the second most, and Rendering the least.
 

@@ -3,11 +3,12 @@ categories = ["DevOps", "Docker", "NodeJS", "Express", "NPM"]
 date = "2015-06-14T12:03:15+01:00"
 description = "Previously I showed you how to get a docker container up and running. Now I'll show you how to build your own container with your own code in, and run that."
 title = "Creating docker containers is easy"
-
 +++
- There is a lot of complex sounding terms when it comes to docker, but I'm going to show you how to cut through that and get an application you've just written up and running in a docker container without much effort. Imagine you're going to revolutionise the GaaS industry (greetings as a service), and you've developed the following MVP using express and NPM.
+
+There is a lot of complex sounding terms when it comes to docker, but I'm going to show you how to cut through that and get an application you've just written up and running in a docker container without much effort. Imagine you're going to revolutionize the GaaS industry (greetings as a service), and you've developed the following MVP using express and NPM.
 
 Your server.js looks like this:
+
 <pre class="code">
 <code class="javascript">
 var express = require('express');
@@ -29,6 +30,7 @@ var server = app.listen(3000, function () {
 </pre>
 
 Your package.json looks like this:
+
 <pre class="code">
 <code class="javascript">
 {
@@ -52,6 +54,7 @@ Your package.json looks like this:
 </pre>
 
 And when you run it looks like this:
+
 <pre class="code">
 <code class="shell">
 $ npm install && npm start &
@@ -61,9 +64,8 @@ Hello World!
 </pre>
 
 Now this is all well and good but how are you going to get this code into a container that you can deploy to your infrastructure?
- 
- 
- First step is to create a [Dockerfile](https://docs.docker.com/reference/builder/).  This is a plain text file with some instructions and environment detail about our application. Our Dockerfile for this application would look like this:
+
+First step is to create a [Dockerfile](https://docs.docker.com/reference/builder/). This is a plain text file with some instructions and environment detail about our application. Our Dockerfile for this application would look like this:
 
 <pre class="code">
 <code class="docker">
@@ -86,7 +88,7 @@ FROM node:0.10-onbuild
 </code>
 </pre>
 
-The first line of a docker file is the "FROM" statement. This is a existing container that we're building on. I'm building on the [node:0.10-onbuild container](https://registry.hub.docker.com/_/node/), which is the official node container. 
+The first line of a docker file is the "FROM" statement. This is a existing container that we're building on. I'm building on the [node:0.10-onbuild container](https://registry.hub.docker.com/_/node/), which is the official node container.
 
 This container has everything installed, such as npm and node, that is required to run a node application. There are lower level containers too, such as a [CentOS container](https://registry.hub.docker.com/_/centos/), or a [Ubuntu container](https://registry.hub.docker.com/_/ubuntu/). These might be more suitable if you're doing something lower level, but most of the time it's a good idea to reuse other peoples work setting up the applications and libraries you need, rather than rolling your own.
 
@@ -97,7 +99,7 @@ ADD . /server
 </code>
 </pre>
 
-The next line tells docker to run the mkdir command to create a directory, and the command following that ADD's the "." repository to the image. This means that the folder /server in the container will contain everything that is in the same directory as the Dockerfile. You can exclude files using a [.dockerignore](https://docs.docker.com/reference/builder/#the-dockerignore-file). 
+The next line tells docker to run the mkdir command to create a directory, and the command following that ADD's the "." repository to the image. This means that the folder /server in the container will contain everything that is in the same directory as the Dockerfile. You can exclude files using a [.dockerignore](https://docs.docker.com/reference/builder/#the-dockerignore-file).
 
 The thing to note about docker is that it is build on top of [AUFS](https://en.wikipedia.org/wiki/Aufs) - a layered file system, each change like this creates a new layer in the filesystem. This is good because it means that once you have the previous layers, you only need to add the new layer on top. This means that for every container that uses the node:0.10-onbuild container, we can share all the previous layers, while only adding a tiny custom layer to make a fully fledged container.
 
@@ -124,7 +126,7 @@ EXPOSE 3000
 </code>
 </pre>
 
-Expose is a special command in docker, if we were to [--link this container with another one](https://docs.docker.com/userguide/dockerlinks/ ), this would ensure an environment variable with the name "name_PORT_port_protocol" was set on the container this container was being linked to.
+Expose is a special command in docker, if we were to [--link this container with another one](https://docs.docker.com/userguide/dockerlinks/), this would ensure an environment variable with the name "name_PORT_port_protocol" was set on the container this container was being linked to.
 
 So that's the docker file itself. But how do we make that into something we can run in docker?
 
@@ -134,7 +136,7 @@ To turn this text file into a docker container we need to build it.
 <code class="shell">
 $ docker build -t purplebooth/dockerdemo:0.1.0 .
 Sending build context to Docker daemon 8.192 kB
-Sending build context to Docker daemon 
+Sending build context to Docker daemon
 Step 0 : FROM node:0.10-onbuild
 # Executing 3 build triggers
 Trigger 0, COPY package.json /usr/src/app/
@@ -201,14 +203,14 @@ Successfully built 925594502efd
 </code>
 </pre>
 
-There's only really one switch here, and that's the "-t" flag. The "-t" flag tags the container we are building with a name and a version. 
+There's only really one switch here, and that's the "-t" flag. The "-t" flag tags the container we are building with a name and a version.
 
 This means that we can now run it
 
 <pre class="code">
 <code class="shell">
 $ docker run -p 3001:3000 purplebooth/dockerdemo:0.1.0 &
-$ curl $(boot2docker ip):3001 
+$ curl $(boot2docker ip):3001
 Hello World!
 </code>
 </pre>
@@ -231,31 +233,31 @@ Once you've done that you can create your repository on the site, and push from 
 <code class="shell">
 $ docker push purplebooth/dockerdemo
 The push refers to a repository [purplebooth/dockerdemo] (len: 1)
-925594502efd: Image already exists 
-c492e79f29ca: Image successfully pushed 
-a9e24d62db37: Image successfully pushed 
-346b9ab3d304: Image successfully pushed 
-c4bfa8cdd4c9: Image successfully pushed 
-8d009637a909: Image successfully pushed 
-1c7cfad45c83: Image successfully pushed 
-506ac1b876d1: Image successfully pushed 
-182c05d5ec57: Image successfully pushed 
-00363a668b4c: Image successfully pushed 
-cccccafed114: Image successfully pushed 
-42036a7197e1: Image successfully pushed 
-6ccbbffacc4d: Image successfully pushed 
-ca3fb8ba8bf9: Image successfully pushed 
-193eb1810e24: Image successfully pushed 
-73a4c0982b27: Image successfully pushed 
-9bd8130837c5: Image successfully pushed 
-c69aee172ec1: Image successfully pushed 
-17e468a56a40: Image successfully pushed 
-15ac36dafb19: Image successfully pushed 
-272a9ceee931: Image successfully pushed 
-1f7b395e1580: Image successfully pushed 
-25963d635584: Image successfully pushed 
-f5224fc54ad2: Image successfully pushed 
-61b3964dfa70: Image successfully pushed 
+925594502efd: Image already exists
+c492e79f29ca: Image successfully pushed
+a9e24d62db37: Image successfully pushed
+346b9ab3d304: Image successfully pushed
+c4bfa8cdd4c9: Image successfully pushed
+8d009637a909: Image successfully pushed
+1c7cfad45c83: Image successfully pushed
+506ac1b876d1: Image successfully pushed
+182c05d5ec57: Image successfully pushed
+00363a668b4c: Image successfully pushed
+cccccafed114: Image successfully pushed
+42036a7197e1: Image successfully pushed
+6ccbbffacc4d: Image successfully pushed
+ca3fb8ba8bf9: Image successfully pushed
+193eb1810e24: Image successfully pushed
+73a4c0982b27: Image successfully pushed
+9bd8130837c5: Image successfully pushed
+c69aee172ec1: Image successfully pushed
+17e468a56a40: Image successfully pushed
+15ac36dafb19: Image successfully pushed
+272a9ceee931: Image successfully pushed
+1f7b395e1580: Image successfully pushed
+25963d635584: Image successfully pushed
+f5224fc54ad2: Image successfully pushed
+61b3964dfa70: Image successfully pushed
 Digest: sha256:a5ff62af772ce82c4b05aadd93e80571db8d89f6172487614e6f165da2953827
 </code>
 </pre>
@@ -265,7 +267,7 @@ Now anyone in the world can run your application with a simple docker run comman
 <pre class="code">
 <code class="shell">
 $ docker run -p 3001:3000 purplebooth/dockerdemo:0.1.0 &
-$ curl $(boot2docker ip):3001 
+$ curl $(boot2docker ip):3001
 Hello World!
 </code>
 </pre>

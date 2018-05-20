@@ -2,7 +2,6 @@
 date = "2015-03-27T16:02:17Z"
 title = "Skipping Packages with Composer"
 Categories = ["PHP", "Composer"]
-
 +++
 
 Just a quick note, if you find your project doesn't work with a specific release of a package that you're pulling in with [composer](https://getcomposer.org), maybe due to a bug, maybe due to an accidental backwards compatibility break, you don't need to lock composer to a specific version. You can tell composer to skip a single version, or range of versions. This allows you to avoid the situation where you can no longer pull in bug fixes or performance enhancements.

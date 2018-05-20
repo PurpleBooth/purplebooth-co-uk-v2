@@ -2,7 +2,6 @@
 date = "2015-04-05T17:51:06+01:00"
 title = "Coming out as Trans as work"
 Categories = ["Trans", "Video"]
-
 +++
 
 I've made a short video about my experiences coming out as a trans woman at work. It's something that I've wanted to talk about for a while, but I don't think would fit in at a conference.

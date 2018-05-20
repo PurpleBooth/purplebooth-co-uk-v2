@@ -3,7 +3,6 @@ categories = ["Open Source", "Working Openly", "Cathedral and the Bazaar"]
 date = "2015-08-16T20:57:50+01:00"
 description = "Working openly and its benefits"
 title = "Working Openly and Open Source"
-
 +++
 
 > “Who would have thought even five years ago (1991) that a world-class operating system could coalesce as if by magic out of part-time hacking by several thousand developers scattered all over the planet, connected only by the tenuous strands of the Internet?”
@@ -15,7 +14,7 @@ Working openly is so successful even those pieces of software that are not open 
 
 If open development is the key to code reuse, why is it then, that in business we’re so keen on locking away our code in private code stores. How frequently have you joined a team, only to discover that you need adding to 15 different code stores you didn’t know existed. What time saving wonders might those code stores have held for your last project had you have known they existed.
 
-Now this is not the case in every company. Google develop Android in the open, and Facebook have a number of projects across a number of different platforms that are developed openly, not least of which are React and HHVM. Even famously closed source company Oracle have the Java Community Process that allows it to be developed in an open manner.
+Now this is not the case in every company. Google develop Android in the open, and Facebook have a number of projects across a number of platforms that are developed openly, not least of which are React and HHVM. Even famously closed source company Oracle have the Java Community Process that allows it to be developed in an open manner.
 
 > Even not being able to Open Source your work does not preclude you from working openly
 
@@ -33,13 +32,13 @@ It can be the greatest buzz ever knowing you have saved someone a week of coding
 
 Some of the places I have worked have had fairly successful cultures of openness, and some less so. Here are some strategies that I have seen work.
 
-Strategy 1: Limiting the number of private repositories, and open sourcing repositories to free up more private ones. This works two fold, firstly developers get recognition outside of the company, secondly you’re motivated to keep code clean incase the public see it.
+Strategy 1: Limiting the number of private repositories, and open sourcing repositories to free up more private ones. This works two fold, firstly developers get recognition outside of the company, secondly you’re motivated to keep code clean encase the public see it.
 
 Strategy 2: Keeping the functionality of projects small. This works by only having small amounts of functionality in each repository, meaning you can reuse the specific components that work for you, and that you don’t need massive user guides that need to be maintained, and versioning is easy.
 
 Strategy 3: Open sourcing anything outside your core business. If your core business is that you make washing machines, it won’t make any difference to that bottom line if you open source your neat date parsing library. The constant open sourcing of code is good advertising, and creates a culture of maintaining shareable code that isn’t being open sourced.
 
-Now these are only a small sample of techniques, and like with all changes that attempt to garner cultural change, you milage may vary.
+Now these are only a small sample of techniques, and like with all changes that attempt to garner cultural change, you mileage may vary.
 
 The difference in code quality and community spirit between companies I have worked at which develop software in an open manner is marked, and the companies I see go on to be the most successful are those that make the biggest impact in their markets. Simply because by making code culturally and technically reusable they enable more agility for themselves.
 

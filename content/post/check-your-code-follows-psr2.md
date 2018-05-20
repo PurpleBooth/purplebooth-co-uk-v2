@@ -3,7 +3,6 @@ categories = ["Quick", "Clean Code", "Tip"]
 date = "2016-03-03T09:07:50Z"
 description = "Prefer to write your code using something like sublime? Or ever been stuck without your IDE of choice, this tip will tell you how to run code standard checks on the commandline."
 title = "Check your code follows PSR-2 and check it's got a good design on the command line"
-
 +++
 
 Need to check your code follows PSR-2, but it's not supported in your
@@ -46,7 +45,7 @@ Time: 764ms; Memory: 10Mb
 </code>
 </pre>
 
-You only need to run the *composer require* once.
+You only need to run the _composer require_ once.
 
 As you can see you'll get a nice summary as to your compliance with
 PSR-2, and what you need to fix.

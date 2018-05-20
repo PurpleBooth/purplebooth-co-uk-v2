@@ -3,16 +3,14 @@ date = "2015-02-22T13:01:30Z"
 draft = false
 title = "Our Services"
 menu  = "main"
-
-
 +++
 
 # Services We Provide
 
 ## Training
 
-Want to bring your team up to speed on the latest software development techniques? We can run intensive training 
-courses bringing your developers up to speed on a number of different problems. Bringing you the skills you need to 
+Want to bring your team up to speed on the latest software development techniques? We can run intensive training
+courses bringing your developers up to speed on a number of problems. Bringing you the skills you need to
 solve your customers problems.
 
 Some examples of the training we can provide:
@@ -27,8 +25,8 @@ We love to hear about the challenges you're facing, and what areas we can help y
 
 ## Consultancy
 
-Need advice navigating a bit of decision making? We can help guide you through those tricky decisions that your company 
-needs to make. Be them small things like which framework should we use for our next project, to large like how can we 
+Need advice navigating a bit of decision making? We can help guide you through those tricky decisions that your company
+needs to make. Be them small things like which framework should we use for our next project, to large like how can we
 transition to a immutable architecture.
 
 Some examples of areas we can help you in:
@@ -38,7 +36,7 @@ Some examples of areas we can help you in:
 * Allowing your teams to continually master the technologies they use.
 
 And many more things besides
-    
+
 <a href="{{< relref "#contact-us" >}}" class="button">Contact Us</a>
 
 ## Software Development
@@ -58,8 +56,8 @@ We specialise in:
 {{< figure src="/me_5_30.jpg" title="Billie Thompson" >}}
 
 Billie Thompson is a software developer. She's been running Purple Booth Ltd since 2012 but has been working in software
-development for over six years. During that time she has got to play with lots of cool technology, everything from 
-RabbitMQ, to NodeJS, to Puppet and beyond (as well as the usual suspects of Zend, Zend 2 and Symfony2). However 
+development for over six years. During that time she has got to play with lots of cool technology, everything from
+RabbitMQ, to NodeJS, to Puppet and beyond (as well as the usual suspects of Zend, Zend 2 and Symfony2). However
 primarily she's a PHP developer.
 
 # Contact Us

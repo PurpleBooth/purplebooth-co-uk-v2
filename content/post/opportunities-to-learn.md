@@ -3,7 +3,6 @@ Categories = ["Development", "Process", "Agile", "Pull Requests"]
 Description = "Discussing creating information discovery opportunities in a development team"
 date = "2015-03-15T10:58:34Z"
 title = "Creating prompts to Learn"
-
 +++
 
 **Individuals and interactions** over Processes and tools. This is the first tenant of Agile software development. It means value individuals contributing domain knowledge and expertise to create high quality software, rather than attempting to enforce a "safe" way of working by restricting someone to a specific process.
@@ -54,7 +53,7 @@ One risk with this sort of Peer Review is that it becomes a box ticking exercise
 
 Peer review also comes in another form, the **Demo**. At the end of your sprint you should demonstrate your completed work to the business, and more importantly the people who requested that work be done. Not only does this offer an opportunity to double check that the functionality is completed correctly, but it can trigger discussions about future functionality, or prioritization of the work that is to be completed next.
 
-The next technique I want to discuss with you is **Pair Programming**. There are a number of different ways to implement this: my personal favorite is [Ping Pong pair programming](http://c2.com/cgi/wiki?PairProgrammingPingPongPattern).
+The next technique I want to discuss with you is **Pair Programming**. There are a number of ways to implement this: my personal favorite is [Ping Pong pair programming](http://c2.com/cgi/wiki?PairProgrammingPingPongPattern).
 
 Ping Pong pair programming is where one developer writes a test, and then the other writes code until that test is passing, and writes the next test, and so on and so forth until an entire feature is complete. While one developer is writing code, the other developer is considering and thinking about the architecture of the system. We call the developer who is thinking about the architecture the Navigator, and the person who is writing the code at the time the Driver. The pair of developers typically share a computer to use this technique.
 

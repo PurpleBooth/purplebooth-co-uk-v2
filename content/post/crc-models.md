@@ -2,8 +2,6 @@
 date = "2015-03-10T04:51:03Z"
 title = "CRC Models"
 Categories = ["OOP", "CRC"]
-
-
 +++
 
 Yesterday I had fun breaking down a complex system into simpler classes using CRC Models. CRC Models are Class Responsibility Collaborator models, and it allows you to identify classes that aren't quite doing what they should be.
@@ -12,10 +10,10 @@ Typically a key instance of when this practice is useful is if a system is consi
 
 CRC Modeling works like this, you follow 4 simple steps and at each stage fill in a different area of your model.
 
-1. Find Classes
-2. Find Responsibilities
-3. Define Collaborators
-4. Discuss - and make changes
+1.  Find Classes
+2.  Find Responsibilities
+3.  Define Collaborators
+4.  Discuss - and make changes
 
 {{< figure src="/post/crc-models/1.png" title="CRC Model" >}}
 

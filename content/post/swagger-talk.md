@@ -3,7 +3,6 @@
 date = "2016-11-26T09:35:51+00:00"
 title = "API Contracts using Open API"
 categories = ["Video", "Symfony London", "OpenAPI", "Swagger"]
-
 +++
 
 (I can't embed this one, sorry!)
