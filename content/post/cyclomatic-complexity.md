@@ -11,7 +11,7 @@ So you commit it, and push it to your build pipeline, where it's analyzed. The b
 
 You're given a numeric complexity value for your code, and a lower complexity value that you need to get your code's complexity under. But what does that exactly does this value mean? And why does high complexity mean you probably need to refactor your code?
 
-Complexity in software development is Cyclomatic Complexity. Cyclomatic Complexity was first described way back in [1976 by Thomas McCabe](http://books.google.ro/books?id=vtNWAAAAMAAJ&pg=PA3#v=onepage&q&f=false), and is in it's essence a numeric value that is the total number of paths an execution through a piece of code could take. The higher this number, the higher the number of routes through a piece of code, and the more behaviors your class will exhibit that you'll need to test for (and opportunities your code has to choose the wrong path).
+Complexity in software development is Cyclomatic Complexity. Cyclomatic Complexity was first described way back in [1976 by Thomas McCabe](https://books.google.ro/books?id=vtNWAAAAMAAJ&pg=PA3&hl=ro), and is in it's essence a numeric value that is the total number of paths an execution through a piece of code could take. The higher this number, the higher the number of routes through a piece of code, and the more behaviors your class will exhibit that you'll need to test for (and opportunities your code has to choose the wrong path).
 
 ### How to we work out the number?
 

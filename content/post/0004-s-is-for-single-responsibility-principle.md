@@ -116,7 +116,7 @@ Another key indicator is, if when attempting to describe what the object does, y
 
 Not following this rule (also known as high coupling), is going to cause you problems because now you're going to need to bring an _EmailSender_ where ever you initialize your _Basket_, and what's worse, the _EmailSender_ has wound its way into the order complete logic, and it's now impossible to use this class anywhere where we would want to complete an order without sending an email.
 
-The correct way to implement this is to split each responsibility into a class. In this example this means we end up with a _Basket_ and _BasketCompleteEmailListener_. We will run the _BasketCompleteEmailListener_ with the [Observer pattern](http://en.wikipedia.org/wiki/Observer_pattern). This way we can still send the email when the order is complete, but we can also complete an order without sending an email.
+The correct way to implement this is to split each responsibility into a class. In this example this means we end up with a _Basket_ and _BasketCompleteEmailListener_. We will run the _BasketCompleteEmailListener_ with the [Observer pattern](https://en.wikipedia.org/wiki/Observer_pattern). This way we can still send the email when the order is complete, but we can also complete an order without sending an email.
 
 <pre class="code">
 <code class="php">

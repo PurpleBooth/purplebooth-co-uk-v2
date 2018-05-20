@@ -88,9 +88,9 @@ FROM node:0.10-onbuild
 </code>
 </pre>
 
-The first line of a docker file is the "FROM" statement. This is a existing container that we're building on. I'm building on the [node:0.10-onbuild container](https://registry.hub.docker.com/_/node/), which is the official node container.
+The first line of a docker file is the "FROM" statement. This is a existing container that we're building on. I'm building on the [node:0.10-onbuild container](https://hub.docker.com/_/node/), which is the official node container.
 
-This container has everything installed, such as npm and node, that is required to run a node application. There are lower level containers too, such as a [CentOS container](https://registry.hub.docker.com/_/centos/), or a [Ubuntu container](https://registry.hub.docker.com/_/ubuntu/). These might be more suitable if you're doing something lower level, but most of the time it's a good idea to reuse other peoples work setting up the applications and libraries you need, rather than rolling your own.
+This container has everything installed, such as npm and node, that is required to run a node application. There are lower level containers too, such as a [CentOS container](https://hub.docker.com/_/centos/), or a [Ubuntu container](https://hub.docker.com/_/ubuntu/). These might be more suitable if you're doing something lower level, but most of the time it's a good idea to reuse other peoples work setting up the applications and libraries you need, rather than rolling your own.
 
 <pre class="code">
 <code class="docker">
@@ -217,7 +217,7 @@ Hello World!
 
 Now it's all well and good having this on your local machine, but we need this to be pushed out to where everyone can access it. We do this by pushing a tag to a repository.
 
-You can [run your own](https://registry.hub.docker.com/_/registry/), or you can use the [official docker one](https://registry.hub.docker.com/). I'm going to use the official one.
+You can [run your own](https://hub.docker.com/_/registry/), or you can use the [official docker one](https://hub.docker.com/). I'm going to use the official one.
 
 The first step is to login.
 

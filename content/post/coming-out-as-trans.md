@@ -12,7 +12,7 @@ I'm putting this out there because I want trans people who're thinking about tra
 
 Enjoy!
 
-**Edit:** I just remembered some people that really deserve an honorable mention here. Everyone at [Transform UK](http://www.transformuk.com/).
+**Edit:** I just remembered some people that really deserve an honorable mention here. Everyone at [Transform UK](http://transformuk.com/).
 
 As soon as I told them about my transition, they printed me business cards with my name on, which as a trans person finally using that name everywhere, meant so much to me.
 

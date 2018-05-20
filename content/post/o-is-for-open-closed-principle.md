@@ -229,7 +229,7 @@ class Disliked extends User
 
 You can see here that we can add additional types, simply by adding another class, we don't need to change any existing classes. We're open to extension of the functionality, closed to needing to modify the original class.
 
-If you're looking for an easy way to spot instances where you're not taking full advantage of the Open Closed Principle: look at your if statements. Use this thought experiment: [Think about how you would remove each of your selection statements using polymorphism](http://www.refactoring.com/catalog/replaceConditionalWithPolymorphism.html), it should be possible to remove nearly every single one!
+If you're looking for an easy way to spot instances where you're not taking full advantage of the Open Closed Principle: look at your if statements. Use this thought experiment: [Think about how you would remove each of your selection statements using polymorphism](https://www.refactoring.com/catalog/replaceConditionalWithPolymorphism.html), it should be possible to remove nearly every single one!
 
 However, there are some instances that it is undesirable to open our code up to extension. The key instance of these is member variables.
 

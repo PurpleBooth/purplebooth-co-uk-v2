@@ -5,7 +5,7 @@ title = "14 Yes/No Questions to measure your team"
 categories = ["The Joel Test", "Management"]
 +++
 
-Someone reminded me recently of [The Joel Test](http://www.joelonsoftware.com/articles/fog0000000043.html), which is 12 yes or no questions to rate a software development team's ability to perform.
+Someone reminded me recently of [The Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/), which is 12 yes or no questions to rate a software development team's ability to perform.
 
 They're looking a little tired and old now, I thought I'd attempt an update, so here's 14 yes or no questions to testing how well your team is able to perform.
 

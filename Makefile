@@ -13,8 +13,10 @@ else
 endif
 
 autoformat:
-	prettier --write content/**/*.md  
+	textlint --fix content/**/*.md
+	prettier --write content/**/*.md
 
 lint:
 	 proselint content/*/**.md
 	 prettier content/**/*.md
+	 textlint content/**/*.md

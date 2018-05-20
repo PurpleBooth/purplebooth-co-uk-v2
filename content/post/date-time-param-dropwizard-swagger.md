@@ -5,7 +5,7 @@ description = "Example of how to make DateTimeParam not show up as unknown in sw
 title = "Correct parameter type for DateTimeParam in Dropwizard when using Swagger"
 +++
 
-If you're using the [Swagger](https://github.com/federecio/dropwizard-swagger) bundle for [Dropwizard](http://www.dropwizard.io/) and also a [DateTimeParam](https://github.com/dropwizard/dropwizard/blob/master/dropwizard-jersey/src/main/java/io/dropwizard/jersey/params/DateTimeParam.java) you may have noticed that Swagger puts _unknown_ for this parameter in the _swagger.json_, when it should be a _date-time_. Here's how to resolve that.
+If you're using the [Swagger](https://github.com/federecio/dropwizard-swagger) bundle for [Dropwizard](https://www.dropwizard.io/) and also a [DateTimeParam](https://github.com/dropwizard/dropwizard/blob/master/dropwizard-jersey/src/main/java/io/dropwizard/jersey/params/DateTimeParam.java) you may have noticed that Swagger puts _unknown_ for this parameter in the _swagger.json_, when it should be a _date-time_. Here's how to resolve that.
 
 We get _unknown_ because Swagger doesn't know how to represent a _DateTimeParam_ in it's output. We can tell Swagger how to interpret this class using a _ModelConverter_. _ModelConverters_ give swagger knowledge of how it should output classes, and allow us some degree of customization of swaggers output.
 

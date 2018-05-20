@@ -5,7 +5,7 @@ description = "A design pattern to manage docker using Ansible and SystemD"
 title = "Managing Docker"
 +++
 
-Today I'm going to talk to you about a pattern for managing _[Docker](https://www.docker.com/)_ with _[Ansible](http://www.ansible.com/)_ and _[SystemD](https://wiki.freedesktop.org/www/Software/systemd/)_.
+Today I'm going to talk to you about a pattern for managing _[Docker](https://www.docker.com/)_ with _[Ansible](https://www.ansible.com/)_ and _[SystemD](https://wiki.freedesktop.org/www/Software/systemd/)_.
 
 If you're not aware, Docker is a system for running _Linux Containers_. It's becoming increasingly popular, and is often touted as a good choice as a deployment tool. But what exactly is a _[Linux Container](https://en.wikipedia.org/wiki/LXC)_?
 
@@ -34,13 +34,13 @@ docker run --name mysql -e MYSQL_ROOT_PASSWORD=A-Password mysql
 
 You can create your own containers too, using a process I won't talk about now, but it can be done from within another container, which, for example, could be running your CI server.
 
-You'll notice that in this example I'm passing "-e" and then a parameter to the container when I run it, which sets an environment variable within the container. With _Linux Containers_ we pass around parameters by setting environment variables. This is just one of a suite of 12 good practices for developing with containers, that you can read more about on [The Twelve-Factor App](http://12factor.net/).
+You'll notice that in this example I'm passing "-e" and then a parameter to the container when I run it, which sets an environment variable within the container. With _Linux Containers_ we pass around parameters by setting environment variables. This is just one of a suite of 12 good practices for developing with containers, that you can read more about on [The Twelve-Factor App](https://12factor.net/).
 
 This does leave us with a question though. How do we manage configuring and running these containers within our system. How do we ensure we can roll out a new version, and that the containers will be run on system startup? How to we manage provisioning within the system.
 
 I've created a demonstration of how you might achieve this.
 
-The first problem, of how to we ensure that applications are running I've solved using SystemD. SystemD is the modern replacement for Init scripts, and allows you to [define a hierarchal "unit" file](https://coreos.com/docs/launching-containers/launching/getting-started-with-systemd/) that determines what pre-existing services a service needs to run, and how to run the service itself in a simple text file. Here's an example below for our MySQL container.
+The first problem, of how to we ensure that applications are running I've solved using SystemD. SystemD is the modern replacement for Init scripts, and allows you to [define a hierarchal "unit" file](https://coreos.com/os/docs/latest/getting-started-with-systemd.html) that determines what pre-existing services a service needs to run, and how to run the service itself in a simple text file. Here's an example below for our MySQL container.
 
 <pre class="code">
 <code class="ini">

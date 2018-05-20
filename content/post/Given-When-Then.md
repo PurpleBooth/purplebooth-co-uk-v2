@@ -20,7 +20,7 @@ Lets start from the beginning though, what is BDD? BDD is Behavior Driven Develo
 
 BDD means you develop your system by defining a behavior you want it to have in a feature file. You then write code until that test passes. Then you stop coding or write another test.
 
-This is similar to [TDD](http://en.wikipedia.org/wiki/Test-driven_development), in that you write tests, then write code. But with one key difference: BDD makes it clear what you're supposed to be testing: Behavior.
+This is similar to [TDD](https://en.wikipedia.org/wiki/Test-driven_development), in that you write tests, then write code. But with one key difference: BDD makes it clear what you're supposed to be testing: Behavior.
 
 Testing Behavior means that you test the apparent actions of the system from a users perspective. For a website you're testing that a user can log in, can look at a product, can search, and so on. You don't test implementation details such as what a value in a database is, or if a method was called.
 
@@ -64,7 +64,7 @@ Most behavioral testing frameworks have standardized around the [Gherkin](https:
 
 Each of these scenarios has multiple lines with a starting keyword, of Given, When and Then. Each of these lines triggers a bit of code to be executed. We call the code that is executed the step definition.
 
-This is an [example from the Behat manual](http://docs.behat.org/en/latest/guides/1.gherkin.html):
+This is an [example from the Behat manual](http://docs.behat.org/en/v2.5/guides/1.gherkin.html):
 
 <pre class="code">
 <code class="gherkin">
@@ -230,7 +230,7 @@ Lets talk about step definitions. Step definitions are controllers for your step
 
 There are a few ways to achieve this though. Firstly you're an Object Oriented programmer: Use objects and apply the [SOLID]({{< ref "post/0004-s-is-for-single-responsibility-principle.md" >}}) principles to your step definitions.
 
-Take for example this [Behat](http://behat.org/) step definition.
+Take for example this [Behat](http://behat.org/en/v2.5/) step definition.
 
 <pre class="code">
 <code class="php">
@@ -300,9 +300,9 @@ public function publishBook($title)
 </code>
 </pre>
 
-Secondly take advantage of [transformers](http://docs.behat.org/en/latest/guides/2.definitions.html#step-argument-transformations) so your steps don't contain lots of repeated code to transform a table or string into the applicable object. This can remove a lot of repeated code.
+Secondly take advantage of [transformers](http://docs.behat.org/en/v2.5/guides/2.definitions.html#step-argument-transformations) so your steps don't contain lots of repeated code to transform a table or string into the applicable object. This can remove a lot of repeated code.
 
-Transformations are [available in Cucumber too](https://cukes.info/step-definitions#string_transformations).
+Transformations are [available in Cucumber too](https://docs.cucumber.io/cucumber/cucumber-expressions/#custom-parameter-types).
 
 <pre class="code">
 <code class="php">
@@ -352,7 +352,7 @@ public function publishBook(ComparisonBook $book)
 </code>
 </pre>
 
-Finally use the [page object](http://martinfowler.com/bliki/PageObject.html) design pattern. The page object design pattern gives you an object that represents a single page in your system with methods on to make assertions or perform actions with. This means that you can reduce and centralize low level code that does things like parse web pages, or make API requests.
+Finally use the [page object](https://martinfowler.com/bliki/PageObject.html) design pattern. The page object design pattern gives you an object that represents a single page in your system with methods on to make assertions or perform actions with. This means that you can reduce and centralize low level code that does things like parse web pages, or make API requests.
 
 Typically the object has all the actions that are available from that page, and offers ways to access the data in the page. When you access another page from that page, the method you call will return a new page object, with the actions on for that new page.
 
@@ -394,7 +394,7 @@ Here's a run down of those tips:
 * Textual descriptions can be clearer than tables
 * Use [SOLID]({{< ref "post/0004-s-is-for-single-responsibility-principle.md" >}}) in your step definitions
 * Keep your step definitions to a minimum number of lines
-* Use [data transformations](http://docs.behat.org/en/latest/guides/2.definitions.html#step-argument-transformations) (or in [cucumber](https://cukes.info/step-definitions#string_transformations))
-* Use the [page object pattern](http://martinfowler.com/bliki/PageObject.html)
+* Use [data transformations](http://docs.behat.org/en/v2.5/guides/2.definitions.html#step-argument-transformations) (or in [cucumber](https://docs.cucumber.io/cucumber/cucumber-expressions/#custom-parameter-types))
+* Use the [page object pattern](https://martinfowler.com/bliki/PageObject.html)
 
 Maintaining a full suite of tests doesn't have to be a chore so long as you follow those simple steps. You'll soon find that your test suite become much more of an asset.

@@ -148,8 +148,8 @@ This could have serious problems in a situation when we want to force a fallback
 
 What's worse, when we make a change to the _JsonWriter_, we're also making a change to our MongoDBWriter. With this non-clear dependency it's highly likely we will impact the _MongoDBWriter_ with any change, as these classes, despite describing different behaviours, are now tightly coupled.
 
-The tricky part of this rule is that it seems to be [DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself)ing up our code. We want to be able to share logic between our classes. However it's important to remember that OOP is really about modeling behaviours. A _MongoDBWriter_ is not a special kind of _JsonWriter_, so we shouldn't tell other components within the system that it is.
+The tricky part of this rule is that it seems to be [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)ing up our code. We want to be able to share logic between our classes. However it's important to remember that OOP is really about modeling behaviours. A _MongoDBWriter_ is not a special kind of _JsonWriter_, so we shouldn't tell other components within the system that it is.
 
 So how do I DRY up my code then? Take advantage of composition. Composition is where you move shared logic to a new class, and then set that class via a constructor or setter as a member variable in your existing class. Only if you know all classes of that type need the logic, should you use inheritance to prevent code duplication.
 
-LSP is one of the simpler rules of SOLID, however it's one of the most effective at preventing bugs. Next up in the tour of SOLID is [I the "Interface segregation principle"](/post/I-is-for-Interface-Segregation-principle).
+LSP is one of the simpler rules of SOLID, however it's one of the most effective at preventing bugs. Next up in the tour of SOLID is [I the "Interface segregation principle"]({{< relref "I-is-for-Interface-Segregation-principle.md" >}}).

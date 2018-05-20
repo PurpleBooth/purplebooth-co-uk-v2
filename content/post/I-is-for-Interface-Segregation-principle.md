@@ -22,7 +22,7 @@ The Interface Segregation Principle is the idea that "Many client specific inter
 
 So for each of your services, you should provide an interface for each of its clients. What I mean by service is a class or set of classes that provide a grouped suite of behaviors to the rest of the system, for example, imagine a service that is the shopping basket for your Plushie store. What I mean by client is a class that depends on this service to achieve a certain goal, which may be providing reporting information on this weeks purchases to decide which soft toys to get in stock next week, or it may be allowing someone to add items to their basket.
 
-{{< figure src="/post/I-is-for-Interface-Segregation-principle/teddies.jpg" title="Plushie store" attr="Photo by Edward Terry" attrlink="https://flic.kr/p/nw5b84" >}}
+{{< figure src="/post/I-is-for-Interface-Segregation-principle/teddies.jpg" title="Plushie store" attr="Photo by Edward Terry" attrlink="https://www.flickr.com/photos/zachoneniner/14123801505/" >}}
 
 Take for example the following purchasing system, and it's two clients that are dependent on the concrete class.
 
@@ -361,4 +361,4 @@ So how do we deal with the problem of third party interfaces changing, meaning w
 
 A simple idea. Frequently misunderstood. However, with a little insight it can lower the coupling between your services and classes that depend on them, allowing you to quickly make radical changes to how your services are implemented, in a way that has limited impact on classes that have dependencies on them. This means simpler and faster refactoring, and there's nothing I love more than a refactoring session that is done in half an hour rather than half a day.
 
-The next item in our tour of SOLID is the [Dependency Inversion Principle](/post/D-is-for-Dependency-Inversion-Principle).
+The next item in our tour of SOLID is the [Dependency Inversion Principle]({{< relref "D-is-for-Dependency-Inversion-Principle.md" >}}).
