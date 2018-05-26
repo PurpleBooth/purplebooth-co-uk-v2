@@ -22,10 +22,10 @@ paginate = 10
 [params]
     logo = "Purple Booth Logo-01-min.png"
     logo_small = "Purple Booth Logo Colored-1-notext-min.png"
-    Description = "I write code. I am quite tall and have curly hair."
+    Description = "Articles about software development by Billie Thompson"
     #GoogleAnalytics = "UA-32113064-1"
     # Used when a given page doesn't set its own.
-    defaultDescription = "I write code. I am quite tall and have curly hair."
+    defaultDescription = "Article about software development by Billie Thompson"
     defaultKeywords = "Coding,Billie Thompson,blog"
 
     # Changes sidebar background and link/accent colours.
