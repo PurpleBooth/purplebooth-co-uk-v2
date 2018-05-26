@@ -11,7 +11,7 @@ menu  = "main"
 
 I'm a software developer working at [Armakuni](http://armakuni.com/).
 
-I write code, am in interested in Agile, Lean, DevOps and Infrastructure. I am also quite tall, and have curly hair.
+I write code, am interested in Agile, Lean, DevOps and Infrastructure. I am also quite tall, and have curly hair.
 
 # Contact
 
