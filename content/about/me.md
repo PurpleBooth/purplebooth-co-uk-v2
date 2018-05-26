@@ -1,66 +1,19 @@
 +++
 date = "2015-02-22T13:01:30Z"
 draft = false
-title = "Our Services"
+title = "About Me"
 menu  = "main"
 +++
 
-# Services We Provide
-
-## Training
-
-Want to bring your team up to speed on the latest software development techniques? We can run intensive training
-courses bringing your developers up to speed on a number of problems. Bringing you the skills you need to
-solve your customers problems.
-
-Some examples of the training we can provide:
-
-* How to take PHP applications to the next level
-* Implementing Microservice Architectures
-* Testing Applications & Microservices with BDD
-
-We love to hear about the challenges you're facing, and what areas we can help you develop.
-
-<a href="{{< relref "#contact-us" >}}" class="button">Contact Us</a>
-
-## Consultancy
-
-Need advice navigating a bit of decision making? We can help guide you through those tricky decisions that your company
-needs to make. Be them small things like which framework should we use for our next project, to large like how can we
-transition to a immutable architecture.
-
-Some examples of areas we can help you in:
-
-* Moving to cross functional teams
-* Improving the quality of your software
-* Allowing your teams to continually master the technologies they use.
-
-And many more things besides
-
-<a href="{{< relref "#contact-us" >}}" class="button">Contact Us</a>
-
-## Software Development
-
-Need some quality software delivered fast? We can do bespoke software development.
-
-We specialise in:
-
-* Microservices
-* PHP, Java, or NodeJS
-* Developing search services
-
-<a href="{{< relref "#contact-us" >}}" class="button">Contact Us</a>
-
-# Who are we?
+# About Me
 
 {{< figure src="/me_5_30.jpg" title="Billie Thompson" >}}
 
-Billie Thompson is a software developer. She's been running Purple Booth Ltd since 2012 but has been working in software
-development for over six years. During that time she has got to play with lots of cool technology, everything from
-RabbitMQ, to NodeJS, to Puppet and beyond (as well as the usual suspects of Zend, Zend 2 and Symfony2). However
-primarily she's a PHP developer.
+I'm a software developer working at [Armakuni](http://armakuni.com/).
 
-# Contact Us
+I write code, am in interested in Agile, Lean, DevOps and Infrastructure. I am also quite tall, and have curly hair.
+
+# Contact
 
 * [**<i class="fa fa-phone-square"> </i>** +44 7813 452516](tel:+447813452516)
 * [**<i class="fa fa-twitter-square"> </i>** @PurpleBooth](https://twitter.com/purplebooth)
@@ -71,4 +24,4 @@ primarily she's a PHP developer.
 
 # PGP
 
-* [**<i class="fa fa-key"></i>** D5D5 0C93 78BF CAB0](https://keybase.io/billie)
+* [**<i class="fa fa-key"></i>** 1AE6 1571 6381 6A8F](https://keybase.io/billie)
