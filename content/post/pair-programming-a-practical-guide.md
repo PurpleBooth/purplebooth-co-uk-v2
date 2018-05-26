@@ -23,7 +23,7 @@ These roles are not fixed forever, and change depending on the dynamics of a pai
 
 ## What's my role?
 
-### High/Skill Low Skill
+### High Skill/Low Skill
 
 When you're in a pair with one high skill person and one low skill person I recommend
 
