@@ -9,7 +9,7 @@ deploy: ## Build, push and deploy project
 ifeq (, $(shell helm list --all | grep "purplebooth-co-uk" ))
 	helm install --name=lovely-ant ./helm -f secrets/helm-secrets.yml
 else
-	helm upgrade lovely-ant ./helm -f secrets/helm-secrets.yml
+	helm upgrade lovely-ant ./helm --recreate-pods -f secrets/helm-secrets.yml
 endif
 
 autoformat:
