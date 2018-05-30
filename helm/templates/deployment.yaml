@@ -26,8 +26,8 @@ spec:
               topologyKey: kubernetes.io/hostname
       containers:
       - name: "{{ .Chart.Name }}"
-        image: "{{ .Values.image.nginx.repository }}:{{ .Values.image.nginx.tag }}"
-        imagePullPolicy: "{{ .Values.image.nginx.pullPolicy }}"
+        image: "{{ .Values.image }}"
+        imagePullPolicy: "{{ .Values.imagePullPolicy }}"
         livenessProbe:
           httpGet:
             path: /
@@ -42,8 +42,8 @@ spec:
         resources:
 {{ toYaml .Values.resources.nginx | indent 12 }}
       - name: "{{ .Chart.Name }}-newrelic"
-        image: "{{ .Values.image.newRelic.repository }}:{{ .Values.image.newRelic.tag }}"
-        imagePullPolicy: "{{ .Values.image.newRelic.pullPolicy }}"
+        image: "{{ .Values.newRelicImage.repository }}:{{ .Values.newRelicImage.tag }}"
+        imagePullPolicy: "{{ .Values.newRelicImagePullPolicy }}"
         env:
           - name: NEW_RELIC_APP_NAME
             value: "{{ .Values.newRelic.appName }}"
