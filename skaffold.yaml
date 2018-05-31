@@ -11,6 +11,7 @@ deploy:
     - name: lovely-ant
       chartPath: helm
       namespace: default
+      valuesFilePath: secrets/helm-secrets.yml
       values:
         image: gcr.io/purplebooth-gke/github-purplebooth-purplebooth-co-uk-v2
 profiles:
