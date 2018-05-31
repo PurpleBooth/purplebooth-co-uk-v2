@@ -7,9 +7,7 @@ replicaCount:
   max: 10
   targetCPUUtilizationPercentage: 50
 
-image:
-  repository: gcr.io/purplebooth-gke/github-purplebooth-purplebooth-co-uk-v2
-  tag: latest
+image: gcr.io/purplebooth-gke/github-purplebooth-purplebooth-co-uk-v2:latest
 
 imagePullPolicy: Always
 
