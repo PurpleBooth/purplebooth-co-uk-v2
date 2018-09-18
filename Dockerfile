@@ -15,11 +15,12 @@ COPY . /data
 ARG hugobaseurl="https://purplebooth.co.uk"
 RUN echo /tmp/hugo --baseUrl=$hugobaseurl
 RUN /tmp/hugo --baseUrl=$hugobaseurl
-RUN touch /empty
+RUN mkdir -p /var/log/nginx
+RUN touch /var/log/nginx/error.log
 
 FROM nginx:alpine
 
-COPY --from=0 /empty /var/log/nginx/error.log
+COPY --from=0 /var/log/nginx /var/log/nginx
 COPY default.conf /etc/nginx/conf.d/default.conf
 COPY --from=0 /data/public /usr/share/nginx/html
 CMD ["nginx", "-p", "/tmp", "-g", "daemon off;"]
