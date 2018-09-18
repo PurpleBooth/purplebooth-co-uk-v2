@@ -15,9 +15,11 @@ COPY . /data
 ARG hugobaseurl="https://purplebooth.co.uk"
 RUN echo /tmp/hugo --baseUrl=$hugobaseurl
 RUN /tmp/hugo --baseUrl=$hugobaseurl
+RUN touch /empty
 
 FROM nginx:alpine
 
+COPY --from=0 /empty /var/log/nginx/error.log
 COPY default.conf /etc/nginx/conf.d/default.conf
 COPY --from=0 /data/public /usr/share/nginx/html
 EXPOSE 8080
