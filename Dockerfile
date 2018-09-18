@@ -15,13 +15,11 @@ COPY . /data
 ARG hugobaseurl="https://purplebooth.co.uk"
 RUN echo /tmp/hugo --baseUrl=$hugobaseurl
 RUN /tmp/hugo --baseUrl=$hugobaseurl
-RUN mkdir -p /var/log/nginx
-RUN touch /var/log/nginx/error.log
 
 FROM nginx:alpine
 
-COPY --from=0 /var/log/nginx /var/log/nginx
-COPY default.conf /etc/nginx/conf.d/default.conf
+ENV PORT=8080
+COPY default.conf.template /etc/nginx/conf.d/default.conf.template
 COPY --from=0 /data/public /usr/share/nginx/html
-CMD ["nginx", "-p", "/tmp", "-g", "daemon off;"]
+CMD ["sh", "-c", "mkdir -p /var/log/nginx && envsubst '$PORT' < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"]
 EXPOSE 8080
