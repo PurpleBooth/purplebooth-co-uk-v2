@@ -6,4 +6,4 @@ services:
       args:
         - hugobaseurl=http://localhost:8888
     ports:
-     - "8888:80"
+     - "8888:8080"
