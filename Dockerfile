@@ -22,4 +22,5 @@ FROM nginx:alpine
 COPY --from=0 /empty /var/log/nginx/error.log
 COPY default.conf /etc/nginx/conf.d/default.conf
 COPY --from=0 /data/public /usr/share/nginx/html
+CMD ["nginx", "-p", "/tmp", "-g", "daemon off;"]
 EXPOSE 8080
