@@ -1,0 +1,52 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: purplebooth-co-uk-v2
+spec:
+  gateways:
+  - knative-shared-gateway.knative-serving.svc.cluster.local
+  hosts:
+  - purplebooth.co.uk
+  - www.purplebooth.co.uk
+  http:
+  - match:
+    - authority:
+        exact: purplebooth.co.uk
+    - authority:
+        exact: www.purplebooth.co.uk
+    rewrite:
+      authority: purplebooth-co-uk-v2.default.svc.cluster.local
+    route:
+      - destination:
+          host: knative-ingressgateway.istio-system.svc.cluster.local
+        weight: 100
+---
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+  name: purplebooth-co-uk-v2
+spec:
+  runLatest:
+    configuration:
+      build:
+        serviceAccountName: build-bot
+        source:
+          git:
+            url: https://github.com/PurpleBooth/purplebooth-co-uk-v2.git
+            revision: master
+        template:
+          name: kaniko
+          arguments:
+          - name: IMAGE
+            value: &image eu.gcr.io/knative-f3b2d46c/purplebooth-co-uk-v2:latest
+      revisionTemplate:
+        spec:
+          container:
+            image: *image
+            imagePullPolicy: Always
+            livenessProbe:
+              httpGet:
+                path: /
+            readinessProbe:
+              httpGet:
+                path: /
