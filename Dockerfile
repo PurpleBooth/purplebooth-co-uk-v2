@@ -16,7 +16,7 @@ ARG hugobaseurl="https://purplebooth.co.uk"
 RUN echo /tmp/hugo --baseUrl=$hugobaseurl
 RUN /tmp/hugo --baseUrl=$hugobaseurl
 
-FROM nginx:alpine
+FROM nginx:1.21-alpine
 
 ENV PORT=8080
 COPY default.conf.template /etc/nginx/conf.d/default.conf.template
