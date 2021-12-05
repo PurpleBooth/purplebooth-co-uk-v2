@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 <div class="content container">
   <div class="posts">
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "post") }}
     {{ range $paginator.Pages }}
     <div class="post">
       <h1 class="post-title">
@@ -11,7 +11,7 @@
       {{ if isset .Params "categories" }}
       <br/>
       {{ $BaseURL := .Site.BaseURL }}
-      {{ range .Params.categories }}<a class="label" href="{{ $BaseURL }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
+      {{ range .Params.categories }}<a   class="label" href="{{ $BaseURL }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
       {{ end }}</span>
       <p>{{ if .Description }} {{ .Description }} {{ else }} {{ .Summary }} {{ end }}</p>
 
