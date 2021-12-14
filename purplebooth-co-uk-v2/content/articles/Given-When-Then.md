@@ -2,7 +2,6 @@
 date: "2015-03-18T15:30:54Z"
 title: "Given When Then"
 categories: ["BDD", "Cucumber", "Behat", "Testing"]
-description: "How to write good behavioral tests You’re being given a tour of a code base. You get to the end and you ask if the code has any tests, and your friend proudly says “Oh yes, we have lots of tests” and opens a folder filled with feature files. “Brilliant”, you say smiling, but your heart begins to sink when you look at the contents of the files. There are no Givens. "
 ---
 
 ## How to write good behavioral tests

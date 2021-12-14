@@ -1,5 +1,6 @@
 import { formatISO, parseISO } from "date-fns";
 import { GrayMatterFile } from "gray-matter";
+import removeMarkdown from "markdown-to-text";
 
 const averageWpm = 255;
 
@@ -46,11 +47,14 @@ export default class Meta {
     const wordCount = grayMatterFile.content.trim().split(/\s+/).length;
     const readingTime = Math.ceil(wordCount / averageWpm);
 
+    const split = grayMatterFile.content.split("\n\n").filter(item => item.trim() != "");
+    const summary:string = removeMarkdown(split[0] || "");
+
     return new Meta(
       grayMatterFile.data.title,
       grayMatterFile.data.categories || [],
       readingTime,
-      grayMatterFile.data.description,
+      grayMatterFile.data.description || summary,
       grayMatterFile.data.date ? parseISO(grayMatterFile.data.date) : undefined
     );
   }
