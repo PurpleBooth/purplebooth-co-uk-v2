@@ -1,9 +1,9 @@
 import Article from "../models/Article";
-import Meta from "../models/Meta";
+import Meta  from "../models/Meta";
 import { promises as fsPromises } from "fs";
 import path from "path";
 
-import matter from "gray-matter";
+import matter, { GrayMatterFile } from "gray-matter";
 
 export default class ArticlesService {
   async find(): Promise<Article[]> {
@@ -19,9 +19,9 @@ export default class ArticlesService {
       }
 
       const rawContents = await fsPromises.readFile(fullArticlePath);
-      const { content, data } = matter(rawContents);
+      const grayMatterFile: GrayMatterFile<Buffer> = matter(rawContents);
 
-      articles.push(new Article(Meta.fromMarkdown(data, content), content));
+      articles.push(new Article(Meta.fromGrayMatterFile(grayMatterFile), grayMatterFile.content));
     }
 
     articles.sort(

@@ -1,4 +1,5 @@
 import { formatISO, parseISO } from "date-fns";
+import { GrayMatterFile } from "gray-matter";
 
 const averageWpm = 255;
 
@@ -7,13 +8,6 @@ export interface MetaJSON {
   categories: string[];
   readLengthMin: number;
   date: string | null;
-  description: string;
-}
-
-interface MarkdownMatter {
-  title: string;
-  categories: string[];
-  date?: string;
   description: string;
 }
 
@@ -48,16 +42,16 @@ export default class Meta {
     };
   }
 
-  static fromMarkdown(data: MarkdownMatter, content: string) {
-    const wordCount = content.trim().split(/\s+/).length;
+  static fromGrayMatterFile(grayMatterFile: GrayMatterFile<Buffer>) {
+    const wordCount = grayMatterFile.content.trim().split(/\s+/).length;
     const readingTime = Math.ceil(wordCount / averageWpm);
 
     return new Meta(
-      data.title,
-      data.categories || [],
+      grayMatterFile.data.title,
+      grayMatterFile.data.categories || [],
       readingTime,
-      data.description,
-      data.date ? parseISO(data.date) : undefined
+      grayMatterFile.data.description,
+      grayMatterFile.data.date ? parseISO(grayMatterFile.data.date) : undefined
     );
   }
 }
