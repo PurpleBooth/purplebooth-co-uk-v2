@@ -14,18 +14,23 @@ const License: NextPage = () => {
           name="description"
           content="Article about software development by Billie Thompson"
         />
-        <link rel="shortcut icon" href="/favicon.ico"/>
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
 
-      <Nav/>
+      <Nav />
 
       <main className={"m-8 prose"}>
         <h1 id="about-me">About Me</h1>
         <figure>
-          <Image width="461px" height="614px" src="/me_5_30.jpg"/>
-          <figcaption>
-            Billie Thompson
-          </figcaption>
+          <Image
+            width="461px"
+            height="614px"
+            alt={
+              "A somewhat tall girl with a black t-shirt on with long curly red-brown hair"
+            }
+            src="/me_5_30.jpg"
+          />
+          <figcaption>Billie Thompson</figcaption>
         </figure>
         <p>
           I’m a software developer working at{" "}
@@ -38,68 +43,79 @@ const License: NextPage = () => {
         <h2 id="contact">Contact</h2>
         <ul className={"fa-ul"}>
           <li className={"flex items-center"}>
-            <Link href="tel:+447813452516">
-              <>
+            <Link href="tel:+447813452516" passHref>
+              <a>
                 <FontAwesomeIcon
                   title={"Mobile"}
                   icon={["fas", "phone"]}
                   listItem
                   alignmentBaseline={"auto"}
-                /> +44 7813 452516
-              </>
+                />{" "}
+                +44 7813 452516
+              </a>
             </Link>
           </li>
           <li className={"flex items-center"}>
-            <Link href="https://twitter.com/purplebooth"><>
-              <FontAwesomeIcon
-                title={"Twitter"}
-                icon={["fab", "twitter"]}
-                listItem
-              /> @PurpleBooth
-            </>
+            <Link passHref href="https://twitter.com/purplebooth">
+              <a>
+                <FontAwesomeIcon
+                  title={"Twitter"}
+                  icon={["fab", "twitter"]}
+                  listItem
+                />{" "}
+                @PurpleBooth
+              </a>
             </Link>
           </li>
           <li className={"flex items-center"}>
-            <Link href="https://uk.linkedin.com/in/purplebooth"><>
-              <FontAwesomeIcon
-                title={"linkedIn"}
-                icon={["fab", "linkedin"]}
-                listItem
-              /> purplebooth
-            </>
+            <Link passHref href="https://uk.linkedin.com/in/purplebooth">
+              <a>
+                <FontAwesomeIcon
+                  title={"linkedIn"}
+                  icon={["fab", "linkedin"]}
+                  listItem
+                />{" "}
+                purplebooth
+              </a>
             </Link>
           </li>
           <li className={"flex items-center"}>
-            <Link href="https://github.com/purplebooth"><>
-              <FontAwesomeIcon
-                title={"GitHub"}
-                icon={["fab", "github"]}
-                listItem
-              /> purplebooth
-            </>
+            <Link passHref href="https://github.com/purplebooth">
+              <a>
+                <FontAwesomeIcon
+                  title={"GitHub"}
+                  icon={["fab", "github"]}
+                  listItem
+                />{" "}
+                purplebooth
+              </a>
             </Link>
           </li>
           <li className={"flex items-center"}>
             <Link href={"mailto:contactus@purplebooth.co.uk"}>
-              <>
+              <a>
                 <FontAwesomeIcon
                   title={"Email Address"}
                   icon={["fas", "at"]}
                   listItem
-                /> contactus@purplebooth.co.uk
-              </>
-            </Link></li>
+                />{" "}
+                contactus@purplebooth.co.uk
+              </a>
+            </Link>
+          </li>
         </ul>
         <h3 id="pgp">PGP</h3>
         <ul className={"fa-ul"}>
           <li className={"flex items-center"}>
-            <Link href="https://keybase.io/billie"><>
-              <FontAwesomeIcon
-                title={"PGP Key"}
-                icon={["fas", "key"]}
-                listItem
-              /> 1AE6 1571 6381 6A8F
-            </>
+            <Link href="https://keybase.io/billie">
+              <a>
+                <FontAwesomeIcon
+                  title={"PGP Key"}
+                  icon={["fas", "key"]}
+                  listItem
+                />{" "}
+                1AE6 1571 6381 6A8F
+              </a>
             </Link>
           </li>
         </ul>

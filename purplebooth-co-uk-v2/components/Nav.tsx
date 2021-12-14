@@ -14,8 +14,14 @@ const Nav: FunctionComponent = () => (
     <div className={"relative"}>
       <div className={"w-80 fixed bottom-8"}>
         <h1 className={"cursor-pointer"}>
-          <Link href={"/"}>
-            <Image layout={"responsive"} src={logo} alt={"Purple Booth Ltd."}/>
+          <Link passHref href={"/"}>
+            <a>
+              <Image
+                layout={"responsive"}
+                src={logo}
+                alt={"Purple Booth Ltd."}
+              />
+            </a>
           </Link>
         </h1>
         <h2 className={"text-slate-600 text-2xl ml-4 mt-8"}>
@@ -23,65 +29,81 @@ const Nav: FunctionComponent = () => (
         </h2>
         <ul className={" ml-16 flex flex-col mt-8"}>
           <li>
-            <Link href={"/"}>
-          <span className={"cursor-pointer"}>
-            <span className={"text-slate-800"}><FontAwesomeIcon icon={["fas", "square"]}/></span>
-            &nbsp;Home
-          </span>
+            <Link passHref href={"/"}>
+              <a>
+                <span className={"cursor-pointer"}>
+                  <span className={"text-slate-800"}>
+                    <FontAwesomeIcon icon={["fas", "square"]} />
+                  </span>
+                  &nbsp;Home
+                </span>
+              </a>
             </Link>
           </li>
           <li>
-            <Link href={"/about/me"}>
-          <span className={"cursor-pointer"}>
-            <span className={"text-slate-800"}><FontAwesomeIcon icon={["fas", "square"]}/></span>
-            &nbsp;About&nbsp;Me
-          </span>
+            <Link passHref href={"/about/me"}>
+              <a>
+                <span className={"cursor-pointer"}>
+                  <span className={"text-slate-800"}>
+                    <FontAwesomeIcon icon={["fas", "square"]} />
+                  </span>
+                  &nbsp;About&nbsp;Me
+                </span>
+              </a>
             </Link>
           </li>
         </ul>
         <ul className={"flex flex-row gap-4 justify-center mt-8"}>
           <li>
-            <Link href={"https://github.com/PurpleBooth"}>
-          <span className={"cursor-pointer text-slate-800"}>
-            <FontAwesomeIcon
-              size={"3x"}
-              title={"GitHub"}
-              icon={["fab", "github-square"]}
-            />
-          </span>
+            <Link passHref href={"https://github.com/PurpleBooth"}>
+              <a>
+                <span className={"cursor-pointer text-slate-800"}>
+                  <FontAwesomeIcon
+                    size={"3x"}
+                    title={"GitHub"}
+                    icon={["fab", "github-square"]}
+                  />
+                </span>
+              </a>
             </Link>
           </li>
           <li>
-            <Link href={"https://www.linkedin.com/in/purplebooth/"}>
-          <span className={"cursor-pointer text-slate-800"}>
-            <FontAwesomeIcon
-              size={"3x"}
-              title={"LinkedIn"}
-              icon={["fab", "linkedin"]}
-            />
-          </span>
+            <Link passHref href={"https://www.linkedin.com/in/purplebooth/"}>
+              <a>
+                <span className={"cursor-pointer text-slate-800"}>
+                  <FontAwesomeIcon
+                    size={"3x"}
+                    title={"LinkedIn"}
+                    icon={["fab", "linkedin"]}
+                  />
+                </span>
+              </a>
             </Link>
           </li>
           <li>
-            <Link href={"https://twitter.com/PurpleBooth"}>
-          <span className={"cursor-pointer text-slate-800"}>
-            <FontAwesomeIcon
-              size={"3x"}
-              title={"Twitter"}
-              icon={["fab", "twitter-square"]}
-            />
-          </span>
+            <Link passHref href={"https://twitter.com/PurpleBooth"}>
+              <a>
+                <span className={"cursor-pointer text-slate-800"}>
+                  <FontAwesomeIcon
+                    size={"3x"}
+                    title={"Twitter"}
+                    icon={["fab", "twitter-square"]}
+                  />
+                </span>
+              </a>
             </Link>
           </li>
         </ul>
         <footer className={"text-slate-600 text-center mt-8"}>
-          <Link href={"/license"}>
-        <span className={"cursor-pointer"}>
-          Copyright ©{" "}
-          {intlFormat(Date.now(), {
-            year: "numeric",
-          })}
-        </span>
+          <Link passHref href={"/license"}>
+            <a>
+              <span className={"cursor-pointer"}>
+                Copyright ©{" "}
+                {intlFormat(Date.now(), {
+                  year: "numeric",
+                })}
+              </span>
+            </a>
           </Link>
         </footer>
       </div>

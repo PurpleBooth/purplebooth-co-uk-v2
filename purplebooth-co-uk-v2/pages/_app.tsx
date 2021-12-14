@@ -17,9 +17,9 @@ config.autoAddCss = false;
 
 library.add(fab, fas, far);
 
-const ResponsiveImage: FunctionComponent<ImageProps> = (props) => (
-  <Image {...props} />
-);
+const ResponsiveImage: FunctionComponent<ImageProps> = (
+  props // eslint-disable-next-line jsx-a11y/alt-text
+) => <Image {...props} />;
 
 const Heading1: FunctionComponent<PropsWithChildren<{}>> = ({
   children,

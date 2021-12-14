@@ -7,9 +7,9 @@ module.exports = {
     extend: {},
 
     fontFamily: {
-      'sans': ["IBM Plex Sans", 'ui-sans-serif', 'system-ui'],
-      'serif': ["Space Grotesk", 'ui-serif', 'Georgia'],
-      'mono': ["Iosevka", 'ui-monospace', 'SFMono-Regular'],
+      sans: ["IBM Plex Sans", "ui-sans-serif", "system-ui"],
+      serif: ["Space Grotesk", "ui-serif", "Georgia"],
+      mono: ["Iosevka", "ui-monospace", "SFMono-Regular"],
     },
   },
   plugins: [require("@tailwindcss/typography")],
