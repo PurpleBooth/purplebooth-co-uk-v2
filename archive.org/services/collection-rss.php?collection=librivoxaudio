@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <link>https://archive.org/details/librivoxaudio</link>
+    <title>Internet Archive - Collection: librivoxaudio</title>
+    <description>The most recent additions to the Internet Archive collections.  This RSS feed is generated dynamically</description>
+    <webMaster>info@archive.org (Info Box)</webMaster>
+    <pubDate>Mon, 06 Dec 2021 19:06:52 GMT</pubDate>
+    <image>
+      <url>https://archive.org/images/glogo.png</url>
+      <title>Internet Archive - Collection: librivoxaudio</title>
+      <link>https://archive.org/details/librivoxaudio</link>
+    </image>
+    <item>
+      <title>Snowball</title>
+      <media:title>Snowball</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=snowball_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Snowball by Poul William Anderson. Read in English by Phil Chenevert;  Simon's new source of power promised a new era for Mankind. But what happens to world economy when anyone can manufacture it in the kitchen oven?......&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, Item Tile, Metadata, PNG, Spectrogram, VBR MP3&lt;/p&gt;</description>
+      <link>https://archive.org/details/snowball_2112_librivox</link>
+      <guid>https://archive.org/details/snowball_2112_librivox</guid>
+      <pubDate>Mon, 06 Dec 2021 17:42:07 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/snowball_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/snowball_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/snowball_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks</media:keywords>
+    </item>
+    <item>
+      <title>Flowers of the Farm</title>
+      <media:title>Flowers of the Farm</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=flowersofthefarm_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Flowers of the Farm by Arthur Owens Cooke. Read in English by Maida "To-day we are at Willow Farm again, and I want to show you some of the flowers that grow there. I do not mean those which Mrs....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/flowersofthefarm_2112_librivox</link>
+      <guid>https://archive.org/details/flowersofthefarm_2112_librivox</guid>
+      <pubDate>Mon, 06 Dec 2021 01:10:46 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/flowersofthefarm_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/flowersofthefarm_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/flowersofthefarm_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks</media:keywords>
+    </item>
+    <item>
+      <title>Love's Coming-of-Age: A Series of Papers on the Relations of the Sexes</title>
+      <media:title>Love's Coming-of-Age: A Series of Papers on the Relations of the Sexes</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=lovescomingofage_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Love's Coming-of-Age: A Series of Papers on the Relations of the Sexes by Edward Carpenter. Read in English LibriVox Volunteers "The little god of Love is generally represented as a child; and rightly, perhaps, considering the erratic character of his ways among the human race....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, Item Tile, Metadata, PNG, Spectrogram, VBR MP3&lt;/p&gt;</description>
+      <link>https://archive.org/details/lovescomingofage_2112_librivox</link>
+      <guid>https://archive.org/details/lovescomingofage_2112_librivox</guid>
+      <pubDate>Sun, 05 Dec 2021 22:53:10 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/lovescomingofage_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/lovescomingofage_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/lovescomingofage_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, relationships, love, feminism</media:keywords>
+    </item>
+    <item>
+      <title>The Vale to You, To Me the Heights</title>
+      <media:title>The Vale to You, To Me the Heights</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=the_vale_to_you_to_me_the_heights_2112.poem_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox  volunteers bring you 10 recordings of The Vale to You, To Me the Heights by Victor Hugo. This was the Weekly Poetry project for November 28, 2021. Read in English by Bruce Kachuk; ChadH94; Newgatenovelist; fshort; Greg Giordano; yourbookvoice; Larry Wilson; Leo Fialho; Phil Schempf and st....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, Item Tile, Metadata, PNG, Spectrogram, VBR MP3&lt;/p&gt;</description>
+      <link>https://archive.org/details/the_vale_to_you_to_me_the_heights_2112.poem_librivox</link>
+      <guid>https://archive.org/details/the_vale_to_you_to_me_the_heights_2112.poem_librivox</guid>
+      <pubDate>Sun, 05 Dec 2021 20:09:36 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/the_vale_to_you_to_me_the_heights_2112.poem_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/the_vale_to_you_to_me_the_heights_2112.poem_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/the_vale_to_you_to_me_the_heights_2112.poem_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, literature, poetry, nature, philosophy, lion, eagle</media:keywords>
+    </item>
+    <item>
+      <title>The Turquoise Story Book: Stories and Legends of Summer and Nature</title>
+      <media:title>The Turquoise Story Book: Stories and Legends of Summer and Nature</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=turquoise_story_book_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of The Turquoise Story Book: Stories and Legends of Summer and Nature by Ada M. Skinner; Eleanor L. Skinner. Read in English by volunteer readers. A book compiling stories, legends, and poems about summer and nature, piquing reader's interests by appealing to the reader's fancy, q....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, Item Tile, Metadata, PNG, Spectrogram, VBR MP3&lt;/p&gt;</description>
+      <link>https://archive.org/details/turquoise_story_book_2112_librivox</link>
+      <guid>https://archive.org/details/turquoise_story_book_2112_librivox</guid>
+      <pubDate>Sat, 04 Dec 2021 21:36:37 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/turquoise_story_book_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/turquoise_story_book_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/turquoise_story_book_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, nature, Legends, poems, stories, summer</media:keywords>
+    </item>
+    <item>
+      <title>The Guide for the Perplexed, Part One</title>
+      <media:title>The Guide for the Perplexed, Part One</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=guidefortheperplexed1_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of The Guide for the Perplexed, Part One by Moses Maimonides. (Translated by Michael Friedländer.) Read in English by Daniel Davison; Sovietgnome; czandra The Guide for the Perplexed by Mūsá ibn Maymūn (known throughout the Christian West as Moses Maimonides) is regarded as on....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/guidefortheperplexed1_2112_librivox</link>
+      <guid>https://archive.org/details/guidefortheperplexed1_2112_librivox</guid>
+      <pubDate>Sat, 04 Dec 2021 20:39:25 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/guidefortheperplexed1_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/guidefortheperplexed1_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/guidefortheperplexed1_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, Jewish history, maimonides, morehnebuchim, rambam, kalam, jewish thought, jewish mysticism, moses ben maimon, philosophy of kalam</media:keywords>
+    </item>
+    <item>
+      <title>Hinduism and Buddhism, An Historical Sketch, Vol. 3</title>
+      <media:title>Hinduism and Buddhism, An Historical Sketch, Vol. 3</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=hinduism_and_buddhism_3_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Hinduism and Buddhism, An Historical Sketch, Vol. 3 by Charles Eliot. Read in English by rLibrivox volunteers Started in 1907, An Historical Sketch was a work in 3 volumes. The author was a British diplomat posted to Asia and his great work was interrupted by World War I, final....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/hinduism_and_buddhism_3_2112_librivox</link>
+      <guid>https://archive.org/details/hinduism_and_buddhism_3_2112_librivox</guid>
+      <pubDate>Sat, 04 Dec 2021 15:21:21 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/hinduism_and_buddhism_3_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/hinduism_and_buddhism_3_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/hinduism_and_buddhism_3_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, religion, Asia, comparisons</media:keywords>
+    </item>
+    <item>
+      <title>The Gracchi, Marius and Sulla</title>
+      <media:title>The Gracchi, Marius and Sulla</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=gracchi_marius_and_sulla_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of The Gracchi, Marius and Sulla by A. H. Beesly. Read in English by Pamela Nagami During the last half of the second century B.C. Rome was undisputed mistress of the civilized western world....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, Item Tile, Metadata, PNG, Spectrogram, VBR MP3&lt;/p&gt;</description>
+      <link>https://archive.org/details/gracchi_marius_and_sulla_2112_librivox</link>
+      <guid>https://archive.org/details/gracchi_marius_and_sulla_2112_librivox</guid>
+      <pubDate>Fri, 03 Dec 2021 16:20:59 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/gracchi_marius_and_sulla_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/gracchi_marius_and_sulla_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/gracchi_marius_and_sulla_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, Marius, sulla, cinna, tiberius gracchus, gaius gracchus, roman army, jugurthine war, slave war, scipio aemilianus, tribunate, battle of chaeronia, sulpicius rufus, roman proscriptions, lex servilia, lex julia, mithraditic wars</media:keywords>
+    </item>
+    <item>
+      <title>Balada de la cárcel de Reading</title>
+      <media:title>Balada de la cárcel de Reading</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=baladadelacarceldereading_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Balada de la cárcel de Reading by Oscar Wilde. Read in Spanish by Victor Villarraza Testamentos vitales y literarios de Oscar Wilde que escribió tras su encarcelamiento. Casado y padre de dos hijos, Wilde era un declarado homosexual, y sus relaciones y su enfrentamiento a los....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/baladadelacarceldereading_2112_librivox</link>
+      <guid>https://archive.org/details/baladadelacarceldereading_2112_librivox</guid>
+      <pubDate>Fri, 03 Dec 2021 15:25:05 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/baladadelacarceldereading_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/baladadelacarceldereading_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/baladadelacarceldereading_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, reading, oscar wilde, ballad, gaol, jail</media:keywords>
+    </item>
+    <item>
+      <title>The Aftermath of Slavery</title>
+      <media:title>The Aftermath of Slavery</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=aftermath_of_slavery_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of The Aftermath of Slavery by William A. Sinclair. Read in English by Jim Locke This work describes conditions and forces the black population of the South faced after freedom was brought by the Civil War....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/aftermath_of_slavery_2112_librivox</link>
+      <guid>https://archive.org/details/aftermath_of_slavery_2112_librivox</guid>
+      <pubDate>Thu, 02 Dec 2021 16:15:29 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/aftermath_of_slavery_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/aftermath_of_slavery_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/aftermath_of_slavery_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, reconstruction, race relations, politics and government, suffrage</media:keywords>
+    </item>
+    <item>
+      <title>The Grand Cañon of the Colorado</title>
+      <media:title>The Grand Cañon of the Colorado</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=grandcanonofcolorado_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of The Grand Cañon of the Colorado by John Muir. Read in English by Rebecca Eden Walker Nothing is ordinary in the world of John Muir, naturalist and author known as the Father of the US National Parks....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Apple Audiobook, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/grandcanonofcolorado_2112_librivox</link>
+      <guid>https://archive.org/details/grandcanonofcolorado_2112_librivox</guid>
+      <pubDate>Thu, 02 Dec 2021 05:04:04 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/grandcanonofcolorado_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/grandcanonofcolorado_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/grandcanonofcolorado_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, nature, geology, Arizona, National Parks, Grand Canyon</media:keywords>
+    </item>
+    <item>
+      <title>The Story of My Life, part 1</title>
+      <media:title>The Story of My Life, part 1</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=story_of_my_life_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of The Story of My Life by Helen Keller. Read in English by Victoria Neely. When Helen Keller's autobiography was first published in 1903, she was a young woman studying at Radcliffe College....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/story_of_my_life_2112_librivox</link>
+      <guid>https://archive.org/details/story_of_my_life_2112_librivox</guid>
+      <pubDate>Thu, 02 Dec 2021 04:35:35 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/story_of_my_life_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/story_of_my_life_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/story_of_my_life_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, blindness, deafness</media:keywords>
+    </item>
+    <item>
+      <title>Murray's Adirondack Tales</title>
+      <media:title>Murray's Adirondack Tales</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=murrays_adirondack_tales_ks_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Murray's Adirondack Tales by William Henry Harrison Murray. Read in English by  Keith Salis Two delightful tales surrounding the adventures of John Norton, the Trapper. He gives us a good glimpse into life in the deep woods, and how he deals with those who would disturb him or....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/murrays_adirondack_tales_ks_2112_librivox</link>
+      <guid>https://archive.org/details/murrays_adirondack_tales_ks_2112_librivox</guid>
+      <pubDate>Thu, 02 Dec 2021 04:12:53 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/murrays_adirondack_tales_ks_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/murrays_adirondack_tales_ks_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/murrays_adirondack_tales_ks_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, adventure, Mystery, Adirondacks, trapper, woodsmen</media:keywords>
+    </item>
+    <item>
+      <title>Short Poetry Collection 222</title>
+      <media:title>Short Poetry Collection 222</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=spc222_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Short Poetry Collection 222 by Various. This is a collection of 44 poems read in English by LibriVox volunteers for November 2021. For further information, including links to online text, reader information, RSS feeds, CD cover or other formats (if available), please go to the ....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/spc222_2112_librivox</link>
+      <guid>https://archive.org/details/spc222_2112_librivox</guid>
+      <pubDate>Wed, 01 Dec 2021 22:16:17 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/spc222_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/spc222_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/spc222_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, poetry collection, short poetry, long poetry</media:keywords>
+    </item>
+    <item>
+      <title>Sir Gawain and the Green Knight</title>
+      <media:title>Sir Gawain and the Green Knight</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=sirgawain_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Sir Gawain and the Green Knight by Jessie Laidlay Weston. Read in English by Thomas A. Copeland. This poem celebrates Christmas by exploring the mystery of Christ's mission on earth: his death, resurrection, and second coming as judge of all human souls....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/sirgawain_2112_librivox</link>
+      <guid>https://archive.org/details/sirgawain_2112_librivox</guid>
+      <pubDate>Wed, 01 Dec 2021 19:18:40 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/sirgawain_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/sirgawain_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/sirgawain_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, religion, Christmas, middle english, medieval, myth, King Arthur</media:keywords>
+    </item>
+    <item>
+      <title>Say and Seal, Volume 2</title>
+      <media:title>Say and Seal, Volume 2</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=say_and_seal_2_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Say and Seal, Volume 2 by Anna Bartlett Warner; Susan Warner. Read in English by Librivox volunteers The arrival of a new schoolteacher causes quite a stir in the small New England town of Pattaquasset, not the least of it in the house of Mrs....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/say_and_seal_2_2112_librivox</link>
+      <guid>https://archive.org/details/say_and_seal_2_2112_librivox</guid>
+      <pubDate>Wed, 01 Dec 2021 15:07:01 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/say_and_seal_2_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/say_and_seal_2_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/say_and_seal_2_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, romance, christian fiction</media:keywords>
+    </item>
+    <item>
+      <title>Stichus; or, The Parasite Rebuffed</title>
+      <media:title>Stichus; or, The Parasite Rebuffed</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=stichus_2112_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Stichus; or, The Parasite Rebuffed by Titus Maccius Plautus. (Translated by Henry Thomas Riley.) Read in English by ToddHW; Larry Wilson; Jenn Broda; Nissy; Greg Giordano; Larry Wilson; Sonia; Jenn Broda; Ethan Hurst; Alan Mapstone; Greg Giordano; Larry Wilson; Jim Locke; ToddH....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, Item Tile, Metadata, PNG, Spectrogram, VBR MP3&lt;/p&gt;</description>
+      <link>https://archive.org/details/stichus_2112_librivox</link>
+      <guid>https://archive.org/details/stichus_2112_librivox</guid>
+      <pubDate>Wed, 01 Dec 2021 12:28:36 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/stichus_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/stichus_2112_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/stichus_2112_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, daughters, parasites, lost brothers, remarriage</media:keywords>
+    </item>
+    <item>
+      <title>Civilisation: Its Cause and Cure, and Other Essays</title>
+      <media:title>Civilisation: Its Cause and Cure, and Other Essays</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=civilisationitscauseandcure_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Civilisation: Its Cause and Cure, and Other Essays by Edward Carpenter. Read in English by volunteer readers. This publication, by English utopian socialist Edward Carpenter, describes civilisation as a sort of disease with which humanity is afflicted....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/civilisationitscauseandcure_2111_librivox</link>
+      <guid>https://archive.org/details/civilisationitscauseandcure_2111_librivox</guid>
+      <pubDate>Wed, 01 Dec 2021 03:55:23 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/civilisationitscauseandcure_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/civilisationitscauseandcure_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/civilisationitscauseandcure_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, morality, science, Darwin, philosopy, criminals, civilization, custom, humanity, civilisation, futurism, lamarck</media:keywords>
+    </item>
+    <item>
+      <title>A Tree with a Bird in it</title>
+      <media:title>A Tree with a Bird in it</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=tree_with_bird_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of A Tree with a Bird in it: a symposium of contemporary american poets on being shown a pear-tree on which sat a grackle by Margaret Widdemer. Read in English by mleigh; Stefan Von Blon; Joanna Michal Hoyt; mleigh; Siu; Phil Schempf; mleigh; Ryan Godley; Victoria; Tom Merritt; Li....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/tree_with_bird_2111_librivox</link>
+      <guid>https://archive.org/details/tree_with_bird_2111_librivox</guid>
+      <pubDate>Tue, 30 Nov 2021 23:43:02 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/tree_with_bird_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/tree_with_bird_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/tree_with_bird_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, parodies, 20th century poetry</media:keywords>
+    </item>
+    <item>
+      <title>Highways in Hiding</title>
+      <media:title>Highways in Hiding</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=highwaysinhiding_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Highways in Hiding by George O. Smith. Read in English by Jessica Martin Mechanical engineer Steve Cornell lives in a world where ESP and telepathy are normal, and a spreading plague called Mekstrom’s Disease turns its victims into supermen....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/highwaysinhiding_2111_librivox</link>
+      <guid>https://archive.org/details/highwaysinhiding_2111_librivox</guid>
+      <pubDate>Tue, 30 Nov 2021 06:43:07 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/highwaysinhiding_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/highwaysinhiding_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/highwaysinhiding_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, science fiction, space, esp</media:keywords>
+    </item>
+    <item>
+      <title>Society as I Have Found It</title>
+      <media:title>Society as I Have Found It</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=societyasihavefoundit_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Society as I Have Found It by Ward McAllister. Read in English by John Greenman Mark Twain illustrator Dan Beard recalled discussing McAllister’s book with Twain. “It was before Webster &amp; Company failed that Ward McAllister’s book (Society as I have Found It) appeared, an....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/societyasihavefoundit_2111_librivox</link>
+      <guid>https://archive.org/details/societyasihavefoundit_2111_librivox</guid>
+      <pubDate>Mon, 29 Nov 2021 20:57:55 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/societyasihavefoundit_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/societyasihavefoundit_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/societyasihavefoundit_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, New York, biography, socialites, new york (state)</media:keywords>
+    </item>
+    <item>
+      <title>Madame Bovary (Version 2)</title>
+      <media:title>Madame Bovary (Version 2)</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=madame_bovary_ver2_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Madame Bovary (Version 2) by Gustave Flaubert. (Translated by Eleanor Marx Aveling.) Read in English by  Peter Dann Written over a century and a half ago, Madame Bovary is still an extraordinarily fresh, exciting and shockingly frank novel, at once an acute psychological study....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/madame_bovary_ver2_2111_librivox</link>
+      <guid>https://archive.org/details/madame_bovary_ver2_2111_librivox</guid>
+      <pubDate>Mon, 29 Nov 2021 20:41:10 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/madame_bovary_ver2_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/madame_bovary_ver2_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/madame_bovary_ver2_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, adultery, France, middle class, married women, physicians' spouses, suicide victims</media:keywords>
+    </item>
+    <item>
+      <title>Adrienne Lecouvreur</title>
+      <media:title>Adrienne Lecouvreur</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=adrienne_lecouvreur_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Adrienne Lecouvreur by Ernest Legouve; Eugène Scribe. (Translated by Henry Herman.) Read in English by librivox volunteers. This drama was written in 1848 for the great French tragedienne, Rachel, by Eugene Scribe and his writing partner, Ernest Legouve....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/adrienne_lecouvreur_2111_librivox</link>
+      <guid>https://archive.org/details/adrienne_lecouvreur_2111_librivox</guid>
+      <pubDate>Mon, 29 Nov 2021 20:13:18 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/adrienne_lecouvreur_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/adrienne_lecouvreur_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/adrienne_lecouvreur_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks</media:keywords>
+    </item>
+    <item>
+      <title>Multilingual Short Works Collection 030 - Poetry &amp; Prose</title>
+      <media:title>Multilingual Short Works Collection 030 - Poetry &amp; Prose</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=mswcollection_030_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Multilingual Short Works Collection 030 - Poetry &amp; Prose by Various. Read in Multilingual by Melina Hristova; Melina Hristova; Verla Viera; Christiane Jehanne; Christiane Jehanne; Christiane Jehanne; Christiane Jehanne; Christiane Jehanne; czandra; lorda; Nathan Lewin; Piotr Na....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/mswcollection_030_2111_librivox</link>
+      <guid>https://archive.org/details/mswcollection_030_2111_librivox</guid>
+      <pubDate>Mon, 29 Nov 2021 19:10:17 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/mswcollection_030_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/mswcollection_030_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/mswcollection_030_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks</media:keywords>
+    </item>
+    <item>
+      <title>Shakespeare Monologues Collection vol. 16 (Multilingual)</title>
+      <media:title>Shakespeare Monologues Collection vol. 16 (Multilingual)</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=shakespearemonologuescollection_16_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Shakespeare Monologues Collection vol. 16 (Multilingual) by William Shakespeare. Read in Multilingual by Cavaet; Cordelia Glende; Cavaet; Cavaet; Cavaet; Jenn Broda; Juls11; Juls11; Joanna Michal Hoyt; Hannah Dormor; Hannah Dormor; Bruce Kachuk; Bruce Kachuk; Bruce Kachuk; Andr....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/shakespearemonologuescollection_16_2111_librivox</link>
+      <guid>https://archive.org/details/shakespearemonologuescollection_16_2111_librivox</guid>
+      <pubDate>Mon, 29 Nov 2021 15:24:40 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/shakespearemonologuescollection_16_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/shakespearemonologuescollection_16_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/shakespearemonologuescollection_16_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, Shakespeare, monologues</media:keywords>
+    </item>
+    <item>
+      <title>Das Marmorbild</title>
+      <media:title>Das Marmorbild</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=das_marmorbild_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Das Marmorbild by Joseph von Eichendorff. Read in German by lorda Das Marmorbild ist eine Märchennovelle und weist Merkmale der romantischen Epoche auf. Die Novelle handelt von Florio und dem Zwiespalt seiner Gefühle....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, Item Tile, Metadata, PNG, Spectrogram, VBR MP3&lt;/p&gt;</description>
+      <link>https://archive.org/details/das_marmorbild_2111_librivox</link>
+      <guid>https://archive.org/details/das_marmorbild_2111_librivox</guid>
+      <pubDate>Mon, 29 Nov 2021 14:30:04 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/publicdomain/mark/1.0/</creativeCommons:license>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/das_marmorbild_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/das_marmorbild_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/das_marmorbild_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, Novelle, Märchen, romantik, persönlicher zwiespalt</media:keywords>
+    </item>
+    <item>
+      <title>Walking</title>
+      <media:title>Walking</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=walking_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Walking (Version 2) by Henry David Thoreau. Read in English by Allyson Hester This was originally titled "The Wild" and is a lecture given by Thoreau in 1851 at the Concord lyceum....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/walking_2111_librivox</link>
+      <guid>https://archive.org/details/walking_2111_librivox</guid>
+      <pubDate>Mon, 29 Nov 2021 13:53:20 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/walking_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/walking_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/walking_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, nature, essays</media:keywords>
+    </item>
+    <item>
+      <title>The Castle of Otranto</title>
+      <media:title>The Castle of Otranto</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=castle_otranto2_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of The Castle of Otranto by Horace Walpole. Read in English by Thomas A. Copeland The Castle of Otranto is regarded as the first Gothic novel, a genre appealing to a taste for terror and set in a remote past when prodigies and magic can be imagined to have existed, with violent co....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/castle_otranto2_2111_librivox</link>
+      <guid>https://archive.org/details/castle_otranto2_2111_librivox</guid>
+      <pubDate>Sun, 28 Nov 2021 21:45:20 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/castle_otranto2_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/castle_otranto2_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/castle_otranto2_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, horror, Gothic, passion, antiquity</media:keywords>
+    </item>
+    <item>
+      <title>The Martian</title>
+      <media:title>The Martian</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=themartian_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of The Martian by George du Maurier. Read in English by Rita Boutros The Martian, by George du Maurier, is a largely autobiographical novel published in 1898 and the author's third. It describes the life of Barty Josselin as told by his close friend Robert Maurice, starting from t....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/themartian_2111_librivox</link>
+      <guid>https://archive.org/details/themartian_2111_librivox</guid>
+      <pubDate>Sun, 28 Nov 2021 19:30:44 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/themartian_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/themartian_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/themartian_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, fiction, biography</media:keywords>
+    </item>
+    <item>
+      <title>Eight Hours</title>
+      <media:title>Eight Hours</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=eight_hours_2111.poem_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox  volunteers bring you 17 recordings of Eight Hours by George A. Baker Jr. This was the Weekly Poetry project for November 21, 2021. Read in English by Anna Goss; amanstuy; Adrian Stephens; Brize C; Bruce Kachuk; ChadH94; czandra; hvolunteer; yourbookvoice; Larry Wilson; LakshmiSudha; Marcu....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/eight_hours_2111.poem_librivox</link>
+      <guid>https://archive.org/details/eight_hours_2111.poem_librivox</guid>
+      <pubDate>Sun, 28 Nov 2021 14:43:27 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/eight_hours_2111.poem_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/eight_hours_2111.poem_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/eight_hours_2111.poem_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, literature, poetry, nature, philosophy, dialogue, working</media:keywords>
+    </item>
+    <item>
+      <title>The Cambridge Modern History. Volume 03, The Wars of Religion</title>
+      <media:title>The Cambridge Modern History. Volume 03, The Wars of Religion</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=cambridgemodernhistory3_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of The Cambridge Modern History. Volume 03, The Wars of Religion by Various. Read in English by LibriVox volunteers. The Cambridge Modern History is a universal history covering the period from 1450 to 1910....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/cambridgemodernhistory3_2111_librivox</link>
+      <guid>https://archive.org/details/cambridgemodernhistory3_2111_librivox</guid>
+      <pubDate>Sun, 28 Nov 2021 01:54:43 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/cambridgemodernhistory3_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/cambridgemodernhistory3_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/cambridgemodernhistory3_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, tudors, ottoman empire, spanish armada, holy roman empire, valois, a. a. tilley, french humanism, a. j. butler, r. nisbet bain, the catholic reaction, báthory, moritz brosch, a. w. ward, george edmundson, thomas graves law, j. k. laughton, sidney lee, e. armstrong, ugo balzani, martin hume, s. r. gardiner, r. dunlop</media:keywords>
+    </item>
+    <item>
+      <title>English Literature for Boys and Girls</title>
+      <media:title>English Literature for Boys and Girls</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=englishliteratureforboysandgirls_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of English Literature for Boys and Girls by Henrietta Elizabeth Marshall. Read in English by LibriVox Volunteers "Has there ever been a time when no stories were told? Has there ever been a people who did not care to listen? I think not." Thus begins a journey through the history ....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/englishliteratureforboysandgirls_2111_librivox</link>
+      <guid>https://archive.org/details/englishliteratureforboysandgirls_2111_librivox</guid>
+      <pubDate>Sat, 27 Nov 2021 22:08:41 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/englishliteratureforboysandgirls_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/englishliteratureforboysandgirls_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/englishliteratureforboysandgirls_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, medieval literature, classic literature, ambleside, retelling, charlotte mason</media:keywords>
+    </item>
+    <item>
+      <title>Witch of the Demon Seas</title>
+      <media:title>Witch of the Demon Seas</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=witchofthedemonseas_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Witch of the Demon Seas by Poul William Anderson. Read in English by Phil Chenevert;  "Guide a black galleon to the lost, fear-hauntedCitadel of the Xanthi wizards—into the very jaws of Doom? Corun, condemned pirate of Conahur, laughed....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/witchofthedemonseas_2111_librivox</link>
+      <guid>https://archive.org/details/witchofthedemonseas_2111_librivox</guid>
+      <pubDate>Sat, 27 Nov 2021 20:13:41 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/witchofthedemonseas_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/witchofthedemonseas_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/witchofthedemonseas_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks</media:keywords>
+    </item>
+    <item>
+      <title>Miss Lochinvar</title>
+      <media:title>Miss Lochinvar</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=miss_lochinvar_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Miss Lochinvar by Marion Ames Taggart. Read in English by Librivox volunteers At breakfast, Mr. Graham drops the bombshell that his niece -- Joan, Jane or Janet, he's not sure which, will be arriving from the west to live with his large family....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/miss_lochinvar_2111_librivox</link>
+      <guid>https://archive.org/details/miss_lochinvar_2111_librivox</guid>
+      <pubDate>Sat, 27 Nov 2021 14:54:38 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/miss_lochinvar_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/miss_lochinvar_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/miss_lochinvar_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, family, school, cousin, visitor</media:keywords>
+    </item>
+    <item>
+      <title>Encyclical Letters of Pope Leo XIII</title>
+      <media:title>Encyclical Letters of Pope Leo XIII</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=encyclicalspopeleoxiii_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Encyclical Letters of Pope Leo XIII by Pope Leo XIII. Read in English by Librivox volunteers. Pope Leo XIII (1810-1903) wrote eighty-eight Encyclicals during his twenty-five year pontificate (1878-1903)....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/encyclicalspopeleoxiii_2111_librivox</link>
+      <guid>https://archive.org/details/encyclicalspopeleoxiii_2111_librivox</guid>
+      <pubDate>Fri, 26 Nov 2021 21:42:12 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/encyclicalspopeleoxiii_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/encyclicalspopeleoxiii_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/encyclicalspopeleoxiii_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, slavery, church, Catholic, Catholicism, marriage, education, pope, immigrants, labour, Christopher Columbus, clergy, state, encyclical, freemasonry, dueling, rosary, civil power, holy scriptures, sacred heart, christian democracy, the holy eucharist</media:keywords>
+    </item>
+    <item>
+      <title>In the Garden of Delight</title>
+      <media:title>In the Garden of Delight</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=inthegardenofdelight_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of In the Garden of Delight by Lily Hammond. Read in English by Katie Bond. This novel is narrated in the first person and revolves around a character named Lil (somewhat autobiographical of the author) and the dynamics of a colorful cast of family members....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/inthegardenofdelight_2111_librivox</link>
+      <guid>https://archive.org/details/inthegardenofdelight_2111_librivox</guid>
+      <pubDate>Thu, 25 Nov 2021 17:50:57 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/inthegardenofdelight_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/inthegardenofdelight_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/inthegardenofdelight_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, nature, birds, family, Tennessee, american south</media:keywords>
+    </item>
+    <item>
+      <title>Short Mystery and Suspense Collection 012</title>
+      <media:title>Short Mystery and Suspense Collection 012</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=sms_012_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Short Mystery and Suspense Collection 012 by Various. Read in English by Librivox volunteers The 12th edition of the Librivox Mystery and Suspense Collection delivers such gems as Father Brown in the Donnington Affair, Edgar Allen Poe and Guy de Maupassant amongst others....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/sms_012_2111_librivox</link>
+      <guid>https://archive.org/details/sms_012_2111_librivox</guid>
+      <pubDate>Thu, 25 Nov 2021 16:14:40 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/sms_012_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/sms_012_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/sms_012_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, dogs, halloween, father brown, monkeys</media:keywords>
+    </item>
+    <item>
+      <title>Bible (YLT) NT 07: 1st Epistle to the Corinthians</title>
+      <media:title>Bible (YLT) NT 07: 1st Epistle to the Corinthians</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=1corinthians_ylt_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of 1 Corinthians, Young's Literal Translation. Read in English by volunteer readers. The First Epistle to the Corinthians was written by the Apostle Paul, after having established the church in Corinth....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/1corinthians_ylt_2111_librivox</link>
+      <guid>https://archive.org/details/1corinthians_ylt_2111_librivox</guid>
+      <pubDate>Thu, 25 Nov 2021 13:47:57 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/1corinthians_ylt_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/1corinthians_ylt_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/1corinthians_ylt_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, bible, New Testament, Corinth, Epistles, pauline</media:keywords>
+    </item>
+    <item>
+      <title>Greetings from Longfellow</title>
+      <media:title>Greetings from Longfellow</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=greetings_from_longfellow_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Greetings from Longfellow by Henry Wadsworth Longfellow. Read in English by Bruce Kachuk This is a wonderful selection of six of the greatest works from Henry Wadsworth Longfellow, unquestionably one of the world's most celebrated poets....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/greetings_from_longfellow_2111_librivox</link>
+      <guid>https://archive.org/details/greetings_from_longfellow_2111_librivox</guid>
+      <pubDate>Thu, 25 Nov 2021 08:45:35 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/greetings_from_longfellow_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/greetings_from_longfellow_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/greetings_from_longfellow_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, poetry, faith, patriotism, hope, inspiration</media:keywords>
+    </item>
+    <item>
+      <title>The Rover Vol. 01 No. 26</title>
+      <media:title>The Rover Vol. 01 No. 26</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=rover_01_26_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of The Rover Vol. 01 No. 26 by Seba Smith; Lawrence Labree. Read in English by Alan Mapstone; Faithann Gibson; Jim Locke; Greg Giordano; ZacharyJ "The Rover: A weekly magazine of tales, poetry and engravings, original and selected" was a magazine started in 1843 by Seba Smith and ....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/rover_01_26_2111_librivox</link>
+      <guid>https://archive.org/details/rover_01_26_2111_librivox</guid>
+      <pubDate>Wed, 24 Nov 2021 14:30:04 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/rover_01_26_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/rover_01_26_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/rover_01_26_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, satire, poetry, history, drama, romance, letters, magazine</media:keywords>
+    </item>
+    <item>
+      <title>The Black Cat Vol. 02 No. 07 April 1897</title>
+      <media:title>The Black Cat Vol. 02 No. 07 April 1897</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=black_cat_02_07_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of The Black Cat Vol. 02 No. 07 April 1897 by Various. Read in English by Jake Malizia; Julie Burks; Greg Giordano; NarratorJ; Wayne Cooke The Black Cat (1895-1922) was a monthly literary magazine, publishing original short stories, often about uncanny or fantastical topics....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/black_cat_02_07_2111_librivox</link>
+      <guid>https://archive.org/details/black_cat_02_07_2111_librivox</guid>
+      <pubDate>Wed, 24 Nov 2021 13:20:50 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/black_cat_02_07_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/black_cat_02_07_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/black_cat_02_07_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, adventure, romance, Mystery, suspense, magazine, uncanny</media:keywords>
+    </item>
+    <item>
+      <title>Shen of the Sea: A Book for Children</title>
+      <media:title>Shen of the Sea: A Book for Children</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=shenofthesea_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Shen of the Sea: A Book for Children by Arthur Bowie Chrisman. Read in English by Scotty Smith; Vineymala; Scotty Smith; yourbookvoice; Scotty Smith; yourbookvoice; Scotty Smith; Kimi Weldon; Scotty Smith; Kimi Weldon; Scotty Smith; Scotty Smith; jwright7983; Ellen Adams; Toby ....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/shenofthesea_2111_librivox</link>
+      <guid>https://archive.org/details/shenofthesea_2111_librivox</guid>
+      <pubDate>Wed, 24 Nov 2021 01:44:07 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/shenofthesea_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/shenofthesea_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/shenofthesea_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks</media:keywords>
+    </item>
+    <item>
+      <title>The Brethren</title>
+      <media:title>The Brethren</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=brethren_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of The Brethren (Version 2) by H. Rider Haggard. Read in English by Elroi A tale of love, romance and chivalry set amongst the backdrop of the climactic months before the opening of the Kings' Crusade....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/brethren_2111_librivox</link>
+      <guid>https://archive.org/details/brethren_2111_librivox</guid>
+      <pubDate>Tue, 23 Nov 2021 19:17:32 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/brethren_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/brethren_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/brethren_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, crusades, fiction, romance, Knights, historical, action</media:keywords>
+    </item>
+    <item>
+      <title>The Story My Doggie Told to Me</title>
+      <media:title>The Story My Doggie Told to Me</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=story_my_doggie_told_to_me_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox of The Story My Doggie Told to Me by Ralph Henry Barbour. Read in English by Donald Cummings  The author of this book, Ralph Henry Barbour, was a prolific writer of scholastic and college sports and adventure fiction for boys....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/story_my_doggie_told_to_me_2111_librivox</link>
+      <guid>https://archive.org/details/story_my_doggie_told_to_me_2111_librivox</guid>
+      <pubDate>Tue, 23 Nov 2021 15:10:44 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/story_my_doggie_told_to_me_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/story_my_doggie_told_to_me_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/story_my_doggie_told_to_me_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, fiction, adventure, dogs, juvenile, puppies, dachshunds</media:keywords>
+    </item>
+    <item>
+      <title>Mrs. Dalloway (Version 2)</title>
+      <media:title>Mrs. Dalloway (Version 2)</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=mrsdalloway_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Mrs. Dalloway (Version 2) by Virginia Woolf. Read in English by Hannah Dormor. Clarissa Dalloway is having a party. Join her and a web of connections in exploring London, their memories and their innermost thoughts and feelings....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/mrsdalloway_2111_librivox</link>
+      <guid>https://archive.org/details/mrsdalloway_2111_librivox</guid>
+      <pubDate>Tue, 23 Nov 2021 15:06:58 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/mrsdalloway_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/mrsdalloway_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/mrsdalloway_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks</media:keywords>
+    </item>
+    <item>
+      <title>Rossini</title>
+      <media:title>Rossini</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=rossini_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Rossini by W. Armine Bevan. Read in English by Mozartjr A brief summary of the life of the opera king, Rossini. - Summary by Mozartjr For further information, including links to online text, reader information, RSS feeds, CD cover or other formats (if available), please go to t....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/rossini_2111_librivox</link>
+      <guid>https://archive.org/details/rossini_2111_librivox</guid>
+      <pubDate>Tue, 23 Nov 2021 13:11:38 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/rossini_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/rossini_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/rossini_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, opera</media:keywords>
+    </item>
+    <item>
+      <title>Stories of the Saints by Candle-Light</title>
+      <media:title>Stories of the Saints by Candle-Light</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=saintsbycandlelight_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Stories of the Saints by Candle-Light by Vera Charlesworth Barclay. Read in English by Librivox volunteers. Once upon a time there were fifteen Cubs who spent nine wonderful days in camp....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/saintsbycandlelight_2111_librivox</link>
+      <guid>https://archive.org/details/saintsbycandlelight_2111_librivox</guid>
+      <pubDate>Tue, 23 Nov 2021 00:21:22 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/saintsbycandlelight_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/saintsbycandlelight_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/saintsbycandlelight_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, children, Catholic, saints, Boy Scouts, st anthony, scouts, st benedict, st patrick, st george, st francis, st edmund</media:keywords>
+    </item>
+    <item>
+      <title>The Rover Vol. 01 No. 24</title>
+      <media:title>The Rover Vol. 01 No. 24</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=rover_01_24_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of The Rover Vol. 01 No. 24 by Seba Smith; Lawrence Labree. Read in English by Alan Mapstone; Jim Locke; Greg Giordano; Gini Rosario; Brize C; yourbookvoice "The Rover: A weekly magazine of tales, poetry and engravings, original and selected" was a magazine started in 1843 by Seba....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/rover_01_24_2111_librivox</link>
+      <guid>https://archive.org/details/rover_01_24_2111_librivox</guid>
+      <pubDate>Mon, 22 Nov 2021 17:39:07 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/rover_01_24_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/rover_01_24_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/rover_01_24_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, poetry, history, drama, tragedy, romance, suspense, magazine</media:keywords>
+    </item>
+    <item>
+      <title>Myths and Legends Around the World - Collection 12</title>
+      <media:title>Myths and Legends Around the World - Collection 12</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=mlaw12_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Myths and Legends Around the World - Collection 12 by Various. Read in English by LibriVox Volunteers. This collection is dedicated to recordings of short mythical or legendary works which are in the Public Domain....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/mlaw12_2111_librivox</link>
+      <guid>https://archive.org/details/mlaw12_2111_librivox</guid>
+      <pubDate>Mon, 22 Nov 2021 17:25:16 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/mlaw12_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/mlaw12_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/mlaw12_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, fairy tales, myths, folk tales, Legends, folklore, heroes, cultural history, ancient lore</media:keywords>
+    </item>
+    <item>
+      <title>Infection and Immunity</title>
+      <media:title>Infection and Immunity</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="https://archive.org/services/get-item-image.php?identifier=infectionandimmunity_2111_librivox&amp;mediatype=audio&amp;collection=librivoxaudio"/&gt;&lt;p&gt;LibriVox recording of Infection and Immunity by George M. Sternberg. Read in English by J. M. Smallheer Infection and Immunity with Special Reference to the Prevention of Infectious Diseases presents a subject that is as relevant today as it was in 1903....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/librivoxaudio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: 128Kbps MP3, 64Kbps MP3, Archive BitTorrent, DjVuTXT, Djvu XML, Item Image, Item Tile, JPEG, JPEG Thumb, LibriVox Apple Audiobook, Metadata, OCR Page Index, OCR Search Text, PNG, Page Numbers JSON, Scandata, Single Page Processed JP2 ZIP, Spectrogram, Text PDF, VBR MP3, chOCR, hOCR&lt;/p&gt;</description>
+      <link>https://archive.org/details/infectionandimmunity_2111_librivox</link>
+      <guid>https://archive.org/details/infectionandimmunity_2111_librivox</guid>
+      <pubDate>Mon, 22 Nov 2021 17:02:50 GMT</pubDate>
+      <category>audio/librivoxaudio</category>
+      <media:group>
+        <media:content url="https://archive.org/download/infectionandimmunity_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="64"/>
+        <media:content url="https://archive.org/download/infectionandimmunity_2111_librivox/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" bitrate="128"/>
+      </media:group>
+      <enclosure url="https://archive.org/download/infectionandimmunity_2111_librivox/format=64Kbps+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>librivox, audiobooks, infectious disease, immunity, disinfection</media:keywords>
+    </item>
+  </channel>
+</rss>
