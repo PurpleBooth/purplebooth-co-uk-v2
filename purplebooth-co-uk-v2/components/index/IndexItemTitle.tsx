@@ -1,13 +1,20 @@
-import { FunctionComponent } from "react";
+import { FC } from "react";
 import Link from "next/link";
 
-export const IndexItemTitle: FunctionComponent<{
+interface Props {
   title: string;
   href: string;
-}> = ({ title, href }) => (
+  pageHasTitle?: boolean;
+}
+
+export const IndexItemTitle: FC<Props> = ({ title, href, pageHasTitle }) => (
   <Link passHref href={href}>
     <a className={"no-underline hover:underline"}>
-      <h1 className={"mb-1"}>{title}</h1>
+      {pageHasTitle ? (
+        <h2 className={"mb-1"}>{title}</h2>
+      ) : (
+        <h1 className={"mb-1"}>{title}</h1>
+      )}
     </a>
   </Link>
 );

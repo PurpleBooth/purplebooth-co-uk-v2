@@ -2,10 +2,17 @@ import Article from "../models/Article";
 import { promises as fsPromises } from "fs";
 import path from "path";
 import matter, { GrayMatterFile } from "gray-matter";
+import getConfig from "next/config";
+import category from "../pages/categories/[category]";
 
 export default class ArticlesService {
-  async find(): Promise<Article[]> {
-    const articlePath = `${__dirname}/../../../content/articles/`;
+  async find(query?: { categories?: string[] }): Promise<Article[]> {
+    const { serverRuntimeConfig } = getConfig();
+    const articlePath = path.join(
+      serverRuntimeConfig.PROJECT_ROOT,
+      "content",
+      "articles"
+    );
     const articleFiles = await fsPromises.readdir(articlePath);
     const articles = [];
 
@@ -19,7 +26,20 @@ export default class ArticlesService {
       const rawContents = await fsPromises.readFile(fullArticlePath);
       const grayMatterFile: GrayMatterFile<Buffer> = matter(rawContents);
 
-      articles.push(Article.fromGrayMatterFile(grayMatterFile));
+      let article = Article.fromGrayMatterFile(grayMatterFile);
+
+      if (
+        Array.isArray(query?.categories) &&
+        article.meta.categories.filter((articleCategory) =>
+          query?.categories
+            ?.map((queryCategory) => queryCategory.toLowerCase())
+            .includes(articleCategory.toLowerCase())
+        ).length == 0
+      ) {
+        continue;
+      }
+
+      articles.push(article);
     }
 
     articles.sort(

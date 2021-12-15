@@ -9,13 +9,14 @@ import IndexItem from "../components/index/IndexItem";
 import ArticlesService from "../services/ArticleService";
 import Article, { ArticleJSON } from "../models/Article";
 import { MetaJSON } from "../models/Meta";
+import category from "./categories/[category]";
 
 interface Props {
   meta: MetaJSON[];
 }
 
-const Home: NextPage<Props> = ({ meta }: Props) => {
-  return (
+const Home: NextPage<Props> = ({ meta }: Props) =>
+  (
     <div className={"flex flex-row"}>
       <Head>
         <title>Purple Booth · Billie Thompson</title>
@@ -23,19 +24,18 @@ const Home: NextPage<Props> = ({ meta }: Props) => {
           name="description"
           content="Article about software development by Billie Thompson"
         />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico"/>
       </Head>
 
-      <Nav />
+      <Nav/>
 
       <main className={"m-8 prose"}>
         {meta.map((meta, index) => (
-          <IndexItem key={index} articleMeta={meta} />
+          <IndexItem key={index} articleMeta={meta}/>
         ))}
       </main>
     </div>
   );
-};
 
 export const getServerSideProps: GetServerSideProps = async (
   context
@@ -44,7 +44,9 @@ export const getServerSideProps: GetServerSideProps = async (
 
   return {
     props: {
-      meta: (await service.find()).map((article) => article.meta.toJSON()),
+      meta: (await service.find()).map((article) =>
+        article.meta.toJSON()
+      ),
     },
   };
 };

@@ -8,18 +8,30 @@ import { IndexItemArrowButton } from "./IndexItemArrowButton";
 
 interface Props {
   articleMeta: MetaJSON;
+  pageHasTitle?: boolean;
 }
 
-const IndexItem: FunctionComponent<Props> = ({ articleMeta }) => {
+const IndexItem: FunctionComponent<Props> = ({ articleMeta, pageHasTitle }) => {
   const articleDate = articleMeta.date ? parseISO(articleMeta.date) : undefined;
-  const url = `/blog/${articleDate?.getFullYear()}/${articleDate?.getMonth()}/${articleDate?.getDate()}/${articleMeta.title
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, "-")}`;
+  let yearParam = encodeURIComponent(articleDate?.getFullYear() || "");
+  let monthParam = encodeURIComponent(articleDate?.getMonth() || "");
+  let dayParam = encodeURIComponent(articleDate?.getDate() || "");
+  let titleParam = encodeURIComponent(
+    articleMeta.title
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9]+/g, "-")
+  );
+
+  const url = `/blog/${yearParam}/${monthParam}/${dayParam}/${titleParam}`;
 
   return (
     <article className={"mb-4"}>
-      <IndexItemTitle title={articleMeta.title} href={url} />
+      <IndexItemTitle
+        title={articleMeta.title}
+        href={url}
+        pageHasTitle={pageHasTitle}
+      />
       <IndexItemStatsLine
         readLengthMin={articleMeta.readLengthMin}
         date={articleDate}
