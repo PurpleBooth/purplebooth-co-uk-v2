@@ -30,25 +30,21 @@ const Nav: FunctionComponent = () => (
         <ul className={" ml-16 flex flex-col mt-8"}>
           <li>
             <Link passHref href={"/"}>
-              <a>
-                <span className={"cursor-pointer"}>
+              <a className={"cursor-pointer"}>
                   <span className={"text-slate-800"}>
-                    <FontAwesomeIcon icon={["fas", "square"]} />
-                  </span>
-                  &nbsp;Home
-                </span>
+                    <FontAwesomeIcon icon={["fas", "square"]}/>
+                  </span>&nbsp;
+                <span className={"hover:underline"}>Home</span>
               </a>
             </Link>
           </li>
           <li>
             <Link passHref href={"/about/me"}>
-              <a>
-                <span className={"cursor-pointer"}>
+              <a className={"cursor-pointer"}>
                   <span className={"text-slate-800"}>
-                    <FontAwesomeIcon icon={["fas", "square"]} />
-                  </span>
-                  &nbsp;About&nbsp;Me
-                </span>
+                    <FontAwesomeIcon icon={["fas", "square"]}/>
+                  </span>&nbsp;
+                <span className={"hover:underline"}>About&nbsp;Me</span>
               </a>
             </Link>
           </li>
@@ -56,53 +52,45 @@ const Nav: FunctionComponent = () => (
         <ul className={"flex flex-row gap-4 justify-center mt-8"}>
           <li>
             <Link passHref href={"https://github.com/PurpleBooth"}>
-              <a>
-                <span className={"cursor-pointer text-slate-800"}>
+              <a className={"cursor-pointer text-slate-800"}>
                   <FontAwesomeIcon
                     size={"3x"}
                     title={"GitHub"}
                     icon={["fab", "github-square"]}
                   />
-                </span>
               </a>
             </Link>
           </li>
           <li>
             <Link passHref href={"https://www.linkedin.com/in/purplebooth/"}>
-              <a>
-                <span className={"cursor-pointer text-slate-800"}>
+              <a className={"cursor-pointer text-slate-800"}>
                   <FontAwesomeIcon
                     size={"3x"}
                     title={"LinkedIn"}
                     icon={["fab", "linkedin"]}
                   />
-                </span>
               </a>
             </Link>
           </li>
           <li>
             <Link passHref href={"https://twitter.com/PurpleBooth"}>
-              <a>
-                <span className={"cursor-pointer text-slate-800"}>
+              <a className={"cursor-pointer text-slate-800"}>
                   <FontAwesomeIcon
                     size={"3x"}
                     title={"Twitter"}
                     icon={["fab", "twitter-square"]}
                   />
-                </span>
               </a>
             </Link>
           </li>
         </ul>
         <footer className={"text-slate-600 text-center mt-8"}>
           <Link passHref href={"/license"}>
-            <a>
-              <span className={"cursor-pointer"}>
+            <a className={"cursor-pointer hover:underline"}>
                 Copyright ©{" "}
                 {intlFormat(Date.now(), {
                   year: "numeric",
                 })}
-              </span>
             </a>
           </Link>
         </footer>
