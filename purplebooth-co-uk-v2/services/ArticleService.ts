@@ -3,16 +3,11 @@ import { promises as fsPromises } from "fs";
 import path from "path";
 import matter, { GrayMatterFile } from "gray-matter";
 import getConfig from "next/config";
-import category from "../pages/categories/[category]";
 
 export default class ArticlesService {
   async find(query?: { categories?: string[] }): Promise<Article[]> {
     const { serverRuntimeConfig } = getConfig();
-    const articlePath = path.join(
-      serverRuntimeConfig.PROJECT_ROOT,
-      "content",
-      "articles"
-    );
+    const articlePath = path.join(process.cwd(), "content", "articles", "");
     const articleFiles = await fsPromises.readdir(articlePath);
     const articles = [];
 

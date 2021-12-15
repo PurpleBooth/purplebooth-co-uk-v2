@@ -33,16 +33,6 @@ export default class Meta {
     this.description = description;
   }
 
-  toJSON(): MetaJSON {
-    return {
-      title: this.title,
-      date: this.date ? formatISO(this.date) : null,
-      categories: this.categories,
-      readLengthMin: this.readLengthMin,
-      description: this.description,
-    };
-  }
-
   static fromGrayMatterFile(grayMatterFile: GrayMatterFile<Buffer>) {
     const wordCount = grayMatterFile.content.trim().split(/\s+/).length;
     const readingTime = Math.ceil(wordCount / averageWpm);
@@ -59,5 +49,15 @@ export default class Meta {
       grayMatterFile.data.description || summary,
       grayMatterFile.data.date ? parseISO(grayMatterFile.data.date) : undefined
     );
+  }
+
+  toJSON(): MetaJSON {
+    return {
+      title: this.title,
+      date: this.date ? formatISO(this.date) : null,
+      categories: this.categories,
+      readLengthMin: this.readLengthMin,
+      description: this.description,
+    };
   }
 }
