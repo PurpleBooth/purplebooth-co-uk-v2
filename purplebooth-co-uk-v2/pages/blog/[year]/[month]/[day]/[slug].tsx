@@ -58,7 +58,7 @@ export const getServerSideProps: GetServerSideProps = async ({
     day: day,
     slug: slug,
   });
-  const article = articles.at(0);
+  const article = articles[0];
 
   if (!article) {
     res.statusCode = 404;
