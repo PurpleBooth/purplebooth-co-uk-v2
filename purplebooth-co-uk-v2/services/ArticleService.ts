@@ -56,12 +56,12 @@ export default class ArticlesService {
         year &&
         month &&
         day &&
-        !article.isOnDate(year?.at(0), month?.at(0), day?.at(0))
+        !article.isOnDate(year[0], month[0], day[0])
       ) {
         continue;
       }
 
-      if (slug && !article.hasSlug(slug?.at(0))) {
+      if (slug && !article.hasSlug(slug[0])) {
         continue;
       }
 
