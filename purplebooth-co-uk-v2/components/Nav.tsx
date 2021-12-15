@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/Purple Booth Logo-01.png";
+import logo from "../public/Purple Booth Logo-01.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import intlFormat from "date-fns/intlFormat";
 
