@@ -4,12 +4,37 @@ import path from "path";
 import matter, { GrayMatterFile } from "gray-matter";
 import getConfig from "next/config";
 
+interface Query {
+  categories?: string[] | string;
+}
+
+function standardise(
+  value: string[] | string | undefined
+): string[] | undefined {
+  if (Array.isArray(value) || value === undefined) {
+    return value as string[] | undefined;
+  } else {
+    return [value as string];
+  }
+}
+
 export default class ArticlesService {
-  async find(query?: { categories?: string[] }): Promise<Article[]> {
+  async find(query?: {
+    categories?: string[] | string;
+    year?: string[] | string;
+    month?: string[] | string;
+    day?: string[] | string;
+    slug?: string[] | string;
+  }): Promise<Article[]> {
     const { serverRuntimeConfig } = getConfig();
     const articlePath = path.join(process.cwd(), "content", "articles", "");
     const articleFiles = await fsPromises.readdir(articlePath);
     const articles = [];
+    let categories = standardise(query?.categories);
+    let day = standardise(query?.day);
+    let month = standardise(query?.month);
+    let year = standardise(query?.year);
+    let slug = standardise(query?.slug);
 
     for (const index in articleFiles) {
       const fullArticlePath = path.join(articlePath, articleFiles[index]);
@@ -21,16 +46,22 @@ export default class ArticlesService {
       const rawContents = await fsPromises.readFile(fullArticlePath);
       const grayMatterFile: GrayMatterFile<Buffer> = matter(rawContents);
 
-      let article = Article.fromGrayMatterFile(grayMatterFile);
+      let article = await Article.fromGrayMatterFile(grayMatterFile);
+
+      if (categories && !article.hasAnyCategory(categories)) {
+        continue;
+      }
 
       if (
-        Array.isArray(query?.categories) &&
-        article.meta.categories.filter((articleCategory) =>
-          query?.categories
-            ?.map((queryCategory) => queryCategory.toLowerCase())
-            .includes(articleCategory.toLowerCase())
-        ).length == 0
+        year &&
+        month &&
+        day &&
+        !article.isOnDate(year?.at(0), month?.at(0), day?.at(0))
       ) {
+        continue;
+      }
+
+      if (slug && !article.hasSlug(slug?.at(0))) {
         continue;
       }
 

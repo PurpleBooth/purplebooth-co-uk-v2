@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { parseISO } from "date-fns";
 import { MetaJSON } from "../../models/Meta";
-import { IndexItemTitle } from "./IndexItemTitle";
+import { IndexItemLinkTitle } from "./IndexItemLinkTitle";
 import { IndexItemStatsLine } from "./IndexItemStatsLine";
 import { IndexItemCategories } from "./IndexItemCategories";
 import { IndexItemArrowButton } from "./IndexItemArrowButton";
@@ -16,18 +16,13 @@ const IndexItem: FunctionComponent<Props> = ({ articleMeta, pageHasTitle }) => {
   let yearParam = encodeURIComponent(articleDate?.getFullYear() || "");
   let monthParam = encodeURIComponent(articleDate?.getMonth() || "");
   let dayParam = encodeURIComponent(articleDate?.getDate() || "");
-  let titleParam = encodeURIComponent(
-    articleMeta.title
-      .toLowerCase()
-      .trim()
-      .replace(/[^a-z0-9]+/g, "-")
-  );
+  let slugParam = encodeURIComponent(articleMeta.slug);
 
-  const url = `/blog/${yearParam}/${monthParam}/${dayParam}/${titleParam}`;
+  const url = `/blog/${yearParam}/${monthParam}/${dayParam}/${slugParam}`;
 
   return (
     <article className={"mb-4"}>
-      <IndexItemTitle
+      <IndexItemLinkTitle
         title={articleMeta.title}
         href={url}
         pageHasTitle={pageHasTitle}

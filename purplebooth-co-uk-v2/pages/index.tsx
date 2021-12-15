@@ -11,7 +11,7 @@ interface Props {
 const Home: NextPage<Props> = ({ meta }: Props) => (
   <Layout>
     {meta.map((meta, index) => (
-      <IndexItem key={index} articleMeta={meta}/>
+      <IndexItem key={index} articleMeta={meta} />
     ))}
   </Layout>
 );

@@ -6,6 +6,7 @@ const averageWpm = 255;
 
 export interface MetaJSON {
   title: string;
+  slug: string;
   categories: string[];
   readLengthMin: number;
   date: string | null;
@@ -33,6 +34,13 @@ export default class Meta {
     this.description = description;
   }
 
+  public get slug(): string {
+    return this.title
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9]+/g, "-");
+  }
+
   static fromGrayMatterFile(grayMatterFile: GrayMatterFile<Buffer>) {
     const wordCount = grayMatterFile.content.trim().split(/\s+/).length;
     const readingTime = Math.ceil(wordCount / averageWpm);
@@ -54,6 +62,7 @@ export default class Meta {
   toJSON(): MetaJSON {
     return {
       title: this.title,
+      slug: this.slug,
       date: this.date ? formatISO(this.date) : null,
       categories: this.categories,
       readLengthMin: this.readLengthMin,

@@ -24,8 +24,8 @@ const License: NextPage = () => {
         <Link href="http://armakuni.com/">Armakuni</Link>.
       </p>
       <p>
-        I write code, am interested in Agile, Lean, DevOps and Infrastructure.
-        I am also quite tall, and have curly hair.
+        I write code, am interested in Agile, Lean, DevOps and Infrastructure. I
+        am also quite tall, and have curly hair.
       </p>
       <h2 id="contact">Contact</h2>
       <ul className={"fa-ul"}>

@@ -21,12 +21,12 @@ const Category: NextPage<Props> = ({ meta }: Props) => {
     .join(" ");
 
   return (
-      <Layout pageTitle={capitalisedCategory}>
-        <h1>{capitalisedCategory}</h1>
-        {meta.map((meta, index) => (
-          <IndexItem key={index} articleMeta={meta} pageHasTitle />
-        ))}
-      </Layout>
+    <Layout pageTitle={capitalisedCategory}>
+      <h1>Category: {capitalisedCategory}</h1>
+      {meta.map((meta, index) => (
+        <IndexItem key={index} articleMeta={meta} pageHasTitle />
+      ))}
+    </Layout>
   );
 };
 
@@ -34,21 +34,11 @@ export const getServerSideProps: GetServerSideProps = async (
   context
 ): Promise<{ props: Props }> => {
   const { category } = context.query;
-  let categories: string[] | undefined;
-
-  if (Array.isArray(category)) {
-    categories = category;
-  } else if (category !== undefined) {
-    categories = [category];
-  } else {
-    categories = undefined;
-  }
-
   const service = new ArticlesService();
 
   return {
     props: {
-      meta: (await service.find({ categories: categories })).map((article) =>
+      meta: (await service.find({ categories: category })).map((article) =>
         article.meta.toJSON()
       ),
     },
