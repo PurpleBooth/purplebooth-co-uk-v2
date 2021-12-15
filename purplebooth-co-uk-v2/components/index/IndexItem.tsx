@@ -15,7 +15,7 @@ const IndexItem: FunctionComponent<Props> = ({ articleMeta }) => {
   const url = `/blog/${articleDate?.getFullYear()}/${articleDate?.getMonth()}/${articleDate?.getDate()}/${articleMeta.title
     .toLowerCase()
     .trim()
-    .replace(/\s+/g, "-")}`;
+    .replace(/[^a-zA-Z0-9]+/g, "-")}`;
 
   return (
     <article className={"mb-4"}>
