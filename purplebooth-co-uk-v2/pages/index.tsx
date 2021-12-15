@@ -5,7 +5,7 @@ import type {
 } from "next";
 import Head from "next/head";
 import Nav from "../components/Nav";
-import IndexItem from "../components/IndexItem";
+import IndexItem from "../components/index/IndexItem";
 import ArticlesService from "../services/ArticleService";
 import Article, { ArticleJSON } from "../models/Article";
 import { MetaJSON } from "../models/Meta";
