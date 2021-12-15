@@ -31,9 +31,10 @@ const Nav: FunctionComponent = () => (
           <li>
             <Link passHref href={"/"}>
               <a className={"cursor-pointer"}>
-                  <span className={"text-slate-800"}>
-                    <FontAwesomeIcon icon={["fas", "square"]}/>
-                  </span>&nbsp;
+                <span className={"text-slate-800"}>
+                  <FontAwesomeIcon icon={["fas", "square"]} />
+                </span>
+                &nbsp;
                 <span className={"hover:underline"}>Home</span>
               </a>
             </Link>
@@ -41,9 +42,10 @@ const Nav: FunctionComponent = () => (
           <li>
             <Link passHref href={"/about/me"}>
               <a className={"cursor-pointer"}>
-                  <span className={"text-slate-800"}>
-                    <FontAwesomeIcon icon={["fas", "square"]}/>
-                  </span>&nbsp;
+                <span className={"text-slate-800"}>
+                  <FontAwesomeIcon icon={["fas", "square"]} />
+                </span>
+                &nbsp;
                 <span className={"hover:underline"}>About&nbsp;Me</span>
               </a>
             </Link>
@@ -53,33 +55,33 @@ const Nav: FunctionComponent = () => (
           <li>
             <Link passHref href={"https://github.com/PurpleBooth"}>
               <a className={"cursor-pointer text-slate-800"}>
-                  <FontAwesomeIcon
-                    size={"3x"}
-                    title={"GitHub"}
-                    icon={["fab", "github-square"]}
-                  />
+                <FontAwesomeIcon
+                  size={"3x"}
+                  title={"GitHub"}
+                  icon={["fab", "github-square"]}
+                />
               </a>
             </Link>
           </li>
           <li>
             <Link passHref href={"https://www.linkedin.com/in/purplebooth/"}>
               <a className={"cursor-pointer text-slate-800"}>
-                  <FontAwesomeIcon
-                    size={"3x"}
-                    title={"LinkedIn"}
-                    icon={["fab", "linkedin"]}
-                  />
+                <FontAwesomeIcon
+                  size={"3x"}
+                  title={"LinkedIn"}
+                  icon={["fab", "linkedin"]}
+                />
               </a>
             </Link>
           </li>
           <li>
             <Link passHref href={"https://twitter.com/PurpleBooth"}>
               <a className={"cursor-pointer text-slate-800"}>
-                  <FontAwesomeIcon
-                    size={"3x"}
-                    title={"Twitter"}
-                    icon={["fab", "twitter-square"]}
-                  />
+                <FontAwesomeIcon
+                  size={"3x"}
+                  title={"Twitter"}
+                  icon={["fab", "twitter-square"]}
+                />
               </a>
             </Link>
           </li>
@@ -87,10 +89,10 @@ const Nav: FunctionComponent = () => (
         <footer className={"text-slate-600 text-center mt-8"}>
           <Link passHref href={"/license"}>
             <a className={"cursor-pointer hover:underline"}>
-                Copyright ©{" "}
-                {intlFormat(Date.now(), {
-                  year: "numeric",
-                })}
+              Copyright ©{" "}
+              {intlFormat(Date.now(), {
+                year: "numeric",
+              })}
             </a>
           </Link>
         </footer>

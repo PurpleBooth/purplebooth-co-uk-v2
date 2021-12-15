@@ -47,8 +47,10 @@ export default class Meta {
     const wordCount = grayMatterFile.content.trim().split(/\s+/).length;
     const readingTime = Math.ceil(wordCount / averageWpm);
 
-    const split = grayMatterFile.content.split("\n\n").filter(item => item.trim() != "");
-    const summary:string = removeMarkdown(split[0] || "");
+    const split = grayMatterFile.content
+      .split("\n\n")
+      .filter((item) => item.trim() != "");
+    const summary: string = removeMarkdown(split[0] || "");
 
     return new Meta(
       grayMatterFile.data.title,

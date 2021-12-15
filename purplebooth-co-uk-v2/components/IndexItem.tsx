@@ -10,11 +10,18 @@ interface Props {
 
 const IndexItem: FunctionComponent<Props> = ({ articleMeta }) => {
   const articleDate = articleMeta.date ? parseISO(articleMeta.date) : undefined;
-  const url = `/blog/${articleDate?.getFullYear()}/${articleDate?.getMonth()}/${articleDate?.getDate()}/${articleMeta.title.toLowerCase().trim().replaceAll(" ", "-")}`
+  const url = `/blog/${articleDate?.getFullYear()}/${articleDate?.getMonth()}/${articleDate?.getDate()}/${articleMeta.title
+    .toLowerCase()
+    .trim()
+    .replaceAll(" ", "-")}`;
 
   return (
     <article className={"mb-4"}>
-      <Link passHref href={url}><a className={"no-underline hover:underline"}><h1 className={"mb-1"}>{articleMeta.title}</h1></a></Link>
+      <Link passHref href={url}>
+        <a className={"no-underline hover:underline"}>
+          <h1 className={"mb-1"}>{articleMeta.title}</h1>
+        </a>
+      </Link>
       <div className={"text-slate-600"}>
         {articleDate ? intlFormat(articleDate) + " · " : ""}
         {new Intl.NumberFormat(undefined, {
@@ -30,15 +37,17 @@ const IndexItem: FunctionComponent<Props> = ({ articleMeta }) => {
             className={"bg-slate-50 rounded p-1 whitespace-nowrap inline-block"}
           >
             <Link href={`/categories/${tag.toLowerCase()}/`} passHref>
-            <a  className={"no-underline font-bold"}>
-            {tag}
-            </a>
+              <a className={"no-underline font-bold"}>{tag}</a>
             </Link>
           </li>
         ))}
       </ul>
       <p className={"prose my-2"}>{articleMeta.description}</p>
-      <Link passHref href={url}><a className={"block p-1 no-underline"}><span className={"hover:underline"} >Read On</span> →</a></Link>
+      <Link passHref href={url}>
+        <a className={"block p-1 no-underline"}>
+          <span className={"hover:underline"}>Read On</span> →
+        </a>
+      </Link>
     </article>
   );
 };

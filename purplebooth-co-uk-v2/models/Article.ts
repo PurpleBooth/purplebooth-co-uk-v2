@@ -22,6 +22,9 @@ export default class Article {
   }
 
   static fromGrayMatterFile(grayMatterFile: GrayMatterFile<Buffer>) {
-    return new Article(Meta.fromGrayMatterFile(grayMatterFile), grayMatterFile.content)
+    return new Article(
+      Meta.fromGrayMatterFile(grayMatterFile),
+      grayMatterFile.content
+    );
   }
 }
