@@ -1,4 +1,4 @@
-import type { GetServerSideProps, NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import IndexItem from "../components/index/IndexItem";
 import ArticlesService from "../services/ArticleService";
 import { MetaJSON } from "../models/Meta";
@@ -16,7 +16,7 @@ const Home: NextPage<Props> = ({ meta }: Props) => (
   </Layout>
 );
 
-export const getServerSideProps: GetServerSideProps = async (
+export const getStaticProps: GetStaticProps = async (
   context
 ): Promise<{ props: Props }> => {
   const service = new ArticlesService();
