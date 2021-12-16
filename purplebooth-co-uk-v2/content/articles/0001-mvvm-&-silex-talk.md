@@ -9,4 +9,4 @@ description: "The slides from my MVVM and Silex talk"
 
 Here are the slides from my MVVM & Silex talk from PHP UK.
 
-<script async class="speakerdeck-embed" data-id="5381767e531e4ab39960466089e24d27" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+<script async className="speakerdeck-embed" data-id="5381767e531e4ab39960466089e24d27" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>

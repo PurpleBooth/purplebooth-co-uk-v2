@@ -8,11 +8,11 @@ draft: false
 
 This is the third article in a series the SOLID principles for software design. There are 5 principles, each corresponding to a letter in the word SOLID.
 
-1.  [S is for Single Responsibility Principle]({{< relref "0004-s-is-for-single-responsibility-principle.md" >}})
-2.  [O is for Open Closed Principle]({{< relref "o-is-for-open-closed-principle.md" >}})
-3.  [L is for Liskovs Substitution Principle]({{< relref "l-is-for-liskovs-substitution-principle.md" >}})
-4.  [I is for Interface Segregation Principle]({{< relref "I-is-for-Interface-Segregation-principle.md" >}})
-5.  [D is for Dependency Inversion Principle]({{< relref "D-is-for-Dependency-Inversion-Principle.md" >}})
+1.  [S is for Single Responsibility Principle](/blog/2015/1/23/s-is-for-single-responsibility-principle)
+2.  [O is for Open Closed Principle](/blog/2015/1/24/o-is-for-open-closed-principle)
+3.  [L is for Liskovs Substitution Principle](/blog/2015/1/25/l-is-for-liskovs-substitution-principle)
+4.  [I is for Interface Segregation Principle](/blog/2015/1/28/i-is-for-interface-segregation-principle)
+5.  [D is for Dependency Inversion Principle](/blog/2015/2/1/d-is-for-dependency-inversion-principle)
 
 These principles describe the key principles to follow to make maintainable Object Oriented Code.
 
@@ -140,4 +140,4 @@ The tricky part of this rule is that it seems to be [DRY](https://en.wikipedia.o
 
 So how do I DRY up my code then? Take advantage of composition. Composition is where you move shared logic to a new class, and then set that class via a constructor or setter as a member variable in your existing class. Only if you know all classes of that type need the logic, should you use inheritance to prevent code duplication.
 
-LSP is one of the simpler rules of SOLID, however it's one of the most effective at preventing bugs. Next up in the tour of SOLID is [I the "Interface segregation principle"]({{< relref "I-is-for-Interface-Segregation-principle.md" >}}).
+LSP is one of the simpler rules of SOLID, however it's one of the most effective at preventing bugs. Next up in the tour of SOLID is [I the "Interface segregation principle"](/blog/2015/1/28/i-is-for-interface-segregation-principle).

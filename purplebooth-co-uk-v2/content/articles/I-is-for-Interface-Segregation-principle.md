@@ -8,11 +8,11 @@ draft: false
 
 This is the fourth article in a series the SOLID principles for software design. There are 5 principles, each corresponding to a letter in the word SOLID.
 
-1.  [S is for Single Responsibility Principle]({{< relref "0004-s-is-for-single-responsibility-principle.md" >}})
-2.  [O is for Open Closed Principle]({{< relref "o-is-for-open-closed-principle.md" >}})
-3.  [L is for Liskovs Substitution Principle]({{< relref "l-is-for-liskovs-substitution-principle.md" >}})
-4.  [I is for Interface Segregation Principle]({{< relref "I-is-for-Interface-Segregation-principle.md" >}})
-5.  [D is for Dependency Inversion Principle]({{< relref "D-is-for-Dependency-Inversion-Principle.md" >}})
+1.  [S is for Single Responsibility Principle](/blog/2015/1/23/s-is-for-single-responsibility-principle)
+2.  [O is for Open Closed Principle](/blog/2015/1/24/o-is-for-open-closed-principle)
+3.  [L is for Liskovs Substitution Principle](/blog/2015/1/25/l-is-for-liskovs-substitution-principle)
+4.  [I is for Interface Segregation Principle](/blog/2015/1/28/i-is-for-interface-segregation-principle)
+5.  [D is for Dependency Inversion Principle](/blog/2015/2/1/d-is-for-dependency-inversion-principle)
 
 These principles describe the key principles to follow to make maintainable Object Oriented Code.
 
@@ -347,4 +347,4 @@ So how do we deal with the problem of third party interfaces changing, meaning w
 
 A simple idea. Frequently misunderstood. However, with a little insight it can lower the coupling between your services and classes that depend on them, allowing you to quickly make radical changes to how your services are implemented, in a way that has limited impact on classes that have dependencies on them. This means simpler and faster refactoring, and there's nothing I love more than a refactoring session that is done in half an hour rather than half a day.
 
-The next item in our tour of SOLID is the [Dependency Inversion Principle]({{< relref "D-is-for-Dependency-Inversion-Principle.md" >}}).
+The next item in our tour of SOLID is the [Dependency Inversion Principle](/blog/2015/2/1/d-is-for-dependency-inversion-principle).

@@ -51,4 +51,4 @@ To wrap up, a lot of the strategies I have come across for working openly do inv
 
 You can also read this story on medium.
 
-<script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" href="https://medium.com/@PurpleBooth/working-openly-and-open-source-dd044cdfbe73">Working Openly and Open Source</a>
+<script async src="https://static.medium.com/embed.js"></script><a className="m-story" data-collapsed="true" href="https://medium.com/@PurpleBooth/working-openly-and-open-source-dd044cdfbe73">Working Openly and Open Source</a>

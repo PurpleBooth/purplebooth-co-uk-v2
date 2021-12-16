@@ -91,7 +91,7 @@ $ vendor/bin/phpmd your-code/ text cleancode,codesize,design,naming,unusedcode
 ```
 
 This will check against a whole bunch of rules from naming guidelines
-to, [cyclomatic complexity]({{< relref "cyclomatic-complexity.md" >}}),
+to, [cyclomatic complexity](/blog/2015/3/10/cyclomatic-complexity),
 to checking for unused code. Check the [PHPMD website](https://phpmd.org/) for more
 details.
 

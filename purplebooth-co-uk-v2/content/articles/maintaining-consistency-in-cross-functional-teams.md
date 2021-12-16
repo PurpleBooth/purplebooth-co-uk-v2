@@ -60,5 +60,5 @@ It's also easier to see the end goal, and as such see the purpose of your code i
 
 So there you have it. Siloed teams not only have lots of conflict like I explored in my [last article][last-article], but also sap motivation and reduce your ability to make a well fitting solution.
 
-[last-article]: {{< relref "cross-functional-teams.md" >}}
+[last-article]: /blog/2016/1/16/maintaining-consistency-in-cross-functional-teams
 [reddit-question]: https://www.reddit.com/r/programming/comments/45jsn1/cross_functional_teams/czz8u2l

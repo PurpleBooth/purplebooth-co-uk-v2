@@ -9,7 +9,7 @@ I've made a short video about my experiences coming out as a trans woman at work
 
 I'm putting this out there because I want trans people who're thinking about transitioning at work, particularly in the UK, and particularly in software to know they're not alone, and that if I can do this, they can too.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OhrCCGfgrXA" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OhrCCGfgrXA" frameBorder="0" allowFullScreen></iframe>
 
 Enjoy!
 
