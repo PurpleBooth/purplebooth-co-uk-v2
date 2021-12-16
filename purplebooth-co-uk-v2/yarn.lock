@@ -873,6 +873,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-syntax-highlighter@npm:^13.5.2":
+  version: 13.5.2
+  resolution: "@types/react-syntax-highlighter@npm:13.5.2"
+  dependencies:
+    "@types/react": "*"
+  checksum: 237cb596368f7c2c8549d0150308cd5fe633d249b6e20bebb4e242bc1172b60e808db2a57d212f409ab3fee37f47b8465ac35c4754e814d7e0f53cc1b2dd14ea
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*, @types/react@npm:17.0.37":
   version: 17.0.37
   resolution: "@types/react@npm:17.0.37"
@@ -5338,6 +5347,7 @@ __metadata:
     "@types/mdx-js__react": ^1.5.5
     "@types/node": 16.11.12
     "@types/react": 17.0.37
+    "@types/react-syntax-highlighter": ^13.5.2
     autoprefixer: ^10.4.0
     date-fns: ^2.27.0
     eslint: 8.4.1

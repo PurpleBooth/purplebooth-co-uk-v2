@@ -1,4 +1,9 @@
-import { GetServerSideProps, GetStaticPaths, GetStaticProps, NextPage } from "next";
+import {
+  GetServerSideProps,
+  GetStaticPaths,
+  GetStaticProps,
+  NextPage,
+} from "next";
 import ArticlesService from "../../../../../services/ArticleService";
 import Layout from "../../../../../components/Layout";
 import { ArticleJSON } from "../../../../../models/Article";
@@ -45,14 +50,19 @@ const Category: NextPage<Props> = ({ article, contents }: Props) => {
   );
 };
 
-
 export const getStaticPaths: GetStaticPaths = async () => {
   const service = new ArticlesService();
   const articles = await service.find();
 
   return {
-    paths: articles
-      .map((value) => ({params: {year: value.meta.date?.getFullYear().toString(), "month": value.meta.date?.getMonth().toString(), day: value.meta.date?.getDate().toString(), slug: value.meta.slug}})),
+    paths: articles.map((value) => ({
+      params: {
+        year: value.meta.date?.getFullYear().toString(),
+        month: value.meta.date?.getMonth().toString(),
+        day: value.meta.date?.getDate().toString(),
+        slug: value.meta.slug,
+      },
+    })),
     fallback: true,
   };
 };
