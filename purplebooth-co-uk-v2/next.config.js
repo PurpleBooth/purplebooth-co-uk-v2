@@ -2,10 +2,16 @@
 
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [],
-    rehypePlugins: [],
-  },
+  commonmark: true,
+  gfm: true,
+  remarkPlugins: [
+    [
+      require('remark-prism'),
+      {
+        /* options */
+      },
+    ],
+  ],
 });
 module.exports = withMDX({
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
