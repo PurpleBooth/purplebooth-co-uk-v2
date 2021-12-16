@@ -26,8 +26,7 @@ This principle is based around the idea that each responsibility that a class ha
 
 Take for example this class
 
-<pre class="code">
-<code class="php">
+```php
 
 /**
  * Shopping basket.
@@ -102,8 +101,7 @@ class Basket
         );
     }
 }
-</code>
-</pre>
+```
 
 This class violates the Single Responsibility Principle because it's got two things that can cause the object to change.
 
@@ -118,8 +116,7 @@ Not following this rule (also known as high coupling), is going to cause you pro
 
 The correct way to implement this is to split each responsibility into a class. In this example this means we end up with a _Basket_ and _BasketCompleteEmailListener_. We will run the _BasketCompleteEmailListener_ with the [Observer pattern](https://en.wikipedia.org/wiki/Observer_pattern). This way we can still send the email when the order is complete, but we can also complete an order without sending an email.
 
-<pre class="code">
-<code class="php">
+```php
 
 /**
  * Shopping basket.
@@ -154,11 +151,9 @@ class Basket
     }
 }
 
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 
 /**
  * Listens for Basket Completion and sends an email
@@ -200,8 +195,7 @@ class BasketCompleteEmailListener
         );
     }
 }
-</code>
-</pre>
+```
 
 Once separated like this it's clear to see: responsibilities mean requirements. The requirement to send an email, or keep track of the basket in this example. Uncoupling these responsibilities means, if we get a change in requirements to not send an email sometimes, that's perfectly achievable without changing the basket logic, so a single change, rather than both email and basket logic.
 

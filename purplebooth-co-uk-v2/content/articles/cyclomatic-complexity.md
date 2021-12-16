@@ -17,17 +17,15 @@ Complexity in software development is Cyclomatic Complexity. Cyclomatic Complexi
 
 Take for example this simple method.
 
-<pre class="code">
-<code class="ruby">
+```ruby
 def hello
     puts "hello, world!";
 end
-</code>
-</pre>
+```
 
 We can represent this using a graph. Using a node to represent the start and the end of the code, and a node for every decision made within the graph. In our example there are none, making the complexity simple to work out.
 
-{{< figure src="/post/cyclomatic-complexity/simple.png" title="A decision graph of our simple method" >}}
+![A decision graph of our simple method](/post/cyclomatic-complexity/simple.png)
 
 Now we've built our graph, we apply this formula defined by McCabe that counts the number of routes through the code.
 
@@ -56,8 +54,7 @@ So this method has a complexity of 1. There is 1 route through the code.
 
 Okay, but what if we start making our method more complex? Lets add in an if statement in there.
 
-<pre class="code">
-<code class="ruby">
+```ruby
 def hello(name=nil)
     if name.nil?
         puts "hello, world!"; # A
@@ -65,12 +62,11 @@ def hello(name=nil)
         puts "hello, "+name+"!"; # B
     end
 end
-</code>
-</pre>
+```
 
 We can represent this with a graph like this
 
-{{< figure src="/post/cyclomatic-complexity/less-simple.png" title="A more complicated method with an if statement in it" >}}
+![A more complicated method with an if statement in it](/post/cyclomatic-complexity/less-simple.png)
 
 So lets take our formula again
 
@@ -93,8 +89,7 @@ Programs don't just need selection though, they need iteration too! Also known a
 
 Here's our updated example with a small loop in it
 
-<pre class="code">
-<code class="ruby">
+```ruby
 def hello(loops, name=nil)
 
     loops.times do # A1
@@ -107,12 +102,11 @@ def hello(loops, name=nil)
         puts "hello, "+name+"!"; # D
     end
 end
-</code>
-</pre>
+```
 
 Now representing loops is a little bit more complicated than if statements
 
-{{< figure src="/post/cyclomatic-complexity/loopy.png" title="Representing loops in complexity" >}}
+![Representing loops in complexity](/post/cyclomatic-complexity/loopy.png)
 
 You'll notice that for the loop there are 3 nodes. A1 is the path to the loop, B is the code in the loop, and A2 is the code from the loop till the next statement.
 

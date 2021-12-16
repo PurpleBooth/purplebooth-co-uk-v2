@@ -12,8 +12,7 @@ an empty array when you call getTranslations()?
 
 Try this:
 
-<pre class="code">
-<code class="php">
+```php
 
 $client = new Google_Client();
 
@@ -42,8 +41,7 @@ var_dump($translations->data['translations'][0]["translatedText"]);
 // }
 // string(17) "Bonjour le monde!"
 
-</code>
-</pre>
+```
 
 Unfortunately this client is generated, so it's not as simple as
 submitting a PR to fix it, but this still works to get hold of those

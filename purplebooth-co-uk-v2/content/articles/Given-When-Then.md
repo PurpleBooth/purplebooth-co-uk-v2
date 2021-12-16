@@ -26,27 +26,23 @@ Testing Behavior means that you test the apparent actions of the system from a u
 
 Have a look at this example where I'm testing implementation details rather than behavior:
 
-<pre class="code">
-<code class="gherkin">
+```gherkin
 Scenario: A book can be rated
     Given There is a book called "Black Lagoon"
     When I leave a 5 star rating on the book "Black Lagoon"
     Then the "rating" table should have 1 "5" star rating
-</code>
-</pre>
+```
 
 Now imagine I change the database table that the users are stored in from ratings to reviews. All my tests will break, even if my code is correct.
 
 If your tests are tied to your implementation then you're going have all your tests break the moment you change that implementation. What we care about is the behavior, not how we have implemented it. To put it another way: We care that we _can_ create a rating, not _how_ we create a rating.
 
-<pre class="code">
-<code class="gherkin">
+```gherkin
 Scenario: A book can be rated
     Given There is a book called "Black Lagoon"
     When I leave a 5 star rating on the book "Black Lagoon"
     Then book "Black Lagoon" should have the rating "5"
-</code>
-</pre>
+```
 
 Now look at this example, changing the name of the users table wouldn't break the test (unless we break the behavior of course).
 
@@ -66,8 +62,7 @@ Each of these scenarios has multiple lines with a starting keyword, of Given, Wh
 
 This is an [example from the Behat manual](http://docs.behat.org/en/v2.5/guides/1.gherkin.html):
 
-<pre class="code">
-<code class="gherkin">
+```gherkin
 Feature: Some terse yet descriptive text of what is desired
   In order to realize a named business value
   As an explicit system actor
@@ -86,8 +81,7 @@ Feature: Some terse yet descriptive text of what is desired
 
   Scenario: A different situation
     ...
-</code>
-</pre>
+```
 
 ### Given
 
@@ -95,8 +89,7 @@ Given is your context, what you're assuming in order for this test to run. By sa
 
 Take for example these two scenarios without any Givens.
 
-<pre class="code">
-<code class="gherkin">
+```gherkin
 Scenario: Create Book
     When I create the book "Black Lagoon"
     Then book "Black Lagoon" should exist
@@ -104,8 +97,7 @@ Scenario: Create Book
 Scenario: Remove Book
     When I delete the on the book "Black Lagoon"
     Then there should be no book titled "Black Lagoon"
-</code>
-</pre>
+```
 
 Now imagine that you change the second scenario to run first, or simply run it alone. It'll break!
 
@@ -119,28 +111,24 @@ A fixture means that you won't know what the context of this test is. A vital pa
 
 Take for example this test without Givens but using fixtures.
 
-<pre class="code">
-<code class="gherkin">
+```gherkin
 Scenario: Remove Book
     Given I load the fixtures
     # This might be done with a pre-scenario hook or script
     When I delete the on the book "Black Lagoon"
     Then there should be no book titled "Black Lagoon"
-</code>
-</pre>
+```
 
 What happens if someone removes the book from the fixtures, and breaks the delete functionality. We might have a situation where the functionality is broken but we don't know until it's too late, because this test will pass regardless. The context that there is a book is important to the test.
 
 Now take for example this test which isn't using fixtures, but rather using Givens.
 
-<pre class="code">
-<code class="gherkin">
+```gherkin
 Scenario: Remove Book
     Given there is a book "Black Lagoon"
     When I delete the on the book "Black Lagoon"
     Then there should be no book titled "Black Lagoon"
-</code>
-</pre>
+```
 
 Much clearer, and we don't risk the functionality being broken and us not noticing.
 
@@ -156,8 +144,7 @@ A key component of a good when step is that it's fairly high level.
 
 Take for example these low level steps. Which is the important step here?
 
-<pre class="code">
-<code class="gherkin">
+```gherkin
 Scenario: Remove Book
     Given there is a book "Black Lagoon"
     When I click on the "login" link
@@ -171,19 +158,16 @@ Scenario: Remove Book
     And I click on "Confirm"
     When I delete the on the book "Black Lagoon"
     Then there should be no book titled "Black Lagoon"
-</code>
-</pre>
+```
 
 Now look at this example which is much more brief. It's clear what the action we're performing is:
 
-<pre class="code">
-<code class="gherkin">
+```gherkin
 Scenario: Remove Book
     Given there is a book "Black Lagoon"
     When I delete the on the book "Black Lagoon"
     Then there should be no book titled "Black Lagoon"
-</code>
-</pre>
+```
 
 ### Then
 
@@ -195,8 +179,7 @@ However there is another thing you want to avoid, and that is using tables. Whil
 
 Take the following example. What is this step doing? What does this data mean?
 
-<pre class="code">
-<code class="gherkin">
+```gherkin
 Scenario: Publish Book
     Given there is a book "Black Lagoon"
     When publish the book "Black Lagoon"
@@ -210,19 +193,16 @@ Scenario: Publish Book
         | Tags         | Scary, Lake, Monster       |
         | Category     | Horror                     |
         | Spoilers     | true                       |
-</code>
-</pre>
+```
 
 Now look at this example, much clearer. You can see what the data means, which is often more important than what the data actually is.
 
-<pre class="code">
-<code class="gherkin">
+```gherkin
 Scenario: Publish Book
     Given there is a book "Black Lagoon"
     When publish the book "Black Lagoon"
     Then book "Black Lagoon" should have a published date
-</code>
-</pre>
+```
 
 ### Step definitions
 
@@ -232,8 +212,7 @@ There are a few ways to achieve this though. Firstly you're an Object Oriented p
 
 Take for example this [Behat](http://behat.org/en/v2.5/) step definition.
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * @When I publish the book :title
  */
@@ -256,13 +235,11 @@ public function publishBook($title)
 
     $this->load('/publish', 'post', ['bookId' => $bookId]);
 }
-</code>
-</pre>
+```
 
 And the same step definition refactored to use some entity objects. Notice how we're now comparing two Books, rather than fairly arbitrary strings.
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * @When I publish the book :title
  */
@@ -297,15 +274,13 @@ public function publishBook($title)
         ['bookId' => $toPublish->getId()]
     );
 }
-</code>
-</pre>
+```
 
 Secondly take advantage of [transformers](http://docs.behat.org/en/v2.5/guides/2.definitions.html#step-argument-transformations) so your steps don't contain lots of repeated code to transform a table or string into the applicable object. This can remove a lot of repeated code.
 
 Transformations are [available in Cucumber too](https://docs.cucumber.io/cucumber/cucumber-expressions/#custom-parameter-types).
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * @Transform :book
  */
@@ -349,15 +324,13 @@ public function publishBook(ComparisonBook $book)
         ['bookId' => $toPublish->getId()]
     );
 }
-</code>
-</pre>
+```
 
 Finally use the [page object](https://martinfowler.com/bliki/PageObject.html) design pattern. The page object design pattern gives you an object that represents a single page in your system with methods on to make assertions or perform actions with. This means that you can reduce and centralize low level code that does things like parse web pages, or make API requests.
 
 Typically the object has all the actions that are available from that page, and offers ways to access the data in the page. When you access another page from that page, the method you call will return a new page object, with the actions on for that new page.
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * @Transform :book
  */
@@ -378,8 +351,7 @@ public function publishBook(ComparisonBook $book)
     $bookPage = $this->bookListPage->getBookPage($book);
     $bookPage->publish();
 }
-</code>
-</pre>
+```
 
 This allows you to have much higher reuse between steps. On top of that your code is much more readable, and writing new steps will be much quicker.
 

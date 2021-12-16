@@ -9,8 +9,7 @@ Need to check your code follows PSR-2, but it's not supported in your
 editor of choice? Here's a quick bit of code to check. It uses
 [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer).
 
-<pre class="code">
-<code class="bash">
+```bash
 $ composer require --dev "squizlabs/php_codesniffer=*"
 $ vendor/bin/phpcs --standard=PSR2 your-code-path/
 vendor/bin/phpcs --standard=PSR2 app/
@@ -42,8 +41,7 @@ PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 Time: 764ms; Memory: 10Mb
 
 
-</code>
-</pre>
+```
 
 You only need to run the _composer require_ once.
 
@@ -53,8 +51,7 @@ PSR-2, and what you need to fix.
 What's more you can also use this code to fix most of the style
 violations too!
 
-<pre class="code">
-<code class="bash">
+```bash
 $ vendor/bin/phpcbf --standard=PSR2 your-code-path/
 Changing into directory /home/vagrant/Code/search/php-app/app/Console/Commands
 Processing SearchBenchmarkMerchants.php [PHP => 1414 tokens in 192 lines]... DONE in 44ms (0 fixable violations)
@@ -82,19 +79,16 @@ Processing MerchantStrategy.php [PHP => 138 tokens in 28 lines]... DONE in 4ms (
 Patched 10 files
 Time: 1.29 secs; Memory: 10Mb
 
-</code>
-</pre>
+```
 
 If you want to run some fancy analytics on your code to see if your
 design is looking okay, use [PHPMD](https://phpmd.org/).
 
-<pre class="code">
-<code class="bash">
+```bash
 $ composer require --dev "phpmd/phpmd=@stable"
 $ vendor/bin/phpmd your-code/ text cleancode,codesize,design,naming,unusedcode
 /home/vagrant/Code/search/php-app/app/Http/Controllers/SearchController.php:29	The class SearchController has a coupling between objects value of 13. Consider to reduce the number of dependencies under 13.
-</code>
-</pre>
+```
 
 This will check against a whole bunch of rules from naming guidelines
 to, [cyclomatic complexity]({{< relref "cyclomatic-complexity.md" >}}),

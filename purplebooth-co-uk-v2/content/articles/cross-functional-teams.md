@@ -26,7 +26,7 @@ Cross Functional Teams put the primary goal as being producing value for the bus
 
 To illustrate the problem Cross Functional Teams solve I'm going to pretend that we're playing a turn based game. So lets take this first example.
 
-{{< figure src="/post/cross-functional-teams/non-cross-functional-teams/1.png" title="Skill silos: Turn 1 - No plan ever survives contact with the enemy" >}}
+!["Skill silos: Turn 1 - No plan ever survives contact with the enemy"](/post/cross-functional-teams/non-cross-functional-teams/1.png)
 
 It's a plan of work that spans across many teams. In this example I've stuck to three teams, as these are often the most visible from a developers perspective: Ops, Dev, Front. However there are actually loads of teams inside an organization, Maybe there is a Product team, maybe there is a Test, or Marketing team.
 
@@ -34,7 +34,7 @@ This doesn't matter, as even in this simplified example you'll still see the sam
 
 Lets take our first turn.
 
-{{< figure src="/post/cross-functional-teams/non-cross-functional-teams/2.png" title="Skill Silos: Turn 2 - A disruption has appeared in the long grass!" >}}
+!["Skill Silos: Turn 2 - A disruption has appeared in the long grass!"](/post/cross-functional-teams/non-cross-functional-teams/2.png)
 
 In this fictional world we have taken our first step, and both the Ops, Dev and Front teams have completed their turn. As we move into our second turn we're already seeing problems.
 
@@ -44,11 +44,11 @@ As minor as this is, it still interrupts other teams work on vital features, and
 
 Lets take another step.
 
-{{< figure src="/post/cross-functional-teams/non-cross-functional-teams/3.png" title="Skill Silos: Turn 3 - All my estimations are always correct" >}}
+!["Skill Silos: Turn 3 - All my estimations are always correct"](/post/cross-functional-teams/non-cross-functional-teams/3.png)
 
 Hold up though! Real life doesn't work like this, we don't complete a known amount each turn. Sometimes our estimation is wrong, or scope changes after discovering new functionality.
 
-{{< figure src="/post/cross-functional-teams/non-cross-functional-teams/5.png" title="Skill Silos: Turn 3 - Lets be realistic" >}}
+!["Skill Silos: Turn 3 - Lets be realistic"](/post/cross-functional-teams/non-cross-functional-teams/5.png)
 
 This is a bit more like it.
 
@@ -58,7 +58,7 @@ Oh no, now there are two conflicts going on though. The Ops guys are bored, they
 
 On top of this the frontend team are finding bugs in, and asking them about work they completed what seems like ages ago. Everyone is feeling a little harried.
 
-{{< figure src="/post/cross-functional-teams/non-cross-functional-teams/6.png" title="Skill Silos: Turn 4 - Pandemonium!" >}}
+!["Skill Silos: Turn 4 - Pandemonium!"](/post/cross-functional-teams/non-cross-functional-teams/6.png)
 
 Under increased pressure from the Ops the Dev team are rushing to get finished. What's worse the Front team are being blocked by them too!
 
@@ -68,17 +68,17 @@ All in all a pretty unpleasant experience for everyone.
 
 Okay, so lets bring this example to a close here. Lets compare this to Cross Functional Teams.
 
-{{< figure src="/post/cross-functional-teams/cross-functional-teams/1.png" title="Cross Functional Teams: Turn 1" >}}
+!["Cross Functional Teams: Turn 1"](/post/cross-functional-teams/cross-functional-teams/1.png)
 
 No friction
 
-{{< figure src="/post/cross-functional-teams/cross-functional-teams/2.png" title="Cross Functional Teams: Turn 2" >}}
+!["Cross Functional Teams: Turn 2"](/post/cross-functional-teams/cross-functional-teams/2.png)
 
 Still no friction.
 
 Okay this is boring, lets pretend our teams suck at estimation.
 
-{{< figure src="/post/cross-functional-teams/cross-functional-teams/3.png" title="Cross Functional Teams: Turn 2" >}}
+!["Cross Functional Teams: Turn 2"](/post/cross-functional-teams/cross-functional-teams/3.png)
 
 Still no friction. Teams can simply bring in more work or push back other work, without blocking anyone.
 

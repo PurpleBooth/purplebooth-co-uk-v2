@@ -24,8 +24,7 @@ In practical terms, this means that any new functionality should be implementabl
 
 Take for example this _LineItem_ that offers special discount for some _User_ types of the system:
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Line item in the basket
  */
@@ -65,11 +64,9 @@ class LineItem
     }
 
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * A user of the system
  */
@@ -100,8 +97,7 @@ class User
         $this->type = $type;
     }
 }
-</code>
-</pre>
+```
 
 This violates the open closed principle because we need to modify existing code in order to add additional _User_ _LineItem_ price calculations.
 
@@ -109,8 +105,7 @@ This is bad because we have some code that we know works, in the _LineItem_, how
 
 However it is possible to write code that only needs us to write new classes to extend it (that is open to extension), and doesn't require us to change the existing working code (closed to modification).
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Line item in the basket
  */
@@ -143,11 +138,9 @@ class LineItem
     }
 
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * A user of the system
  */
@@ -161,11 +154,9 @@ abstract class User
      */
     abstract public function getPrice($price);
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * A special favourite customer
  */
@@ -182,11 +173,9 @@ class Special extends User
         return $price / 2;
     }
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * A customer we like the best
  */
@@ -203,11 +192,9 @@ class Regular extends User
         return $price;
     }
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * A customer we don't like much
  */
@@ -224,8 +211,7 @@ class Disliked extends User
         return $price * 2;
     }
 }
-</code>
-</pre>
+```
 
 You can see here that we can add additional types, simply by adding another class, we don't need to change any existing classes. We're open to extension of the functionality, closed to needing to modify the original class.
 
@@ -237,8 +223,7 @@ If we were to make our class fully open, we should make all our member variables
 
 This has an additional benefit, by explicitly creating the extension points we give our fellow developers key information as to how some code is to be used, and we can even take advantage of the compiler to enforce this usage. In the following example we're taking advantage of making the extension point to delayDispatch explicitly only take _Disliked_ users, to prevent any users that are not mean to us from having their _LineItem_ delayed.
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Line item in the basket
  */
@@ -274,8 +259,7 @@ class LineItem
         //...
     }
 }
-</code>
-</pre>
+```
 
 So you can see the Open Closed Principle is key to good usage of polymorphism. It helps us think about where we're willing to let new functionality be added to our system, and enforce where we are not. It's a powerful design tool that can allow the compiler to prevent errors before they happen, and teach other developers how to use the system.
 

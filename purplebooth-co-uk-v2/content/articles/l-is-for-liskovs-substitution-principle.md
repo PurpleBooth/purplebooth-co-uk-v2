@@ -18,14 +18,13 @@ These principles describe the key principles to follow to make maintainable Obje
 
 L stands for Liskov's Substitution Principle or LSP (not that LSP)
 
-{{< figure src="/Lumpy_Space.png" title="Like, Oh My Glob" >}}
+![Like, Oh My Glob](/Lumpy_Space.png)
 
 Liskov's Substitution Principle states that "objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program", and it's a specific violation of the Open Closed Principle when broken.
 
 Take for example:
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Writes log lines to MongoDB
  */
@@ -40,11 +39,9 @@ class MongoDBWriter extends  Writer {
         return true;
     }
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Writes log lines in JSON to disk
  */
@@ -59,11 +56,9 @@ class JsonWriter extends Writer {
         return array('success' => true);
     }
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Parent class for all log writers
  */
@@ -75,8 +70,7 @@ abstract class Writer {
     abstract public function connect();
 
 }
-</code>
-</pre>
+```
 
 Here you can see that we don't match the interface of the parent class in our _JsonWriter_. You can imagine what's going to happen when we try to check if the connection has been successfully made in a none strict manner. It'll always return true, because a none empty array is true in PHP.
 
@@ -84,8 +78,7 @@ Another common mistake is to have functions throw exceptions, where no exception
 
 These are the simplest instance of violating the LSP. There is a more subtle violation of the LSP though. This is the incorrect use of inheritance.
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Writes log lines to MongoDB
  */
@@ -101,11 +94,9 @@ class MongoDBWriter extends JsonWriter {
         return true;
     }
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Writes log lines in JSON to disk
  */
@@ -123,11 +114,9 @@ class JsonWriter extends Writer {
         error_log($json);
     }
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Parent class for all log writers
  */
@@ -139,8 +128,7 @@ abstract class Writer {
     abstract public function connect();
 
 }
-</code>
-</pre>
+```
 
 Take the above code. We have extended the _JsonWriter_ to form the _MongoDBWriter_ to utilise some of it's internal logic. However in doing so we've introduced a problem: we can no longer force a logger to be a _JsonWriter_ logger, without first assuming we might get a MongoDB writing logger instead.
 

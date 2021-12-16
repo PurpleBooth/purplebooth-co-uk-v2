@@ -13,7 +13,7 @@ This can be summarized like so: Beliefs Change, Doctrine is set in stone. If you
 
 However this leaves us with a problem. Peoples beliefs are sometimes wrong. Even the winner of Time Magazine's Person of the Year award in 2006 can have the wrong beliefs.
 
-{{< figure src="/post/opportunities-to-learn/Time_youcover01.jpg" title="You won Time Magazine's Person of the Year award in 2006" >}}
+![You won Time Magazine's Person of the Year award in 2006](/post/opportunities-to-learn/Time_youcover01.jpg)
 
 How do we ensure that everyone on a team is consistently developing the latest skills and beliefs about how to develop software?
 
@@ -25,7 +25,7 @@ We do this by talking to people, and sharing knowledge within or outside the tea
 
 The first way is the most obvious. Ape the local user group and **create your own monthly talks within a business**.
 
-{{< figure src="/post/opportunities-to-learn/me-at-phpsw.jpg" title="Me speaking at PHPSW on CQRS" >}}
+![Me speaking at PHPSW on CQRS](/post/opportunities-to-learn/me-at-phpsw.jpg)
 
 This is a fantastic way of transferring large blocks of information and putting forward complex ideas, concepts and ways of working. It can also be seen as a bit of a break from the norm, and a fun event for the team to decompress a little.
 
@@ -33,7 +33,7 @@ The technique has it's problems though, it can be hard to find speakers in small
 
 One technique that does give us the insight into other areas of the business is **BDD**, or **[Behavior Driven Development](https://en.wikipedia.org/wiki/Business-driven_development)**. Behavior driven development is the idea that before developing a feature, you should sit with the business, and define it's required behavior.
 
-{{< figure src="/post/opportunities-to-learn/bdd.png" title="The Red-Green cycle of BDD" >}}
+![The Red-Green cycle of BDD](/post/opportunities-to-learn/bdd.png)
 
 Sitting down with the representative for the feature being implemented can impart knowledge about the behavior that can allow the developer to not only write the correct thing, but negotiate changes in the detail of the behavior that may allow a user to have a better experience, or the developer to write a simpler system.
 
@@ -57,7 +57,7 @@ The next technique I want to discuss with you is **Pair Programming**. There are
 
 Ping Pong pair programming is where one developer writes a test, and then the other writes code until that test is passing, and writes the next test, and so on and so forth until an entire feature is complete. While one developer is writing code, the other developer is considering and thinking about the architecture of the system. We call the developer who is thinking about the architecture the Navigator, and the person who is writing the code at the time the Driver. The pair of developers typically share a computer to use this technique.
 
-{{< figure src="/post/opportunities-to-learn/pingpong.png" title="Ping Pong Pair Programming" >}}
+![Ping Pong Pair Programming](/post/opportunities-to-learn/pingpong.png)
 
 This allows both developers to discuss both individual development techniques, but also broader architectural ideas in the system. This offers both developers the opportunity to grow and learn new things.
 

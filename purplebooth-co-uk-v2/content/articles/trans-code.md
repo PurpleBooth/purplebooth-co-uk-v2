@@ -7,4 +7,4 @@ description: "Meeting some awesome people at Trans*code hack day tonight"
 
 Meeting some awesome people at [Trans\*code](http://trans-code.org/) hack day tonight
 
-{{< figure src="/post/trans-code/cropped-cropped-TransCode_transparent2-300x46.jpg" >}}
+![Trans Code Logo](/post/trans-code/cropped-cropped-TransCode_transparent2-300x46.jpg){{< figure src="/post/I-is-for-Interface-Segregation-principle/teddies.jpg" title="Plushie store" attr="Photo by Edward Terry" attrlink="https://www.flickr.com/photos/zachoneniner/14123801505/" >}}

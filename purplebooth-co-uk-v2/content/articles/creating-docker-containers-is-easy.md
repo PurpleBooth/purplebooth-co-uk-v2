@@ -9,30 +9,25 @@ There is a lot of complex sounding terms when it comes to docker, but I'm going 
 
 Your server.js looks like this:
 
-<pre class="code">
-<code class="javascript">
-var express = require('express');
+```javascript
+var express = require("express");
 var app = express();
 
-app.get('/', function (req, res) {
-    res.send("Hello World!\n");
+app.get("/", function (req, res) {
+  res.send("Hello World!\n");
 });
 
 var server = app.listen(3000, function () {
+  var host = server.address().address;
+  var port = server.address().port;
 
-    var host = server.address().address;
-    var port = server.address().port;
-
-    console.log('Example app listening at http://%s:%s', host, port);
-
+  console.log("Example app listening at http://%s:%s", host, port);
 });
-</code>
-</pre>
+```
 
 Your package.json looks like this:
 
-<pre class="code">
-<code class="javascript">
+```javascript
 {
   "name": "dockerdemo",
   "version": "0.1.0",
@@ -50,25 +45,21 @@ Your package.json looks like this:
   "license": "MIT"
 }
 
-</code>
-</pre>
+```
 
 And when you run it looks like this:
 
-<pre class="code">
-<code class="shell">
+```shell
 $ npm install && npm start &
 $ curl localhost:3000
 Hello World!
-</code>
-</pre>
+```
 
 Now this is all well and good but how are you going to get this code into a container that you can deploy to your infrastructure?
 
 First step is to create a [Dockerfile](https://docs.docker.com/reference/builder/). This is a plain text file with some instructions and environment detail about our application. Our Dockerfile for this application would look like this:
 
-<pre class="code">
-<code class="docker">
+```docker
 FROM node:0.10-onbuild
 
 RUN mkdir /server
@@ -77,54 +68,43 @@ WORKDIR /server
 RUN npm install
 ENTRYPOINT npm start
 EXPOSE 3000
-</code>
-</pre>
+```
 
 Lets break this down line by line.
 
-<pre class="code">
-<code class="docker">
+```docker
 FROM node:0.10-onbuild
-</code>
-</pre>
+```
 
 The first line of a docker file is the "FROM" statement. This is a existing container that we're building on. I'm building on the [node:0.10-onbuild container](https://hub.docker.com/_/node/), which is the official node container.
 
 This container has everything installed, such as npm and node, that is required to run a node application. There are lower level containers too, such as a [CentOS container](https://hub.docker.com/_/centos/), or a [Ubuntu container](https://hub.docker.com/_/ubuntu/). These might be more suitable if you're doing something lower level, but most of the time it's a good idea to reuse other peoples work setting up the applications and libraries you need, rather than rolling your own.
 
-<pre class="code">
-<code class="docker">
+```docker
 RUN mkdir /server
 ADD . /server
-</code>
-</pre>
+```
 
 The next line tells docker to run the mkdir command to create a directory, and the command following that ADD's the "." repository to the image. This means that the folder /server in the container will contain everything that is in the same directory as the Dockerfile. You can exclude files using a [.dockerignore](https://docs.docker.com/reference/builder/#the-dockerignore-file).
 
 The thing to note about docker is that it is build on top of [AUFS](https://en.wikipedia.org/wiki/Aufs) - a layered file system, each change like this creates a new layer in the filesystem. This is good because it means that once you have the previous layers, you only need to add the new layer on top. This means that for every container that uses the node:0.10-onbuild container, we can share all the previous layers, while only adding a tiny custom layer to make a fully fledged container.
 
-<pre class="code">
-<code class="docker">
+```docker
 WORKDIR /server
 RUN npm install
-</code>
-</pre>
+```
 
 WORKDIR changes the current working directory, same as cd does in bash, then we run an NPM install like we would on a developers machine.
 
-<pre class="code">
-<code class="docker">
+```docker
 ENTRYPOINT npm start
-</code>
-</pre>
+```
 
 After that we specify the entrypoint. This is the command that will be ran when we run this container, in our case we'll use it to start our express application.
 
-<pre class="code">
-<code class="docker">
+```docker
 EXPOSE 3000
-</code>
-</pre>
+```
 
 Expose is a special command in docker, if we were to [--link this container with another one](https://docs.docker.com/userguide/dockerlinks/), this would ensure an environment variable with the name "name_PORT_port_protocol" was set on the container this container was being linked to.
 
@@ -132,8 +112,7 @@ So that's the docker file itself. But how do we make that into something we can 
 
 To turn this text file into a docker container we need to build it.
 
-<pre class="code">
-<code class="shell">
+```shell
 $ docker build -t purplebooth/dockerdemo:0.1.0 .
 Sending build context to Docker daemon 8.192 kB
 Sending build context to Docker daemon
@@ -200,20 +179,17 @@ Step 6 : ENTRYPOINT npm start
  ---> 925594502efd
 Removing intermediate container e4ad3aecd386
 Successfully built 925594502efd
-</code>
-</pre>
+```
 
 There's only really one switch here, and that's the "-t" flag. The "-t" flag tags the container we are building with a name and a version.
 
 This means that we can now run it
 
-<pre class="code">
-<code class="shell">
+```shell
 $ docker run -p 3001:3000 purplebooth/dockerdemo:0.1.0 &
 $ curl $(boot2docker ip):3001
 Hello World!
-</code>
-</pre>
+```
 
 Now it's all well and good having this on your local machine, but we need this to be pushed out to where everyone can access it. We do this by pushing a tag to a repository.
 
@@ -221,16 +197,13 @@ You can [run your own](https://hub.docker.com/_/registry/), or you can use the [
 
 The first step is to login.
 
-<pre class="code">
-<code class="shell">
+```shell
 $ docker login
-</code>
-</pre>
+```
 
 Once you've done that you can create your repository on the site, and push from your local machine the tag you have just created.
 
-<pre class="code">
-<code class="shell">
+```shell
 $ docker push purplebooth/dockerdemo
 The push refers to a repository [purplebooth/dockerdemo] (len: 1)
 925594502efd: Image already exists
@@ -259,18 +232,15 @@ c69aee172ec1: Image successfully pushed
 f5224fc54ad2: Image successfully pushed
 61b3964dfa70: Image successfully pushed
 Digest: sha256:a5ff62af772ce82c4b05aadd93e80571db8d89f6172487614e6f165da2953827
-</code>
-</pre>
+```
 
 Now anyone in the world can run your application with a simple docker run command.
 
-<pre class="code">
-<code class="shell">
+```shell
 $ docker run -p 3001:3000 purplebooth/dockerdemo:0.1.0 &
 $ curl $(boot2docker ip):3001
 Hello World!
-</code>
-</pre>
+```
 
 Neat, eh?
 

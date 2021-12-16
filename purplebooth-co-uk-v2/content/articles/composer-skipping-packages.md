@@ -22,8 +22,7 @@ It's worth noting that the semver conditional is the preferred way of setting re
         "doctrine/orm" : "^2.1.0 !=2.1.5"
     }
 }
-</code>
-</pre>
+```
 
 You can also create more complicated package requirements by using the or operator. The or operator is "||". Using this you can combine two ranges to skip a large series of versions.
 
@@ -34,8 +33,7 @@ You can also create more complicated package requirements by using the or operat
         "doctrine/orm" : "^2.1.0 <2.1.5 || ^2.4.0"
     }
 }
-</code>
-</pre>
+```
 
 In this case we're saying we want versions from 2.1.0 to versions less than 2.1.5 or 2.4.0 to anything less than version 3.0.0
 

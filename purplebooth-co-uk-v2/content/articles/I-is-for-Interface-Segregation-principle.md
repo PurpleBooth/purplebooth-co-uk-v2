@@ -22,12 +22,13 @@ The Interface Segregation Principle is the idea that "Many client specific inter
 
 So for each of your services, you should provide an interface for each of its clients. What I mean by service is a class or set of classes that provide a grouped suite of behaviors to the rest of the system, for example, imagine a service that is the shopping basket for your Plushie store. What I mean by client is a class that depends on this service to achieve a certain goal, which may be providing reporting information on this weeks purchases to decide which soft toys to get in stock next week, or it may be allowing someone to add items to their basket.
 
-{{< figure src="/post/I-is-for-Interface-Segregation-principle/teddies.jpg" title="Plushie store" attr="Photo by Edward Terry" attrlink="https://www.flickr.com/photos/zachoneniner/14123801505/" >}}
+![![Plushie Store](/post/I-is-for-Interface-Segregation-principle/teddies.jpg)
+
+> [Photo by Edward Terry](https://www.flickr.com/photos/zachoneniner/14123801505/)
 
 Take for example the following purchasing system, and it's two clients that are dependent on the concrete class.
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Make changes to the stored basket within the system
  */
@@ -66,11 +67,9 @@ class BasketPersistenceService
     // More methods
 
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Order new stock depending on the top purchases
  */
@@ -102,11 +101,9 @@ class StockManagementService
 
     // More methods
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Service for making changes to the basket for a specific user
  *
@@ -160,8 +157,7 @@ class UserBasket
 
     // More methods
 }
-</code>
-</pre>
+```
 
 Now assume we want to extend and enhance the reporting aspects of this system, to such an extent that the analytics methods such as _getTopWeeklySellers_ deserve their own class, away from the purchasing methods such as _addItemToBasket_ and _purchaseBasket_.
 
@@ -169,8 +165,7 @@ We now have to change the interface in two downstream clients, because we cannot
 
 Now consider the following design following the Interface Segregation Principle. Notice how we only have to change the classes that are impacted by the change: _BasketPersistenceService_ and _StockManagementService_, rather than all of the classes that have the _BasketPersistenceService_ injected as a constructor variable into them. This is because the client specific interfaces guarantee that the analytics methods are only being called in classes that require them.
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Interface for the Stock Management Service to identity purchasing trends
  */
@@ -181,11 +176,9 @@ interface BasketAnalyticsService
      */
     public function getTopWeeklySellers();
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Interface for the Session Basket to allow users to purchase things
  */
@@ -207,11 +200,9 @@ interface PurchasingService
      */
     public function purchaseBasket(User $user);
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Make changes to the stored basket within the system
  */
@@ -250,11 +241,9 @@ class BasketPersistenceService implements PurchasingService, BasketAnalyticsServ
     // More methods
 
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Order new stock depending on the top purchases
  */
@@ -286,11 +275,9 @@ class StockManagementService
 
     // More methods
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Service for making changes to the basket for a specific user
  *
@@ -344,8 +331,7 @@ class UserBasket
 
     // More methods
 }
-</code>
-</pre>
+```
 
 Now there are two common questions people have about this Principle.
 
@@ -353,7 +339,7 @@ The first one is simple, how do I deal with the situation where multiple clients
 
 The second common question is trickier. Sometimes we use third party code, and as such we have no client interface available to us. So what can we do to prevent changing interfaces having an impact on classes that depend on that third party code?
 
-{{< figure src="/post/I-is-for-Interface-Segregation-principle/wrappers.jpg" title="A proliferation of wrappers" >}}
+![A proliferation of wrappers](/post/I-is-for-Interface-Segregation-principle/wrappers.jpg)
 
 A common solution to this is to write a wrapper. This is a bad choice because you're violating the first of the SOLID principles: The Single Responsibility Principle. You now have a third party library that has a specific behavior, and you have your own code, that is supposed to present the same behavior. You have one behavior, twice within your system, rather than a single time. What's worse, is that the wrapper won't even be as functional as the original code, and you'll need to maintain it too!
 

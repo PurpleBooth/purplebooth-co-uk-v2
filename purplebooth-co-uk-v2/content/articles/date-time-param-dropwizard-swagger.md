@@ -9,8 +9,7 @@ If you're using the [Swagger](https://github.com/federecio/dropwizard-swagger) b
 
 We get _unknown_ because Swagger doesn't know how to represent a _DateTimeParam_ in it's output. We can tell Swagger how to interpret this class using a _ModelConverter_. _ModelConverters_ give swagger knowledge of how it should output classes, and allow us some degree of customization of swaggers output.
 
-<pre class="code">
-<code class="java">
+```java
 package uk.co.purplebooth.someproject.configuration;
 
 import com.wordnik.swagger.converter.ModelConverter;
@@ -46,8 +45,7 @@ public class SwaggerDateModelConverter extends AbstractModelConverter implements
 
 }
 
-</code>
-</pre>
+```
 
 Above is an example that allows you to output _DateTimeParam_ as _date-time_.
 
@@ -63,8 +61,7 @@ We're going to call the parent class and resolve the property as normal. Then we
 
 Once you've done this, you simply need to add the converter to swagger.
 
-<pre class="code">
-<code class="java">
+```java
   /**
    * Run the web server. Adds endpoints.
    *
@@ -75,7 +72,6 @@ Once you've done this, you simply need to add the converter to swagger.
   public void run(SomeConfiguration configuration, Environment environment) {
     ModelConverters.getInstance().addConverter(new SwaggerDateModelConverter());
   }
-</code>
-</pre>
+```
 
 I hope this has saved you a little time Googling.

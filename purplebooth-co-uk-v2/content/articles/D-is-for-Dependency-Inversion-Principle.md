@@ -19,23 +19,19 @@ D stands for Dependency Inversion Principle.
 
 The Dependency Inversion Principle is
 
-<blockquote>
-A. High-level modules should not depend on low-level modules. Both should depend on abstractions.
-
-B. Abstractions should not depend on details. Details should depend on abstractions.
-
-</blockquote>
+> A. High-level modules should not depend on low-level modules. Both should depend on abstractions.
+>
+> B. Abstractions should not depend on details. Details should depend on abstractions.
 
 What this means is that your service classes should implement and depend on interfaces, rather than concrete classes. So each of your collaborating classes, that is the classes in your member variables, need to be defined as an interface, and every concrete service should implement an interface. This is to help you decouple your low level class choices from your high level implementation.
 
 Just to clarify, by services I mean classes that exist within your system that depend on lower level classes, and implement business logic. In the example below the Pagination class is a service that has a number of low level dependencies. If you're not working with a class that is depended on, or has dependencies on, lower or higher levels, that class isn't effected by this principle, but these are rare.
 
-{{< figure src="/post/D-is-for-Dependency-Inversion-Principle/service-diagram.png" title="Services & Lower and Higher classes" >}}
+![Services & Lower and Higher classes](/post/D-is-for-Dependency-Inversion-Principle/service-diagram.png)
 
 Imagine for a minute we have a caching layer. In this caching layer we have a number of methods, for getting and setting cache values. We use this caching layer in another class, one that calculates the number of pages that a search result has.
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Client for an in memory cache service
  */
@@ -67,11 +63,9 @@ class MemoryCache
 
     // More methods
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Paginates search results
  */
@@ -108,8 +102,7 @@ class SearchPagination
 
     // More methods
 }
-</code>
-</pre>
+```
 
 You can see that if we need to change the caching layer we need to modify our currently working _SearchPagination_ class. If we modify a class that is working, we you can break it. What we need is to make these two classes depend on a common interface, so if need be we can swap out the low level class with a different concrete implementation.
 
@@ -119,8 +112,7 @@ Lets change this class to follow the Dependency Inversion Principle. We will cha
 
 The key things to notice now are that if we need to change the way we do caching, we no longer have to change any of the code inside our _SearchPagination_ class.
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * KeyValueCache interface.
  */
@@ -142,11 +134,9 @@ interface KeyValueCache
      */
     public function set($key, $value);
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Client for an in memory cache service
  */
@@ -178,11 +168,9 @@ class MemoryCache implements KeyValueCache
 
     // More methods
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 /**
  * Paginates search results
  */
@@ -234,16 +222,13 @@ class SearchPagination
 
     // More methods
 }
-</code>
-</pre>
+```
 
-<pre class="code">
-<code class="php">
+```php
 // In a dependency injection container somewhere
 $cache = new MemoryCache();
 $service = new SearchPagination($cache);
-</code>
-</pre>
+```
 
 One of the most compelling reasons to do this is that in different situations we need to swap out our low level classes for a different implementation. Imagine the scenario that you have a payment provider, provided by a third party, you can swap out the client for that provider with one that gives you fake responses development environments, so your developers don't end up getting their credit card out to test something.
 
