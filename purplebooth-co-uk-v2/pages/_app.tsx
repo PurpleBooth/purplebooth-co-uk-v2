@@ -19,8 +19,11 @@ library.add(fab, fas, far);
 
 const ResponsiveImage: FunctionComponent<ImageProps> = (
   props // eslint-disable-next-line jsx-a11y/alt-text
-) => <Image {...props} />;
+) => {
+  const { alt, src, ...rest } = props;
 
+  return <Image alt={alt || ""} src={`${src}`} {...rest} />;
+};
 const Heading1: FunctionComponent<PropsWithChildren<{}>> = ({
   children,
   ...rest

@@ -1,6 +1,9 @@
-import type { GetServerSideProps, NextPage } from "next";
-import Head from "next/head";
-import Nav from "../../components/Nav";
+import type {
+  GetServerSideProps,
+  GetStaticPaths,
+  GetStaticProps,
+  NextPage,
+} from "next";
 import IndexItem from "../../components/index/IndexItem";
 import ArticlesService from "../../services/ArticleService";
 import { MetaJSON } from "../../models/Meta";
@@ -23,17 +26,42 @@ const Category: NextPage<Props> = ({ meta }: Props) => {
   return (
     <Layout pageTitle={capitalisedCategory}>
       <h1>Category: {capitalisedCategory}</h1>
-      {meta.map((meta, index) => (
-        <IndexItem key={index} articleMeta={meta} pageHasTitle />
-      ))}
+      {meta &&
+        meta.map((meta, index) => (
+          <IndexItem key={index} articleMeta={meta} pageHasTitle />
+        ))}
     </Layout>
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async (
+export const getStaticPaths: GetStaticPaths = async () => {
+  const service = new ArticlesService();
+  const articles = await service.find();
+
+  const uniqueCategories = new Set(
+    articles
+      .map((value) => value.meta.categories)
+      .flat()
+      .map((value) => value.toLowerCase())
+  );
+  const params: { params: { category: string } }[] = Array.from(
+    uniqueCategories
+  ).map((value) => ({
+    params: {
+      category: value,
+    },
+  }));
+
+  return {
+    paths: params,
+    fallback: true,
+  };
+};
+
+export const getStaticProps: GetStaticProps<Props> = async (
   context
 ): Promise<{ props: Props }> => {
-  const { category } = context.query;
+  const category = context?.params?.category || "";
   const service = new ArticlesService();
 
   return {
