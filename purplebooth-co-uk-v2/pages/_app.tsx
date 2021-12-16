@@ -18,11 +18,11 @@ config.autoAddCss = false;
 library.add(fab, fas, far);
 
 const ResponsiveImage: FunctionComponent<ImageProps> = (
-  props // eslint-disable-next-line jsx-a11y/alt-text
+  props
 ) => {
   const { alt, src, ...rest } = props;
-
-  return <Image alt={alt || ""} src={`${src}`} {...rest} />;
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img alt={alt || ""} src={`${src}`} {...rest} />;
 };
 const Heading1: FunctionComponent<PropsWithChildren<{}>> = ({
   children,
