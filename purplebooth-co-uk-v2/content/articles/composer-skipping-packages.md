@@ -15,8 +15,7 @@ In this example we're going to combine the not version conditional with the [sem
 
 It's worth noting that the semver conditional is the preferred way of setting required package versions, and soon will be the default in composer.
 
-<pre>
-<code class="json">
+``` json
 {
     "require": {
         "doctrine/orm" : "^2.1.0 !=2.1.5"
@@ -26,8 +25,7 @@ It's worth noting that the semver conditional is the preferred way of setting re
 
 You can also create more complicated package requirements by using the or operator. The or operator is "||". Using this you can combine two ranges to skip a large series of versions.
 
-<pre>
-<code class="json">
+``` json
 {
     "require": {
         "doctrine/orm" : "^2.1.0 <2.1.5 || ^2.4.0"

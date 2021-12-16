@@ -1,4 +1,4 @@
-import { GetServerSideProps, NextPage } from "next";
+import { GetServerSideProps, GetStaticPaths, GetStaticProps, NextPage } from "next";
 import ArticlesService from "../../../../../services/ArticleService";
 import Layout from "../../../../../components/Layout";
 import { ArticleJSON } from "../../../../../models/Article";
@@ -45,11 +45,22 @@ const Category: NextPage<Props> = ({ article, contents }: Props) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async ({
-  res,
-  query,
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const service = new ArticlesService();
+  const articles = await service.find();
+
+  return {
+    paths: articles
+      .map((value) => ({params: {year: value.meta.date?.getFullYear().toString(), "month": value.meta.date?.getMonth().toString(), day: value.meta.date?.getDate().toString(), slug: value.meta.slug}})),
+    fallback: true,
+  };
+};
+
+export const getStaticProps: GetStaticProps<Props> = async ({
+  params,
 }): Promise<{ props: Props }> => {
-  const { year, month, day, slug } = query;
+  const { year, month, day, slug } = params || {};
 
   const service = new ArticlesService();
   const articles = await service.find({
@@ -59,14 +70,6 @@ export const getServerSideProps: GetServerSideProps = async ({
     slug: slug,
   });
   const article = articles[0];
-
-  if (!article) {
-    res.statusCode = 404;
-
-    return {
-      props: {},
-    };
-  }
 
   return {
     props: {
