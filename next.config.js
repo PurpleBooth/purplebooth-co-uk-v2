@@ -18,5 +18,8 @@ module.exports = withMDX({
         destination: '/page/1'
       }
     ];
-  }
+  },
+  images: {
+    domains: ['purplebooth.co.uk', 'www.purplebooth.co.uk'],
+  },
 });
