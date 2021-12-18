@@ -9,6 +9,13 @@ export function MobileFooter() {
       }
     >
       <div>
+        <Link passHref href={"/"}>
+          <a className={"cursor-pointer"}>
+            <span className={"hover:underline dark:text-white"}>Home</span>
+          </a>
+        </Link>
+      </div>
+      <div>
         <Link passHref href={"/about/me"}>
           <a className={"cursor-pointer"}>
             <span className={"hover:underline dark:text-white"}>About Me</span>
