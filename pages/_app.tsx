@@ -13,12 +13,19 @@ import "@fontsource/space-grotesk";
 import "@fontsource/ibm-plex-sans";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import { ImageProps } from "next/image";
+import Image from 'next/image'
 
 config.autoAddCss = false;
 
 library.add(fab, fas, far);
 
+
+
 const components = {
+  img: ({alt, ...props}: PropsWithChildren<ImageProps&{alt: string}>) => (
+    <Image alt={alt} layout="intrinsic" {...props} />
+  ),
   code: ({
     className,
     children,

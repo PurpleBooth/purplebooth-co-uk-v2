@@ -15,22 +15,24 @@ const FullNav: FunctionComponent = () => (
     <div className={"relative"}>
       <div className={"w-80 fixed bottom-8"}>
         <h1 className={"cursor-pointer"}>
-          <Link passHref href={"/"} prefetch>
+          <Link passHref href={"/"} >
             <a className={"dark:hidden"}>
               <Image
                 layout={"responsive"}
                 src={logo}
                 alt={"Purple Booth Ltd."}
+                unoptimized
               />
             </a>
           </Link>
           <div className="hidden dark:flex rounded-full aspect-square items-center justify-center bg-slate-100 m-10 p-5">
-            <Link passHref href={"/"} prefetch>
+            <Link passHref href={"/"} >
               <a className={""}>
                 <Image
                   layout={"intrinsic"}
                   src={mark}
                   alt={"Purple Booth Ltd."}
+                  unoptimized
                 />
               </a>
             </Link>
@@ -41,7 +43,7 @@ const FullNav: FunctionComponent = () => (
         </h2>
         <ul className={" ml-16 flex flex-col mt-8"}>
           <li>
-            <Link passHref href={"/"} prefetch>
+            <Link passHref href={"/"} >
               <a className={"cursor-pointer"}>
                 <span className={"text-slate-800 dark:text-slate-200"}>
                   <FontAwesomeIcon icon={["fas", "square"]} />
