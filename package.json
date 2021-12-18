@@ -6,6 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "jest",
     "export": "next export"
   },
   "dependencies": {
@@ -37,6 +38,8 @@
     "sass": "^1.45.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
     "@types/mdx-js__react": "^1.5.5",
     "@types/node": "16.11.12",
     "@types/react": "17.0.37",
@@ -44,7 +47,9 @@
     "eslint": "8.4.1",
     "eslint-config-next": "12.0.7",
     "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.4.5",
     "postcss": "^8.4.4",
+    "react-test-renderer": "^17.0.2",
     "tailwindcss": "^3.0.1",
     "typescript": "4.5.3"
   },
