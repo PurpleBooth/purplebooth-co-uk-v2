@@ -1,18 +1,26 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useMemo } from "react";
 import { intlFormat } from "date-fns";
 
 export const IndexItemStatsLine: FunctionComponent<{
   readLengthMin: number;
   date?: Date;
 }> = ({ readLengthMin, date }) => {
-  return (
-    <div className={"text-slate-600 dark:text-slate-400"}>
-      {date ? intlFormat(date) + " · " : ""}
-      {new Intl.NumberFormat(undefined, {
+  const timestamp = useMemo(
+    () =>
+      new Intl.NumberFormat(undefined, {
         style: "unit",
         unit: "minute",
-      }).format(readLengthMin)}{" "}
-      read
+      }).format(readLengthMin),
+    [readLengthMin]
+  );
+  const formattedDate = useMemo(
+    () => (date ? intlFormat(date) + " · " : ""),
+    [date]
+  );
+
+  return (
+    <div className={"text-slate-600 dark:text-slate-400"}>
+      {formattedDate} {timestamp} read
     </div>
   );
 };
