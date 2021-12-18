@@ -6,7 +6,7 @@ import Layout from "../../components/Layout";
 
 const License: NextPage = () => {
   return (
-    <Layout pageTitle={"About Me"}>
+    <Layout pageTitle={"About Me"} pageDescription={"About Billie Thompson, the author of this site"}>
       <h1 id="about-me">About Me</h1>
       <figure>
         <Image
