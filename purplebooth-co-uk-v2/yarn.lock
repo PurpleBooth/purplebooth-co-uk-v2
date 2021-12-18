@@ -354,6 +354,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bradgarropy/next-seo@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@bradgarropy/next-seo@npm:1.2.0"
+  peerDependencies:
+    react: ">=16"
+  checksum: ac032f496c917fdca4bb1c39ae54e9d275897a739bd7efb64b9d7644e4fc70e59b31cd7afcba03eecc3f9925933ee9b9bea4d79c0e868a60645b6db821e1275a
+  languageName: node
+  linkType: hard
+
 "@csstools/convert-colors@npm:2.0.0":
   version: 2.0.0
   resolution: "@csstools/convert-colors@npm:2.0.0"
@@ -5340,6 +5349,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "purplebooth-co-uk-v2@workspace:."
   dependencies:
+    "@bradgarropy/next-seo": ^1.2.0
     "@fontsource/ibm-plex-sans": ^4.5.1
     "@fontsource/iosevka": ^4.5.1
     "@fontsource/space-grotesk": ^4.5.0

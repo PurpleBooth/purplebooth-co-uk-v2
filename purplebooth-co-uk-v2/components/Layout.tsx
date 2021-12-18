@@ -3,6 +3,7 @@ import Head from "next/head";
 import FullNav from "./nav/FullNav";
 import { MobileNav } from "./nav/MobileNav";
 import { MobileFooter } from "./nav/MobileFooter";
+import SEO from "@bradgarropy/next-seo";
 
 const Layout: FC<PropsWithChildren<{ pageTitle?: string }>> = ({
   children,
@@ -11,14 +12,27 @@ const Layout: FC<PropsWithChildren<{ pageTitle?: string }>> = ({
   <div className={"lg:flex lg:flex-row"}>
     <Head>
       <title>{pageTitle ? pageTitle : "Purple Booth"} · Billie Thompson</title>
-      <meta
-        name="description"
-        content="Article about software development by Billie Thompson"
-      />
-      <link rel="shortcut icon" href="/favicon.ico" />
       <body className={"dark:bg-black"} />
     </Head>
 
+    <SEO
+      keywords={["Coding", "Billie Thompson", "Blog"]}
+      themeColor="#f1f5f9"
+      colorScheme="light"
+      facebook={{
+        image: "/Purple Booth Logo-01.svg",
+        url: "https://purplebooth.co.uk",
+        type: "website",
+      }}
+      twitter={{
+        image: "/Purple Booth Logo-01.svg",
+        site: "@PurpleBooth",
+        card: "summary",
+      }}
+      title={pageTitle ? pageTitle : "Purple Booth"}
+      description="Article about software development by Billie Thompson"
+      icon={"/Purple Booth Logo-01.svg"}
+    />
     <FullNav />
     <MobileNav />
 

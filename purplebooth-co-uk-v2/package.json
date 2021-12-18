@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@bradgarropy/next-seo": "^1.2.0",
     "@fontsource/ibm-plex-sans": "^4.5.1",
     "@fontsource/iosevka": "^4.5.1",
     "@fontsource/space-grotesk": "^4.5.0",
