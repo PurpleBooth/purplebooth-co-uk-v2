@@ -1,9 +1,4 @@
-import type {
-  GetServerSideProps,
-  GetStaticPaths,
-  GetStaticProps,
-  NextPage,
-} from "next";
+import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import IndexItem from "../../components/index/IndexItem";
 import ArticlesService from "../../services/ArticleService";
 import { MetaJSON } from "../../models/Meta";

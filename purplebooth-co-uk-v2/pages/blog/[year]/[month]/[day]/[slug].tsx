@@ -15,7 +15,7 @@ interface Props {
   contents?: MDXRemoteSerializeResult<Record<string, unknown>>;
 }
 
-const Category: NextPage<Props> = ({ article, contents }: Props) => {
+const IndexPage: NextPage<Props> = ({ article, contents }: Props) => {
   if (!article || !contents) {
     return (
       <>
@@ -87,4 +87,4 @@ export const getStaticProps: GetStaticProps<Props> = async ({
   };
 };
 
-export default Category;
+export default IndexPage;
