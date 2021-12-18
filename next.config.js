@@ -18,11 +18,5 @@ module.exports = withMDX({
         destination: '/page/1'
       }
     ];
-  },
-  images: {
-    domains: ['purplebooth.co.uk', 'www.purplebooth.co.uk', 'fervent-morse-1cad54.netlify.app'],
-    formats: ['image/avif', 'image/webp'],
-    loader: 'imgix',
-    path: 'https://purplebooth.co.uk/.netlify/functions/_ipx/',
-  },
+  }
 });
