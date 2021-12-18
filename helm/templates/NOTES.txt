@@ -1,6 +1,0 @@
-Done, the service will be running at
-https://{{ .Values.fqdn.canonical }}
-
-If you have configured the DNS
-
-Also check newrelic, see if it's updating
