@@ -2,20 +2,21 @@ import { FunctionComponent } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../public/Purple Booth Logo-01.svg";
+import mark from "../public/Purple Booth Mark.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import intlFormat from "date-fns/intlFormat";
 
 const Nav: FunctionComponent = () => (
   <nav
     className={
-      "bg-slate-50 w-96 p-8 min-h-screen h-100 flex flex-col justify-end text-xl gap-2"
+      "bg-slate-100 dark:bg-slate-800 w-96 p-8 min-h-screen h-100 flex flex-col justify-end text-xl gap-2"
     }
   >
     <div className={"relative"}>
       <div className={"w-80 fixed bottom-8"}>
         <h1 className={"cursor-pointer"}>
           <Link passHref href={"/"}>
-            <a>
+            <a className={"dark:hidden"}>
               <Image
                 layout={"responsive"}
                 src={logo}
@@ -23,30 +24,43 @@ const Nav: FunctionComponent = () => (
               />
             </a>
           </Link>
+          <div className="hidden dark:flex rounded-full aspect-square items-center justify-center bg-slate-100 m-10 p-5">
+            <Link passHref href={"/"}>
+              <a className={""}>
+                <Image
+                  layout={"intrinsic"}
+                  src={mark}
+                  alt={"Purple Booth Ltd."}
+                />
+              </a>
+            </Link>
+          </div>
         </h1>
-        <h2 className={"text-slate-600 text-2xl ml-4 mt-8"}>
+        <h2 className={"text-slate-600 dark:text-slate-400 text-2xl ml-4 mt-8"}>
           I write code. I am quite tall and have curly hair.
         </h2>
         <ul className={" ml-16 flex flex-col mt-8"}>
           <li>
             <Link passHref href={"/"}>
               <a className={"cursor-pointer"}>
-                <span className={"text-slate-800"}>
+                <span className={"text-slate-800 dark:text-slate-200"}>
                   <FontAwesomeIcon icon={["fas", "square"]} />
                 </span>
                 &nbsp;
-                <span className={"hover:underline"}>Home</span>
+                <span className={"hover:underline dark:text-white"}>Home</span>
               </a>
             </Link>
           </li>
           <li>
             <Link passHref href={"/about/me"}>
               <a className={"cursor-pointer"}>
-                <span className={"text-slate-800"}>
+                <span className={"text-slate-800 dark:text-slate-200"}>
                   <FontAwesomeIcon icon={["fas", "square"]} />
                 </span>
                 &nbsp;
-                <span className={"hover:underline"}>About&nbsp;Me</span>
+                <span className={"hover:underline dark:text-white"}>
+                  About&nbsp;Me
+                </span>
               </a>
             </Link>
           </li>
@@ -54,7 +68,9 @@ const Nav: FunctionComponent = () => (
         <ul className={"flex flex-row gap-4 justify-center mt-8"}>
           <li>
             <Link passHref href={"https://github.com/PurpleBooth"}>
-              <a className={"cursor-pointer text-slate-800"}>
+              <a
+                className={"cursor-pointer text-slate-800 dark:text-slate-200"}
+              >
                 <FontAwesomeIcon
                   size={"3x"}
                   title={"GitHub"}
@@ -65,7 +81,9 @@ const Nav: FunctionComponent = () => (
           </li>
           <li>
             <Link passHref href={"https://www.linkedin.com/in/purplebooth/"}>
-              <a className={"cursor-pointer text-slate-800"}>
+              <a
+                className={"cursor-pointer text-slate-800 dark:text-slate-200"}
+              >
                 <FontAwesomeIcon
                   size={"3x"}
                   title={"LinkedIn"}
@@ -76,7 +94,9 @@ const Nav: FunctionComponent = () => (
           </li>
           <li>
             <Link passHref href={"https://twitter.com/PurpleBooth"}>
-              <a className={"cursor-pointer text-slate-800"}>
+              <a
+                className={"cursor-pointer text-slate-800 dark:text-slate-200"}
+              >
                 <FontAwesomeIcon
                   size={"3x"}
                   title={"Twitter"}
@@ -86,7 +106,9 @@ const Nav: FunctionComponent = () => (
             </Link>
           </li>
         </ul>
-        <footer className={"text-slate-600 text-center mt-8"}>
+        <footer
+          className={"text-slate-600 dark:text-slate-400 text-center mt-8"}
+        >
           <Link passHref href={"/license"}>
             <a className={"cursor-pointer hover:underline"}>
               Copyright ©{" "}

@@ -1,6 +1,7 @@
 import { FC, PropsWithChildren } from "react";
 import Head from "next/head";
 import Nav from "./Nav";
+import { Body } from "next/dist/server/web/spec-compliant/body";
 
 const Layout: FC<PropsWithChildren<{ pageTitle?: string }>> = ({
   children,
@@ -14,11 +15,12 @@ const Layout: FC<PropsWithChildren<{ pageTitle?: string }>> = ({
         content="Article about software development by Billie Thompson"
       />
       <link rel="shortcut icon" href="/favicon.ico" />
+      <body className={"dark:bg-black"} />
     </Head>
 
     <Nav />
 
-    <main className={"m-8 prose"}>{children}</main>
+    <main className={"m-8 prose dark:prose-invert"}>{children}</main>
   </div>
 );
 

@@ -7,7 +7,11 @@ export const Paginator = ({
   page: number;
   maxPage: number;
 }) => (
-  <span className={"rounded-gray-600 rounded border inline-flex mt-4"}>
+  <span
+    className={
+      "rounded-slate-600 dark:rounded-slate-400 rounded border inline-flex mt-4"
+    }
+  >
     <PageLink page={1} disabled={page == 1}>
       ««
     </PageLink>

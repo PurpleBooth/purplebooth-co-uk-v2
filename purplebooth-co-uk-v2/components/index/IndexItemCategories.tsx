@@ -9,7 +9,9 @@ export const IndexItemCategories: FunctionComponent<{
       {categories.map((tag, index) => (
         <li
           key={tag + index}
-          className={"bg-slate-50 rounded p-1 whitespace-nowrap inline-block"}
+          className={
+            "bg-slate-100 dark:bg-slate-900 rounded p-1 whitespace-nowrap inline-block"
+          }
         >
           <Link
             href={`/categories/${encodeURIComponent(tag.toLowerCase())}/`}

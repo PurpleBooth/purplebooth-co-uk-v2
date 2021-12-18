@@ -17,9 +17,8 @@ interface Props {
 const BlogPage: NextPage<Props> = ({ meta, page, maxPage }: Props) => {
   return (
     <Layout>
-      {meta && meta.map((meta, index) => (
-        <IndexItem key={index} articleMeta={meta} />
-      ))}
+      {meta &&
+        meta.map((meta, index) => <IndexItem key={index} articleMeta={meta} />)}
       <Paginator page={page} maxPage={maxPage} />
     </Layout>
   );

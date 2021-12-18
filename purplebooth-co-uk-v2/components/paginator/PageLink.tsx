@@ -19,7 +19,11 @@ export const PageLink = ({
 
   return (
     <Link href={page == 1 ? "/" : `/page/${encodeURIComponent(page)}`} passHref>
-      <a className={` hover:bg-gray-100 p-2 ${selected ? " bg-gray-100" : ""}`}>
+      <a
+        className={`hover:bg-slate-100 dark:hover:bg-slate-900 p-2 ${
+          selected ? " bg-slate-100 dark:bg-slate-900" : ""
+        }`}
+      >
         {children}
       </a>
     </Link>

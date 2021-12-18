@@ -42,7 +42,7 @@ const Category: NextPage<Props> = ({ article, contents }: Props) => {
           date={articleDate}
         />
         <IndexItemCategories categories={article.meta.categories} />
-        <p className={"prose my-2"}>
+        <p className={"prose dark:prose-invert my-2"}>
           <MDXRemote {...contents} />
         </p>
       </article>

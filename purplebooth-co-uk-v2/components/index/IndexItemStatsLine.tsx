@@ -6,7 +6,7 @@ export const IndexItemStatsLine: FunctionComponent<{
   date?: Date;
 }> = ({ readLengthMin, date }) => {
   return (
-    <div className={"text-slate-600"}>
+    <div className={"text-slate-600 dark:text-slate-400"}>
       {date ? intlFormat(date) + " · " : ""}
       {new Intl.NumberFormat(undefined, {
         style: "unit",
