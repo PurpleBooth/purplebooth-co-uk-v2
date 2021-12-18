@@ -23,6 +23,7 @@ const FullNav: FunctionComponent = () => (
                 alt={"Purple Booth Ltd."}
                 width="320"
                 height="215"
+                unoptimized
               />
             </a>
           </Link>
@@ -35,6 +36,7 @@ const FullNav: FunctionComponent = () => (
                   width="200"
                   height="200"
                   alt={"Purple Booth Ltd."}
+                  unoptimized
                 />
               </a>
             </Link>

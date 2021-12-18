@@ -13,6 +13,7 @@ export const MobileNav = () => (
             layout={"intrinsic"}
             src={mark}
             alt={"Purple Booth Ltd."}
+            unoptimized
           />
         </a>
       </Link>
