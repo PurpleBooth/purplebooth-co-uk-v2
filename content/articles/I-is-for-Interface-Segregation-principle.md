@@ -22,7 +22,7 @@ The Interface Segregation Principle is the idea that "Many client specific inter
 
 So for each of your services, you should provide an interface for each of its clients. What I mean by service is a class or set of classes that provide a grouped suite of behaviors to the rest of the system, for example, imagine a service that is the shopping basket for your Plushie store. What I mean by client is a class that depends on this service to achieve a certain goal, which may be providing reporting information on this weeks purchases to decide which soft toys to get in stock next week, or it may be allowing someone to add items to their basket.
 
-![![Plushie Store](/post/I-is-for-Interface-Segregation-principle/teddies.jpg)
+<img src="/post/I-is-for-Interface-Segregation-principle/teddies.jpg" alt="Plushie Store" width="640" height="640" />
 
 > [Photo by Edward Terry](https://www.flickr.com/photos/zachoneniner/14123801505/)
 
@@ -339,7 +339,7 @@ The first one is simple, how do I deal with the situation where multiple clients
 
 The second common question is trickier. Sometimes we use third party code, and as such we have no client interface available to us. So what can we do to prevent changing interfaces having an impact on classes that depend on that third party code?
 
-![A proliferation of wrappers](/post/I-is-for-Interface-Segregation-principle/wrappers.jpg)
+<img src="/post/I-is-for-Interface-Segregation-principle/wrappers.jpg" width="555" height="480" alt="A proliferation of wrappers"  />
 
 A common solution to this is to write a wrapper. This is a bad choice because you're violating the first of the SOLID principles: The Single Responsibility Principle. You now have a third party library that has a specific behavior, and you have your own code, that is supposed to present the same behavior. You have one behavior, twice within your system, rather than a single time. What's worse, is that the wrapper won't even be as functional as the original code, and you'll need to maintain it too!
 

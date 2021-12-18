@@ -18,7 +18,7 @@ These principles describe the key principles to follow to make maintainable Obje
 
 L stands for Liskov's Substitution Principle or LSP (not that LSP)
 
-![Like, Oh My Glob](/Lumpy_Space.png)
+<img src="/Lumpy_Space.png" alt="Like, Oh My Glob" width="170" height="201" />
 
 Liskov's Substitution Principle states that "objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program", and it's a specific violation of the Open Closed Principle when broken.
 

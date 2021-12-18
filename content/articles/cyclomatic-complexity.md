@@ -25,7 +25,7 @@ end
 
 We can represent this using a graph. Using a node to represent the start and the end of the code, and a node for every decision made within the graph. In our example there are none, making the complexity simple to work out.
 
-![A decision graph of our simple method](/post/cyclomatic-complexity/simple.png)
+<img src="/post/cyclomatic-complexity/simple.png" alt="A decision graph of our simple method"  width="438" height="204" />
 
 Now we've built our graph, we apply this formula defined by McCabe that counts the number of routes through the code.
 
@@ -66,7 +66,7 @@ end
 
 We can represent this with a graph like this
 
-![A more complicated method with an if statement in it](/post/cyclomatic-complexity/less-simple.png)
+<img src="/post/cyclomatic-complexity/less-simple.png" alt="A more complicated method with an if statement in it"  width="650" height="446" />
 
 So lets take our formula again
 
@@ -106,7 +106,7 @@ end
 
 Now representing loops is a little bit more complicated than if statements
 
-![Representing loops in complexity](/post/cyclomatic-complexity/loopy.png)
+<img src="/post/cyclomatic-complexity/loopy.png" alt="Representing loops in complexity" width="1066" height="390" />
 
 You'll notice that for the loop there are 3 nodes. A1 is the path to the loop, B is the code in the loop, and A2 is the code from the loop till the next statement.
 

@@ -21,7 +21,7 @@ The observer pattern is a design pattern that is implemented in many libraries. 
 
 A popular implementation of the observer pattern is the Event Dispatcher (like [Symfony's](http://symfony.com/doc/current/components/event_dispatcher.html)). This is a common implementation in which the subject is a the event dispatcher, and the listeners that are executed when certain events are triggered in the dispatcher are the **observers**.
 
-![Sequence Diagram of the observer pattern](/post/Speeding-up-your-code-by-mirroring-the-CPU/observer-squence-diagram.png)
+<img src="/post/Speeding-up-your-code-by-mirroring-the-CPU/observer-squence-diagram.png" alt="Sequence Diagram of the observer pattern" width="996" height="702" />
 
 The observer pattern is exactly what happens internally inside your computer, when you want to interact with a peripheral. You register your interest in being notified when an event happens, such as writing to disk, or a packet coming in from the network, by setting an [interrupt](https://en.wikipedia.org/wiki/Interrupt) on the CPU. Interrupts are triggered when that event occurs and your code is run, it does this by interrupting the code that is currently scheduled to run on the CPU at that time, and by running your code instead - hence the name.
 
@@ -33,8 +33,8 @@ The second way is a lot more efficient. That is to pass a piece of code to be ex
 
 This is called a non-blocking architecture. This is because we don't block any other code from running while we're waiting. There are languages that explicitly support non-blocking code, including, [Python](https://docs.python.org/2/library/multiprocessing.html), [Java](https://spring.io/guides/gs/async-method/), [Go](https://golang.org/doc/effective_go.html#concurrency), [Rust](https://static.rust-lang.org/doc/master/book/concurrency.html), [JavaScript](https://developers.google.com/web/fundamentals/primers/promises), or [Ruby](http://rubyeventmachine.com/).
 
-![Blocking](/post/Speeding-up-your-code-by-mirroring-the-CPU/blocking.png)
-![Non-blocking](/post/Speeding-up-your-code-by-mirroring-the-CPU/non-blocking.png)
+<img src="/post/Speeding-up-your-code-by-mirroring-the-CPU/blocking.png" alt="Blocking"  width="1672" height="364" />
+<img src="/post/Speeding-up-your-code-by-mirroring-the-CPU/non-blocking.png" alt="Non-blocking" width="1438" height="796" />
 
 Non-blocking systems are fast. However they're also hard to understand, because any **observer** can run at any time, it's often difficult to determine which bits of memory are being read from, or written to. This can lead to complex to debug [race conditions](https://en.wikipedia.org/wiki/Race_condition).
 
@@ -42,7 +42,7 @@ To make it simpler, we can regiment our architecture with an event dispatcher. A
 
 This reduces the opportunity for race conditions because the only shared memory is the message, and we can make that immutable (read only), as once passed to the listener, the listener can simply make a new message to communicate with other listeners.
 
-![Sequence Diagram of the event dispatcher](/post/Speeding-up-your-code-by-mirroring-the-CPU/event-dispatcher-sequence-diagram.png)
+<img src="/post/Speeding-up-your-code-by-mirroring-the-CPU/event-dispatcher-sequence-diagram.png" alt="Sequence Diagram of the event dispatcher" width="1048" height="638" />
 
 However inside our system we don't only want to do low level things. We frequently want to combine a number of low level tasks into a single unit. To this end we can also use an event dispatcher to trigger a more abstract event, such as "user signed up", allowing us to have the efficiency of low level non-blocking code, for our high level business logic.
 

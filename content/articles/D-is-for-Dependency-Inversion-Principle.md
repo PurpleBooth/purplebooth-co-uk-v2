@@ -27,7 +27,7 @@ What this means is that your service classes should implement and depend on inte
 
 Just to clarify, by services I mean classes that exist within your system that depend on lower level classes, and implement business logic. In the example below the Pagination class is a service that has a number of low level dependencies. If you're not working with a class that is depended on, or has dependencies on, lower or higher levels, that class isn't effected by this principle, but these are rare.
 
-![Services & Lower and Higher classes](/post/D-is-for-Dependency-Inversion-Principle/service-diagram.png)
+<img src="/post/D-is-for-Dependency-Inversion-Principle/service-diagram.png" alt="Services & Lower and Higher classes" width="640" height="309" />
 
 Imagine for a minute we have a caching layer. In this caching layer we have a number of methods, for getting and setting cache values. We use this caching layer in another class, one that calculates the number of pages that a search result has.
 

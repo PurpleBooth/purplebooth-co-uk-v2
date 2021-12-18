@@ -42,7 +42,7 @@ specialization (see the bold shapes), and have them regularly meet, manage, and 
 skills and practices. These teams are secondary to the primary project teams, but offer a way to influence and develop
 a cohesive way of working across projects.
 
-![Guilds, Professions, or Disciplines are names given to this structure](/post/cross-functional-teams-2/specialisms.png)
+<img src="/post/cross-functional-teams-2/specialisms.png" alt="Guilds, Professions, or Disciplines are names given to this structure" width="693" height="567" />
 
 These teams tell you "How", not "What" to do, and you don't sit with them primarily, you sit with your project.
 
