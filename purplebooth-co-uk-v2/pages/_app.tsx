@@ -19,6 +19,7 @@ import "@fontsource/space-grotesk";
 import "@fontsource/ibm-plex-sans";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import SEO from "@bradgarropy/next-seo";
 
 config.autoAddCss = false;
 
@@ -41,6 +42,24 @@ const components = {
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <MDXProvider components={components}>
+      <SEO
+        keywords={["Coding", "Billie Thompson", "Blog"]}
+        themeColor="#f1f5f9"
+        colorScheme="light"
+        facebook={{
+          image: "/Purple Booth Logo-01.svg",
+          url: "https://purplebooth.co.uk",
+          type: "website",
+        }}
+        twitter={{
+          image: "/Purple Booth Logo-01.svg",
+          site: "@PurpleBooth",
+          card: "summary",
+        }}
+        title={"Purple Booth"}
+        description="Article about software development by Billie Thompson"
+        icon={"/Purple Booth Logo-01.svg"}
+      />
       <Component {...pageProps} />
     </MDXProvider>
   );

@@ -1,9 +1,4 @@
-import {
-  GetServerSideProps,
-  GetStaticPaths,
-  GetStaticProps,
-  NextPage,
-} from "next";
+import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import ArticlesService from "../../../../../services/ArticleService";
 import Layout from "../../../../../components/Layout";
 import { ArticleJSON } from "../../../../../models/Article";
@@ -14,7 +9,6 @@ import { IndexItemTitle } from "../../../../../components/index/IndexItemTitle";
 import { parseISO } from "date-fns";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
-import SEO from "@bradgarropy/next-seo";
 
 interface Props {
   article?: ArticleJSON;
@@ -35,8 +29,10 @@ const Category: NextPage<Props> = ({ article, contents }: Props) => {
     : undefined;
 
   return (
-    <Layout pageTitle={article.meta.title}>
-      <SEO description={article.meta.description} />
+    <Layout
+      pageTitle={article.meta.title}
+      pageDescription={article.meta.description}
+    >
       <article className={"mb-4"}>
         <IndexItemTitle title={article.meta.title} />
         <IndexItemStatsLine
