@@ -18,10 +18,11 @@ const FullNav: FunctionComponent = () => (
           <Link passHref href={"/"}>
             <a className={"dark:hidden"}>
               <Image
-                layout={"responsive"}
+                layout={"intrinsic"}
                 src={logo}
                 alt={"Purple Booth Ltd."}
-                unoptimized
+                width="320"
+                height="215"
               />
             </a>
           </Link>
@@ -31,8 +32,9 @@ const FullNav: FunctionComponent = () => (
                 <Image
                   layout={"intrinsic"}
                   src={mark}
+                  width="200"
+                  height="200"
                   alt={"Purple Booth Ltd."}
-                  unoptimized
                 />
               </a>
             </Link>
