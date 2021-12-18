@@ -1,0 +1,9 @@
+[build]
+publish = ".next"
+
+command = "yarn run build"
+
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
+[[plugins]]
+package = "@netlify/plugin-nextjs"
