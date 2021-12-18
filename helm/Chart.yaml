@@ -1,8 +1,0 @@
-apiVersion: v1
-description: The purplebooth website
-name: purplebooth-co-uk
-version: 0.1.7
-home: https://github.com/PurpleBooth/purplebooth-co-uk-v2
-maintainers:
-  - name: Billie Alice Thompson
-    email: billie@purplebooth.co.uk
