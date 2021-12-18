@@ -20,6 +20,6 @@ module.exports = withMDX({
     ];
   },
   images: {
-    domains: ['purplebooth.co.uk', 'www.purplebooth.co.uk'],
+    domains: ['purplebooth.co.uk', 'www.purplebooth.co.uk', 'fervent-morse-1cad54.netlify.app'],
   },
 });
