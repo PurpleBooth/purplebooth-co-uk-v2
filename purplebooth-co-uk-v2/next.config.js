@@ -11,4 +11,12 @@ module.exports = withMDX({
   eslint: {
     dirs: ['pages', 'utils', "models", "services"], // Only run ESLint on the 'pages' and 'utils' directories during production builds (next build)
   },
+  async rewrites() {
+    return [
+      {
+        source: '/',
+        destination: '/page/1'
+      }
+    ];
+  }
 });

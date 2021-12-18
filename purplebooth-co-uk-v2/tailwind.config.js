@@ -1,4 +1,4 @@
-const disabledCss = {
+const preBackground = {
   pre: {
     'background-color': "rgb(40, 42, 54)",
   },
@@ -12,11 +12,11 @@ module.exports = {
   theme: {
     extend: {
       typography: {
-        DEFAULT: { css: disabledCss },
-        sm: { css: disabledCss },
-        lg: { css: disabledCss },
-        xl: { css: disabledCss },
-        '2xl': { css: disabledCss },
+        DEFAULT: { css: preBackground },
+        sm: { css: preBackground },
+        lg: { css: preBackground },
+        xl: { css: preBackground },
+        '2xl': { css: preBackground },
       }
     },
 
