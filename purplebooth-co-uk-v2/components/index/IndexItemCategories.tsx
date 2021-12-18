@@ -5,12 +5,12 @@ export const IndexItemCategories: FunctionComponent<{
   categories: string[];
 }> = ({ categories }) => {
   return (
-    <ul className={"flex flex-row gap-1 list-none font-bold pl-0"}>
+    <ul className={"flex flex-row list-none font-bold flex-wrap gap-1 pl-0"}>
       {categories.map((tag, index) => (
         <li
           key={tag + index}
           className={
-            "bg-slate-100 dark:bg-slate-900 rounded p-1 whitespace-nowrap inline-block"
+            "bg-slate-100 dark:bg-slate-900 rounded p-1 whitespace-nowrap inline-block m-0"
           }
         >
           <Link

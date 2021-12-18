@@ -1,15 +1,15 @@
 import { FunctionComponent } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/Purple Booth Logo-01.svg";
-import mark from "../public/Purple Booth Mark.svg";
+import logo from "../../public/Purple Booth Logo-01.svg";
+import mark from "../../public/Purple Booth Mark.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import intlFormat from "date-fns/intlFormat";
 
-const Nav: FunctionComponent = () => (
+const FullNav: FunctionComponent = () => (
   <nav
     className={
-      "bg-slate-100 dark:bg-slate-800 w-96 p-8 min-h-screen h-100 flex flex-col justify-end text-xl gap-2"
+      "bg-slate-100 dark:bg-slate-800 w-96 p-8 min-h-screen h-100 lg:flex flex-col justify-end text-xl gap-2 hidden"
     }
   >
     <div className={"relative"}>
@@ -123,4 +123,4 @@ const Nav: FunctionComponent = () => (
   </nav>
 );
 
-export default Nav;
+export default FullNav;
