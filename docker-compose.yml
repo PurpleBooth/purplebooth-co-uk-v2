@@ -1,9 +1,0 @@
-version: '3'
-services:
-  web:
-    build:
-      context: "."
-      args:
-        - hugobaseurl=http://localhost:8888
-    ports:
-     - "8888:8080"

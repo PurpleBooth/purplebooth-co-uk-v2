@@ -1,71 +1,34 @@
-# The Purple Booth Webpage
-
-This is the [purplebooth.co.uk](https://purplebooth.co.uk) website.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-It uses Hugo, install that using [this guide](https://gohugo.io/#action).
+First, run the development server:
 
-To see it running run this after installing hugo.
-
+```bash
+npm run dev
+# or
+yarn dev
 ```
-hugo -w server
-```
 
-I'll be running on [http://localhost:1313](http://localhost:1313)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-For more things you can do run hugo and look at the help page.
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-```
-$ hugo --help
-hugo is the main command, used to build your Hugo site.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-Hugo is a Fast and Flexible Static Site Generator
-built with love by spf13 and friends in Go.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-Complete documentation is available at http://gohugo.io/.
+## Learn More
 
-Usage:
-  hugo [flags]
-  hugo [command]
+To learn more about Next.js, take a look at the following resources:
 
-Available Commands:
-  server      A high performance webserver
-  version     Print the version number of Hugo
-  config      Print the site configuration
-  check       Check content in the source directory
-  benchmark   Benchmark hugo by building a site a number of times.
-  convert     Convert your content to different formats
-  new         Create new content for your site
-  list        Listing out various types of content
-  undraft     Undraft changes the content's draft status from 'True' to 'False'
-  import      Import your site from others.
-  gen         A collection of several useful generators.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Flags:
-  -b, --baseURL="": hostname (and path) to the root, e.g. http://spf13.com/
-  -D, --buildDrafts[=false]: include content marked as draft
-  -F, --buildFuture[=false]: include content with publishdate in the future
-      --cacheDir="": filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/
-      --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL
-      --config="": config file (default is path/config.yaml|json|toml)
-  -d, --destination="": filesystem path to write files to
-      --disableRSS[=false]: Do not build RSS files
-      --disableSitemap[=false]: Do not build Sitemap file
-      --editor="": edit new content with this editor, if provided
-      --ignoreCache[=false]: Ignores the cache directory for reading but still writes to it
-      --log[=false]: Enable Logging
-      --logFile="": Log File path (if set, logging enabled automatically)
-      --noTimes[=false]: Don't sync modification time of files
-      --pluralizeListTitles[=true]: Pluralize titles in lists using inflect
-      --preserveTaxonomyNames[=false]: Preserve taxonomy names as written ("Gérard Depardieu" vs "gerard-depardieu")
-  -s, --source="": filesystem path to read files relative from
-      --stepAnalysis[=false]: display memory and timing of different steps of the program
-  -t, --theme="": theme to use (located in /themes/THEMENAME/)
-      --uglyURLs[=false]: if true, use /filename.html instead of /filename/
-  -v, --verbose[=false]: verbose output
-      --verboseLog[=false]: verbose logging
-  -w, --watch[=false]: watch filesystem for changes and recreate as needed
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Use "hugo [command] --help" for more information about a command.
-```
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
