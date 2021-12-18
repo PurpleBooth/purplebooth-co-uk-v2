@@ -58,7 +58,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         }}
         title={"Purple Booth"}
         description="Article about software development by Billie Thompson"
-        icon={"/Purple Booth Logo-01.svg"}
+        icon={"/Purple Booth Mark.svg"}
       />
       <Component {...pageProps} />
     </MDXProvider>
