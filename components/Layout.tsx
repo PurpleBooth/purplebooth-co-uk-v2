@@ -3,6 +3,19 @@ import Head from "next/head";
 import Nav from "./nav/full/Nav";
 import { MobileNav } from "./nav/mobile/MobileNav";
 import { MobileFooter } from "./nav/mobile/MobileFooter";
+import "@fontsource/iosevka";
+import "@fontsource/space-grotesk";
+import "@fontsource/ibm-plex-sans";
+import { config, library } from "@fortawesome/fontawesome-svg-core";
+import "prismjs/themes/prism-tomorrow.css";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
+config.autoAddCss = false;
+
+library.add(fab, fas, far);
 
 const Layout: FC<
   PropsWithChildren<{ pageTitle?: string; pageDescription?: string }>
