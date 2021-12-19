@@ -6,7 +6,7 @@ export const NavFooter: FC = () => (
   <footer className={"text-slate-600 dark:text-slate-400 text-center mt-8"}>
     <Link passHref href={"/license"}>
       <a className={"cursor-pointer hover:underline"}>
-        <CopyrightNotice/>
+        <CopyrightNotice />
       </a>
     </Link>
   </footer>

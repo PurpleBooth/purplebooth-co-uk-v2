@@ -19,14 +19,16 @@ export function MobileFooter() {
         <li>
           <Link passHref href={"/about/me"}>
             <a className={"cursor-pointer"}>
-              <span className={"hover:underline dark:text-white"}>About Me</span>
+              <span className={"hover:underline dark:text-white"}>
+                About Me
+              </span>
             </a>
           </Link>
         </li>
         <li>
           <Link passHref href={"/license"}>
             <a className={"cursor-pointer hover:underline"}>
-              <CopyrightNotice/>
+              <CopyrightNotice />
             </a>
           </Link>
         </li>
