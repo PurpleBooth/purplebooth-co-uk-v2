@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Layout from "../../components/Layout";
 
-const License: NextPage = () => {
+const AboutMe: NextPage = () => {
   return (
     <Layout
       pageTitle={"About Me"}
@@ -113,4 +113,4 @@ const License: NextPage = () => {
   );
 };
 
-export default License;
+export default AboutMe;
