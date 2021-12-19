@@ -11,10 +11,15 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 import "@fontsource/iosevka";
 import "@fontsource/space-grotesk";
 import "@fontsource/ibm-plex-sans";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { PrismAsync } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { ImageProps } from "next/image";
-import Image from "next/image";
+
+import dynamic from "next/dynamic";
+
+const Image = dynamic(() => import("next/image"), {
+  loading: () => <>.....</>,
+});
 
 config.autoAddCss = false;
 
@@ -30,9 +35,9 @@ const components = {
   }: PropsWithChildren<{ className?: string }>) => {
     const lang = className?.replace("language-", "") || "shell";
     return (
-      <SyntaxHighlighter language={lang} style={dracula}>
+      <PrismAsync language={lang} style={dracula}>
         {children}
-      </SyntaxHighlighter>
+      </PrismAsync>
     );
   },
 };
