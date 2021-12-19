@@ -80,6 +80,11 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
+    needs:
+      - test
+      - style
+      - lint
+      - build
     steps:
       - name: Trigger Deploy
         run: curl -X POST -d '{}' "$DEPLOY_TRIGGER?trigger_title=triggered%20by%20GitHub%20Actions%20on%20'main'"
