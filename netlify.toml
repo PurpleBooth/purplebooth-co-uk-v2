@@ -1,7 +1,7 @@
 [build]
 publish = ".next"
 
-command = "yarn dlx prettier -c services/ components/ pages/ styles/ && yarn run test && yarn run lint && yarn run build"
+command = "yarn dlx prettier -c services/ components/ pages/ styles/ && NODE_ENV=\"test\" yarn run test && yarn run lint && yarn run build"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"

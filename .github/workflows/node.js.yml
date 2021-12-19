@@ -77,3 +77,11 @@ jobs:
           cache: 'yarn'
       - run: yarn
       - run: yarn run build
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Deploy
+        run: curl -X POST -d '{}' "$DEPLOY_TRIGGER?trigger_title=triggered%20by%20GitHub%20Actions%20on%20'main'"
+        env:
+          DEPLOY_TRIGGER: ${{secrets.DEPLOY_TRIGGER}}
