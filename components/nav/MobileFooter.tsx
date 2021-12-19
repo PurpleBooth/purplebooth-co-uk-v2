@@ -1,5 +1,5 @@
 import Link from "next/link";
-import intlFormat from "date-fns/intlFormat";
+import { CopyrightNotice } from "./CopyrightNotice";
 
 export function MobileFooter() {
   return (
@@ -8,30 +8,29 @@ export function MobileFooter() {
         "text-slate-600 dark:text-slate-400 text-center mt-8 lg:hidden"
       }
     >
-      <div>
-        <Link passHref href={"/"}>
-          <a className={"cursor-pointer"}>
-            <span className={"hover:underline dark:text-white"}>Home</span>
-          </a>
-        </Link>
-      </div>
-      <div>
-        <Link passHref href={"/about/me"}>
-          <a className={"cursor-pointer"}>
-            <span className={"hover:underline dark:text-white"}>About Me</span>
-          </a>
-        </Link>
-      </div>
-      <div>
-        <Link passHref href={"/license"}>
-          <a className={"cursor-pointer hover:underline"}>
-            Copyright ©{" "}
-            {intlFormat(Date.now(), {
-              year: "numeric",
-            })}
-          </a>
-        </Link>
-      </div>
+      <ul>
+        <li>
+          <Link passHref href={"/"}>
+            <a className={"cursor-pointer"}>
+              <span className={"hover:underline dark:text-white"}>Home</span>
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link passHref href={"/about/me"}>
+            <a className={"cursor-pointer"}>
+              <span className={"hover:underline dark:text-white"}>About Me</span>
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link passHref href={"/license"}>
+            <a className={"cursor-pointer hover:underline"}>
+              <CopyrightNotice/>
+            </a>
+          </Link>
+        </li>
+      </ul>
     </footer>
   );
 }
