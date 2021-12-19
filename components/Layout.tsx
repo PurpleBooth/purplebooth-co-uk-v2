@@ -3,9 +3,7 @@ import Head from "next/head";
 import Nav from "./nav/full/Nav";
 import { MobileNav } from "./nav/mobile/MobileNav";
 import { MobileFooter } from "./nav/mobile/MobileFooter";
-import "@fontsource/iosevka";
-import "@fontsource/space-grotesk";
-import "@fontsource/ibm-plex-sans";
+
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 import "prismjs/themes/prism-tomorrow.css";
 import { fab } from "@fortawesome/free-brands-svg-icons";

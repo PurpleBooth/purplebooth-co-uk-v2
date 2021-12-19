@@ -7,6 +7,9 @@ import { PropsWithChildren } from "react";
 import { PrismAsync } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { ImageProps } from "next/image";
+import "@fontsource/iosevka";
+import "@fontsource/space-grotesk";
+import "@fontsource/ibm-plex-sans";
 
 import dynamic from "next/dynamic";
 
