@@ -1,5 +1,6 @@
 import { PropsWithChildren } from "react";
-import Link from "next/link";
+import { DisabledLink } from "./DisabledLink";
+import { ActiveLink } from "./ActiveLink";
 
 interface PageLinkProps {
   page: number;
@@ -14,18 +15,12 @@ export const PageLink = ({
   selected,
 }: PropsWithChildren<PageLinkProps>) => {
   if (disabled) {
-    return <span className={"m-2"}>{children}</span>;
+    return <DisabledLink>{children}</DisabledLink>;
   }
 
   return (
-    <Link href={page == 1 ? "/" : `/page/${encodeURIComponent(page)}`} passHref>
-      <a
-        className={`hover:bg-slate-100 dark:hover:bg-slate-900 p-2 ${
-          selected ? " bg-slate-100 dark:bg-slate-900" : ""
-        }`}
-      >
-        {children}
-      </a>
-    </Link>
+    <ActiveLink page={page} selected={selected}>
+      {children}
+    </ActiveLink>
   );
 };

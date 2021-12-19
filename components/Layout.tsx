@@ -1,8 +1,8 @@
 import { FC, PropsWithChildren } from "react";
 import Head from "next/head";
 import Nav from "./nav/full/Nav";
-import { MobileNav } from "./nav/MobileNav";
-import { MobileFooter } from "./nav/MobileFooter";
+import { MobileNav } from "./nav/mobile/MobileNav";
+import { MobileFooter } from "./nav/mobile/MobileFooter";
 
 const Layout: FC<
   PropsWithChildren<{ pageTitle?: string; pageDescription?: string }>

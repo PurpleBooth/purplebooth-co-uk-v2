@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import mark from "../../public/Purple Booth Mark.svg";
+import mark from "../../../public/Purple Booth Mark.svg";
 
 export const MobileNav = () => (
   <nav className={"lg:hidden bg-slate-100 dark:bg-slate-900"}>
