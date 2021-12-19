@@ -1,6 +1,6 @@
 import { FC, PropsWithChildren } from "react";
 import Head from "next/head";
-import FullNav from "./nav/FullNav";
+import Nav from "./nav/full/Nav";
 import { MobileNav } from "./nav/MobileNav";
 import { MobileFooter } from "./nav/MobileFooter";
 
@@ -32,7 +32,7 @@ const Layout: FC<
         <body className={"dark:bg-black"} />
       </Head>
       <div className={"lg:flex lg:flex-row"}>
-        <FullNav />
+        <Nav />
         <MobileNav />
 
         <main className={"m-8 prose dark:prose-invert"}>{children}</main>
