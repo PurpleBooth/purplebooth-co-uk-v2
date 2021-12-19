@@ -14226,6 +14226,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "prettier@npm:2.5.1"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 21b9408476ea1c544b0e45d51ceb94a84789ff92095abb710942d780c862d0daebdb29972d47f6b4d0f7ebbfb0ffbf56cc2cfa3e3e9d1cca54864af185b15b66
+  languageName: node
+  linkType: hard
+
 "pretty-bytes@npm:^5.6.0":
   version: 5.6.0
   resolution: "pretty-bytes@npm:5.6.0"
@@ -14493,6 +14502,7 @@ __metadata:
     postcss: ^8.4.4
     postcss-flexbugs-fixes: ^5.0.2
     postcss-preset-env: ^7.0.1
+    prettier: ^2.5.1
     react: 17.0.2
     react-dom: 17.0.2
     react-syntax-highlighter: ^15.4.5

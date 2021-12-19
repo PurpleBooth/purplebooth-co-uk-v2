@@ -3,7 +3,6 @@
  */
 
 import { render } from "@testing-library/react";
-import { IndexItemTitle } from "./IndexItemTitle";
 import { IndexItemStatsLine } from "./IndexItemStatsLine";
 
 describe("IndexItemStatsLine", () => {

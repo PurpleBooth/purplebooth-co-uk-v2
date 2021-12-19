@@ -4,7 +4,7 @@ import logo from "../../../public/Purple Booth Logo-01.svg";
 
 export const LightLogo = () => (
   <Link passHref href={"/"}>
-    <a className={"dark:hidden"}>
+    <a data-testid={"LightLogo"} className={"dark:hidden"}>
       <Image
         layout={"intrinsic"}
         src={logo}

@@ -3,8 +3,6 @@
  */
 
 import { render } from "@testing-library/react";
-import { IndexItemLinkTitle } from "./IndexItemLinkTitle";
-import { IndexItemCategories } from "./IndexItemCategories";
 import { IndexItemArrowButton } from "./IndexItemArrowButton";
 
 describe("IndexItemArrowButton", () => {

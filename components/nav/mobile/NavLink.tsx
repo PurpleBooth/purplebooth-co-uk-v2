@@ -6,7 +6,7 @@ export const NavLink: FC<PropsWithChildren<{ href: string }>> = ({
   href,
 }) => (
   <Link passHref href={href}>
-    <a className={"cursor-pointer"}>
+    <a data-testid={"NavLink"} className={"cursor-pointer"}>
       <span className={"hover:underline dark:text-white"}>{children}</span>
     </a>
   </Link>

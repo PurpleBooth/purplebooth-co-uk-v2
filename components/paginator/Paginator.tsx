@@ -1,12 +1,10 @@
 import { PageLink } from "./PageLink";
+import { FC } from "react";
 
-export const Paginator = ({
-  page,
-  maxPage,
-}: {
+export const Paginator: FC<{
   page: number;
   maxPage: number;
-}) => (
+}> = ({ page, maxPage }) => (
   <span
     className={
       "rounded-slate-600 dark:rounded-slate-400 rounded border inline-flex mt-4"

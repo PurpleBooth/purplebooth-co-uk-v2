@@ -42,7 +42,7 @@ const Layout: FC<
         <meta name="twitter:title" content={title} />
         <body className={"dark:bg-black"} />
       </Head>
-      <div className={"lg:flex lg:flex-row"}>
+      <div data-testid={"Layout"} className={"lg:flex lg:flex-row"}>
         <Nav />
         <MobileNav />
 

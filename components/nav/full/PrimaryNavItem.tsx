@@ -6,7 +6,7 @@ export type Props = PropsWithChildren<{ href: string }>;
 export const PrimaryNavItem: FC<Props> = ({ href, children }) => (
   <li>
     <Link passHref href={href}>
-      <a className={"cursor-pointer"}>
+      <a data-testid={"PrimaryNavItem"} className={"cursor-pointer"}>
         <span className={"text-slate-800 dark:text-slate-200"}>
           <FontAwesomeIcon icon={["fas", "square"]} />
         </span>

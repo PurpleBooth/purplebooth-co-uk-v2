@@ -7,5 +7,6 @@ export const CopyrightNotice: FC = () => (
     {intlFormat(Date.now(), {
       year: "numeric",
     })}
+    <span data-testid={"CopyrightNotice"} />
   </>
 );
