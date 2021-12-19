@@ -19,7 +19,10 @@ export const IndexItemStatsLine: FunctionComponent<{
   );
 
   return (
-    <div className={"text-slate-600 dark:text-slate-400"}>
+    <div
+      data-testid={"IndexItemStatsLine"}
+      className={"text-slate-600 dark:text-slate-400"}
+    >
       {formattedDate} {timestamp} read
     </div>
   );

@@ -6,7 +6,10 @@ export const IndexItemArrowButton: FunctionComponent<
 > = ({ href, children }) => {
   return (
     <Link passHref href={href}>
-      <a className={"block p-1 no-underline"}>
+      <a
+        data-testid={"IndexItemArrowButton a"}
+        className={"block p-1 no-underline"}
+      >
         <span className={"hover:underline"}>{children}</span> →
       </a>
     </Link>

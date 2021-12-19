@@ -14,7 +14,10 @@ export const IndexItemLinkTitle: FC<Props> = ({
   pageHasTitle,
 }) => (
   <Link passHref href={href}>
-    <a className={"no-underline hover:underline"}>
+    <a
+      data-testid={"IndexItemLinkTitle"}
+      className={"no-underline hover:underline"}
+    >
       <IndexItemTitle title={title} pageHasTitle={pageHasTitle} />
     </a>
   </Link>

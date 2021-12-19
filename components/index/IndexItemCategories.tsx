@@ -17,7 +17,12 @@ export const IndexItemCategories: FunctionComponent<{
             href={`/categories/${encodeURIComponent(tag.toLowerCase())}/`}
             passHref
           >
-            <a className={"no-underline font-bold"}>{tag}</a>
+            <a
+              data-testid={`IndexItemCategories ${tag} a`}
+              className={"no-underline font-bold"}
+            >
+              {tag}
+            </a>
           </Link>
         </li>
       ))}

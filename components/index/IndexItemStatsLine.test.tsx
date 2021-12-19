@@ -6,7 +6,7 @@ import { render } from "@testing-library/react";
 import { IndexItemTitle } from "./IndexItemTitle";
 import { IndexItemStatsLine } from "./IndexItemStatsLine";
 
-describe("IndexItemTitle", () => {
+describe("IndexItemStatsLine", () => {
   it("internationalise the read length", async () => {
     const { getByText } = render(
       <IndexItemStatsLine
