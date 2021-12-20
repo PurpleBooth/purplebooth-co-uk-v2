@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Image from "next/image";
-import { MDXRemoteSerializeResult } from "next-mdx-remote";
 import Layout from "../components/Layout";
 
 const License: NextPage = () => {

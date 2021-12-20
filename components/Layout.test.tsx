@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import { render, waitFor } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import Layout from "./Layout";
 
 describe("Layout", () => {

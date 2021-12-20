@@ -3,7 +3,6 @@
  */
 
 import { render } from "@testing-library/react";
-import { DarkLogo } from "./DarkLogo";
 import { LightLogo } from "./LightLogo";
 
 describe("LightLogo", () => {

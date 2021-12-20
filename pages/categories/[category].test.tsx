@@ -4,7 +4,7 @@
 
 import React from "react";
 import { render } from "@testing-library/react";
-import CategoryPage from "./[category]";
+import CategoryPage, { getStaticPaths, getStaticProps } from "./[category]";
 import Meta from "../../models/Meta";
 import * as router from "next/router";
 import { NextRouter } from "next/router";
@@ -69,5 +69,47 @@ describe("IndexPage", () => {
     expect(getByText("Title 1")).toBeInTheDocument();
     expect(getByText("Title 2")).toBeInTheDocument();
     expect(getByText("Title 3")).toBeInTheDocument();
+  });
+});
+
+describe("getStaticPaths", () => {
+  it("fallback is enabled", async () => {
+    const actual = await getStaticPaths({});
+
+    expect(actual.fallback).toBeTruthy();
+  });
+
+  it("there to be enough articles", async () => {
+    const actual = await getStaticPaths({});
+
+    expect(actual.paths.length).toBeGreaterThan(10);
+    expect(new Set(actual.paths).size).toEqual(actual.paths.length);
+    expect(actual.paths[actual.paths.length - 1]).toEqual({
+      params: {
+        category: "slides",
+      },
+    });
+  });
+});
+
+describe("getStaticProps", () => {
+  it("fallback is enabled", async () => {
+    const actual = await getStaticProps({
+      params: {
+        category: "OOP",
+      },
+    });
+
+    expect(actual).toEqual(
+      expect.objectContaining({
+        props: expect.objectContaining({
+          meta: expect.arrayContaining([
+            expect.objectContaining({
+              categories: expect.arrayContaining(["OOP"]),
+            }),
+          ]),
+        }),
+      })
+    );
   });
 });

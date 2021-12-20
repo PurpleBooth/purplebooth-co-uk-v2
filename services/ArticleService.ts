@@ -2,7 +2,6 @@ import Article from "../models/Article";
 import { promises as fsPromises } from "fs";
 import path from "path";
 import matter, { GrayMatterFile } from "gray-matter";
-import getConfig from "next/config";
 
 interface Query {
   categories?: string[] | string;

@@ -4,8 +4,8 @@
 
 import React from "react";
 import { render } from "@testing-library/react";
-import BlogPage from "./[page]";
-import Meta from "../../models/Meta";
+import BlogPage, { getStaticPaths, getStaticProps } from "./[page]";
+import Meta, { MetaJSON } from "../../models/Meta";
 
 describe("IndexPage", () => {
   it("Displays a list of articles", async () => {
@@ -40,5 +40,41 @@ describe("IndexPage", () => {
     expect(getByText("Title 1")).toBeInTheDocument();
     expect(getByText("Title 2")).toBeInTheDocument();
     expect(getByText("Title 3")).toBeInTheDocument();
+  });
+});
+
+describe("getStaticPaths", () => {
+  it("fallback is enabled", async () => {
+    const actual = await getStaticPaths({});
+
+    expect(actual.fallback).toBeTruthy();
+  });
+
+  it("there to be enough articles", async () => {
+    const actual = await getStaticPaths({});
+
+    expect(actual.paths.length).toBeGreaterThanOrEqual(4);
+    expect(new Set(actual.paths).size).toEqual(actual.paths.length);
+    expect(actual.paths[0]).toEqual({
+      params: {
+        page: "1",
+      },
+    });
+  });
+});
+
+describe("getStaticProps", () => {
+  it("fallback is enabled", async () => {
+    const actual = await getStaticProps({});
+
+    expect(actual).toEqual(
+      expect.objectContaining({
+        props: expect.objectContaining({
+          maxPage: expect.any(Number),
+          page: expect.any(Number),
+          meta: expect.arrayContaining([expect.any(Object)]),
+        }),
+      })
+    );
   });
 });

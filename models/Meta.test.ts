@@ -46,7 +46,10 @@ describe("Meta", () => {
   });
 
   it("can convert to json serializable object", async () => {
-    const actual = Meta.fromGrayMatterFile({content: "ABC", data: {title: "Title", date: "2021-12-19T21:34:32Z", "categories": ["cake"], description: "Description"}});
+    const actual = Meta.fromGrayMatterFile({
+      content: "ABC",
+      data: { title: "Title", date: "2021-12-19T21:34:32Z", "categories": ["cake"], description: "Description" }
+    });
     expect(actual).toEqual({
       "categories": [
         "cake"

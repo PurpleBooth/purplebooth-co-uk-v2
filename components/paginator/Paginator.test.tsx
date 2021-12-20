@@ -3,7 +3,6 @@
  */
 
 import { queryAllByRole, render } from "@testing-library/react";
-import { PageLink } from "./PageLink";
 import { Paginator } from "./Paginator";
 
 describe("Paginator", () => {
