@@ -3,6 +3,9 @@
 
 name: Node.js CI
 
+env:
+  NODE_VERSION: 17.x
+
 on:
   push:
   pull_request:
@@ -14,7 +17,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version:
+          - ${{env.NODE_VERSION}}
     steps:
     - uses: actions/checkout@v2
       with:
@@ -31,7 +35,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version:
+          - ${{env.NODE_VERSION}}
     steps:
       - uses: actions/checkout@v2
         with:
@@ -48,7 +53,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version:
+          - ${{env.NODE_VERSION}}
     steps:
       - uses: actions/checkout@v2
         with:
@@ -65,7 +71,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version:
+          - ${{env.NODE_VERSION}}
     steps:
       - uses: actions/checkout@v2
         with:
