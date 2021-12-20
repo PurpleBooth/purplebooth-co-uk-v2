@@ -3,13 +3,13 @@
  */
 
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import License from "./license.page";
 
 describe("License", () => {
-  it("Renders", () => {
+  it("Renders", async () => {
     const { getByTestId } = render(<License />);
 
-    expect(getByTestId("License")).toBeInTheDocument();
+    await waitFor(() => expect(getByTestId("License")).toBeInTheDocument());
   });
 });

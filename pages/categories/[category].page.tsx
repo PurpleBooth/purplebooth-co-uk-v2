@@ -1,8 +1,8 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
+import { useRouter } from "next/router";
 import IndexItem from "../../components/index/IndexItem";
 import ArticlesService from "../../services/ArticleService";
 import { MetaJSON } from "../../models/Meta";
-import { useRouter } from "next/router";
 import Layout from "../../components/Layout";
 
 interface Props {

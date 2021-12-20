@@ -3,9 +3,9 @@
  */
 
 import React from "react";
-import { render } from "@testing-library/react";
-import BlogPage, { getStaticPaths, getStaticProps } from "./[page].page";
+import { render, waitFor } from "@testing-library/react";
 import Meta, { MetaJSON } from "../../models/Meta";
+import BlogPage, { getStaticPaths, getStaticProps } from "./[page].page";
 
 describe("IndexPage", () => {
   it("Displays a list of articles", async () => {
@@ -37,7 +37,7 @@ describe("IndexPage", () => {
       <BlogPage page={1} maxPage={10} meta={meta} />
     );
 
-    expect(getByText("Title 1")).toBeInTheDocument();
+    await waitFor(() => expect(getByText("Title 1")).toBeInTheDocument());
     expect(getByText("Title 2")).toBeInTheDocument();
     expect(getByText("Title 3")).toBeInTheDocument();
   });

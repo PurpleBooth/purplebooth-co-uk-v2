@@ -2,14 +2,14 @@
  * @jest-environment jsdom
  */
 
-import { render } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import Layout from "./Layout";
 
 describe("Layout", () => {
   it("it has the correct page links", async () => {
     const { getByText } = render(<Layout>Some Content</Layout>);
 
-    expect(getByText(/Some Content/)).toBeInTheDocument();
+    await waitFor(() => expect(getByText(/Some Content/)).toBeInTheDocument());
   });
 
   it("it can be given custom page titles", async () => {
@@ -19,6 +19,6 @@ describe("Layout", () => {
       </Layout>
     );
 
-    expect(getByTestId("Layout")).toBeInTheDocument();
+    await waitFor(() => expect(getByTestId("Layout")).toBeInTheDocument());
   });
 });

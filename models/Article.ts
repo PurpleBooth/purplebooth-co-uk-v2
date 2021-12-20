@@ -1,5 +1,5 @@
-import Meta, { MetaJSON } from "./Meta";
 import { GrayMatterFile } from "gray-matter";
+import Meta, { MetaJSON } from "./Meta";
 
 export interface ArticleJSON {
   meta: MetaJSON;

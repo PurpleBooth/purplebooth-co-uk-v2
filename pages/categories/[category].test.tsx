@@ -3,23 +3,25 @@
  */
 
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
+import * as router from "next/dist/client/router";
+import { NextRouter } from "next/dist/client/router";
+import { SpyInstance } from "jest-mock";
+import Meta from "../../models/Meta";
 import CategoryPage, {
   getStaticPaths,
   getStaticProps,
 } from "./[category].page";
-import Meta from "../../models/Meta";
-import * as router from "next/router";
-import { NextRouter } from "next/router";
-import { SpyInstance } from "jest-mock";
 
-jest.mock("next/router", () => ({
+jest.mock("next/dist/client/router", () => ({
   useRouter() {
     return {
       route: "",
       pathname: "",
       query: "",
       asPath: "",
+      prefetch: () => Promise.resolve(),
+      push: () => {},
     };
   },
 }));
@@ -40,6 +42,8 @@ describe("IndexPage", () => {
           asPath: "",
           basePath: "basePath",
           isLocaleDomain: true,
+          prefetch: () => Promise.resolve(),
+          push: () => {},
         } as any)
     );
 
@@ -69,7 +73,7 @@ describe("IndexPage", () => {
 
     const { getByText } = render(<CategoryPage meta={meta} />);
 
-    expect(getByText("Title 1")).toBeInTheDocument();
+    await waitFor(() => expect(getByText("Title 1")).toBeInTheDocument());
     expect(getByText("Title 2")).toBeInTheDocument();
     expect(getByText("Title 3")).toBeInTheDocument();
   });

@@ -3,8 +3,8 @@
  */
 
 import { render } from "@testing-library/react";
-import { MobileNav } from "./MobileNav";
-import { MobileFooter } from "./MobileFooter";
+import MobileNav from "./MobileNav";
+import MobileFooter from "./MobileFooter";
 
 describe("MobileNav", () => {
   it("has a link to the homepage", async () => {

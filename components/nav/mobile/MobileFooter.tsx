@@ -1,8 +1,9 @@
 import { CopyrightNotice } from "../CopyrightNotice";
 import { NavLink } from "./NavLink";
 import { FC } from "react";
+import MobileNav from "./MobileNav";
 
-export const MobileFooter: FC = () => (
+const MobileFooter: FC = () => (
   <footer
     className={"text-slate-600 dark:text-slate-400 text-center mt-8 lg:hidden"}
   >
@@ -21,3 +22,4 @@ export const MobileFooter: FC = () => (
     </ul>
   </footer>
 );
+export default MobileFooter;

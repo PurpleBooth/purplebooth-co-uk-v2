@@ -1,5 +1,5 @@
-import Meta from "./Meta";
 import { formatISO, parseISO } from "date-fns";
+import Meta from "./Meta";
 
 describe("Meta", () => {
   it("has a title", async () => {

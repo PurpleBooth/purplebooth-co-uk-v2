@@ -1,7 +1,7 @@
-import Article from "../models/Article";
 import fs from "fs/promises";
 import path from "path";
 import matter, { GrayMatterFile } from "gray-matter";
+import Article from "../models/Article";
 
 interface Query {
   categories?: string[] | string;

@@ -4,18 +4,18 @@
 
 import "fs";
 import React from "react";
-import { render } from "@testing-library/react";
-import IndexPage, { getStaticPaths, getStaticProps } from "./[slug].page";
-import Meta from "../../../../../models/Meta";
-import Article from "../../../../../models/Article";
+import { render, waitFor } from "@testing-library/react";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
+import Meta from "../../../../../models/Meta";
+import Article from "../../../../../models/Article";
+import IndexPage, { getStaticPaths, getStaticProps } from "./[slug].page";
 
 describe("IndexPage", () => {
-  it('404"s on no article', () => {
+  it('404"s on no article', async () => {
     const { getByText } = render(<IndexPage />);
 
-    expect(getByText(/404/)).toBeInTheDocument();
+    await waitFor(() => expect(getByText(/404/)).toBeInTheDocument());
   });
 
   it("Displays the article", async () => {
@@ -35,7 +35,8 @@ describe("IndexPage", () => {
       <IndexPage article={article.toJSON()} contents={serializeResult} />
     );
 
-    expect(getByText("Title!")).toBeInTheDocument();
+    await waitFor(() => expect(getByText("Title!")).toBeInTheDocument());
+
     expect(getByText("Some Content")).toBeInTheDocument();
     expect(getByText("a")).toBeInTheDocument();
     expect(getByText("b")).toBeInTheDocument();

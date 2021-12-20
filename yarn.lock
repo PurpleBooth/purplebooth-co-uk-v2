@@ -7196,7 +7196,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.25.2":
+"eslint-plugin-import@npm:^2.25.2, eslint-plugin-import@npm:^2.25.3":
   version: 2.25.3
   resolution: "eslint-plugin-import@npm:2.25.3"
   dependencies:
@@ -12398,6 +12398,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-router-mock@npm:^0.6.3":
+  version: 0.6.3
+  resolution: "next-router-mock@npm:0.6.3"
+  peerDependencies:
+    next: ">=10.0.0"
+    react: ">=17.0.0"
+  checksum: c1d51ce0541f655902a376c2740b549c8d0ef84fb26a3d356f1367ffe77435fa7c01963c9af5119ec0504785dfd4a8aee80dd78ce93c6662ef011c629b2fa5ae
+  languageName: node
+  linkType: hard
+
 "next@npm:12.0.7":
   version: 12.0.7
   resolution: "next@npm:12.0.7"
@@ -14493,12 +14503,14 @@ __metadata:
     eslint: 8.4.1
     eslint-config-next: 12.0.7
     eslint-config-prettier: ^8.3.0
+    eslint-plugin-import: ^2.25.3
     gray-matter: ^4.0.3
     jest: ^27.4.5
     markdown-to-text: ^0.1.1
     netlify-cli: ^8.1.8
     next: 12.0.7
     next-mdx-remote: ^3.0.8
+    next-router-mock: ^0.6.3
     postcss: ^8.4.4
     postcss-flexbugs-fixes: ^5.0.2
     postcss-preset-env: ^7.0.1
