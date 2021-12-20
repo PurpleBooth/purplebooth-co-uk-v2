@@ -1,7 +1,5 @@
 import Meta, { MetaJSON } from "./Meta";
 import { GrayMatterFile } from "gray-matter";
-import { serialize } from "next-mdx-remote/serialize";
-import { MDXRemoteSerializeResult } from "next-mdx-remote";
 
 export interface ArticleJSON {
   meta: MetaJSON;
@@ -29,14 +27,13 @@ export default class Article {
   }
 
   hasAnyCategory(givenCategories: string[]): boolean {
-    return (
-      Array.isArray(givenCategories) &&
-      this.meta.categories.filter((articleCategory) =>
-        givenCategories
-          ?.map((queryCategory) => queryCategory.toLowerCase())
-          .includes(articleCategory.toLowerCase())
-      ).length == 0
-    );
+    for (const category of givenCategories) {
+      if (this.meta.categories.includes(category)) {
+        return true;
+      }
+    }
+
+    return false
   }
 
   isOnDate(year?: string, month?: string, day?: string): boolean {

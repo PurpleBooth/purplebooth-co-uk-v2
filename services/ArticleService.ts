@@ -26,15 +26,14 @@ export default class ArticlesService {
     day?: string[] | string;
     slug?: string[] | string;
   }): Promise<Article[]> {
-    const { serverRuntimeConfig } = getConfig();
     const articlePath = path.join(process.cwd(), "content", "articles", "");
     const articleFiles = await fsPromises.readdir(articlePath);
     const articles = [];
-    let categories = standardise(query?.categories);
-    let day = standardise(query?.day);
-    let month = standardise(query?.month);
-    let year = standardise(query?.year);
-    let slug = standardise(query?.slug);
+    const categories = standardise(query?.categories);
+    const day = standardise(query?.day);
+    const month = standardise(query?.month);
+    const year = standardise(query?.year);
+    const slug = standardise(query?.slug);
 
     for (const index in articleFiles) {
       const fullArticlePath = path.join(articlePath, articleFiles[index]);
@@ -46,7 +45,7 @@ export default class ArticlesService {
       const rawContents = await fsPromises.readFile(fullArticlePath);
       const grayMatterFile: GrayMatterFile<Buffer> = matter(rawContents);
 
-      let article = await Article.fromGrayMatterFile(grayMatterFile);
+      const article = await Article.fromGrayMatterFile(grayMatterFile);
 
       if (categories && !article.hasAnyCategory(categories)) {
         continue;

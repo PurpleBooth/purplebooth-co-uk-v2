@@ -41,7 +41,7 @@ export default class Meta {
       .replace(/[^a-z0-9]+/g, "-");
   }
 
-  static fromGrayMatterFile(grayMatterFile: GrayMatterFile<Buffer>) {
+  static fromGrayMatterFile(grayMatterFile: { content: string, data: { title?: string, categories?: string[], description?:string, date?:string }}) {
     const wordCount = grayMatterFile.content.trim().split(/\s+/).length;
     const readingTime = Math.ceil(wordCount / averageWpm);
 
@@ -51,7 +51,7 @@ export default class Meta {
     const summary: string = removeMarkdown(split[0] || "");
 
     return new Meta(
-      grayMatterFile.data.title,
+      grayMatterFile.data.title || "",
       grayMatterFile.data.categories || [],
       readingTime,
       grayMatterFile.data.description || summary,

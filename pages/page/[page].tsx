@@ -6,7 +6,7 @@ import { MetaJSON } from "../../models/Meta";
 import Layout from "../../components/Layout";
 import { Paginator } from "../../components/paginator/Paginator";
 import Article from "../../models/Article";
-import { getMaxPage } from "../../components/paginator/GetMaxPage";
+import { getMaxPage } from "../../services/GetMaxPage";
 
 interface Props {
   meta?: MetaJSON[];
