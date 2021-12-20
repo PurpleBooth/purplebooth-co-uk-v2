@@ -9,6 +9,10 @@
     "test": "TZ=\"GMT\" LANG=\"en_US\" LC_ALL=\"en_US.UTF-8\" LC_CTYPE=\"en_US.UTF-8\" jest",
     "export": "next export"
   },
+  "browserslist": [
+    "defaults",
+    "maintained node versions"
+  ],
   "dependencies": {
     "@fontsource/ibm-plex-sans": "^4.5.1",
     "@fontsource/iosevka": "^4.5.1",
