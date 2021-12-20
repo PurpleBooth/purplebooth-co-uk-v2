@@ -18,5 +18,18 @@ describe("Article", () => {
     const meta = new Meta("title", ["a", "b", "c"], 10, "description");
     const article = new Article(meta, "contents");
     expect(article.hasAnyCategory(["a", "z"])).toBeTruthy();
+    expect(article.hasAnyCategory(["x", "z"])).toBeFalsy();
+  });
+  it("is able to tell me if it was on a date", async () => {
+    const meta = new Meta("title", ["a", "b", "c"], 10, "description", new Date(2020, 2, 2));
+    const article = new Article(meta, "contents");
+    expect(article.isOnDate("2020", '2', "2")).toBeTruthy();
+    expect(article.isOnDate("2020", '2', "1")).toBeFalsy();
+  });
+  it("is able to tell me if it has a slug", async () => {
+    const meta = new Meta("Title!", ["a", "b", "c"], 10, "description", new Date(2020, 2, 2));
+    const article = new Article(meta, "contents");
+    expect(article.hasSlug("title-")).toBeTruthy();
+    expect(article.hasSlug("something else")).toBeFalsy();
   });
 });
