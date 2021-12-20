@@ -6,7 +6,7 @@ const withMDX = require("@next/mdx")({
   gfm: true,
 });
 module.exports = withMDX({
-  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
+  pageExtensions: ["page.js", "page.jsx", "page.ts", "page.tsx", "page.md", "page.mdx"],
   reactStrictMode: true,
   eslint: {
     dirs: ['pages', 'utils', "models", "services"], // Only run ESLint on the 'pages' and 'utils' directories during production builds (next build)

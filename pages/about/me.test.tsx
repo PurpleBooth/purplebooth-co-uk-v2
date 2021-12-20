@@ -4,7 +4,7 @@
 
 import React from "react";
 import { render } from "@testing-library/react";
-import AboutMe from "./me";
+import AboutMe from "./me.page";
 
 describe("About me", () => {
   it("Renders", () => {

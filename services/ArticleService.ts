@@ -1,5 +1,5 @@
 import Article from "../models/Article";
-import { promises as fsPromises } from "fs";
+import fs from "fs/promises";
 import path from "path";
 import matter, { GrayMatterFile } from "gray-matter";
 
@@ -26,7 +26,7 @@ export default class ArticlesService {
     slug?: string[] | string;
   }): Promise<Article[]> {
     const articlePath = path.join(process.cwd(), "content", "articles", "");
-    const articleFiles = await fsPromises.readdir(articlePath);
+    const articleFiles = await fs.readdir(articlePath);
     const articles = [];
     const categories = standardise(query?.categories);
     const day = standardise(query?.day);
@@ -37,11 +37,11 @@ export default class ArticlesService {
     for (const index in articleFiles) {
       const fullArticlePath = path.join(articlePath, articleFiles[index]);
 
-      if (!(await fsPromises.lstat(fullArticlePath)).isFile()) {
+      if (!(await fs.lstat(fullArticlePath)).isFile()) {
         continue;
       }
 
-      const rawContents = await fsPromises.readFile(fullArticlePath);
+      const rawContents = await fs.readFile(fullArticlePath);
       const grayMatterFile: GrayMatterFile<Buffer> = matter(rawContents);
 
       const article = await Article.fromGrayMatterFile(grayMatterFile);

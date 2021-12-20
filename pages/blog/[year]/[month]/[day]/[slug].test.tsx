@@ -2,9 +2,10 @@
  * @jest-environment jsdom
  */
 
+import "fs";
 import React from "react";
 import { render } from "@testing-library/react";
-import IndexPage, { getStaticPaths, getStaticProps } from "./[slug]";
+import IndexPage, { getStaticPaths, getStaticProps } from "./[slug].page";
 import Meta from "../../../../../models/Meta";
 import Article from "../../../../../models/Article";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";

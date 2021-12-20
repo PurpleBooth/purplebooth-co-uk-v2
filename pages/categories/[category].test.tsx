@@ -4,7 +4,10 @@
 
 import React from "react";
 import { render } from "@testing-library/react";
-import CategoryPage, { getStaticPaths, getStaticProps } from "./[category]";
+import CategoryPage, {
+  getStaticPaths,
+  getStaticProps,
+} from "./[category].page";
 import Meta from "../../models/Meta";
 import * as router from "next/router";
 import { NextRouter } from "next/router";
