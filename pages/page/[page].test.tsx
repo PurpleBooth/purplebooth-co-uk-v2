@@ -4,7 +4,7 @@
 
 import React from "react";
 import { render, waitFor } from "@testing-library/react";
-import Meta, { MetaJSON } from "../../models/Meta";
+import Meta from "../../models/Meta";
 import BlogPage, { getStaticPaths, getStaticProps } from "./[page].page";
 
 describe("IndexPage", () => {

@@ -2,7 +2,16 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Layout from "../../components/Layout";
+import dynamic from "next/dynamic";
+
+const Layout = dynamic(() => import("../../components/Layout"));
+
+import { faPhone, faAt, faKey } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTwitter,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 const AboutMe: NextPage = () => {
   return (
@@ -39,7 +48,7 @@ const AboutMe: NextPage = () => {
             <a>
               <FontAwesomeIcon
                 title={"Mobile"}
-                icon={["fas", "phone"]}
+                icon={faPhone}
                 listItem
                 alignmentBaseline={"auto"}
               />{" "}
@@ -50,11 +59,7 @@ const AboutMe: NextPage = () => {
         <li className={"flex items-center"}>
           <Link passHref href="https://twitter.com/purplebooth">
             <a>
-              <FontAwesomeIcon
-                title={"Twitter"}
-                icon={["fab", "twitter"]}
-                listItem
-              />{" "}
+              <FontAwesomeIcon title={"Twitter"} icon={faTwitter} listItem />{" "}
               @PurpleBooth
             </a>
           </Link>
@@ -62,11 +67,7 @@ const AboutMe: NextPage = () => {
         <li className={"flex items-center"}>
           <Link passHref href="https://uk.linkedin.com/in/purplebooth">
             <a>
-              <FontAwesomeIcon
-                title={"linkedIn"}
-                icon={["fab", "linkedin"]}
-                listItem
-              />{" "}
+              <FontAwesomeIcon title={"linkedIn"} icon={faLinkedin} listItem />{" "}
               purplebooth
             </a>
           </Link>
@@ -74,11 +75,7 @@ const AboutMe: NextPage = () => {
         <li className={"flex items-center"}>
           <Link passHref href="https://github.com/purplebooth">
             <a>
-              <FontAwesomeIcon
-                title={"GitHub"}
-                icon={["fab", "github"]}
-                listItem
-              />{" "}
+              <FontAwesomeIcon title={"GitHub"} icon={faGithub} listItem />{" "}
               purplebooth
             </a>
           </Link>
@@ -86,11 +83,7 @@ const AboutMe: NextPage = () => {
         <li className={"flex items-center"}>
           <Link href={"mailto:contactus@purplebooth.co.uk"}>
             <a>
-              <FontAwesomeIcon
-                title={"Email Address"}
-                icon={["fas", "at"]}
-                listItem
-              />{" "}
+              <FontAwesomeIcon title={"Email Address"} icon={faAt} listItem />{" "}
               contactus@purplebooth.co.uk
             </a>
           </Link>
@@ -101,12 +94,8 @@ const AboutMe: NextPage = () => {
         <li className={"flex items-center"}>
           <Link href="https://keybase.io/billie">
             <a>
-              <FontAwesomeIcon
-                title={"PGP Key"}
-                icon={["fas", "key"]}
-                listItem
-              />{" "}
-              1AE6 1571 6381 6A8F
+              <FontAwesomeIcon title={"PGP Key"} icon={faKey} listItem /> 1AE6
+              1571 6381 6A8F
             </a>
           </Link>
         </li>

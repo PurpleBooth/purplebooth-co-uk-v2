@@ -6,6 +6,11 @@ import { PrimaryNav } from "./PrimaryNav";
 import { NavFooter } from "./NavFooter";
 import { BrandNavItem } from "./BrandNavItem";
 import { BrandNav } from "./BrandNav";
+import {
+  faGithubSquare,
+  faLinkedin,
+  faTwitterSquare,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Nav: FC = () => (
   <nav
@@ -27,17 +32,17 @@ const Nav: FC = () => (
           <BrandNavItem
             href={"https://github.com/PurpleBooth"}
             title={"GitHub"}
-            icon={["fab", "github-square"]}
+            icon={faGithubSquare}
           />
           <BrandNavItem
             href={"https://www.linkedin.com/in/purplebooth/"}
             title={"LinkedIn"}
-            icon={["fab", "linkedin"]}
+            icon={faLinkedin}
           />
           <BrandNavItem
             href={"https://twitter.com/PurpleBooth"}
             title={"Twitter"}
-            icon={["fab", "twitter-square"]}
+            icon={faTwitterSquare}
           />
         </BrandNav>
         <NavFooter />

@@ -3,11 +3,14 @@ import { GetStaticPaths } from "next";
 import IndexItem from "../../components/index/IndexItem";
 import ArticlesService from "../../services/ArticleService";
 import { MetaJSON } from "../../models/Meta";
-import Layout from "../../components/Layout";
-import { Paginator } from "../../components/paginator/Paginator";
+import Paginator from "../../components/paginator/Paginator";
 import Article from "../../models/Article";
-import { getMaxPage } from "../../services/GetMaxPage";
-
+import getMaxPage from "../../services/GetMaxPage";
+import dynamic from "next/dynamic";
+import Spinner from "../../components/Spinner";
+const Layout = dynamic(() => import("../../components/Layout"), {
+  loading: () => <Spinner />,
+});
 interface Props {
   meta?: MetaJSON[];
   page: number;

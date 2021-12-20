@@ -1,4 +1,4 @@
-import { getMaxPage } from "./GetMaxPage";
+import getMaxPage from "./GetMaxPage";
 
 describe("GetMaxPage", () => {
   it("gets me the max page given 10 per page", async () => {

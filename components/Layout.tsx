@@ -1,17 +1,12 @@
 import { FC, PropsWithChildren } from "react";
 import Head from "next/head";
 
-import { config, library } from "@fortawesome/fontawesome-svg-core";
+import { config } from "@fortawesome/fontawesome-svg-core";
 import "prismjs/themes/prism-tomorrow.css";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
-import { far } from "@fortawesome/free-regular-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import dynamic from "next/dynamic";
 
 config.autoAddCss = false;
-
-library.add(fab, fas, far);
 
 const MobileNav = dynamic(() => import("./nav/mobile/MobileNav"));
 

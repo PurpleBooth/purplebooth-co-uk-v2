@@ -1,7 +1,7 @@
 import { PageLink } from "./PageLink";
 import { FC } from "react";
 
-export const Paginator: FC<{
+const Paginator: FC<{
   page: number;
   maxPage: number;
 }> = ({ page, maxPage }) => (
@@ -37,3 +37,4 @@ export const Paginator: FC<{
     </PageLink>
   </span>
 );
+export default Paginator;

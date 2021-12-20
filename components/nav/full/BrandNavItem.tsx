@@ -2,11 +2,12 @@ import { FC } from "react";
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-common-types";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export interface Props {
   href: string;
   title: string;
-  icon: [IconPrefix, IconName];
+  icon: IconProp;
 }
 
 export const BrandNavItem: FC<Props> = ({ href, title, icon }) => (

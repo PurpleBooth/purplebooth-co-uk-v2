@@ -1,6 +1,11 @@
 import type { NextPage } from "next";
+import dynamic from "next/dynamic";
+import Spinner from "../components/Spinner";
 import Image from "next/image";
-import Layout from "../components/Layout";
+
+const Layout = dynamic(() => import("../components/Layout"), {
+  loading: () => <Spinner />,
+});
 
 const License: NextPage = () => {
   return (

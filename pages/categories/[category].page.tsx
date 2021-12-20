@@ -3,7 +3,11 @@ import { useRouter } from "next/router";
 import IndexItem from "../../components/index/IndexItem";
 import ArticlesService from "../../services/ArticleService";
 import { MetaJSON } from "../../models/Meta";
-import Layout from "../../components/Layout";
+import dynamic from "next/dynamic";
+import Spinner from "../../components/Spinner";
+const Layout = dynamic(() => import("../../components/Layout"), {
+  loading: () => <Spinner />,
+});
 
 interface Props {
   meta: MetaJSON[];

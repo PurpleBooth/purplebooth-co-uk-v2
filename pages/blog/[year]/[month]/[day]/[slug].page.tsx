@@ -4,11 +4,15 @@ import { parseISO } from "date-fns";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import ArticlesService from "../../../../../services/ArticleService";
-import Layout from "../../../../../components/Layout";
 import { ArticleJSON } from "../../../../../models/Article";
 import { IndexItemStatsLine } from "../../../../../components/index/IndexItemStatsLine";
 import { IndexItemCategories } from "../../../../../components/index/IndexItemCategories";
 import { IndexItemTitle } from "../../../../../components/index/IndexItemTitle";
+import dynamic from "next/dynamic";
+import Spinner from "../../../../../components/Spinner";
+const Layout = dynamic(() => import("../../../../../components/Layout"), {
+  loading: () => <Spinner />,
+});
 
 interface Props {
   article?: ArticleJSON;
