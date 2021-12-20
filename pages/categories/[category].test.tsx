@@ -76,10 +76,10 @@ describe("IndexPage", () => {
 });
 
 describe("getStaticPaths", () => {
-  it("fallback is enabled", async () => {
+  it("fallback is disabled", async () => {
     const actual = await getStaticPaths({});
 
-    expect(actual.fallback).toBeTruthy();
+    expect(actual.fallback).toBeFalsy();
   });
 
   it("there to be enough articles", async () => {
