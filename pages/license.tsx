@@ -3,13 +3,10 @@ import Image from "next/image";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
 import Layout from "../components/Layout";
 
-const License: NextPage<{
-  source: MDXRemoteSerializeResult;
-  frontMatter: { title: string };
-}> = ({ source, frontMatter }) => {
+const License: NextPage = () => {
   return (
     <Layout pageTitle={"License"}>
-      <h1>License</h1>
+      <h1 data-testid={"License"}>License</h1>
       <h2>You are free to</h2>
       <p>
         <strong>Share</strong> — copy and redistribute the material in any

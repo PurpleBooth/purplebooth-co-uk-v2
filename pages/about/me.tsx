@@ -10,7 +10,9 @@ const AboutMe: NextPage = () => {
       pageTitle={"About Me"}
       pageDescription={"About Billie Thompson, the author of this site"}
     >
-      <h1 id="about-me">About Me</h1>
+      <h1 data-testid={"AboutMe"} id="about-me">
+        About Me
+      </h1>
       <figure>
         <Image
           width="461px"
