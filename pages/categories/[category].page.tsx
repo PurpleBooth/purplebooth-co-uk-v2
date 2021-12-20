@@ -58,7 +58,6 @@ export const getStaticProps: GetStaticProps<Props> = async (
 ): Promise<{ props: Props }> => {
   const category = context?.params?.category || "";
   const service = new ArticlesService();
-
   return {
     props: {
       meta: (await service.find({ categories: category })).map((article) =>

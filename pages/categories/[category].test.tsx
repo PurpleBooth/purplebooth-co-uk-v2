@@ -96,10 +96,10 @@ describe("getStaticPaths", () => {
 });
 
 describe("getStaticProps", () => {
-  it("fallback is enabled", async () => {
+  it("can get all of the items in the oop category", async () => {
     const actual = await getStaticProps({
       params: {
-        category: "OOP",
+        category: "oop",
       },
     });
 

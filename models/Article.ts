@@ -28,7 +28,7 @@ export default class Article {
 
   hasAnyCategory(givenCategories: string[]): boolean {
     for (const category of givenCategories) {
-      if (this.meta.categories.includes(category)) {
+      if (this.meta.categories.map(category => category.toLowerCase()).includes(category.toLowerCase())) {
         return true;
       }
     }

@@ -19,6 +19,7 @@ describe("Article", () => {
     const article = new Article(meta, "contents");
     expect(article.hasAnyCategory(["a", "z"])).toBeTruthy();
     expect(article.hasAnyCategory(["x", "z"])).toBeFalsy();
+    expect(article.hasAnyCategory(["A"])).toBeTruthy();
   });
   it("is able to tell me if it was on a date", async () => {
     const meta = new Meta("title", ["a", "b", "c"], 10, "description", new Date(2020, 2, 2));
