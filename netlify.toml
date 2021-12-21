@@ -6,5 +6,8 @@ command = "yarn dlx prettier -c services/ components/ pages/ styles/ && NODE_ENV
 [[plugins]]
 package = "@netlify/plugin-nextjs"
 
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
+
 [context.production.environment]
 NODE_ENV = "production"
