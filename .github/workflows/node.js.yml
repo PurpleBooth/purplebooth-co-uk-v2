@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'yarn'
-      - run: yarn install --immutable --inline-builds
+      - run: yarn install --inline-builds
         name: Install dependencies
       - name: Pack assets
         run: tar --exclude='./.git' -cf assets.tar .
