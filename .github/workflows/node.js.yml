@@ -30,7 +30,7 @@ jobs:
       - run: yarn install --immutable
         name: Install dependencies
       - name: Pack assets
-        run: tar -cf assets.tar .
+        run: tar --exclude='./.git' -cf assets.tar .
       - uses: actions/upload-artifact@v2
         name: Save assets
         with:
