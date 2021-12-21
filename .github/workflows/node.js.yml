@@ -24,7 +24,7 @@ jobs:
           cache: 'yarn'
       - run: yarn install
       - name: Tar files
-        run: tar -cvf post-install.tar .
+        run: tar -cf post-install.tar .
       - uses: actions/upload-artifact@v2
         with:
           name: installed-artifact
@@ -39,7 +39,7 @@ jobs:
           name: installed-artifact
           path: .
       - name: Tar files
-        run: tar -cvf post-install.tar .
+        run: tar -xf post-install.tar .
       - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v2
         with:
@@ -49,7 +49,7 @@ jobs:
         env:
           NODE_ENV: production
       - name: Tar files
-        run: tar -cvf post-build.tar .
+        run: tar -cf post-build.tar .
 
       - uses: actions/upload-artifact@v2
         with:
@@ -65,7 +65,7 @@ jobs:
         with:
           name: installed-artifact
           path: .
-      - run: tar -xvf post-install.tar
+      - run: tar -xf post-install.tar
       - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v2
         with:
@@ -81,7 +81,7 @@ jobs:
         with:
           name: installed-artifact
           path: .
-      - run: tar -xvf post-install.tar
+      - run: tar -xf post-install.tar
       - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v2
         with:
@@ -97,7 +97,7 @@ jobs:
         with:
           name: installed-artifact
           path: .
-      - run: tar -xvf post-install.tar
+      - run: tar -xf post-install.tar
       - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v2
         with:
@@ -118,7 +118,7 @@ jobs:
         with:
           name: built-artifact
           path: .
-      - run: tar -xvf post-build.tar
+      - run: tar -xf post-build.tar
       - name: Deploy to netlify
         uses: netlify/actions/cli@master
         env:
