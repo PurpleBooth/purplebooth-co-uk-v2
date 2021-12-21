@@ -30,12 +30,12 @@ jobs:
       - run: yarn install
         name: Install dependencies
       - name: Pack assets
-        run: tar -cf post-install.tar .
+        run: tar -cf assets.tar .
       - uses: actions/upload-artifact@v2
         name: Save assets
         with:
           name: installed-artifact
-          path: post-install.tar
+          path: assets.tar
   build:
     name: Create production build
     needs:
@@ -48,7 +48,7 @@ jobs:
           name: installed-artifact
           path: .
       - name: Unpack assets
-        run: tar -xf post-install.tar .
+        run: tar -xf assets.tar .
       - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v2
         with:
@@ -59,13 +59,13 @@ jobs:
         env:
           NODE_ENV: production
       - name: Pack built assets
-        run: tar -cf post-build.tar .
+        run: tar -uf assets.tar .
 
       - uses: actions/upload-artifact@v2
         name: Save built assets
         with:
           name: built-artifact
-          path: post-build.tar
+          path: assets.tar
 
   lint:
     name: Lint code
@@ -78,7 +78,7 @@ jobs:
         with:
           name: installed-artifact
           path: .
-      - run: tar -xf post-install.tar
+      - run: tar -xf assets.tar
         name: Unpack assets
       - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v2
@@ -97,7 +97,7 @@ jobs:
         with:
           name: installed-artifact
           path: .
-      - run: tar -xf post-install.tar
+      - run: tar -xf assets.tar
         name: Unpack assets
       - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v2
@@ -116,7 +116,7 @@ jobs:
         with:
           name: installed-artifact
           path: .
-      - run: tar -xf post-install.tar
+      - run: tar -xf assets.tar
         name: Unpack assets
       - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v2
@@ -140,7 +140,7 @@ jobs:
         with:
           name: built-artifact
           path: .
-      - run: tar -xf post-build.tar
+      - run: tar -xf assets.tar
         name: Unpack assets
       - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v2
