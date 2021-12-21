@@ -5,6 +5,7 @@ name: Node.js CI
 
 env:
   NODE_VERSION: 16.x
+  NETLIFY_SITE_ID: 48139038-b4f3-4992-b6a9-9ee5f75fae5b
 
 on:
   push:
@@ -48,6 +49,7 @@ jobs:
       - run: yarn dlx -p netlify-cli netlify build
         env:
           NODE_ENV: production
+          NETLIFY_SITE_ID: ${{ env.NETLIFY_SITE_ID }}
       - name: Pack assets
         run: tar -cf post-build.tar .
 
@@ -124,10 +126,8 @@ jobs:
       - run: tar -xf post-build.tar
         name: Unpack assets
       - name: Deploy to netlify
-        uses: netlify/actions/cli@master
+      - run: yarn dlx -p netlify-cli netlify deploy --prod
         env:
+          NODE_ENV: production
+          NETLIFY_SITE_ID: ${{ env.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        with:
-          args: deploy --prod
-          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
