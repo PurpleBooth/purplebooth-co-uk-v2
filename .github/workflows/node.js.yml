@@ -136,8 +136,13 @@ jobs:
           path: .
       - run: tar -xf post-build.tar
         name: Unpack assets
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'yarn'
       - name: Deploy to netlify
-      - run: yarn dlx -p netlify-cli netlify deploy --prod
+        run: yarn dlx -p netlify-cli netlify deploy --prod
         env:
           NODE_ENV: production
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
