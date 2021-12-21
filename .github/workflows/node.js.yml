@@ -147,14 +147,9 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'yarn'
-      - name: Perform netlify specific build
-        run: yarn dlx -p netlify-cli netlify build
-        env:
-          NODE_ENV: production
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
 
       - name: Deploy to netlify
-        run: yarn dlx -p netlify-cli netlify deploy --prod
+        run: yarn dlx -p netlify-cli netlify deploy --prod --build
         env:
           NODE_ENV: production
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
