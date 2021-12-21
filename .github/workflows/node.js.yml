@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'yarn'
       - run: yarn install
-      - name: Tar files
+      - name: Pack assets
         run: tar -cf post-install.tar .
       - uses: actions/upload-artifact@v2
         with:
@@ -45,10 +45,10 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'yarn'
-      - run: yarn run build
+      - run: yarn dlx -p netlify-cli netlify build
         env:
           NODE_ENV: production
-      - name: Tar files
+      - name: Pack assets
         run: tar -cf post-build.tar .
 
       - uses: actions/upload-artifact@v2
