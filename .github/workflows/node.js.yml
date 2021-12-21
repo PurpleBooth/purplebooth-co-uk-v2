@@ -108,11 +108,10 @@ jobs:
         with:
           name: built-artifact
           path: .
-
       - name: Deploy to netlify
         uses: netlify/actions/cli@master
         env:
-            NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         with:
           args: deploy --prod
