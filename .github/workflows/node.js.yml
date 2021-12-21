@@ -58,10 +58,11 @@ jobs:
         name: Build site
         env:
           NODE_ENV: production
-      - name: Pack assets
+      - name: Pack built assets
         run: tar -cf post-build.tar .
 
       - uses: actions/upload-artifact@v2
+        name: Save built assets
         with:
           name: built-artifact
           path: post-build.tar
