@@ -7,7 +7,10 @@ command = "yarn dlx prettier -c services/ components/ pages/ styles/ && NODE_ENV
 package = "@netlify/plugin-nextjs"
 
 [[plugins]]
-package = "@netlify/plugin-lighthouse"
+ package = "@netlify/plugin-lighthouse"
+ # to audit a specific absolute url
+ [[plugins.inputs.audits]]
+ url = "http://localhost:3000"
 
 [context.production.environment]
 NODE_ENV = "production"
