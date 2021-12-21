@@ -2377,9 +2377,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@netlify/plugin-nextjs@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@netlify/plugin-nextjs@npm:4.1.0"
+"@netlify/plugin-nextjs@npm:latest":
+  version: 4.1.1
+  resolution: "@netlify/plugin-nextjs@npm:4.1.1"
   dependencies:
     "@netlify/functions": ^0.10.0
     "@netlify/ipx": ^0.0.8
@@ -2397,7 +2397,7 @@ __metadata:
     semver: ^7.3.5
     slash: ^3.0.0
     tiny-glob: ^0.2.9
-  checksum: 89591e284603331db40f04b1693129fef4b291ad15f062d87c5ca68d1768ec5d86343b4e20e7d75c393389dbd27cfbd9f9e6ba94bbd1b3d21244f26cc6eb40f1
+  checksum: 41b59199ac59a1f191851371bca51e0f5423c1d71f8bc284fbd17cfed08ca6d64ffd8407f6d85549158f731c218f8c25296dad0ea91708f342e393151672641a
   languageName: node
   linkType: hard
 
@@ -14512,7 +14512,7 @@ __metadata:
     "@fortawesome/react-fontawesome": ^0.1.16
     "@mdx-js/loader": ^1.6.22
     "@mdx-js/react": ^1.6.22
-    "@netlify/plugin-nextjs": ^4.1.0
+    "@netlify/plugin-nextjs": latest
     "@next/mdx": ^12.0.7
     "@tailwindcss/typography": ^0.5.0
     "@testing-library/jest-dom": ^5.16.1
