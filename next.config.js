@@ -40,7 +40,7 @@ const withMDX = require("@next/mdx")({
 });
 module.exports = withPWA(withMDX({
   pwa: {
-    disable: process.env.NODE_ENV === 'development',
+    disable: process.env.NODE_ENV !== 'production',
     dest: 'public'
   },
   pageExtensions: ["page.js", "page.jsx", "page.ts", "page.tsx", "page.md", "page.mdx"],
