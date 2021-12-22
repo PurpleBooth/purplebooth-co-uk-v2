@@ -31,6 +31,7 @@ class MyDocument extends Document {
             content={"Articles about software development by Billie Thompson"}
           />
           <meta property="og:image" content="/Purple Booth Logo-01.svg" />
+          <link rel="apple-touch-icon" href="/apple-192x192.png" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@PurpleBooth" />
           <meta
