@@ -36,6 +36,7 @@ jobs:
         with:
           name: installed-artifact
           path: assets.tar
+          retention-days: 1
   build:
     name: Create production build
     needs:
@@ -66,6 +67,7 @@ jobs:
         with:
           name: built-artifact
           path: assets.tar
+          retention-days: 1
 
   lint:
     name: Lint code
