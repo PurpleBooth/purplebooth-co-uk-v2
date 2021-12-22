@@ -4,7 +4,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
     "test": "TZ=\"GMT\" LANG=\"en_US\" LC_ALL=\"en_US.UTF-8\" LC_CTYPE=\"en_US.UTF-8\" jest",
@@ -57,7 +56,6 @@
     "jest": "^27.4.5",
     "netlify-cli": "^8.4.1",
     "next-router-mock": "^0.6.3",
-    "next-sitemap": "^1.6.203",
     "postcss": "^8.4.4",
     "prettier": "^2.5.1",
     "react-test-renderer": "^17.0.2",
