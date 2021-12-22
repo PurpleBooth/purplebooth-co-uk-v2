@@ -153,3 +153,7 @@ jobs:
         env:
           NODE_ENV: production
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
+      - name: Smoke Test
+        run: curl --fail https://purplebooth.co.uk -vvv
+
