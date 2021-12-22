@@ -40,6 +40,7 @@ class MyDocument extends Document {
           <meta name="twitter:image" content="/Purple Booth Logo-01.svg" />
           <meta property="og:title" content={"Purple Booth"} />
           <meta name="twitter:title" content={"Purple Booth"} />
+          <link rel="manifest" href="/manifest.json" />
         </Head>
         <body className={"dark:bg-black"}>
           <Main />
