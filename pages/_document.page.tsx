@@ -14,7 +14,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang={"en-US"}>
         <Head>
           <link rel="icon" href="/Purple Booth Mark.svg" />
           <meta

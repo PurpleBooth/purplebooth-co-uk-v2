@@ -5,7 +5,7 @@ const Paginator: FC<{
   page: number;
   maxPage: number;
 }> = ({ page, maxPage }) => (
-  <span
+  <nav
     className={
       "rounded-slate-600 dark:rounded-slate-400 rounded border inline-flex mt-4"
     }
@@ -35,6 +35,6 @@ const Paginator: FC<{
     <PageLink disabled={page == maxPage} page={maxPage}>
       »»
     </PageLink>
-  </span>
+  </nav>
 );
 export default Paginator;
