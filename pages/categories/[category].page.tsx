@@ -17,10 +17,9 @@ const Category: NextPage<Props> = ({ meta }: Props) => {
   const { query } = useRouter();
   const category: string =
     (Array.isArray(query.category) ? query.category[0] : query.category) || "";
-  const capitalisedCategory = category
-    .split(" ")
-    .map((word) => word.charAt(0).toUpperCase() + word.substring(1))
-    .join(" ");
+  const capitalisedCategory = meta[0].categories.filter(
+    (realCategory) => realCategory.toLowerCase() === category.toLowerCase()
+  )[0];
 
   return (
     <Layout pageTitle={capitalisedCategory}>
