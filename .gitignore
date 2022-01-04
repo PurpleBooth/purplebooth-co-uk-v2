@@ -19,6 +19,7 @@ public/workbox-1846d813.js*
 
 # next.js
 /.next/
+/_next/
 /out/
 
 # production
