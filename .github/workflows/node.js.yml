@@ -54,7 +54,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
       - run: npm run build
         name: Build site
         env:
@@ -86,7 +85,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
       - run: npm run lint
   style:
     name: Check coing style
@@ -105,7 +103,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
       - run: npx prettier -c services/ components/ pages/ styles/
   test:
     name: Run tests
@@ -124,7 +121,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
       - run: npm run test
 
   deploy:
@@ -148,8 +144,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-
       - name: Deploy to netlify
         run: npx -p netlify-cli netlify deploy --prod --build
         env:
