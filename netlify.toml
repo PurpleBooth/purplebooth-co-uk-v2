@@ -1,7 +1,7 @@
 [build]
 publish = ".next"
 
-command = "yarn run build"
+command = "npm run build"
 
 [functions]
 directory = "netlify/functions"
