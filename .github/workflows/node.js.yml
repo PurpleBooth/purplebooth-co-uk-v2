@@ -26,8 +26,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'yarn'
-      - run: yarn install --inline-builds
+          cache: 'npm'
+      - run: npm install --inline-builds
         name: Install dependencies
       - name: Pack assets
         run: tar --exclude='./.git' -cf assets.tar .
@@ -54,8 +54,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'yarn'
-      - run: yarn run build
+          cache: 'npm'
+      - run: npm run build
         name: Build site
         env:
           NODE_ENV: production
@@ -86,8 +86,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'yarn'
-      - run: yarn run lint
+          cache: 'npm'
+      - run: npm run lint
   style:
     name: Check coing style
     runs-on: ubuntu-latest
@@ -105,8 +105,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'yarn'
-      - run: yarn dlx prettier -c services/ components/ pages/ styles/
+          cache: 'npm'
+      - run: npx prettier -c services/ components/ pages/ styles/
   test:
     name: Run tests
     runs-on: ubuntu-latest
@@ -124,8 +124,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'yarn'
-      - run: yarn run test
+          cache: 'npm'
+      - run: npm run test
 
   deploy:
     name: Deploy site
@@ -148,10 +148,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'yarn'
+          cache: 'npm'
 
       - name: Deploy to netlify
-        run: yarn dlx -p netlify-cli netlify deploy --prod --build
+        run: npx -p netlify-cli netlify deploy --prod --build
         env:
           NODE_ENV: production
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
