@@ -36,11 +36,11 @@
     "next-mdx-remote": "^3.0.8",
     "next-pwa": "^5.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-preset-env": "^7.0.1",
+    "postcss-preset-env": "^7.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-syntax-highlighter": "^15.4.5",
-    "sass": "^1.47.0"
+    "sass": "^1.48.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.1",
@@ -50,11 +50,11 @@
     "@types/react": "17.0.38",
     "autoprefixer": "^10.4.2",
     "eslint": "8.6.0",
-    "eslint-config-next": "12.0.7",
+    "eslint-config-next": "12.0.8",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "jest": "^27.4.7",
-    "netlify-cli": "^8.8.0",
+    "netlify-cli": "^8.9.3",
     "next-router-mock": "^0.6.5",
     "postcss": "^8.4.4",
     "prettier": "^2.5.1",
