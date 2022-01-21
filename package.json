@@ -54,7 +54,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "jest": "^27.4.7",
-    "netlify-cli": "^8.11.0",
+    "netlify-cli": "^8.11.1",
     "next-router-mock": "^0.6.5",
     "postcss": "^8.4.4",
     "prettier": "^2.5.1",
