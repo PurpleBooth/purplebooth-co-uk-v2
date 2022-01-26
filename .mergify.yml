@@ -3,8 +3,12 @@ queue_rules:
     speculative_checks: 20
     batch_size: 20
     conditions:
-      - "#check-pending<=1"
-      - "#check-success>=6"
+      - check-success=Install dependencies
+      - check-success=Create production build
+      - check-success=Lint code
+      - check-success=Check coing style
+      - check-success=Run tests
+      - check-success=Analyze (javascript)
 
 pull_request_rules:
   - name: request review on external contributor
@@ -18,10 +22,14 @@ pull_request_rules:
   - name: automatic rebase for dependencies
     conditions:
       - base=main
-      - "#check-pending<=1"
-      - "#check-success>=6"
       - label=dependencies
       - author~=^dependabot(|-preview)\[bot\]$
+      - check-success=Install dependencies
+      - check-success=Create production build
+      - check-success=Lint code
+      - check-success=Check coing style
+      - check-success=Run tests
+      - check-success=Analyze (javascript)
     actions:
       queue:
         method: rebase
