@@ -21,6 +21,7 @@ jobs:
       - uses: actions/checkout@v2
         name: Checkout repository
         with:
+          fetch-depth: 0
           lfs: true
       - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v2
@@ -37,6 +38,28 @@ jobs:
           name: installed-artifact
           path: assets.tar
           retention-days: 1
+
+  uplift-check:
+    name: Check we can release
+    needs:
+      - install
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v2
+        name: Download assets
+        with:
+          name: installed-artifact
+          path: .
+      - name: Unpack assets
+        run: tar -xf assets.tar .
+
+    - uses: gembaadvantage/uplift-action@v2
+      name: Dry run release
+      with:
+        args: release --check
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   build:
     name: Create production build
     needs:
@@ -150,47 +173,6 @@ jobs:
           name: playwright-test-results
           path: test-results/
 
-  deploy:
-    name: Deploy site
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    environment:
-      name: production
-      url: https://purplebooth.co.uk
-    concurrency:
-      group: deploy/prod
-    needs:
-      - deploy-draft
-    steps:
-      - uses: actions/download-artifact@v2
-        name: Download assets
-        with:
-          name: built-artifact
-          path: .
-      - run: tar -xf assets.tar
-        name: Unpack assets
-      - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Deploy to netlify
-        run: npx -p netlify-cli netlify deploy --prod --build
-        env:
-          NODE_ENV: production
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-
-      - name: Install Playwright
-        run: npx playwright install --with-deps
-      - name: Run Playwright tests
-        run: npx playwright test
-        env:
-          BASE_URL: https://purplebooth.co.uk
-      - uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: playwright-test-results
-          path: test-results/
-
   deploy-draft:
     name: Deploy draft site
     runs-on: ubuntu-latest
@@ -199,6 +181,7 @@ jobs:
       name: draft
       url: ${{ steps.deploy.outputs.url }}
     needs:
+      - uplift-check
       - test
       - style
       - e2e
@@ -228,6 +211,69 @@ jobs:
         run: npx playwright test
         env:
           BASE_URL: ${{ steps.deploy.outputs.url }}
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: playwright-test-results
+          path: test-results/
+
+  uplift-release:
+    name: Release
+    if: github.ref == 'refs/heads/main'
+    needs:
+      - deploy-draft
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v2
+        name: Download assets
+        with:
+          name: installed-artifact
+          path: .
+      - name: Unpack assets
+        run: tar -xf assets.tar .
+
+      - uses: gembaadvantage/uplift-action@v2
+        name: Release
+        with:
+          args: release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    name: Deploy site
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: production
+      url: https://purplebooth.co.uk
+    concurrency:
+      group: deploy/prod
+    needs:
+      - uplift-release
+    steps:
+      - uses: actions/download-artifact@v2
+        name: Download assets
+        with:
+          name: built-artifact
+          path: .
+      - run: tar -xf assets.tar
+        name: Unpack assets
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Deploy to netlify
+        run: npx -p netlify-cli netlify deploy --prod --build
+        env:
+          NODE_ENV: production
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
+      - name: Install Playwright
+        run: npx playwright install --with-deps
+      - name: Run Playwright tests
+        run: npx playwright test
+        env:
+          BASE_URL: https://purplebooth.co.uk
       - uses: actions/upload-artifact@v2
         if: always()
         with:

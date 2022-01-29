@@ -1,0 +1,8 @@
+bumps:
+  - # The path of the file relative to where uplift is executed
+    file: ./package.json
+
+    # A regex for matching a version within the file
+    regex: '"version": "$VERSION"'
+    semver: true
+    count: 1
