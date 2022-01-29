@@ -154,12 +154,10 @@ jobs:
     name: Deploy site
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    concurrency:
+      group: deploy/prod
     needs:
-      - test
-      - style
-      - e2e
-      - lint
-      - build
+      - deploy-draft
     steps:
       - uses: actions/download-artifact@v2
         name: Download assets
@@ -184,6 +182,46 @@ jobs:
         run: npx playwright test
         env:
           BASE_URL: https://purplebooth.co.uk
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: playwright-test-results
+          path: test-results/
+
+  deploy-draft:
+    name: Deploy draft site
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    needs:
+      - test
+      - style
+      - e2e
+      - lint
+      - build
+    steps:
+      - uses: actions/download-artifact@v2
+        name: Download assets
+        with:
+          name: built-artifact
+          path: .
+      - run: tar -xf assets.tar
+        name: Unpack assets
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Deploy to netlify
+        id: deploy
+        run: echo "::set-output name=url::$(npx -p netlify-cli netlify deploy --json --build | jq -r .deploy_url)"
+        env:
+          NODE_ENV: production
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      - name: Install Playwright
+        run: npx playwright install --with-deps
+      - name: Run Playwright tests
+        run: npx playwright test
+        env:
+          BASE_URL: ${{ steps.deploy.outputs.url }}
       - uses: actions/upload-artifact@v2
         if: always()
         with:
