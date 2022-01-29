@@ -103,7 +103,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - run: npx prettier -c services/ components/ pages/ styles/
+      - run: npx prettier -c services/ components/ pages/ styles/ tests/
   test:
     name: Run unit tests
     runs-on: ubuntu-latest
