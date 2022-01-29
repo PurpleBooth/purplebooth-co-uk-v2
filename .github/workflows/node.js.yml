@@ -123,6 +123,30 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - run: npm run test
 
+  e2e:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v2
+        name: Download assets
+        with:
+          name: installed-artifact
+          path: .
+      - run: tar -xf assets.tar
+        name: Unpack assets
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Install Playwright
+        run: npx playwright install --with-deps
+      - name: Run Playwright tests
+        run: npx playwright test
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: playwright-test-results
+          path: test-results/
+
   deploy:
     name: Deploy site
     runs-on: ubuntu-latest
