@@ -154,6 +154,9 @@ jobs:
     name: Deploy site
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    environment:
+      name: production
+      url: https://purplebooth.co.uk
     concurrency:
       group: deploy/prod
     needs:
@@ -192,6 +195,9 @@ jobs:
     name: Deploy draft site
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    environment:
+      name: draft
+      url: ${{ steps.deploy.outputs.url }}
     needs:
       - test
       - style
