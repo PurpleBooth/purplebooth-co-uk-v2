@@ -35,3 +35,4 @@ pull_request_rules:
         method: rebase
         rebase_fallback: merge
         name: default
+
