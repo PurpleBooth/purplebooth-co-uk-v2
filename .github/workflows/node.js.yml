@@ -39,27 +39,6 @@ jobs:
           path: assets.tar
           retention-days: 1
 
-  uplift-check:
-    name: Check we can release
-    needs:
-      - install
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/download-artifact@v2
-        name: Download assets
-        with:
-          name: installed-artifact
-          path: .
-      - name: Unpack assets
-        run: tar -xf assets.tar .
-
-      - uses: gembaadvantage/uplift-action@v2
-        name: Dry run release
-        with:
-          args: release --check
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
   build:
     name: Create production build
     needs:
@@ -181,7 +160,6 @@ jobs:
       name: draft
       url: ${{ steps.deploy.outputs.url }}
     needs:
-      - uplift-check
       - test
       - style
       - e2e
