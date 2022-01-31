@@ -7,7 +7,8 @@ queue_rules:
       - check-success=Create production build
       - check-success=Lint code
       - check-success=Check coding style
-      - check-success=Run tests
+      - check-success=Run unit tests
+      - check-success=Run end to end tests
       - check-success=Analyze (javascript)
 
 pull_request_rules:
@@ -28,7 +29,8 @@ pull_request_rules:
       - check-success=Create production build
       - check-success=Lint code
       - check-success=Check coding style
-      - check-success=Run tests
+      - check-success=Run unit tests
+      - check-success=Run end to end tests
       - check-success=Analyze (javascript)
     actions:
       queue:
