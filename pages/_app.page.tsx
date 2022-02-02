@@ -6,21 +6,50 @@ import { PropsWithChildren } from "react";
 
 import { PrismAsync } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import { ImageProps } from "next/image";
 import "@fontsource/iosevka";
 import "@fontsource/space-grotesk";
 import "@fontsource/ibm-plex-sans";
 
 import dynamic from "next/dynamic";
+import { MDXComponents } from "mdx/types";
+import { ImageProps } from "next/image";
 
 const Image = dynamic(() => import("next/image"), {
   loading: () => <>.....</>,
 });
 
 const components = {
-  img: ({ alt, ...props }: PropsWithChildren<ImageProps & { alt: string }>) => (
-    <Image alt={alt} layout="responsive" {...props} />
-  ),
+  img: ({
+    alt,
+    src,
+    placeholder,
+    ...props
+  }: PropsWithChildren<
+    Omit<Omit<Omit<ImageProps, "alt">, "src">, "placeholder"> & {
+      alt?: string;
+      src?: string;
+      placeholder?: string;
+    }
+  >) => {
+    var realPlaceholder: "blur" | "empty" | undefined;
+
+    if (placeholder == "blur") {
+      realPlaceholder = "blur";
+    }
+    if (placeholder == "empty") {
+      realPlaceholder = "empty";
+    }
+
+    return (
+      <Image
+        alt={alt || ""}
+        src={src || ""}
+        placeholder={realPlaceholder}
+        layout="responsive"
+        {...props}
+      />
+    );
+  },
   code: ({
     className,
     children,
