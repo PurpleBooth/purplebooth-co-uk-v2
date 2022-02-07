@@ -14,7 +14,7 @@
     "maintained node versions"
   ],
   "dependencies": {
-    "@fontsource/ibm-plex-sans": "^4.5.2",
+    "@fontsource/ibm-plex-sans": "^4.5.3",
     "@fontsource/iosevka": "^4.5.2",
     "@fontsource/space-grotesk": "^4.5.1",
     "@fortawesome/fontawesome-free": "^5.15.4",
