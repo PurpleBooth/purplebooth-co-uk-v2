@@ -5,12 +5,12 @@ export const IndexItemCategories: FunctionComponent<{
   categories: string[];
 }> = ({ categories }) => {
   return (
-    <ul className={"flex flex-row list-none font-bold flex-wrap gap-1 pl-0"}>
+    <ul className={"flex list-none flex-row flex-wrap gap-1 pl-0 font-bold"}>
       {categories.map((tag, index) => (
         <li
           key={tag + index}
           className={
-            "bg-slate-100 dark:bg-slate-900 rounded p-1 whitespace-nowrap inline-block m-0"
+            "m-0 inline-block whitespace-nowrap rounded bg-slate-100 p-1 dark:bg-slate-900"
           }
         >
           <Link
@@ -19,7 +19,7 @@ export const IndexItemCategories: FunctionComponent<{
           >
             <a
               data-testid={`IndexItemCategories ${tag} a`}
-              className={"no-underline font-bold"}
+              className={"font-bold no-underline"}
             >
               {tag}
             </a>

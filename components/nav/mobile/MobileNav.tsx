@@ -4,8 +4,8 @@ import mark from "../../../public/Purple Booth Mark.svg";
 import { FC } from "react";
 
 const MobileNav: FC = () => (
-  <nav className={"lg:hidden bg-slate-100 dark:bg-slate-900"}>
-    <div className="flex inline-flex m-4 rounded-full aspect-square content-center items-center justify-center bg-slate-100 p-1">
+  <nav className={"bg-slate-100 dark:bg-slate-900 lg:hidden"}>
+    <div className="m-4 flex inline-flex aspect-square content-center items-center justify-center rounded-full bg-slate-100 p-1">
       <Link passHref href={"/"}>
         <a data-testid={"MobileNav"} className={"flex inline-flex"}>
           <Image

@@ -38,7 +38,7 @@ const Layout: FC<
         <Nav />
         <MobileNav />
 
-        <main className={"m-8 prose dark:prose-invert"}>{children}</main>
+        <main className={"prose m-8 dark:prose-invert"}>{children}</main>
         <MobileFooter />
       </div>
     </>

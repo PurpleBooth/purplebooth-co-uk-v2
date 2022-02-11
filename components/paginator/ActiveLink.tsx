@@ -8,7 +8,7 @@ export const ActiveLink: FC<
     <Link href={page == 1 ? "/" : `/page/${encodeURIComponent(page)}`} passHref>
       <a
         data-testid={"ActiveLink"}
-        className={`hover:bg-slate-100 dark:hover:bg-slate-900 p-2 ${
+        className={`p-2 hover:bg-slate-100 dark:hover:bg-slate-900 ${
           selected ? " bg-slate-100 dark:bg-slate-900" : ""
         }`}
       >

@@ -5,7 +5,7 @@ import MobileNav from "./MobileNav";
 
 const MobileFooter: FC = () => (
   <footer
-    className={"text-slate-600 dark:text-slate-400 text-center mt-8 lg:hidden"}
+    className={"mt-8 text-center text-slate-600 dark:text-slate-400 lg:hidden"}
   >
     <ul>
       <li>

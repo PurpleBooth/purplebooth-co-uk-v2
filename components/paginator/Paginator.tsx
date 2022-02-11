@@ -7,7 +7,7 @@ const Paginator: FC<{
 }> = ({ page, maxPage }) => (
   <nav
     className={
-      "rounded-slate-600 dark:rounded-slate-400 rounded border inline-flex mt-4"
+      "rounded-slate-600 dark:rounded-slate-400 mt-4 inline-flex rounded border"
     }
   >
     <PageLink page={1} disabled={page == 1}>
