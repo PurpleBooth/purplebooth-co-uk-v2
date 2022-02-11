@@ -15,11 +15,11 @@ import {
 const Nav: FC = () => (
   <nav
     className={
-      "bg-slate-100 dark:bg-slate-800 w-96 p-8 min-h-screen h-100 lg:flex flex-col justify-end text-xl gap-2 hidden"
+      "h-100 hidden min-h-screen w-96 flex-col justify-end gap-2 bg-slate-100 p-8 text-xl dark:bg-slate-800 lg:flex"
     }
   >
     <div className={"relative"}>
-      <div className={"w-80 fixed bottom-8"}>
+      <div className={"fixed bottom-8 w-80"}>
         <LogoHeader />
         <Description>
           I write code. I am quite tall and have curly hair.

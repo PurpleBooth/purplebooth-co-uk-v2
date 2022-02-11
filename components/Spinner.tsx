@@ -5,7 +5,7 @@ const Spinner: FC = () => (
   <div
     data-testid={"Spinner"}
     className={
-      "transition-all duration-150 delay-100 ease-in-out prose dark:prose-invert motion-safe:animate-spin flex min-w-full h-screen justify-center items-center"
+      "prose flex h-screen min-w-full items-center justify-center transition-all delay-100 duration-150 ease-in-out motion-safe:animate-spin dark:prose-invert"
     }
   >
     <LogoHeader />

@@ -32,7 +32,7 @@ const IndexItem: FunctionComponent<Props> = ({ articleMeta, pageHasTitle }) => {
         date={articleDate}
       />
       <IndexItemCategories categories={articleMeta.categories} />
-      <p className={"prose dark:prose-invert my-2"}>
+      <p className={"prose my-2 dark:prose-invert"}>
         {articleMeta.description}
       </p>
       <IndexItemArrowButton href={url}>Read On</IndexItemArrowButton>

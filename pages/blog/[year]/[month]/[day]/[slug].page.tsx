@@ -44,7 +44,7 @@ const IndexPage: NextPage<Props> = ({ article, contents }: Props) => {
           date={articleDate}
         />
         <IndexItemCategories categories={article.meta.categories} />
-        <div className={"prose dark:prose-invert my-2"}>
+        <div className={"prose my-2 dark:prose-invert"}>
           <MDXRemote {...contents} />
         </div>
       </article>
