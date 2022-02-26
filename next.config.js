@@ -47,7 +47,7 @@ module.exports = withPWA(withMDX({
   reactStrictMode: true,
   swcMinify: true,
   productionBrowserSourceMaps: true,
-  experimental: {
+  compiler: {
     // ssr and displayName are configured by default
     styledComponents: true,
   },
