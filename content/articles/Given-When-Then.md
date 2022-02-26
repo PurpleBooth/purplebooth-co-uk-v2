@@ -208,7 +208,7 @@ Scenario: Publish Book
 
 Lets talk about step definitions. Step definitions are controllers for your step logic. Try to apply the same design principles you would to MVC controllers: try to keep them down to as few lines as possible.
 
-There are a few ways to achieve this though. Firstly you're an Object Oriented programmer: Use objects and apply the [SOLID]({{< ref "post/0004-s-is-for-single-responsibility-principle.md" >}}) principles to your step definitions.
+There are a few ways to achieve this though. Firstly you're an Object Oriented programmer: Use objects and apply the [SOLID](/categories/solid) principles to your step definitions.
 
 Take for example this [Behat](http://behat.org/en/v2.5/) step definition.
 
@@ -364,7 +364,7 @@ Here's a run down of those tips:
 - Don't use fixtures
 - Step should be fairly high level
 - Textual descriptions can be clearer than tables
-- Use [SOLID]({{< ref "post/0004-s-is-for-single-responsibility-principle.md" >}}) in your step definitions
+- Use [SOLID](/categories/solid) in your step definitions
 - Keep your step definitions to a minimum number of lines
 - Use [data transformations](http://docs.behat.org/en/v2.5/guides/2.definitions.html#step-argument-transformations) (or in [cucumber](https://docs.cucumber.io/cucumber/cucumber-expressions/#custom-parameter-types))
 - Use the [page object pattern](https://martinfowler.com/bliki/PageObject.html)
