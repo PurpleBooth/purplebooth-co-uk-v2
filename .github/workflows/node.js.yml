@@ -5,7 +5,7 @@ name: Node.js CI
 
 env:
   NODE_VERSION: 16.x
-  NETLIFY_SITE_ID: "48139038-b4f3-4992-b6a9-9ee5f75fae5b"
+  NETLIFY_SITE_ID: 48139038-b4f3-4992-b6a9-9ee5f75fae5b
   NETLIFY_AUTH_TOKEN: fake
 
 on:
@@ -18,139 +18,139 @@ jobs:
     name: Install dependencies
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        name: Checkout repository
-        with:
-          fetch-depth: 0
-          lfs: true
-      - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v3.0.0
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-      - run: npm install
-        name: Install dependencies
-      - name: Pack assets
-        run: tar -cf assets.tar .
-      - uses: actions/upload-artifact@v2
-        name: Save assets
-        with:
-          name: installed-artifact
-          path: assets.tar
-          retention-days: 1
+    - uses: actions/checkout@v3
+      name: Checkout repository
+      with:
+        fetch-depth: 0
+        lfs: true
+    - name: Use Node.js ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v3.0.0
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: npm
+    - run: npm install
+      name: Install dependencies
+    - name: Pack assets
+      run: tar -cf assets.tar .
+    - uses: actions/upload-artifact@v2
+      name: Save assets
+      with:
+        name: installed-artifact
+        path: assets.tar
+        retention-days: 1
 
   build:
     name: Create production build
     needs:
-      - install
+    - install
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v2
-        name: Download assets
-        with:
-          name: installed-artifact
-          path: .
-      - name: Unpack assets
-        run: tar -xf assets.tar .
-      - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v3.0.0
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - run: npm run build
-        name: Build site
-        env:
-          NODE_ENV: production
-      - name: Pack built assets
-        run: tar -uf assets.tar .
+    - uses: actions/download-artifact@v2
+      name: Download assets
+      with:
+        name: installed-artifact
+        path: .
+    - name: Unpack assets
+      run: tar -xf assets.tar .
+    - name: Use Node.js ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v3.0.0
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    - run: npm run build
+      name: Build site
+      env:
+        NODE_ENV: production
+    - name: Pack built assets
+      run: tar -uf assets.tar .
 
-      - uses: actions/upload-artifact@v2
-        name: Save built assets
-        with:
-          name: built-artifact
-          path: assets.tar
-          retention-days: 1
+    - uses: actions/upload-artifact@v2
+      name: Save built assets
+      with:
+        name: built-artifact
+        path: assets.tar
+        retention-days: 1
 
   lint:
     name: Lint code
     runs-on: ubuntu-latest
     needs:
-      - install
+    - install
     steps:
-      - uses: actions/download-artifact@v2
-        name: Download assets
-        with:
-          name: installed-artifact
-          path: .
-      - run: tar -xf assets.tar
-        name: Unpack assets
-      - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v3.0.0
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - run: npm run lint
+    - uses: actions/download-artifact@v2
+      name: Download assets
+      with:
+        name: installed-artifact
+        path: .
+    - run: tar -xf assets.tar
+      name: Unpack assets
+    - name: Use Node.js ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v3.0.0
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    - run: npm run lint
   style:
     name: Check coding style
     runs-on: ubuntu-latest
     needs:
-      - install
+    - install
     steps:
-      - uses: actions/download-artifact@v2
-        name: Download assets
-        with:
-          name: installed-artifact
-          path: .
-      - run: tar -xf assets.tar
-        name: Unpack assets
-      - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v3.0.0
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - run: npx prettier -c services/ components/ pages/ styles/ tests/
+    - uses: actions/download-artifact@v2
+      name: Download assets
+      with:
+        name: installed-artifact
+        path: .
+    - run: tar -xf assets.tar
+      name: Unpack assets
+    - name: Use Node.js ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v3.0.0
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    - run: npx prettier -c services/ components/ pages/ styles/ tests/
   test:
     name: Run unit tests
     runs-on: ubuntu-latest
     needs:
-      - install
+    - install
     steps:
-      - uses: actions/download-artifact@v2
-        name: Download assets
-        with:
-          name: installed-artifact
-          path: .
-      - run: tar -xf assets.tar
-        name: Unpack assets
-      - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v3.0.0
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - run: npm run test
+    - uses: actions/download-artifact@v2
+      name: Download assets
+      with:
+        name: installed-artifact
+        path: .
+    - run: tar -xf assets.tar
+      name: Unpack assets
+    - name: Use Node.js ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v3.0.0
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    - run: npm run test
 
   e2e:
     name: Run end to end tests
     timeout-minutes: 60
     runs-on: ubuntu-latest
     needs:
-      - install
+    - install
     steps:
-      - uses: actions/download-artifact@v2
-        name: Download assets
-        with:
-          name: installed-artifact
-          path: .
-      - run: tar -xf assets.tar
-        name: Unpack assets
-      - uses: actions/setup-node@v3.0.0
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Install Playwright
-        run: npx playwright install --with-deps
-      - name: Run Playwright tests
-        run: npx playwright test
-      - uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: playwright-test-results
-          path: test-results/
+    - uses: actions/download-artifact@v2
+      name: Download assets
+      with:
+        name: installed-artifact
+        path: .
+    - run: tar -xf assets.tar
+      name: Unpack assets
+    - uses: actions/setup-node@v3.0.0
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    - name: Install Playwright
+      run: npx playwright install --with-deps
+    - name: Run Playwright tests
+      run: npx playwright test
+    - uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: playwright-test-results
+        path: test-results/
 
   deploy-draft:
     name: Deploy draft site
@@ -160,68 +160,69 @@ jobs:
       name: draft
       url: ${{ steps.deploy.outputs.url }}
     needs:
-      - test
-      - style
-      - e2e
-      - lint
-      - build
+    - test
+    - style
+    - e2e
+    - lint
+    - build
     steps:
-      - uses: actions/download-artifact@v2
-        name: Download assets
-        with:
-          name: built-artifact
-          path: .
-      - run: tar -xf assets.tar
-        name: Unpack assets
-      - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v3.0.0
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Deploy to netlify
-        id: deploy
-        run: echo "::set-output name=url::$(npx -p netlify-cli netlify deploy --json --build | jq -r .deploy_url)"
-        env:
-          NODE_ENV: production
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      - name: Install Playwright
-        run: npx playwright install --with-deps
-      - name: Run Playwright tests
-        run: npx playwright test
-        env:
-          BASE_URL: ${{ steps.deploy.outputs.url }}
-      - uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: playwright-test-results
-          path: test-results/
+    - uses: actions/download-artifact@v2
+      name: Download assets
+      with:
+        name: built-artifact
+        path: .
+    - run: tar -xf assets.tar
+      name: Unpack assets
+    - name: Use Node.js ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v3.0.0
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    - name: Deploy to netlify
+      id: deploy
+      run: echo "::set-output name=url::$(npx -p netlify-cli netlify deploy --json
+        --build | jq -r .deploy_url)"
+      env:
+        NODE_ENV: production
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    - name: Install Playwright
+      run: npx playwright install --with-deps
+    - name: Run Playwright tests
+      run: npx playwright test
+      env:
+        BASE_URL: ${{ steps.deploy.outputs.url }}
+    - uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: playwright-test-results
+        path: test-results/
 
   uplift-release:
     name: Release
     if: github.ref == 'refs/heads/main'
     needs:
-      - deploy-draft
+    - deploy-draft
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v2
-        name: Download assets
-        with:
-          name: installed-artifact
-          path: .
-      - name: Unpack assets
-        run: tar -xf assets.tar .
+    - uses: actions/download-artifact@v2
+      name: Download assets
+      with:
+        name: installed-artifact
+        path: .
+    - name: Unpack assets
+      run: tar -xf assets.tar .
 
-      - name: Set authentication header
-        run: |
-          git config http.extraHeader="AUTHORIZATION: basic $( echo "$GITHUB_TOKEN" | base64 )"
-
-      - uses: gembaadvantage/uplift-action@v2
-        name: Release
-        with:
-          args: release --fetch-all --skip-changelog
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: git push || true
-      - run: git push --tags || true
+    - name: Set authentication header
+      run: 'git config http.extraHeader "AUTHORIZATION: basic $( echo "$GITHUB_TOKEN" | base64 )"'
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+    - uses: gembaadvantage/uplift-action@v2
+      name: Release
+      with:
+        args: release --fetch-all --skip-changelog
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: git push || true
+    - run: git push --tags || true
   deploy:
     name: Deploy site
     runs-on: ubuntu-latest
@@ -232,33 +233,33 @@ jobs:
     concurrency:
       group: deploy/prod
     needs:
-      - uplift-release
+    - uplift-release
     steps:
-      - uses: actions/download-artifact@v2
-        name: Download assets
-        with:
-          name: built-artifact
-          path: .
-      - run: tar -xf assets.tar
-        name: Unpack assets
-      - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v3.0.0
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Deploy to netlify
-        run: npx -p netlify-cli netlify deploy --prod --build
-        env:
-          NODE_ENV: production
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    - uses: actions/download-artifact@v2
+      name: Download assets
+      with:
+        name: built-artifact
+        path: .
+    - run: tar -xf assets.tar
+      name: Unpack assets
+    - name: Use Node.js ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v3.0.0
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    - name: Deploy to netlify
+      run: npx -p netlify-cli netlify deploy --prod --build
+      env:
+        NODE_ENV: production
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
 
-      - name: Install Playwright
-        run: npx playwright install --with-deps
-      - name: Run Playwright tests
-        run: npx playwright test
-        env:
-          BASE_URL: https://purplebooth.co.uk
-      - uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: playwright-test-results
-          path: test-results/
+    - name: Install Playwright
+      run: npx playwright install --with-deps
+    - name: Run Playwright tests
+      run: npx playwright test
+      env:
+        BASE_URL: https://purplebooth.co.uk
+    - uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: playwright-test-results
+        path: test-results/
