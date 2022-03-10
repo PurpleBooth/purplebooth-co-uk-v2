@@ -213,7 +213,7 @@ jobs:
       - uses: gembaadvantage/uplift-action@v2
         name: Release
         with:
-          args: release --fetch-all
+          args: release --fetch-all --skip-changelog
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: git push || true
