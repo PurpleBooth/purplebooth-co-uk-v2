@@ -221,6 +221,10 @@ jobs:
         args: release --fetch-all --skip-changelog
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Push tags and version bump
+      run: |
+        git push || true
+        git push --tags || true
   deploy:
     name: Deploy site
     runs-on: ubuntu-latest
