@@ -214,15 +214,14 @@ jobs:
     - name: Set authentication header
       run: 'git config http.extraHeader "AUTHORIZATION: basic $( echo "$GITHUB_TOKEN" | base64 )"'
       env:
-        GITHUB_TOKEN: ${{ github.token }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: cat .git/config
     - uses: gembaadvantage/uplift-action@v2
       name: Release
       with:
         args: release --fetch-all --skip-changelog
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - run: git push || true
-    - run: git push --tags || true
   deploy:
     name: Deploy site
     runs-on: ubuntu-latest
