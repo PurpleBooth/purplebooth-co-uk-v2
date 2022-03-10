@@ -210,6 +210,10 @@ jobs:
       - name: Unpack assets
         run: tar -xf assets.tar .
 
+      - name: Set authentication header
+        run: |
+          git config http.extraHeader="AUTHORIZATION: basic $( echo "$GITHUB_TOKEN" | base64 )"
+
       - uses: gembaadvantage/uplift-action@v2
         name: Release
         with:
