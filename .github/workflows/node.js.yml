@@ -212,7 +212,7 @@ jobs:
       run: tar -xf assets.tar .
 
     - name: Set authentication header
-      run: 'git config http.extraHeader "AUTHORIZATION: basic $( echo "$GITHUB_TOKEN" | base64 )"'
+      run: 'git config http.extraHeader "AUTHORIZATION: basic $( echo "x-access-token:$GITHUB_TOKEN" | base64 )"'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: cat .git/config
