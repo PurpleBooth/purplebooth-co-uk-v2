@@ -213,7 +213,7 @@ jobs:
       - uses: gembaadvantage/uplift-action@v2
         name: Release
         with:
-          args: release
+          args: release --fetch-all
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
