@@ -216,7 +216,8 @@ jobs:
           args: release --fetch-all
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+      - run: git push || true
+      - run: git push --tags || true
   deploy:
     name: Deploy site
     runs-on: ubuntu-latest
