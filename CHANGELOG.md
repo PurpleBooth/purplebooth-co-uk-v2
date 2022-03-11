@@ -1,0 +1,121 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## Unreleased
+
+## [v0.4.6](https://github.com/PurpleBooth/purplebooth-co-uk-v2/releases/tag/v0.4.6) - 2022-03-11
+
+- [`79c128e`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/79c128e83920dd1556798a37d011a9b35969efc5) fix(uplift): Test release process
+- [`6a680bb`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/6a680bb9a11aa8f18265c01df5a3cea740bc3912) ci(uplift): Enable changelog
+- [`987c393`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/987c3931dfc00ee8db93da3caa50e6b5215808fe) ci(uplift): Remove old auth setting
+- [`827d35d`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/827d35df8c5944eeaa1135556704c9d04148e160) ci(uplift): Remove the auth header
+- [`8819fdd`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/8819fdd254ab1e0d6e19731822e2474e64dff11b) ci(uplift): use a credential helper for the passwords
+- [`52cfd03`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/52cfd039ecd88d7fc47946b401d421dc69b61192) ci(FastConventional): Tidy up the config
+- [`b78df9d`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/b78df9de9284eadbf30ed40ee0a87734eef985b7) ci(uplift): push tags
+- [`3bfab4b`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/3bfab4b7862fbbb93be892a9cf85e9a3be4f2d02) ci(Actions): Remove debugging
+- [`3b49465`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/3b49465c52ac5b417ee5f5fec67c2435c55bdc45) ci: correct existing header
+- [`0188bc9`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/0188bc967d8e3b33cb5f9a23eb9133454fb58b38) ci: Correct auth for git push
+- [`efd9653`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/efd96530cb9c5c319aafc77a4f9495ba7ea37435) refactor: Debug the release process
+- [`3086d5a`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/3086d5ae423cce2d692c1f0c101e21410815d01c) ci(uplift): Correct github token
+- [`489767e`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/489767e782d13f7b6cbb10da3d253695d6387b76) ci(uplift): Give permissions to push to github
+- [`01454d0`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/01454d0491e73248a0e87b6e13added014fb055c) ci(uplift): skip changelog
+- [`f87cd2b`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/f87cd2bf0c03aa9a3091ff1448f876379fe65213) ci(uplift): push after release
+- [`97929e8`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/97929e823951467ad9b416eb40ab0266aa115064) ci(uplift): Fetch tags
+- [`12ad927`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/12ad927d2d6322b6cf19419498e3cdcc6cf61513) build(deps-dev): bump @types/react from 17.0.39 to 17.0.40
+- [`76bdabb`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/76bdabb78e902544cad55ea699f594419a2c35d0) ci(deploy): Bump using json path rather than regex
+- [`305ebd4`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/305ebd45b56515c879327b110376db9f4e0f1d6e) build(deps-dev): bump @testing-library/react from 12.1.3 to 12.1.4
+- [`936d818`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/936d8188a8de442ae068263030b04cb0a57a3283) build(deps-dev): bump netlify-cli from 9.12.4 to 9.13.0
+- [`843de3d`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/843de3ddb3d34406f0934d5c839e00e38722a3f1) build(deps-dev): bump netlify-cli from 9.12.3 to 9.12.4
+- [`273d9c7`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/273d9c7f3a4826a8504cd0887d3db484370d9242) build(deps-dev): bump postcss from 8.4.7 to 8.4.8
+- [`38155b4`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/38155b4e99cc81bc8dae13259304d707a588347e) build(deps): bump next-pwa from 5.4.4 to 5.4.5
+- [`7622aa6`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/7622aa697ce214c4eca49ab6cdd892c10c2f4b58) build(deps-dev): bump netlify-cli from 9.12.0 to 9.12.3
+- [`c71241a`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c71241a9eeeef72b47e566a026fe9fc624cd3bb7) build(deps-dev): bump eslint-config-prettier from 8.4.0 to 8.5.0
+- [`f38ccd5`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/f38ccd537e4f39fd96c172725c8eac4dca741c73) build(deps): bump postcss-preset-env from 7.4.1 to 7.4.2
+- [`2991f42`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/2991f427f4b8918c2ab65a58337ae94ceffa0dc5) build(deps-dev): bump netlify-cli from 9.9.3 to 9.12.0
+- [`73e3ac1`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/73e3ac1441f746d560e2d7b9561e806caf3eab85) build(deps): bump actions/checkout from 2 to 3
+- [`e64500f`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/e64500f7ea516972b2156d7734ac6713a8df88f6) build(deps-dev): bump netlify-cli from 9.8.4 to 9.9.3
+- [`0c14af0`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/0c14af06900e7a132c31052077b9a64cb21744be) build(deps-dev): bump typescript from 4.5.5 to 4.6.2
+- [`29569f6`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/29569f65ff0f9aa84b66e9e67c891735a42a5506) build(deps-dev): bump netlify-cli from 9.8.3 to 9.8.4
+- [`41bc55d`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/41bc55d713ef5a0355d4a02219df187d33225b8a) build(deps-dev): bump eslint from 8.9.0 to 8.10.0
+- [`d41d685`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/d41d685c609bd379eda099f057dc35450ba09c0a) fix: Correct config key
+- [`dd3e2ff`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/dd3e2ff58204d3673f9034a0c2e821d052918c2d) fix: links are broken, this should solve that
+- [`bed0860`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/bed08609cae803f1c178316813f0dae2a66b86de) build(deps-dev): bump postcss from 8.4.6 to 8.4.7
+- [`ed3a5cb`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/ed3a5cb1d53fb1a827de81b59a3434d9ffa94bce) build(deps-dev): bump netlify-cli from 9.8.0 to 9.8.3
+- [`7e509d6`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/7e509d60156447ef79462690ff360d902e73f040) build(deps): bump sass from 1.49.8 to 1.49.9
+- [`76cfc2e`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/76cfc2e6ebac3c33b6df58414956bd44d369608c) build(deps-dev): bump @playwright/test from 1.19.1 to 1.19.2
+- [`15e2b0c`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/15e2b0cbecce5d4b94855943277623e8d7bdd5ab) build(deps): bump actions/setup-node from 2 to 3.0.0
+- [`d1b455d`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/d1b455d6a8931b3ef9a0804a89d856980306bb59) build(deps-dev): bump @types/node from 17.0.19 to 17.0.21
+- [`e7a53fb`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/e7a53fb608df949ca087a0fff9114353b958e740) build(deps-dev): bump netlify-cli from 9.7.0 to 9.8.0
+- [`bd847f8`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/bd847f8bf58771b9f70111ee8c23fd06f0ea7241) build(deps-dev): bump netlify-cli from 9.6.6 to 9.7.0
+- [`c267809`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c267809b57b99775fae62afbb639fa84bf974dfd) build(deps-dev): bump netlify-cli from 9.6.5 to 9.6.6
+- [`19f1324`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/19f1324c6d52b68705a1ac3cdb3c8f4ce809479b) build(deps-dev): bump @types/node from 17.0.18 to 17.0.19
+- [`7fa2900`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/7fa29005bd9e1f1f4e6ffa34a4f06b3e3dbbb557) build(deps): bump @fontsource/ibm-plex-sans from 4.5.3 to 4.5.4
+- [`766243b`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/766243bc9165521f569561ce4060ce13f206e012) build(deps-dev): bump eslint-config-prettier from 8.3.0 to 8.4.0
+- [`e91cfbf`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/e91cfbf03f00b5fdf9cb479a637124a56659e05c) build(deps): bump sass from 1.49.7 to 1.49.8
+- [`c5b9dae`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c5b9dae2b2dca3eb3e546d94aababb4ea42f9a1c) build(deps): bump @netlify/plugin-nextjs from 4.2.6 to 4.2.7
+- [`5bc17b2`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/5bc17b29567791a232f4517ca577e37c7c8ff371) build(deps-dev): bump netlify-cli from 9.6.4 to 9.6.5
+- [`271624a`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/271624a4f48a968c33a6b1822461c3f97bf2e196) build(deps): bump postcss-preset-env from 7.4.0 to 7.4.1
+- [`7a2ff75`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/7a2ff75a46f50bc155a3b3e3b98c57e6033d1d45) build(deps): bump @next/mdx from 12.0.10 to 12.1.0
+- [`e4f0213`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/e4f0213ca68c4e9f0bc4a876b69b3782a6d16925) build(deps): bump next from 12.0.10 to 12.1.0
+- [`637a902`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/637a90205aad21d773d2979e562fb5c00b75c0e1) build(deps-dev): bump eslint-config-next from 12.0.10 to 12.1.0
+- [`11c0a51`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/11c0a517e8cca5ca17ae3dfcba043b1c7af32431) build(deps-dev): bump @testing-library/react from 12.1.2 to 12.1.3
+- [`1eb1408`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/1eb14085bfa3fb3d3f84a8a8427d7fab4fa68b16) build(deps-dev): bump netlify-cli from 9.6.2 to 9.6.4
+- [`c51140f`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c51140fc052b6085e646f4336cf2e5fa45c8a3bc) build(deps-dev): bump tailwindcss from 3.0.22 to 3.0.23
+- [`d4bece9`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/d4bece913fd7a52a15c843574badda4ea1830208) build(deps): bump postcss-preset-env from 7.3.3 to 7.4.0
+- [`f566dc1`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/f566dc1ee5da2fa7dcbb9034793e06a05fc093af) build(deps-dev): bump @playwright/test from 1.19.0 to 1.19.1
+- [`174dda9`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/174dda9b077b8de1338961c676728401e7e08564) build(deps-dev): bump netlify-cli from 9.4.2 to 9.6.2
+- [`a17c07a`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/a17c07a99431f4de8d70286b2077a810cc20b3d4) build(deps-dev): bump @types/node from 17.0.17 to 17.0.18
+- [`d7c9697`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/d7c969740cc0dd2bd2a5d7b885f42ba7dad45927) build(deps): bump @netlify/plugin-nextjs from 4.2.5 to 4.2.6
+- [`01ca897`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/01ca897655b2c23ce98f0c5bddde161758c4f9cf) build(deps-dev): bump eslint from 8.8.0 to 8.9.0
+- [`abb7ac1`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/abb7ac1212693d1f5a77c80334cbba0f739d18b7) build(deps-dev): bump @playwright/test from 1.18.1 to 1.19.0
+- [`98b97a1`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/98b97a106684ef27b128f594ea1351aa35a8dd58) build(deps-dev): bump netlify-cli from 9.3.0 to 9.4.2
+- [`1530168`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/1530168a77c111c228fee2f3d162b38936d781b6) build(deps): bump @tailwindcss/typography from 0.5.1 to 0.5.2
+- [`266378d`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/266378d14aa21b8b94e109dcb2f72f4e567ec312) build(deps): bump postcss-preset-env from 7.3.1 to 7.3.3
+- [`d6652f4`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/d6652f4925027b5107e82eac5f58bf021cabfa55) build(deps-dev): bump netlify-cli from 9.2.0 to 9.3.0
+- [`de99965`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/de99965d6d2ecaf79849365b6c85cb515d372482) build(deps-dev): bump tailwindcss from 3.0.20 to 3.0.22
+- [`affe8ed`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/affe8edd7f4ebdff418e5d0a63f795e2e4608d80) build(deps): bump @fontsource/space-grotesk from 4.5.2 to 4.5.3
+- [`627bf1c`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/627bf1c70ad5b8cbbf8c65c3c8d37f43d9cb6472) fix: standardise order of class names
+- [`8fbf5ca`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/8fbf5ca35537ec464e0da3a5fb3332333f1edd8d) build(deps-dev): bump tailwindcss from 3.0.19 to 3.0.20
+- [`66e9205`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/66e9205e913e8696d189dbe3eba06561519f110d) build: add playwrights results to ignore list
+- [`1d1f19b`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/1d1f19bf04eed742759a1459d353a4339e651e10) build(deps-dev): bump @types/node from 17.0.16 to 17.0.17
+- [`b4ebd58`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/b4ebd58806c204ab1d4710ddd893b9eb5b332bfb) build(deps-dev): bump netlify-cli from 9.1.1 to 9.2.0
+- [`f23465a`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/f23465a3a3b99e1fdc86c85d19b7485134c2c86e) build(deps-dev): bump netlify-cli from 9.0.2 to 9.1.1
+- [`4043d46`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/4043d46379722950db5321043408cfce55de261e) fix: Experimentally upgrade font awesome
+- [`802811a`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/802811a3d44b77c4f9d9814765c7dea6e3d6a823) build(deps-dev): bump jest from 27.5.0 to 27.5.1
+- [`e51db64`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/e51db64292f84e5f9372398260da88f51696d44d) build(deps): bump @fortawesome/free-regular-svg-icons
+- [`a211520`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/a2115201650db10eb33dd74196d56b08fd13bd1b) build(deps-dev): bump netlify-cli from 8.17.4 to 9.0.1
+- [`5a9ef1b`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/5a9ef1b4537bde84b4397c675c699f375658cec5) build(deps-dev): bump tailwindcss from 3.0.18 to 3.0.19
+- [`5c6fa09`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/5c6fa09d4161f39a607b1ed3d60fb0dc363a7683) build(deps): bump @fortawesome/fontawesome-free from 5.15.4 to 6.0.0
+- [`07e82e2`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/07e82e2e5d0ead3b2596d513fb5653a2a24c157b) build(deps-dev): bump @types/node from 17.0.15 to 17.0.16
+- [`a41fa39`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/a41fa397f2f784ad78f22df1671ebc311a4d8f60) build(deps-dev): bump jest from 27.4.7 to 27.5.0
+- [`cb1e62f`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/cb1e62f8152314eaf92ff3108bd5468fddaa015c) build(deps): bump @netlify/plugin-nextjs from 4.2.4 to 4.2.5
+- [`663c2b5`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/663c2b5ac8a8e66158f63e0cb0cd3274dad642c2) build(deps-dev): bump netlify-cli from 8.16.1 to 8.17.4
+- [`09e07d9`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/09e07d986405da44574ac195833cf71efb992a49) build(deps): bump @fontsource/ibm-plex-sans from 4.5.2 to 4.5.3
+- [`c63416e`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c63416ef52fd49279eceeda050b8f6616f3943c1) build(deps): bump @fontsource/space-grotesk from 4.5.1 to 4.5.2
+- [`00b1e1f`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/00b1e1fd29d2601b1fa9c753c96800f6367a788c) build(deps-dev): bump @types/node from 17.0.14 to 17.0.15
+- [`c165f8f`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c165f8fa3621c9bf6170337862ee16d5405206ce) build(deps-dev): bump netlify-cli from 8.15.3 to 8.16.1
+- [`7022a48`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/7022a48420b297b07274a9682e27c07d365797b1) build(deps): bump @netlify/plugin-nextjs from 4.2.3 to 4.2.4
+- [`738c231`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/738c231e4fbb2c6c11f5f588ad32ffde71c2c99e) build(deps): bump postcss-preset-env from 7.3.0 to 7.3.1
+- [`498b655`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/498b655f1128c7349926817b7188b2ad80ac6c8c) build(deps-dev): bump @testing-library/jest-dom from 5.16.1 to 5.16.2
+- [`965ad16`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/965ad16e1d3f328c335f4d4a548680b7025707f7) build(deps-dev): bump @types/react from 17.0.38 to 17.0.39
+- [`f7ee7a5`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/f7ee7a5c164c6e1f2a2125281cbaa1c0508f22da) build(deps): bump @netlify/plugin-nextjs from 4.2.2 to 4.2.3
+- [`20909f5`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/20909f5190c09024998a5b8b5541e191defb4fbc) build(deps): bump sass from 1.49.4 to 1.49.7
+- [`cc40974`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/cc40974da4bd8f45c215a5839f374473dc338302) build(deps): bump @mdx-js/react from 1.6.22 to 2.0.0
+- [`8c07f95`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/8c07f9590b1a57225cabc987bd59144b32587954) build(deps): bump @next/mdx from 12.0.9 to 12.0.10
+- [`b908629`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/b9086295883c5f476aa47e9d940918831a97b8f9) build(deps-dev): bump @types/node from 17.0.13 to 17.0.14
+- [`97f2281`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/97f228198c295322739b0d1a5aa4658bda53bda8) build(deps-dev): bump netlify-cli from 8.15.1 to 8.15.3
+- [`a8c19be`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/a8c19be08c23d3791157e79aec606411e2b92a54) build(deps-dev): bump postcss from 8.4.5 to 8.4.6
+- [`d687638`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/d687638a19dba49559397567e1ad047556f04ef3) build(deps-dev): bump eslint-config-next from 12.0.9 to 12.0.10
+- [`bf4b637`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/bf4b637b75c42ef7f3dc2b9a3308d8a84eb77033) build(deps): bump next from 12.0.9 to 12.0.10
+- [`0c7fae7`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/0c7fae778d23a27f43fbaaa0b4123820e0290122) build(deps): bump sass from 1.49.0 to 1.49.4
+- [`dc7a79e`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/dc7a79e0a5a183720f440bc3f18f07e2957843dc) build(deps): bump @mdx-js/loader from 1.6.22 to 2.0.0
+- [`b6fd5ec`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/b6fd5ec4623c2af044330e54ec0b96cce7a20e99) build(deps-dev): bump netlify-cli from 8.15.0 to 8.15.1
+- [`26834d0`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/26834d0e8aa63b479c897c116d6427f9e92d2bef) build(deps): bump @netlify/plugin-nextjs from 4.2.1 to 4.2.2
+- [`c388c25`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c388c25073f00130ccdde4dafb8d9934ddf8f6b1) ci(Mergify): Add missing test run checks
+- [`d53933e`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/d53933e7a569ef11db95567020bee4fe29e3ceee) ci(Mergify): correct typo in step name
+- [`c789359`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c789359f2ab2b6d17f3903775bce53d2d839bde0) ci(Mergify): Correct automerge
+- [`3f9eb8a`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/3f9eb8a03d0173fc8fd1782ae1e03a04c3a9a6b8) build(deps): bump postcss-preset-env from 7.2.3 to 7.3.0
+- [`fc9d2c1`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/fc9d2c12def71673a5f0637647cfae8bdda9fef7) ci(Actions): Remove check for uplift
