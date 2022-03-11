@@ -203,6 +203,11 @@ jobs:
     - deploy-draft
     runs-on: ubuntu-latest
     steps:
+    - uses: gembaadvantage/uplift-action@v2
+      name: Install uplift
+      with:
+        install-only: true
+        args: version
     - uses: actions/download-artifact@v2
       name: Download assets
       with:
@@ -216,12 +221,20 @@ jobs:
       run: |
         git config --unset-all http.https://github.com/.extraHeader
         git config credential.helper '!f() { echo "username=x-access-token"; echo "password=$GITHUB_TOKEN"; };f'
-    - uses: gembaadvantage/uplift-action@v2
-      name: Release
-      with:
-        args: release --fetch-all
+    - run: uplift release --fetch-all
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: uplift changelog --diff-only --silent > contents.md
+      name: Generate changelog
+    - run: echo "::set-output name=version::$(git tag | sort --version-sort | tail -1)"
+      name: Set next version
+      id: next
+    - uses: ncipollo/release-action@v1
+      with:
+        bodyFile: "contents.md"
+        allowUpdates: true
+        tag: ${{ steps.next.outputs.version }}
+        token: ${{ secrets.GITHUB_TOKEN }}
   deploy:
     name: Deploy site
     runs-on: ubuntu-latest
