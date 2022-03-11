@@ -222,9 +222,11 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Push tags and version bump
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git push || true
-        git push --tags || true
+        git -c credential.helper='!f() { echo "username=x-access-token"; echo "password=$GITHUB_TOKEN"; };f' push || true
+        git -c credential.helper='!f() { echo "username=x-access-token"; echo "password=$GITHUB_TOKEN"; };f' push --tags || true
   deploy:
     name: Deploy site
     runs-on: ubuntu-latest
