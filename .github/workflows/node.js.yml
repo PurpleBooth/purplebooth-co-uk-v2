@@ -210,11 +210,12 @@ jobs:
         path: .
     - name: Unpack assets
       run: tar -xf assets.tar .
-
-    - name: Set authentication header
-      run: 'git config http.https://github.com/.extraHeader "AUTHORIZATION: basic $( echo "x-access-token:$GITHUB_TOKEN" | base64 )"'
+    - name: Setup authentication
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --unset-all http.https://github.com/.extraHeader
+        git config credential.helper '!f() { echo "username=x-access-token"; echo "password=$GITHUB_TOKEN"; };f'
     - uses: gembaadvantage/uplift-action@v2
       name: Release
       with:
@@ -225,9 +226,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git config --unset-all http.https://github.com/.extraHeader
-        git -c credential.helper='!f() { echo "username=x-access-token"; echo "password=$GITHUB_TOKEN"; };f' push || true
-        git -c credential.helper='!f() { echo "username=x-access-token"; echo "password=$GITHUB_TOKEN"; };f' push --tags || true
+        git push || true
+        git push --tags || true
   deploy:
     name: Deploy site
     runs-on: ubuntu-latest
