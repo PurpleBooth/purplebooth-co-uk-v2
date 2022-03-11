@@ -219,7 +219,7 @@ jobs:
     - uses: gembaadvantage/uplift-action@v2
       name: Release
       with:
-        args: release --fetch-all --skip-changelog
+        args: release --fetch-all
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Push tags and version bump
