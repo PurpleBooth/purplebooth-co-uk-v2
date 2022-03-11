@@ -222,12 +222,6 @@ jobs:
         args: release --fetch-all
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Push tags and version bump
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        git push || true
-        git push --tags || true
   deploy:
     name: Deploy site
     runs-on: ubuntu-latest
