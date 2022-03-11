@@ -230,6 +230,7 @@ jobs:
       name: Set next version
       id: next
     - uses: ncipollo/release-action@v1
+      name: Update release changlog
       with:
         bodyFile: "contents.md"
         allowUpdates: true
