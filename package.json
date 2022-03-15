@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.2.7",
-    "@playwright/test": "^1.19.2",
+    "@playwright/test": "^1.20.0",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@types/mdx-js__react": "^1.5.5",
