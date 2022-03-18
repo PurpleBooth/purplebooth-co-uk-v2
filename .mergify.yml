@@ -9,7 +9,6 @@ queue_rules:
       - check-success=Check coding style
       - check-success=Run unit tests
       - check-success=Run end to end tests
-      - check-success=Analyze (javascript)
 
 pull_request_rules:
   - name: request review on external contributor
@@ -31,7 +30,6 @@ pull_request_rules:
       - check-success=Check coding style
       - check-success=Run unit tests
       - check-success=Run end to end tests
-      - check-success=Analyze (javascript)
     actions:
       queue:
         method: rebase
