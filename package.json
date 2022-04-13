@@ -52,7 +52,7 @@
     "@types/react": "^18.0.1",
     "autoprefixer": "^10.4.4",
     "eslint": "^8.13.0",
-    "eslint-config-next": "^12.1.4",
+    "eslint-config-next": "^12.1.5",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "jest": "^27.5.1",
