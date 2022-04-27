@@ -25,7 +25,7 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@mdx-js/loader": "^2.1.1",
     "@mdx-js/react": "^2.1.1",
-    "@netlify/plugin-nextjs": "^4.4.4",
+    "@netlify/plugin-nextjs": "^4.5.0",
     "@next/mdx": "^12.1.5",
     "@tailwindcss/typography": "^0.5.2",
     "@types/react-syntax-highlighter": "^13.5.2",
@@ -43,7 +43,7 @@
     "sass": "^1.51.0"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.4.4",
+    "@netlify/plugin-nextjs": "^4.5.0",
     "@playwright/test": "^1.21.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.5",
