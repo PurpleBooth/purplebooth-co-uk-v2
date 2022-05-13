@@ -223,7 +223,12 @@ jobs:
         git config credential.helper '!f() { echo "username=x-access-token"; echo "password=$GITHUB_TOKEN"; };f'
         git config user.name "$(git log -1 --pretty=format:"%an")"
         git config user.email "$(git log -1 --pretty=format:'%ae')"
-    - run: uplift release
+    - run: |
+        uplift release --no-push
+        git add package-lock.json
+        git commit --amend --no-edit || true
+        git push
+        git push --tags
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: uplift changelog --diff-only --silent > contents.md
