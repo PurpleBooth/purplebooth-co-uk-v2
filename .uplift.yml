@@ -5,4 +5,5 @@ bumps:
         semver: true
 
 hooks:
-  - npm install
+  before:
+    - npm install
