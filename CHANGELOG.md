@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
+## [v0.4.8](https://github.com/PurpleBooth/purplebooth-co-uk-v2/releases/tag/v0.4.8) - 2022-05-13
+
+- [`764cd55`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/764cd55120aab417fac62b111ffca56782052761) fix: Remove hooks entirely
+- [`a5239e7`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/a5239e75a256150a603303df50b69b7e2fe8e2a1) fix: Commit and push after releasing
+- [`254c534`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/254c534761aaf2048408900412b7840652c87209) ci: Correct uplift to commit to clean the repository
+- [`e4ae757`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/e4ae757959fdd16c2ad334d1304ba4bb7d43940e) ci: Uplift reset
+- [`e2e8704`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/e2e87043e9d8faca481bded6f6621562d17377be) ci: Remove sha and use the built in variable
+- [`aa51af4`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/aa51af45644105af6ab3fcebf431ba1a31510929) fix: Reset the package lock to the sha version
+- [`a6a47aa`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/a6a47aa78c79d5766e7926cf1abf0c20dc4e1e45) ci: Only get latest commit
+- [`d87607d`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/d87607dac1f48c815ac6b3f9f1a73dd5775b7183) fix: Remove dirty package-lock
+- [`9b609c2`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/9b609c260e28968cd3679fecd5fc65e8ff3e8310) build(deps): bump @netlify/plugin-nextjs from 4.6.0 to 4.7.0
+- [`d7c01e6`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/d7c01e6debd58891039288e1afcb824dc3a0dbaa) ci: Ignore another intermediary file
+- [`499b5db`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/499b5db0647ca0bb91e20e9fd23b5c9746d8f95c) build(deps-dev): bump @types/node from 17.0.31 to 17.0.33
+- [`c764ec1`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c764ec173007b9c3365d7676ea01311d3cf5d896) build: Update the package json
+- [`9acde44`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/9acde44f926f66d0413625614c3bfacc70213aa9) ci: Make the username non-global
+- [`395e1b5`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/395e1b504b08be197df1407bf06c8a5f688b4a5b) ci: Set author to previous commit
+- [`4062ea9`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/4062ea944cca9043ce83191a0a315d8f77f26280) build(deps-dev): bump next-router-mock from 0.6.7 to 0.6.9
+
 ## [v0.4.7](https://github.com/PurpleBooth/purplebooth-co-uk-v2/releases/tag/v0.4.7) - 2022-05-13
 
 - [`4f23301`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/4f233016f1adc16f5f9e7a2ba9909f9e52174560) fix: remove old commit step
