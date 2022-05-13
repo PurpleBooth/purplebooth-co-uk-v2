@@ -225,6 +225,7 @@ jobs:
         git config user.email "$(git log -1 --pretty=format:'%ae')"
     - run: |
         uplift release --no-push
+        npm install
         git add package-lock.json
         git commit --amend --no-edit || true
         git push
