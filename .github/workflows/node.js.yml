@@ -221,9 +221,8 @@ jobs:
       run: |
         git config --unset-all http.https://github.com/.extraHeader
         git config credential.helper '!f() { echo "username=x-access-token"; echo "password=$GITHUB_TOKEN"; };f'
-        git config --global user.email "you@example.com"
-        git config --global user.name "$(git log --pretty=format:"%an")"
-        git config --global user.email "$(git log -1 --pretty=format:'%ae')"
+        git config user.name "$(git log --pretty=format:"%an")"
+        git config user.email "$(git log -1 --pretty=format:'%ae')"
     - run: uplift release --fetch-all
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
