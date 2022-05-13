@@ -218,12 +218,14 @@ jobs:
     - name: Setup authentication
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GIT_SHA: ${{ github.sha }}
       run: |
         git config --unset-all http.https://github.com/.extraHeader
         git config credential.helper '!f() { echo "username=x-access-token"; echo "password=$GITHUB_TOKEN"; };f'
         git config user.name "$(git log -1 --pretty=format:"%an")"
         git config user.email "$(git log -1 --pretty=format:'%ae')"
-        git checkout -- package-lock.json
+        git checkout "$GIT_SHA" -- package-lock.json
+        git add package-lock.json
     - run: uplift release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
