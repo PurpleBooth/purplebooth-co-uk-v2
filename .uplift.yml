@@ -7,3 +7,5 @@ bumps:
 hooks:
   before:
     - npm install
+    - git add package-lock.json
+    - 'git commit -m "build: Update lockfile"'
