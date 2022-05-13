@@ -3,3 +3,6 @@ bumps:
     json:
       - path: "version"
         semver: true
+
+hooks:
+  - npm install
