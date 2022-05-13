@@ -7,3 +7,4 @@ bumps:
 hooks:
   before:
     - npm install
+    - git add package-lock.json
