@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.9.1",
-    "@playwright/test": "^1.22.2",
+    "@playwright/test": "^1.23.3",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.5",
     "@types/mdx-js__react": "^1.5.5",
@@ -52,7 +52,7 @@
     "@types/react": "^18.0.9",
     "autoprefixer": "^10.4.7",
     "eslint": "^8.13.0",
-    "eslint-config-next": "^12.1.6",
+    "eslint-config-next": "^12.2.2",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "jest": "^27.5.1",
