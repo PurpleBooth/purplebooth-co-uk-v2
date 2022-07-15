@@ -25,7 +25,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mdx-js/loader": "^2.1.2",
     "@mdx-js/react": "^2.1.1",
-    "@netlify/plugin-nextjs": "^4.9.1",
+    "@netlify/plugin-nextjs": "^4.12.2",
     "@next/mdx": "^12.2.2",
     "@tailwindcss/typography": "^0.5.4",
     "@types/react-syntax-highlighter": "^13.5.2",
@@ -43,7 +43,7 @@
     "sass": "^1.52.3"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.9.1",
+    "@netlify/plugin-nextjs": "^4.12.2",
     "@playwright/test": "^1.23.3",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.5",
@@ -56,7 +56,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "jest": "^27.5.1",
-    "netlify-cli": "^10.8.0",
+    "netlify-cli": "^10.10.0",
     "next-router-mock": "^0.7.4",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
