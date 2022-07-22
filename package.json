@@ -26,7 +26,7 @@
     "@mdx-js/loader": "^2.1.2",
     "@mdx-js/react": "^2.1.2",
     "@netlify/plugin-nextjs": "^4.12.2",
-    "@next/mdx": "^12.2.2",
+    "@next/mdx": "^12.2.3",
     "@tailwindcss/typography": "^0.5.4",
     "@types/react-syntax-highlighter": "^13.5.2",
     "date-fns": "^2.27.0",
