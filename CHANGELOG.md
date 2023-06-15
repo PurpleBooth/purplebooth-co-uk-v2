@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
+## [v0.5.1](https://github.com/PurpleBooth/purplebooth-co-uk-v2/releases/tag/v0.5.1) - 2023-06-15
+
+- [`417ecf4`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/417ecf48326d792badded5e9554f800bf863e0f7) build(deps): bump got and netlify-cli
+- [`8b7614c`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/8b7614c3abb69eeb79a51ed80ca6d1832507b3e7) fix: Update logo to be compliant
+- [`bcbc506`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/bcbc506da62473d956717fd68d8a59597ea1948f) ci: Update .mergify.yml
+- [`8191ff0`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/8191ff0502a7511676279003a1928511307ab199) ci(uplift): uplifted for version v0.5.0
+- [`1f1ac85`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/1f1ac850d85d680764c1a8ad53ad8f351facac5c) ci(uplift): uplifted for version v0.5.0
+
 ## [v0.5.0](https://github.com/PurpleBooth/purplebooth-co-uk-v2/releases/tag/v0.5.0) - 2023-06-15
 
 - [`f253c77`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/f253c7719cfe1bd2d6d8df2e73a348a7905dd0b9) fix: Update package
