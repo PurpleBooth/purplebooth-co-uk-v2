@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
+## [v0.5.2](https://github.com/PurpleBooth/purplebooth-co-uk-v2/releases/tag/v0.5.2) - 2023-06-15
+
+- [`bd96d4e`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/bd96d4e35acc0d82e03af7b0c3ea600ab3512748) fix: Use official tool to tidy svg
+- [`2b5445d`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/2b5445d90001d4eb45ee33599c76af63abf2382c) build(deps): bump webpack from 5.68.0 to 5.87.0
+- [`4991aac`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/4991aac1c184426df30d8b7e7843ac8d47b54d26) build(deps-dev): bump eslint from 8.13.0 to 8.42.0
+- [`717cc3c`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/717cc3c01623778cc24057a2d301d9186aaeda62) ci(uplift): uplifted for version v0.5.1
+- [`4be8746`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/4be8746b39eff5d3ad40dc8bd92b45481d1788b8) ci(uplift): uplifted for version v0.5.1
+
 ## [v0.5.1](https://github.com/PurpleBooth/purplebooth-co-uk-v2/releases/tag/v0.5.1) - 2023-06-15
 
 - [`417ecf4`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/417ecf48326d792badded5e9554f800bf863e0f7) build(deps): bump got and netlify-cli
