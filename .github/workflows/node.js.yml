@@ -45,7 +45,7 @@ jobs:
     - install
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4
       name: Download assets
       with:
         name: installed-artifact
@@ -76,7 +76,7 @@ jobs:
     needs:
     - install
     steps:
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4
       name: Download assets
       with:
         name: installed-artifact
@@ -94,7 +94,7 @@ jobs:
     needs:
     - install
     steps:
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4
       name: Download assets
       with:
         name: installed-artifact
@@ -112,7 +112,7 @@ jobs:
     needs:
     - install
     steps:
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4
       name: Download assets
       with:
         name: installed-artifact
@@ -132,7 +132,7 @@ jobs:
     needs:
     - install
     steps:
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4
       name: Download assets
       with:
         name: installed-artifact
@@ -166,7 +166,7 @@ jobs:
     - lint
     - build
     steps:
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4
       name: Download assets
       with:
         name: built-artifact
@@ -208,7 +208,7 @@ jobs:
       with:
         install-only: true
         args: version
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4
       name: Download assets
       with:
         name: installed-artifact
@@ -256,7 +256,7 @@ jobs:
     needs:
     - uplift-release
     steps:
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4
       name: Download assets
       with:
         name: built-artifact
