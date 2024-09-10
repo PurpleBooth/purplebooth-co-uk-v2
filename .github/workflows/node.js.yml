@@ -32,7 +32,7 @@ jobs:
       name: Install dependencies
     - name: Pack assets
       run: tar -cf assets.tar .
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@50769540e7f4bd5e21e526ee35c689e35e0d6874 # v4
       name: Save assets
       with:
         name: installed-artifact
@@ -63,7 +63,7 @@ jobs:
     - name: Pack built assets
       run: tar -uf assets.tar .
 
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@50769540e7f4bd5e21e526ee35c689e35e0d6874 # v4
       name: Save built assets
       with:
         name: built-artifact
@@ -146,7 +146,7 @@ jobs:
       run: npx playwright install --with-deps
     - name: Run Playwright tests
       run: npx playwright test
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@50769540e7f4bd5e21e526ee35c689e35e0d6874 # v4
       if: always()
       with:
         name: playwright-test-results
@@ -190,7 +190,7 @@ jobs:
       run: npx playwright test
       env:
         BASE_URL: ${{ steps.deploy.outputs.url }}
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@50769540e7f4bd5e21e526ee35c689e35e0d6874 # v4
       if: always()
       with:
         name: playwright-test-results
@@ -279,7 +279,7 @@ jobs:
       run: npx playwright test
       env:
         BASE_URL: https://purplebooth.co.uk
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@50769540e7f4bd5e21e526ee35c689e35e0d6874 # v4
       if: always()
       with:
         name: playwright-test-results
