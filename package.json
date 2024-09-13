@@ -54,7 +54,7 @@
     "eslint": "8.57.0",
     "eslint-config-next": "12.3.4",
     "eslint-config-prettier": "8.10.0",
-    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-import": "2.30.0",
     "jest": "27.5.1",
     "netlify-cli": "17.23.1",
     "next-router-mock": "0.7.4",
