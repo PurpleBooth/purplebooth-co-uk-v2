@@ -57,7 +57,7 @@
     "eslint-plugin-import": "2.30.0",
     "jest": "27.5.1",
     "netlify-cli": "17.36.0",
-    "next-router-mock": "0.7.4",
+    "next-router-mock": "0.9.13",
     "postcss": "^8.4.31",
     "prettier": "2.7.1",
     "react-test-renderer": "17.0.2",
