@@ -6,6 +6,61 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
+## [v0.5.3](https://github.com/PurpleBooth/purplebooth-co-uk-v2/releases/tag/v0.5.3) - 2024-09-14
+
+- [`bea7053`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/bea7053f7cca71f8c8ca8aff9b6d506deae04447) fix(deps): update dependency postcss-preset-env to v10
+- [`ccf0e5b`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/ccf0e5baf241b5b65ba114a7c94614de6aaf9ce9) chore(deps): update dependency typescript to v5
+- [`bb46aa7`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/bb46aa7328f9a27afa049c12bcf6a204ece04d4c) chore(deps): update dependency node to v20
+- [`3bf8c1f`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/3bf8c1ffe627b3ca07f896f1984d87a48f29bc61) chore(deps): update dependency eslint-config-prettier to v9
+- [`e2ce7ff`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/e2ce7ff90c2d6627c803d59d512bdacdbaa7356e) chore(deps): update dependency @netlify/plugin-nextjs to v5
+- [`e68f148`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/e68f1487ad45ab5f5fa862e9d2da0c6fe185851d) chore(deps): update dependency typescript to v4.9.5
+- [`9f18fdd`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/9f18fdd81309aad81613c1d1516bacdea3604d67) chore(deps): update dependency tailwindcss to v3.4.11
+- [`c335791`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c3357919921fd7f8a1947170d36919300ef8b3a9) chore(deps): update dependency prettier to v2.8.8
+- [`e1248ba`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/e1248ba51a595ba0f74de6e8c242405c2b02ec08) chore(deps): update dependency @playwright/test to v1.47.1
+- [`3d778c4`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/3d778c42209a6e0e8e6eea6ce18731d89daaf576) chore(deps): update github/codeql-action digest to 8214744
+- [`b89bd5a`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/b89bd5a9bc75c9ed08c2840aa4bb8a4cf001d73f) chore(deps): update dependency next-router-mock to v0.9.13
+- [`dedb250`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/dedb25014f1c569a1d1ff86d43b7857ad6af85d0) chore(deps): update dependency netlify-cli to v17.36.0
+- [`df0e030`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/df0e0302436a4e42983113e05a66ba6811b306cf) chore(deps): update dependency eslint-plugin-import to v2.30.0
+- [`59e54ee`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/59e54eefdb9859d04434f4eee488713117d5ab42) chore(deps): update dependency eslint-config-prettier to v8.10.0
+- [`26aae47`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/26aae4723c82c938ebb8a2f31273f9a9143ae0ce) chore(deps): update dependency eslint-config-next to v12.3.4
+- [`c7129e3`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c7129e374f100260e314d1f329bd8a66ff2ce6de) chore(deps): update dependency eslint to v8.57.0
+- [`b2056be`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/b2056be0d4fe7eba3c2962c7e3797ac3eb80777d) chore(deps): update dependency @types/react to v18.3.5
+- [`9db42ab`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/9db42ab0d5a0918fb5938426ba3ce9f5bb25d150) chore(deps): update dependency @types/node to v18.19.50
+- [`0d8034f`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/0d8034f74923b9c98bd0c77b7aefd4b63e87da5b) chore(deps): update dependency @testing-library/jest-dom to v5.17.0
+- [`c1ab213`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c1ab2134390f32c0b5bab0afe67c2ee29529ea38) chore(deps): update dependency @playwright/test to v1.47.0
+- [`26086b4`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/26086b4c16e766488639974d8fc2c99d2d101ca2) chore(deps): update dependency @netlify/plugin-nextjs to v4.41.3
+- [`b0a57be`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/b0a57beede7a03fc6a406a24648733ce4307e890) chore(deps): update dependency autoprefixer to v10.4.20
+- [`c98b242`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c98b2427d05ed5d8e2a0102cd5504ee84a47c95b) chore(deps): update dependency @types/mdx-js__react to v1.5.8
+- [`af3b0a2`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/af3b0a229c5d2681ec393d1b9a4375a9ded0caa4) chore(deps): pin dependency @types/react to 18.0.9
+- [`7a826f2`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/7a826f232c434dca0a81cd06c2a64d4920dd7032) chore(deps): update actions/download-artifact action to v4.1.8
+- [`abe36af`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/abe36af1b64ceaa04c53f23d8a6dc8365e05d833) ci: Delete .github/dependabot.yml
+- [`bf1ec78`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/bf1ec78cb54ffc3f1c075bb2f1bbf1c50c373ba8) chore(deps): pin dependencies
+- [`c6b834d`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c6b834d210cde1e46795f6d7fff2f0c588379231) chore(deps): update dependency node to v16.20.2
+- [`cd48187`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/cd48187a005554d20cfd5d8f49c18a44d3d32bdc) chore(deps): update actions/upload-artifact action to v4
+- [`96aaa51`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/96aaa518613a25a090b1ad14903a45c7472986dd) chore(deps): add renovate.json
+- [`a4bb3c0`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/a4bb3c0369fca85e5d1c10dcd382480751499c47) build(deps): bump actions/download-artifact in /.github/workflows
+- [`b41fc73`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/b41fc73a7d552a8cc60b2eba557c3659fd090dc9) build(deps): bump actions/setup-node from 4.0.2 to 4.0.3
+- [`865707a`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/865707a44d88e80b7b7df2e751a9d1507ff939f5) build(deps): bump braces and readdirp
+- [`1a5f700`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/1a5f700010ac22e31c5bf85f2f781c6a758d7aa1) build(deps): bump express and netlify-cli
+- [`afb8293`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/afb82931df3bc7dd9f18b25f8e59edf100d35575) build(deps): bump ejs from 3.1.8 to 3.1.10
+- [`54dbabb`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/54dbabb8cc3a570f929943738fc7db4855a983a5) build(deps): bump actions/setup-node from 4.0.1 to 4.0.2
+- [`4abc8b5`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/4abc8b534c41991a1c04641323f5745e9d7b3e26) build(deps): bump actions/setup-node from 4.0.0 to 4.0.1
+- [`ee6023c`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/ee6023cb493f1993d533f3de6a933ed874b4759c) build(deps): bump github/codeql-action from 2 to 3
+- [`49c3d69`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/49c3d695382a93b5b4000e274e0eacaea0e1e19d) build(deps): bump sharp and @netlify/ipx
+- [`e05f1cb`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/e05f1cbecf97b519a08545929242aa454abb6524) build(deps): bump actions/setup-node from 3.8.1 to 4.0.0
+- [`4285185`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/428518561f7028d0496d298f1f18ab786c0456c7) build(deps): bump @babel/traverse from 7.18.5 to 7.23.2
+- [`68e1b1c`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/68e1b1c6524697e71201a43cd9a16c02536ba538) build(deps-dev): bump undici from 5.19.1 to 5.26.3
+- [`34075d2`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/34075d2a1fbc9263b1c3d30712fd98d0c95dba15) build(deps-dev): bump postcss from 8.4.14 to 8.4.31
+- [`e792314`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/e79231480ffd31beb2d3309c3f410048080a10a9) build(deps): bump actions/checkout from 3 to 4
+- [`808c258`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/808c25820797ce1b431fd9e2747e78a60a5fcae9) build(deps): bump actions/setup-node from 3.8.0 to 3.8.1
+- [`c0ade2b`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c0ade2bf809b1bc07c06543f9d9d4d6675c0804c) build(deps): bump actions/setup-node from 3.7.0 to 3.8.0
+- [`67dca8a`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/67dca8a48e7e1abb45d019f9cf691629626949c7) build(deps): bump word-wrap from 1.2.3 to 1.2.4
+- [`dfe6c82`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/dfe6c82b94b3b45d06521c71025c88f52323754b) build(deps): bump semver from 5.7.1 to 5.7.2
+- [`4b1c4be`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/4b1c4bea8e67b5e57bdaddb4c537012263cead9a) build(deps): bump tough-cookie from 4.0.0 to 4.1.3
+- [`85e8103`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/85e8103b0b2e5ddc06cb4679b6b0d0abe30bd602) build(deps): bump actions/setup-node from 3.6.0 to 3.7.0
+- [`35da125`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/35da12533bbac1b3ab85b3d324f6203c03f7c6a9) ci(uplift): uplifted for version v0.5.2
+- [`bfffc1a`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/bfffc1aa298a89b965206927791e98c34bd6986f) ci(uplift): uplifted for version v0.5.2
+
 ## [v0.5.2](https://github.com/PurpleBooth/purplebooth-co-uk-v2/releases/tag/v0.5.2) - 2023-06-15
 
 - [`bd96d4e`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/bd96d4e35acc0d82e03af7b0c3ea600ab3512748) fix: Use official tool to tidy svg
