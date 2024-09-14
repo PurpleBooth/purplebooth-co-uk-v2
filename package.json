@@ -48,7 +48,7 @@
     "@testing-library/jest-dom": "5.17.0",
     "@testing-library/react": "12.1.5",
     "@types/mdx-js__react": "1.5.8",
-    "@types/node": "18.19.50",
+    "@types/node": "20.16.5",
     "@types/react": "18.3.5",
     "autoprefixer": "10.4.20",
     "eslint": "8.57.0",
