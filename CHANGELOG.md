@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
+## [v0.5.6](https://github.com/PurpleBooth/purplebooth-co-uk-v2/releases/tag/v0.5.6) - 2024-09-15
+
+- [`ad5d6a4`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/ad5d6a460cf8528afdadce5a6ed48588fb51dfea) fix(deps): update mdx monorepo to v3
+- [`bc489e2`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/bc489e28e0bebd80f28ad2e823e05b44567ec39f) ci(uplift): uplifted for version v0.5.5
+- [`24f5480`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/24f5480f97bb32941c884c5159a52744a5958e3c) ci(uplift): uplifted for version v0.5.5
+
 ## [v0.5.5](https://github.com/PurpleBooth/purplebooth-co-uk-v2/releases/tag/v0.5.5) - 2024-09-15
 
 - [`5858002`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/5858002a9b3778b4cc2a41bc1d64a0db48f5b6dd) fix(deps): update nextjs monorepo to v14
