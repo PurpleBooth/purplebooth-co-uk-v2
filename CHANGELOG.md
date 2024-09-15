@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
+## [v0.5.4](https://github.com/PurpleBooth/purplebooth-co-uk-v2/releases/tag/v0.5.4) - 2024-09-14
+
+- [`c0a09ec`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/c0a09ec46bc845f3511b3a8046e04dc2a2a5d53f) fix(deps): update fontsource monorepo to v5
+- [`3464b81`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/3464b8165a005b586227442fe2fc78568687688d) ci(uplift): uplifted for version v0.5.3
+- [`bf1efb6`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/bf1efb607b6ddd9fd0c95b137bbaab79aa425357) ci(uplift): uplifted for version v0.5.3
+
 ## [v0.5.3](https://github.com/PurpleBooth/purplebooth-co-uk-v2/releases/tag/v0.5.3) - 2024-09-14
 
 - [`bea7053`](https://github.com/PurpleBooth/purplebooth-co-uk-v2/commit/bea7053f7cca71f8c8ca8aff9b6d506deae04447) fix(deps): update dependency postcss-preset-env to v10
