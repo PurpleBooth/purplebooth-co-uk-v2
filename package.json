@@ -50,7 +50,7 @@
     "@types/mdx-js__react": "1.5.8",
     "@types/node": "20.16.9",
     "@types/react": "18.3.31",
-    "autoprefixer": "10.4.20",
+    "autoprefixer": "10.5.2",
     "eslint": "8.57.1",
     "eslint-config-next": "14.2.35",
     "eslint-config-prettier": "9.1.2",
