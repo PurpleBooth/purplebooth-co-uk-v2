@@ -45,7 +45,6 @@ module.exports = withPWA(withMDX({
   },
   pageExtensions: ["page.js", "page.jsx", "page.ts", "page.tsx", "page.md", "page.mdx"],
   reactStrictMode: true,
-  swcMinify: true,
   productionBrowserSourceMaps: true,
   compiler: {
     // ssr and displayName are configured by default
