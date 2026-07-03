@@ -24,8 +24,8 @@ const AboutMe: NextPage = () => {
       </h1>
       <figure>
         <Image
-          width="461px"
-          height="614px"
+          width={461}
+          height={614}
           alt={
             "A somewhat tall girl with a black t-shirt on with long curly red-brown hair"
           }
@@ -44,48 +44,38 @@ const AboutMe: NextPage = () => {
       <h2 id="contact">Contact</h2>
       <ul className={"fa-ul"}>
         <li className={"flex items-center"}>
-          <Link href="tel:+447813452516" passHref>
-            <a>
-              <FontAwesomeIcon
-                title={"Mobile"}
-                icon={faPhone}
-                listItem
-                alignmentBaseline={"auto"}
-              />{" "}
-              +44 7813 452516
-            </a>
+          <Link href="tel:+447****2516">
+            <FontAwesomeIcon
+              title={"Mobile"}
+              icon={faPhone}
+              listItem
+              alignmentBaseline={"auto"}
+            />{" "}
+            +44 7813 452516
           </Link>
         </li>
         <li className={"flex items-center"}>
-          <Link passHref href="https://twitter.com/purplebooth">
-            <a>
-              <FontAwesomeIcon title={"Twitter"} icon={faTwitter} listItem />{" "}
-              @PurpleBooth
-            </a>
+          <Link href="https://twitter.com/purplebooth">
+            <FontAwesomeIcon title={"Twitter"} icon={faTwitter} listItem />{" "}
+            @PurpleBooth
           </Link>
         </li>
         <li className={"flex items-center"}>
-          <Link passHref href="https://uk.linkedin.com/in/purplebooth">
-            <a>
-              <FontAwesomeIcon title={"linkedIn"} icon={faLinkedin} listItem />{" "}
-              purplebooth
-            </a>
+          <Link href="https://uk.linkedin.com/in/purplebooth">
+            <FontAwesomeIcon title={"linkedIn"} icon={faLinkedin} listItem />{" "}
+            purplebooth
           </Link>
         </li>
         <li className={"flex items-center"}>
-          <Link passHref href="https://github.com/purplebooth">
-            <a>
-              <FontAwesomeIcon title={"GitHub"} icon={faGithub} listItem />{" "}
-              purplebooth
-            </a>
+          <Link href="https://github.com/purplebooth">
+            <FontAwesomeIcon title={"GitHub"} icon={faGithub} listItem />{" "}
+            purplebooth
           </Link>
         </li>
         <li className={"flex items-center"}>
           <Link href={"mailto:contactus@purplebooth.co.uk"}>
-            <a>
-              <FontAwesomeIcon title={"Email Address"} icon={faAt} listItem />{" "}
-              contactus@purplebooth.co.uk
-            </a>
+            <FontAwesomeIcon title={"Email Address"} icon={faAt} listItem />{" "}
+            contactus@purplebooth.co.uk
           </Link>
         </li>
       </ul>
@@ -93,10 +83,8 @@ const AboutMe: NextPage = () => {
       <ul className={"fa-ul"}>
         <li className={"flex items-center"}>
           <Link href="https://keybase.io/billie">
-            <a>
-              <FontAwesomeIcon title={"PGP Key"} icon={faKey} listItem /> 1AE6
-              1571 6381 6A8F
-            </a>
+            <FontAwesomeIcon title={"PGP Key"} icon={faKey} listItem /> 1AE6
+            1571 6381 6A8F
           </Link>
         </li>
       </ul>

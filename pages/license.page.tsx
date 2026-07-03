@@ -50,8 +50,8 @@ const License: NextPage = () => {
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
         <Image
           alt="Creative Commons Licence"
-          width="88px"
-          height="31px"
+          width={88}
+          height={31}
           src="/cc-image.png"
         />
       </a>

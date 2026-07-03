@@ -5,13 +5,12 @@ export const IndexItemArrowButton: FunctionComponent<
   PropsWithChildren<{ href: string }>
 > = ({ href, children }) => {
   return (
-    <Link passHref href={href}>
-      <a
-        data-testid={"IndexItemArrowButton a"}
-        className={"block p-1 no-underline"}
-      >
-        <span className={"hover:underline"}>{children}</span> →
-      </a>
+    <Link
+      href={href}
+      data-testid={"IndexItemArrowButton a"}
+      className={"block p-1 no-underline"}
+    >
+      <span className={"hover:underline"}>{children}</span> →
     </Link>
   );
 };
