@@ -12,40 +12,27 @@ import "@fontsource/ibm-plex-sans";
 
 import dynamic from "next/dynamic";
 import { MDXComponents } from "mdx/types";
-import { ImageProps } from "next/image";
+import type { ImgHTMLAttributes } from "react";
 
 const Image = dynamic(() => import("next/image"), {
   loading: () => <>.....</>,
 });
 
-const components = {
+const components: MDXComponents = {
   img: ({
     alt,
     src,
-    placeholder,
+    width,
+    height,
     ...props
-  }: PropsWithChildren<
-    Omit<Omit<Omit<ImageProps, "alt">, "src">, "placeholder"> & {
-      alt?: string;
-      src?: string;
-      placeholder?: string;
-    }
-  >) => {
-    var realPlaceholder: "blur" | "empty" | undefined;
-
-    if (placeholder == "blur") {
-      realPlaceholder = "blur";
-    }
-    if (placeholder == "empty") {
-      realPlaceholder = "empty";
-    }
-
+  }: PropsWithChildren<ImgHTMLAttributes<HTMLImageElement>>) => {
     return (
-      <Image
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
         alt={alt || ""}
-        src={src || ""}
-        placeholder={realPlaceholder}
-        layout="responsive"
+        src={typeof src === "string" ? src : ""}
+        width={width}
+        height={height}
         {...props}
       />
     );

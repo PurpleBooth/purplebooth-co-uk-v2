@@ -15,14 +15,10 @@ export const IndexItemCategories: FunctionComponent<{
         >
           <Link
             href={`/categories/${encodeURIComponent(tag.toLowerCase())}/`}
-            passHref
+            data-testid={`IndexItemCategories ${tag} a`}
+            className={"font-bold no-underline"}
           >
-            <a
-              data-testid={`IndexItemCategories ${tag} a`}
-              className={"font-bold no-underline"}
-            >
-              {tag}
-            </a>
+            {tag}
           </Link>
         </li>
       ))}

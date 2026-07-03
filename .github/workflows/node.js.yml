@@ -4,7 +4,7 @@
 name: Node.js CI
 
 env:
-  NODE_VERSION: 16.x
+  NODE_VERSION: 20.x
   NETLIFY_SITE_ID: 48139038-b4f3-4992-b6a9-9ee5f75fae5b
   NETLIFY_AUTH_TOKEN: fake
 
@@ -27,8 +27,7 @@ jobs:
       uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
       with:
         node-version: ${{ env.NODE_VERSION }}
-        cache: npm
-    - run: npm install
+    - run: npm install --no-audit
       name: Install dependencies
     - name: Pack assets
       run: tar -cf assets.tar .
