@@ -13,7 +13,7 @@ describe("IndexItemLinkTitle", () => {
           href={"/news"}
           pageHasTitle
           title={"Example Title Here"}
-        />
+        />,
       );
 
       expect(getByText("Example Title Here")).toBeInTheDocument();
@@ -25,7 +25,7 @@ describe("IndexItemLinkTitle", () => {
           href={"/news"}
           pageHasTitle
           title={"Example Title Here"}
-        />
+        />,
       );
 
       expect(getByTestId("IndexItemTitle h2")).toBeInTheDocument();
@@ -37,12 +37,12 @@ describe("IndexItemLinkTitle", () => {
           href={"/news"}
           pageHasTitle
           title={"Example Title Here"}
-        />
+        />,
       );
 
       expect(getByTestId("IndexItemLinkTitle")).toHaveAttribute(
         "href",
-        "/news"
+        "/news",
       );
     });
   });
@@ -50,7 +50,7 @@ describe("IndexItemLinkTitle", () => {
   describe("big version", () => {
     it("shows the tile", async () => {
       const { getByText } = render(
-        <IndexItemLinkTitle href={"/news"} title={"Example Title Here"} />
+        <IndexItemLinkTitle href={"/news"} title={"Example Title Here"} />,
       );
 
       expect(getByText("Example Title Here")).toBeInTheDocument();
@@ -58,7 +58,7 @@ describe("IndexItemLinkTitle", () => {
 
     it("is big", async () => {
       const { getByTestId } = render(
-        <IndexItemLinkTitle href={"/news"} title={"Example Title Here"} />
+        <IndexItemLinkTitle href={"/news"} title={"Example Title Here"} />,
       );
 
       expect(getByTestId("IndexItemTitle h1")).toBeInTheDocument();
@@ -70,12 +70,12 @@ describe("IndexItemLinkTitle", () => {
           href={"/news"}
           pageHasTitle
           title={"Example Title Here"}
-        />
+        />,
       );
 
       expect(getByTestId("IndexItemLinkTitle")).toHaveAttribute(
         "href",
-        "/news"
+        "/news",
       );
     });
   });

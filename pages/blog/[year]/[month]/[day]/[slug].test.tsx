@@ -24,15 +24,14 @@ describe("IndexPage", () => {
       ["a", "b", "c"],
       10,
       "description",
-      new Date(2012, 2, 2)
+      new Date(2012, 2, 2),
     );
     const article = new Article(meta, "contents");
-    const serializeResult: MDXRemoteSerializeResult = await serialize(
-      "Some Content"
-    );
+    const serializeResult: MDXRemoteSerializeResult =
+      await serialize("Some Content");
 
     const { getByText } = render(
-      <IndexPage article={article.toJSON()} contents={serializeResult} />
+      <IndexPage article={article.toJSON()} contents={serializeResult} />,
     );
 
     await waitFor(() => expect(getByText("Title!")).toBeInTheDocument());
@@ -88,7 +87,7 @@ describe("getStaticProps", () => {
             }),
           }),
         }),
-      })
+      }),
     );
   });
 });

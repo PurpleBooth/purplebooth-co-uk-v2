@@ -31,7 +31,10 @@ const securityHeaders = [
   }
 ];
 
-const withPWA = require('next-pwa');
+const withPWA = require("@ducanh2912/next-pwa").default({
+  dest: "public",
+  disable: process.env.NODE_ENV !== "production",
+});
 
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
@@ -39,10 +42,6 @@ const withMDX = require("@next/mdx")({
   gfm: true,
 });
 module.exports = withPWA(withMDX({
-  pwa: {
-    disable: process.env.NODE_ENV !== 'production',
-    dest: 'public'
-  },
   pageExtensions: ["page.js", "page.jsx", "page.ts", "page.tsx", "page.md", "page.mdx"],
   reactStrictMode: true,
   productionBrowserSourceMaps: true,

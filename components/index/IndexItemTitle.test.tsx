@@ -9,7 +9,7 @@ describe("IndexItemTitle", () => {
   describe("small version", () => {
     it("shows the tile", async () => {
       const { getByText } = render(
-        <IndexItemTitle pageHasTitle title={"Example Title Here"} />
+        <IndexItemTitle pageHasTitle title={"Example Title Here"} />,
       );
 
       expect(getByText("Example Title Here")).toBeInTheDocument();
@@ -17,7 +17,7 @@ describe("IndexItemTitle", () => {
 
     it("is small", async () => {
       const { getByTestId } = render(
-        <IndexItemTitle pageHasTitle title={"Example Title Here"} />
+        <IndexItemTitle pageHasTitle title={"Example Title Here"} />,
       );
 
       expect(getByTestId("IndexItemTitle h2")).toBeInTheDocument();
@@ -26,7 +26,7 @@ describe("IndexItemTitle", () => {
   describe("big version", () => {
     it("shows the tile", async () => {
       const { getByText } = render(
-        <IndexItemTitle title={"Example Title Here"} />
+        <IndexItemTitle title={"Example Title Here"} />,
       );
 
       expect(getByText("Example Title Here")).toBeInTheDocument();
@@ -34,7 +34,7 @@ describe("IndexItemTitle", () => {
 
     it("is big", async () => {
       const { getByTestId } = render(
-        <IndexItemTitle title={"Example Title Here"} />
+        <IndexItemTitle title={"Example Title Here"} />,
       );
 
       expect(getByTestId("IndexItemTitle h1")).toBeInTheDocument();

@@ -8,7 +8,7 @@ import { IndexItemArrowButton } from "./IndexItemArrowButton";
 describe("IndexItemArrowButton", () => {
   it("shows all the categories", async () => {
     const { getByText } = render(
-      <IndexItemArrowButton href="/news">Hello World</IndexItemArrowButton>
+      <IndexItemArrowButton href="/news">Hello World</IndexItemArrowButton>,
     );
 
     expect(getByText("Hello World")).toBeInTheDocument();
@@ -16,12 +16,12 @@ describe("IndexItemArrowButton", () => {
 
   it("lets me link to item", async () => {
     const { getByTestId } = render(
-      <IndexItemArrowButton href="/news">Hello World</IndexItemArrowButton>
+      <IndexItemArrowButton href="/news">Hello World</IndexItemArrowButton>,
     );
 
     expect(getByTestId("IndexItemArrowButton a")).toHaveAttribute(
       "href",
-      "/news"
+      "/news",
     );
   });
 });
