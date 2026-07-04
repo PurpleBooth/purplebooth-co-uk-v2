@@ -11,7 +11,7 @@ describe("Paginator", () => {
       const { queryAllByRole } = render(<Paginator maxPage={10} page={1} />);
 
       expect(
-        queryAllByRole("link").map((item) => item.getAttribute("href"))
+        queryAllByRole("link").map((item) => item.getAttribute("href")),
       ).toEqual(["/", "/page/2", "/page/3", "/page/4", "/page/2", "/page/10"]);
     });
   });
@@ -21,7 +21,7 @@ describe("Paginator", () => {
       const { queryAllByRole } = render(<Paginator maxPage={10} page={2} />);
 
       expect(
-        queryAllByRole("link").map((item) => item.getAttribute("href"))
+        queryAllByRole("link").map((item) => item.getAttribute("href")),
       ).toEqual([
         "/",
         "/",
@@ -38,11 +38,11 @@ describe("Paginator", () => {
   describe("3 page of 10", () => {
     it("it has the correct page links", async () => {
       const { queryAllByRole } = render(
-        <Paginator maxPage={10} page={3}></Paginator>
+        <Paginator maxPage={10} page={3}></Paginator>,
       );
 
       expect(
-        queryAllByRole("link").map((item) => item.getAttribute("href"))
+        queryAllByRole("link").map((item) => item.getAttribute("href")),
       ).toEqual([
         "/",
         "/page/2",
@@ -60,11 +60,11 @@ describe("Paginator", () => {
   describe("4 page of 10", () => {
     it("it has the correct page links", async () => {
       const { queryAllByRole } = render(
-        <Paginator maxPage={10} page={4}></Paginator>
+        <Paginator maxPage={10} page={4}></Paginator>,
       );
 
       expect(
-        queryAllByRole("link").map((item) => item.getAttribute("href"))
+        queryAllByRole("link").map((item) => item.getAttribute("href")),
       ).toEqual([
         "/",
         "/page/3",
@@ -81,11 +81,11 @@ describe("Paginator", () => {
   describe("5 page of 10", () => {
     it("it has the correct page links", async () => {
       const { queryAllByRole } = render(
-        <Paginator maxPage={10} page={5}></Paginator>
+        <Paginator maxPage={10} page={5}></Paginator>,
       );
 
       expect(
-        queryAllByRole("link").map((item) => item.getAttribute("href"))
+        queryAllByRole("link").map((item) => item.getAttribute("href")),
       ).toEqual([
         "/",
         "/page/4",
@@ -102,11 +102,11 @@ describe("Paginator", () => {
   describe("6 page of 10", () => {
     it("it has the correct page links", async () => {
       const { queryAllByRole } = render(
-        <Paginator maxPage={10} page={6}></Paginator>
+        <Paginator maxPage={10} page={6}></Paginator>,
       );
 
       expect(
-        queryAllByRole("link").map((item) => item.getAttribute("href"))
+        queryAllByRole("link").map((item) => item.getAttribute("href")),
       ).toEqual([
         "/",
         "/page/5",
@@ -123,11 +123,11 @@ describe("Paginator", () => {
   describe("7 page of 10", () => {
     it("it has the correct page links", async () => {
       const { queryAllByRole } = render(
-        <Paginator maxPage={10} page={7}></Paginator>
+        <Paginator maxPage={10} page={7}></Paginator>,
       );
 
       expect(
-        queryAllByRole("link").map((item) => item.getAttribute("href"))
+        queryAllByRole("link").map((item) => item.getAttribute("href")),
       ).toEqual([
         "/",
         "/page/6",
@@ -144,11 +144,11 @@ describe("Paginator", () => {
   describe("8 page of 10", () => {
     it("it has the correct page links", async () => {
       const { queryAllByRole } = render(
-        <Paginator maxPage={10} page={8}></Paginator>
+        <Paginator maxPage={10} page={8}></Paginator>,
       );
 
       expect(
-        queryAllByRole("link").map((item) => item.getAttribute("href"))
+        queryAllByRole("link").map((item) => item.getAttribute("href")),
       ).toEqual([
         "/",
         "/page/7",
@@ -167,7 +167,7 @@ describe("Paginator", () => {
       const { queryAllByRole } = render(<Paginator maxPage={10} page={9} />);
 
       expect(
-        queryAllByRole("link").map((item) => item.getAttribute("href"))
+        queryAllByRole("link").map((item) => item.getAttribute("href")),
       ).toEqual([
         "/",
         "/page/8",
@@ -183,11 +183,11 @@ describe("Paginator", () => {
   describe("10 page of 10", () => {
     it("it has the correct page links", async () => {
       const { queryAllByRole } = render(
-        <Paginator maxPage={10} page={10}></Paginator>
+        <Paginator maxPage={10} page={10}></Paginator>,
       );
 
       expect(
-        queryAllByRole("link").map((item) => item.getAttribute("href"))
+        queryAllByRole("link").map((item) => item.getAttribute("href")),
       ).toEqual(["/", "/page/9", "/page/7", "/page/8", "/page/9", "/page/10"]);
     });
   });

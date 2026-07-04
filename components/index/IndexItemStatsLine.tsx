@@ -11,11 +11,11 @@ export const IndexItemStatsLine: FunctionComponent<{
         style: "unit",
         unit: "minute",
       }).format(readLengthMin),
-    [readLengthMin]
+    [readLengthMin],
   );
   const formattedDate = useMemo(
     () => (date ? intlFormat(date) + " · " : ""),
-    [date]
+    [date],
   );
 
   return (

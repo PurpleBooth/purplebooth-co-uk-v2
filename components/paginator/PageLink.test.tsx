@@ -11,7 +11,7 @@ describe("PageLink", () => {
       const { getByText } = render(
         <PageLink disabled page={10}>
           Some Content
-        </PageLink>
+        </PageLink>,
       );
 
       expect(getByText("Some Content")).toBeInTheDocument();
@@ -21,7 +21,7 @@ describe("PageLink", () => {
       const { queryAllByRole } = render(
         <PageLink disabled page={10}>
           Some Content
-        </PageLink>
+        </PageLink>,
       );
 
       expect(queryAllByRole("link")).toHaveLength(0);

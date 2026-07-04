@@ -15,26 +15,26 @@ describe("IndexPage", () => {
         ["a", "b", "c"],
         10,
         "description",
-        new Date(2012, 2, 2)
+        new Date(2012, 2, 2),
       ),
       new Meta(
         "Title 2",
         ["a", "b", "c"],
         10,
         "description",
-        new Date(2012, 2, 2)
+        new Date(2012, 2, 2),
       ),
       new Meta(
         "Title 3",
         ["a", "b", "c"],
         10,
         "description",
-        new Date(2012, 2, 2)
+        new Date(2012, 2, 2),
       ),
     ].map((meta) => meta.toJSON());
 
     const { getByText } = render(
-      <BlogPage page={1} maxPage={10} meta={meta} />
+      <BlogPage page={1} maxPage={10} meta={meta} />,
     );
 
     await waitFor(() => expect(getByText("Title 1")).toBeInTheDocument());
@@ -74,7 +74,7 @@ describe("getStaticProps", () => {
           page: expect.any(Number),
           meta: expect.arrayContaining([expect.any(Object)]),
         }),
-      })
+      }),
     );
   });
 });

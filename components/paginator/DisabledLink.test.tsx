@@ -14,7 +14,7 @@ describe("ActiveLink", () => {
   });
   it("is not a link", async () => {
     const { queryAllByRole } = render(
-      <DisabledLink>Some Content</DisabledLink>
+      <DisabledLink>Some Content</DisabledLink>,
     );
 
     expect(queryAllByRole("link")).toHaveLength(0);

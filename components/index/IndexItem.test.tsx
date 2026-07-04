@@ -20,13 +20,13 @@ describe("IndexItemArrowButton", () => {
             categories: ["hello world", "another"],
             readLengthMin: 20,
           }}
-        />
+        />,
       );
 
       expect(getByText("This is a title")).toBeInTheDocument();
       expect(getByTestId("IndexItemLinkTitle")).toHaveAttribute(
         "href",
-        "/blog/2021/11/19/slug"
+        "/blog/2021/11/19/slug",
       );
     });
 
@@ -42,7 +42,7 @@ describe("IndexItemArrowButton", () => {
             categories: ["hello world", "another"],
             readLengthMin: 20,
           }}
-        />
+        />,
       );
 
       expect(getByTestId("IndexItemStatsLine")).toBeInTheDocument();
@@ -60,7 +60,7 @@ describe("IndexItemArrowButton", () => {
             categories: ["hello world", "another"],
             readLengthMin: 20,
           }}
-        />
+        />,
       );
 
       expect(getByText("hello world")).toBeInTheDocument();
@@ -78,7 +78,7 @@ describe("IndexItemArrowButton", () => {
             categories: ["hello world", "another"],
             readLengthMin: 20,
           }}
-        />
+        />,
       );
 
       expect(getByText("Some Description")).toBeInTheDocument();
@@ -95,12 +95,12 @@ describe("IndexItemArrowButton", () => {
             categories: ["hello world", "another"],
             readLengthMin: 20,
           }}
-        />
+        />,
       );
 
       expect(getByTestId("IndexItemArrowButton a")).toHaveAttribute(
         "href",
-        "/blog/2021/11/19/slug"
+        "/blog/2021/11/19/slug",
       );
     });
   });
@@ -116,13 +116,13 @@ describe("IndexItemArrowButton", () => {
             categories: ["hello world", "another"],
             readLengthMin: 20,
           }}
-        />
+        />,
       );
 
       expect(getByText("This is a title")).toBeInTheDocument();
       expect(getByTestId("IndexItemLinkTitle")).toHaveAttribute(
         "href",
-        "/blog/2021/11/19/slug"
+        "/blog/2021/11/19/slug",
       );
     });
 
@@ -137,7 +137,7 @@ describe("IndexItemArrowButton", () => {
             categories: ["hello world", "another"],
             readLengthMin: 20,
           }}
-        />
+        />,
       );
 
       expect(getByTestId("IndexItemStatsLine")).toBeInTheDocument();
@@ -154,7 +154,7 @@ describe("IndexItemArrowButton", () => {
             categories: ["hello world", "another"],
             readLengthMin: 20,
           }}
-        />
+        />,
       );
 
       expect(getByText("hello world")).toBeInTheDocument();
@@ -171,7 +171,7 @@ describe("IndexItemArrowButton", () => {
             categories: ["hello world", "another"],
             readLengthMin: 20,
           }}
-        />
+        />,
       );
 
       expect(getByText("Some Description")).toBeInTheDocument();
@@ -187,12 +187,12 @@ describe("IndexItemArrowButton", () => {
             categories: ["hello world", "another"],
             readLengthMin: 20,
           }}
-        />
+        />,
       );
 
       expect(getByTestId("IndexItemArrowButton a")).toHaveAttribute(
         "href",
-        "/blog/2021/11/19/slug"
+        "/blog/2021/11/19/slug",
       );
     });
   });
