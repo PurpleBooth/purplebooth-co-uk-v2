@@ -5,11 +5,31 @@
 import "fs";
 import React from "react";
 import { render, waitFor } from "@testing-library/react";
-import { MDXRemoteSerializeResult } from "next-mdx-remote";
-import { serialize } from "next-mdx-remote/serialize";
 import Meta from "../../../../../models/Meta";
 import Article from "../../../../../models/Article";
 import IndexPage, { getStaticPaths, getStaticProps } from "./[slug].page";
+
+type MDXRemoteSerializeResult = {
+  compiledSource: string;
+  frontmatter: Record<string, unknown>;
+  scope: Record<string, unknown>;
+};
+
+jest.mock("next-mdx-remote", () => ({
+  MDXRemote: ({ compiledSource }: { compiledSource?: string }) => (
+    <div>{compiledSource}</div>
+  ),
+}));
+
+jest.mock("next-mdx-remote/serialize", () => ({
+  serialize: jest.fn().mockResolvedValue({
+    compiledSource: "Some Content",
+    frontmatter: {},
+    scope: {},
+  }),
+}));
+
+import { serialize } from "next-mdx-remote/serialize";
 
 describe("IndexPage", () => {
   it('404"s on no article', async () => {
@@ -24,14 +44,15 @@ describe("IndexPage", () => {
       ["a", "b", "c"],
       10,
       "description",
-      new Date(2012, 2, 2),
+      new Date(2012, 2, 2)
     );
     const article = new Article(meta, "contents");
-    const serializeResult: MDXRemoteSerializeResult =
-      await serialize("Some Content");
+    const serializeResult: MDXRemoteSerializeResult = await serialize(
+      "Some Content"
+    );
 
     const { getByText } = render(
-      <IndexPage article={article.toJSON()} contents={serializeResult} />,
+      <IndexPage article={article.toJSON()} contents={serializeResult} />
     );
 
     await waitFor(() => expect(getByText("Title!")).toBeInTheDocument());
@@ -87,7 +108,7 @@ describe("getStaticProps", () => {
             }),
           }),
         }),
-      }),
+      })
     );
   });
 });

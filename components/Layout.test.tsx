@@ -16,7 +16,7 @@ describe("Layout", () => {
     const { getByTestId } = render(
       <Layout pageDescription={"Some Description"} pageTitle={"A Title"}>
         Some Content
-      </Layout>,
+      </Layout>
     );
 
     await waitFor(() => expect(getByTestId("Layout")).toBeInTheDocument());

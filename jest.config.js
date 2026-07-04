@@ -15,15 +15,4 @@ const customJestConfig = {
 }
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
-const getConfig = createJestConfig(customJestConfig)
-
-// Override transformIgnorePatterns to transform next-mdx-remote ESM in node_modules
-module.exports = async () => {
-  const config = await getConfig()
-  config.transformIgnorePatterns = [
-    '/node_modules/(?!next-mdx-remote)',
-    '/\\.next/',
-    '/dist/',
-  ]
-  return config
-}
+module.exports = createJestConfig(customJestConfig)

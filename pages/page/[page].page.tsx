@@ -44,7 +44,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps<Props> = async (
-  context,
+  context
 ): Promise<{ props: Props }> => {
   const service = new ArticlesService();
   let page: number;
@@ -56,7 +56,7 @@ export const getStaticProps: GetStaticProps<Props> = async (
   }
 
   const articleMetas = (await service.find()).map((article: Article) =>
-    article.meta.toJSON(),
+    article.meta.toJSON()
   );
 
   return {
