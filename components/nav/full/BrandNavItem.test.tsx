@@ -15,7 +15,7 @@ describe("BrandNavItem", () => {
         href={"/news"}
         title={"some title"}
         icon={["fas", "twitter"]}
-      />,
+      />
     );
 
     expect(getByTestId("BrandNavItem")).toHaveAttribute("href", "/news");

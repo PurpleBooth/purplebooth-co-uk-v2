@@ -18,7 +18,7 @@ const Category: NextPage<Props> = ({ meta }: Props) => {
   const category: string =
     (Array.isArray(query.category) ? query.category[0] : query.category) || "";
   const capitalisedCategory = meta[0].categories.filter(
-    (realCategory) => realCategory.toLowerCase() === category.toLowerCase(),
+    (realCategory) => realCategory.toLowerCase() === category.toLowerCase()
   )[0];
 
   return (
@@ -40,10 +40,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
     articles
       .map((value) => value.meta.categories)
       .flat()
-      .map((value) => value.toLowerCase()),
+      .map((value) => value.toLowerCase())
   );
   const params: { params: { category: string } }[] = Array.from(
-    uniqueCategories,
+    uniqueCategories
   ).map((value) => ({
     params: {
       category: value,
@@ -57,14 +57,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps<Props> = async (
-  context,
+  context
 ): Promise<{ props: Props }> => {
   const category = context?.params?.category || "";
   const service = new ArticlesService();
   return {
     props: {
       meta: (await service.find({ categories: category })).map((article) =>
-        article.meta.toJSON(),
+        article.meta.toJSON()
       ),
     },
   };

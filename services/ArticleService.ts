@@ -8,7 +8,7 @@ interface Query {
 }
 
 function standardise(
-  value: string[] | string | undefined,
+  value: string[] | string | undefined
 ): string[] | undefined {
   if (Array.isArray(value) || value === undefined) {
     return value as string[] | undefined;
@@ -69,7 +69,7 @@ export default class ArticlesService {
     articles.sort(
       (a, b) =>
         (a.meta.date ? a.meta.date.valueOf() : 0) -
-        (b.meta.date ? b.meta.date.valueOf() : 0),
+        (b.meta.date ? b.meta.date.valueOf() : 0)
     );
     articles.reverse();
 

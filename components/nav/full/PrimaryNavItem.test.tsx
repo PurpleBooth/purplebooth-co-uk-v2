@@ -12,14 +12,14 @@ describe("PrimaryNavItem", () => {
 
   it("Renders children", async () => {
     const { getByText } = render(
-      <PrimaryNavItem href={"/news"}>Some Content</PrimaryNavItem>,
+      <PrimaryNavItem href={"/news"}>Some Content</PrimaryNavItem>
     );
 
     expect(getByText("Some Content")).toBeInTheDocument();
   });
   it("Has link", async () => {
     const { getByTestId } = render(
-      <PrimaryNavItem href={"/news"}>Some Content</PrimaryNavItem>,
+      <PrimaryNavItem href={"/news"}>Some Content</PrimaryNavItem>
     );
 
     expect(getByTestId("PrimaryNavItem")).toHaveAttribute("href", "/news");

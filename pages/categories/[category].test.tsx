@@ -28,7 +28,7 @@ jest.mock("next/dist/client/router", () => ({
 
 const useRouter: SpyInstance<NextRouter, []> = jest.spyOn(
   router,
-  "useRouter",
+  "useRouter"
 ) as any;
 
 describe("IndexPage", () => {
@@ -44,7 +44,7 @@ describe("IndexPage", () => {
           isLocaleDomain: true,
           prefetch: () => Promise.resolve(),
           push: () => {},
-        }) as any,
+        } as any)
     );
 
     const meta = [
@@ -53,21 +53,21 @@ describe("IndexPage", () => {
         ["a", "b", "c"],
         10,
         "description",
-        new Date(2012, 2, 2),
+        new Date(2012, 2, 2)
       ),
       new Meta(
         "Title 2",
         ["a", "b", "c"],
         10,
         "description",
-        new Date(2012, 2, 2),
+        new Date(2012, 2, 2)
       ),
       new Meta(
         "Title 3",
         ["a", "b", "c"],
         10,
         "description",
-        new Date(2012, 2, 2),
+        new Date(2012, 2, 2)
       ),
     ].map((meta) => meta.toJSON());
 
@@ -116,7 +116,7 @@ describe("getStaticProps", () => {
             }),
           ]),
         }),
-      }),
+      })
     );
   });
 });

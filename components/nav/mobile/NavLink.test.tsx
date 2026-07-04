@@ -8,7 +8,7 @@ import { NavLink } from "./NavLink";
 describe("NavLink", () => {
   it("renders children", async () => {
     const { getByText } = render(
-      <NavLink href={"/news"}>Example content</NavLink>,
+      <NavLink href={"/news"}>Example content</NavLink>
     );
 
     expect(getByText("Example content")).toBeInTheDocument();
@@ -16,7 +16,7 @@ describe("NavLink", () => {
 
   it("renders children", async () => {
     const { getByTestId } = render(
-      <NavLink href={"/news"}>Example content</NavLink>,
+      <NavLink href={"/news"}>Example content</NavLink>
     );
 
     expect(getByTestId("NavLink")).toHaveAttribute("href", "/news");
