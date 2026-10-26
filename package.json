@@ -43,7 +43,7 @@
     "sass": "^1.53.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.6",
+    "@babel/core": "^8.0.0",
     "@netlify/plugin-nextjs": "5.15.13",
     "@playwright/test": "1.47.2",
     "@testing-library/jest-dom": "5.17.0",
@@ -70,8 +70,8 @@
     "form-data": "^3.0.5",
     "tmp": "^0.2.6",
     "multiparty": "^4.3.0",
-    "@babel/plugin-transform-modules-systemjs": "^7.29.4",
-    "@babel/core": "^7.29.6",
+    "@babel/plugin-transform-modules-systemjs": "^8.0.0",
+    "@babel/core": "^8.0.0",
     "node-forge": "^1.4.0",
     "h3": "^1.15.6",
     "picomatch": "^4.0.4",
