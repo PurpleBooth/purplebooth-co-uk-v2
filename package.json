@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.29.6",
-    "@netlify/plugin-nextjs": "5.15.13",
+    "@netlify/plugin-nextjs": "5.16.6",
     "@playwright/test": "1.64.1",
     "@testing-library/jest-dom": "5.17.0",
     "@testing-library/react": "^16.0.0",
